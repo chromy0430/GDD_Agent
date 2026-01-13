@@ -1,0 +1,16 @@
+애니메이션,지속시간(ms),이징,반복,비고
+퍼즐 매치,300,ease-out,false,조각 제거
+퍼즐 드롭,200,ease-in,false,조각 낙하
+퍼즐 스왑,150,ease-in-out,false,조각 교환
+스킬 발동,500,ease-out,false,이펙트 표시
+데미지 숫자,800,ease-out,false,숫자 팝업
+HP바 감소,400,ease-in-out,false,체력바 애니메이션
+캐릭터 공격,600,ease-in-out,false,공격 모션
+캐릭터 피격,300,ease-out,false,피격 모션
+승리 연출,2000,ease-in-out,false,전투 승리
+패배 연출,1500,ease-in,false,전투 패배
+가챠 연출,3000,ease-in-out,false,등장 연출
+버튼 클릭,100,ease-out,false,UI 피드백
+화면 전환,400,ease-in-out,false,씬 전환
+아이템 획득,1000,ease-out,false,보상 연출
+레벨업,1500,ease-in-out,false,레벨업 연출
