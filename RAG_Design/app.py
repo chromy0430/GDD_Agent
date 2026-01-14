@@ -18,9 +18,9 @@ from rag_utils import UnityRAG
 # ==========================================
 st.set_page_config(layout="wide", page_title="AI 기획서 평가 봇")
 CRITERIA_FOLDER = "criteria"
-MODEL_NAME = "gemini-2.5-flash" 
 CONFIG_FILE = "config.json"
 
+api_key_input, cx_id, model_name = render_sidebar_settings()
 # ==========================================
 # 2. 유틸리티 함수 (파일 처리)
 # ==========================================
@@ -138,11 +138,19 @@ def upload_to_gemini(uploaded_file, api_key):
         client = genai.Client(api_key=api_key)
         # mime_type 지정 방식이 변경됨 (upload 메서드 내 config 사용 불필요, 자동 감지 혹은 별도 설정)
         # 새 SDK에서는 path만 주면 알아서 처리합니다.
-        uploaded_file_ref = client.files.upload(path=tmp_path)
+        uploaded_file_ref = client.files.upload(
+            file=tmp_path,
+            config={'mime_type': 'application/pdf'} # 명시적으로 PDF임을 지정 (선택사항)
+        )
         return uploaded_file_ref
     except Exception as e:
         st.error(f"Gemini 파일 업로드 실패: {e}")
         return None
+    finally:
+        # 3. 임시 파일 삭제 (리소스 정리)
+        # 업로드가 성공하든 실패하든 임시 파일은 지워주는 것이 좋습니다.
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
 
 def summarize_large_text_if_needed(text, api_key, chunk_size=30000):
     """
@@ -168,7 +176,7 @@ def summarize_large_text_if_needed(text, api_key, chunk_size=30000):
             
             # [변경] generate_content 호출 방식 변경
             response = client.models.generate_content(
-                model=MODEL_NAME,
+                model=model_name,
                 contents=prompt
             )
             summaries.append(response.text)
@@ -271,7 +279,7 @@ def main():
     st.title("📄 AI 게임 기획서 평가 봇")
     st.markdown("로컬 기준 파일과 첨부 데이터를 기반으로 기획서를 분석합니다.")
 
-    api_key_input, cx_id, model_name = render_sidebar_settings()
+    
     # saved_key = load_api_key()
 
     # 사이드바: 설정
