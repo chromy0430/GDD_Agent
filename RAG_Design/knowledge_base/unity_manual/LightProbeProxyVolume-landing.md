@@ -1,0 +1,17 @@
+--- 
+Source: Unity 6 Manual (LightProbeProxyVolume-landing.md)
+---
+
+# Configure a GameObject to sample more Light Probes in the Built-In Render Pipeline
+To make lighting more realistic, use a **Light Probe**Light probes store information about how light passes through space in your scene. A collection of light probes arranged within a given space can improve lighting on moving objects and static LOD scenery within that space. [More info](LightProbes.html)
+See in [Glossary](Glossary.html#LightProbe) Proxy Volume to configure a **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](class-GameObject.html)
+See in [Glossary](Glossary.html#GameObject) to sample multiple Light Probes.
+| **Page** | **Description** |
+| --- | --- |
+| [Light Probe Proxy Volumes](class-LightProbeProxyVolume.html)A component that allows you to use more lighting information for large dynamic GameObjects that cannot use baked lightmaps (for example, large Particle Systems or skinned Meshes). [More info](class-LightProbeProxyVolume.html) See in [Glossary](Glossary.html#LightProbeProxyVolume) | Understand how a Light Probe Proxy Volume component generates a 3D grid and texture that Unity uses to create gradients on GameObjects. |
+| [Set a GameObject to use a Light Probe Proxy Volume](class-LightProbeProxyVolume-add.html) | Use the settings in a **Mesh**The main graphics primitive of Unity. Meshes make up a large part of your 3D worlds. Unity supports triangulated or Quadrangulated polygon meshes. Nurbs, Nurms, Subdiv surfaces must be converted to polygons. [More info](mesh.html) See in [Glossary](Glossary.html#Mesh) Renderer component to set a GameObject to sample multiple probes. |
+| [Configure a Light Probe Proxy Volume](class-LightProbeProxyVolume-configure.html) | Change the size and data format of a Light Probe Proxy Volume. |
+| [Light Probe Proxy Volume component reference](class-LightProbeProxyVolume-reference.html) | Explore the properties and settings in the Light Probe Proxy Volume component **Inspector**A Unity window that displays information about the currently selected GameObject, asset or project settings, allowing you to inspect and edit the values. [More info](UsingTheInspector.html) See in [Glossary](Glossary.html#Inspector) window to customize how Unity generates the 3D grid and texture. |
+| [Add Light Probe Proxy Volume support to a custom shader](class-LightProbeProxyVolume-Shader.html) | An example of a **particle**A small, simple image or mesh that is emitted by a particle system. A particle system can display and move particles in great numbers to represent a fluid or amorphous entity. The effect of all the particles together creates the impression of the complete entity, such as smoke. [More info](class-ParticleSystem.html) See in [Glossary](Glossary.html#particle) **shader**A program that runs on the GPU. [More info](Shaders.html) See in [Glossary](Glossary.html#shader) that uses the `ShadeSHPerPixel` function to add support for a Light Probe Proxy Volume. |
+## Additional resources
+* [Precalculating indirect light with Light Probes](LightProbes-landing.html)

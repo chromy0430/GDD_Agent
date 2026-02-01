@@ -1,0 +1,22 @@
+--- 
+Source: Unity 6 Manual (object-oriented-development.md)
+---
+
+# Object-oriented development
+Traditional Unity projects are grounded in object-oriented design principles and programming philosophy, which is centered around objects, their properties and functions, and the relations between these objects. Code is organized around [GameObjects](working-with-gameobjects.html)The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](class-GameObject.html)
+See in [Glossary](Glossary.html#GameObject) whose behavior is controlled by attached [MonoBehaviour](class-MonoBehaviour.html) [components](components.html)A functional part of a GameObject. A GameObject can contain any number of components. Unity has many built-in components, and you can create your own by writing scripts that inherit from MonoBehaviour. [More info](UsingComponents.html)
+See in [Glossary](Glossary.html#component). In general, these MonoBehaviour components encapsulate logic (methods) and data (fields) together, which can be convenient but can have performance issues at scale.
+An alternative to object-oriented development is data-oriented development, which is both a design philosophy and a set of technologies that help you implement that philosophy. This approach stresses a clear separation between code and data to maximize CPU cache efficiency and parallelism. Instead of MonoBehaviours, the [Entity Component System (ECS)](https://unity.com/ecs) architecture uses components for data, and systems for logic. The data-oriented approach offers strong performance advantages at scale but can be more challenging for inexperienced developers to learn.
+Object-oriented and data-oriented development are not mutually exclusive and you can combine elements from both. For information on data-oriented development, refer to [Unity’s Data-Oriented Technology Stack](https://unity.com/dots).
+| **Topic** | **Description** |
+| --- | --- |
+| **[Fundamental Unity types](fundamental-unity-types.html)** | Understand some of the fundamental C# types that Unity provides and their special significance and behavior in the Unity Editor and runtime. |
+| **[Managing update and execution order](managing-update-order.html)** | Understand the order in which Unity executes your script components and the lifecycle callbacks within those **scripts**A piece of code that allows you to create your own Components, trigger game events, modify Component properties over time and respond to user input in any way you like. [More info](creating-scripts.html) See in [Glossary](Glossary.html#Scripts) during the runtime application loop. |
+| **[Managing time and frame rate](managing-time-and-frame-rate.html)** | Understand how Unity measures time so you can manage the rate at which time passes in your application and ensure values update according to the appropriate time scale. |
+| **[Split tasks across frames with coroutines](Coroutines.html)** | Split the execution of a task synchronously across multiple **scenes**A Scene contains the environments and menus of your game. Think of each unique Scene file as a unique level. In each Scene, you place your environments, obstacles, and decorations, essentially designing and building your game in pieces. [More info](CreatingScenes.html) See in [Glossary](Glossary.html#Scene) with coroutines. This can be useful for tasks that should progress gradually over several frames, such as a fade out effect. |
+| **[Interacting with web servers](web-request.html)** | Use the UnityWebRequest system to allow your application to interact with a web server via HTTP. |
+| **[Handle type data generically with Unity Properties](properties.html)** | Use the Unity Properties API to generically discover and manipulate object properties at runtime. |
+| **[Programming with mathematics](programming-math.html)** | Use Unity’s mathematical APIs to apply trigonometric, logarithmic, and other functions in your application, move objects with vectors, and generate random values. |
+## Additional resources
+* [Unity’s Data-Oriented Technology Stack](https://unity.com/dots)
+* [GameObject](class-GameObject.html)

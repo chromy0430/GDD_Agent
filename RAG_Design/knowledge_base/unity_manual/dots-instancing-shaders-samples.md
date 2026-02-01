@@ -1,0 +1,12 @@
+--- 
+Source: Unity 6 Manual (dots-instancing-shaders-samples.md)
+---
+
+# DOTS Instancing shader examples in URP
+Examples of using built-in macros to access per-instance data and constant data in DOTS Instancing **shaders**A program that runs on the GPU. [More info](Shaders.html)
+See in [Glossary](Glossary.html#shader).
+| **Page** | **Description** |
+| --- | --- |
+| [Example of a DOTS Instancing shader that accesses per-instance data](dots-instancing-shaders-per-instance.html) | An example of accessing per-instance color data in a DOTS Instancing shader. |
+| [Example of a DOTS Instancing shader that accesses constant data](dots-instancing-shaders-constant.html) | An example of accessing constant color data in a DOTS Instancing shader. |
+| [Example of using UNITY\_DOTS\_INSTANCED\_PROP macros in a DOTS Instancing shader](dots-instancing-shaders-unity-dots-instanced-prop.html) | An example of using the `UNITY_ACCESS_DOTS_INSTANCED_PROP` to specify if a property can be instanced or not at compile time. |

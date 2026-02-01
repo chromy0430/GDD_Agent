@@ -11,7 +11,7 @@ from langchain_core.documents import Document
 # 설정
 DB_PATH = "./db/chroma_db"
 KNOWLEDGE_PATH = "./knowledge_base"
-MODEL_NAME = "gemini-2.5-flash" # 파싱용 모델
+MODEL_NAME = "gemini-3-flash-preview" # 파싱용 모델
 
 class UnityRAG:
     def __init__(self, api_key):

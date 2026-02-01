@@ -1,0 +1,13 @@
+--- 
+Source: Unity 6 Manual (Lightmapping-troubleshooting.md)
+---
+
+# Troubleshooting baked lightmaps
+Solve common issues with baked **lightmaps**A pre-rendered texture that contains the effects of light sources on static objects in the scene. Lightmaps are overlaid on top of scene geometry to create the effect of lighting. [More info](Lightmapping.html)
+See in [Glossary](Glossary.html#Lightmap), such as hard edges or light bleeding.
+| **Page** | **Description** |
+| --- | --- |
+| [Troubleshoot lightmapping artifacts](troubleshooting-lightmapping-artifacts.html) | Troubleshoot artifacts related to lightmap UVs, texels, denoising, filtering, **compression**A method of storing data that reduces the amount of storage space it requires. See [Texture Compression](texture-choose-format-by-platform.html), [Animation Compression](class-AnimationClip.html#AssetProperties), [Audio Compression](class-AudioClip.html), [Build Compression](ReducingFilesize.html). See in [Glossary](Glossary.html#compression), or **light probes**Light probes store information about how light passes through space in your scene. A collection of light probes arranged within a given space can improve lighting on moving objects and static LOD scenery within that space. [More info](LightProbes.html) See in [Glossary](Glossary.html#LightProbe). |
+| [Troubleshooting lightmapping quality issues](troubleshooting-lightmapping-quality.html) | Troubleshoot flat **normal maps**A type of Bump Map texture that allows you to add surface detail such as bumps, grooves, and scratches to a model which catch the light as if they are represented by real geometry. See in [Glossary](Glossary.html#normalmap), lightmap seams, and aliasing issues. |
+| [Troubleshooting light leaking](troubleshooting-lightmapping-leaking.html) | Troubleshoot light leaking. |
+| [Troubleshooting no baked global illumination in the scene](ts-no-baked-global-illum.html) | Troubleshoot reasons for baked **global illumination**A group of techniques that model both direct and indirect lighting to provide realistic lighting results. See in [Glossary](Glossary.html#globalillumination) failing to render in a **scene**A Scene contains the environments and menus of your game. Think of each unique Scene file as a unique level. In each Scene, you place your environments, obstacles, and decorations, essentially designing and building your game in pieces. [More info](CreatingScenes.html) See in [Glossary](Glossary.html#Scene). |
