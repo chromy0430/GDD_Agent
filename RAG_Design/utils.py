@@ -15,8 +15,6 @@ LOG_FILE = "usage_log.csv"
 AVAILABLE_MODELS = [
     "gemini-2.5-flash",        # 최신 표준
     "gemini-2.5-flash-lite",   # 가성비/속도
-    "gemini-3-flash",
-    "gemini-3-pro-preview",
     "gemini-3-flash-preview"
     #"gemini-1.5-pro",          # 고성능
     #"gemini-2.0-flash-exp"     # 실험 버전
