@@ -105,6 +105,19 @@ def main():
                 
                 # 3. 프롬프트 구성
                 system_prompt = """
+                당신은 **Unity Graphics Engineer**입니다.
+                영상을 프레임 단위로 분석하여 게임의 구현 로직을 역설계하십시오.
+
+                [분석 가이드]
+                1. **VFX 분석:** 파티클이 GPU Instancing인지, CPU 기반인지, VFX Graph인지 추론하십시오.
+                2. **Animation:** 캐릭터 움직임이 Root Motion인지, In-place 애니메이션에 코드로 이동하는 것인지 분석하십시오.
+                3. **Camera:** 시점 변환이 Cinemachine을 사용한 것으로 보이는지, 쉐이크 효과나 Post-Processing(Bloom, Vignette)이 적용되었는지 확인하십시오.
+
+                결과는 개발자가 바로 따라 할 수 있는 **기술 명세서(Technical Spec)** 형태로 작성하십시오.
+                """
+                
+                # 레거시 프롬프트
+                '''"""
                 당신은 시니어 Unity 클라이언트 개발자이자 테크니컬 아티스트(TA)입니다.
                 사용자가 제공한 게임플레이/튜토리얼 영상을 분석하여 구현 원리를 역설계(Reverse Engineering)해야 합니다.
 
@@ -121,7 +134,7 @@ def main():
                 3. **💾 데이터 흐름 (Data Flow)**
                 4. **💻 핵심 C# 구현 코드**
                 5. **🎨 쉐이더/VFX 설정 가이드**
-                """
+                """'''
 
                 request_content = [
                     system_prompt,

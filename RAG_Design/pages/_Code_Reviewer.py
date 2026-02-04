@@ -79,7 +79,46 @@ def main():
         related_knowledge = rag.retrieve_context(code_content, k=3)
 
         # 프롬프트 구성
-        system_prompt = """
+        system_prompt = """당신은 Unity 6.3 (LTS) 엔진 아키텍트이자 퍼포먼스 최적화 전문가입니다.
+        입력된 C# 코드를 **Unity 6 최신 스펙**과 **Zero-GC 원칙**에 따라 리뷰하고 리팩토링해야 합니다.
+
+        [참고 문서 (RAG Context)]
+        {related_knowledge}
+
+        [작업 절차]
+        1. **Deep Analysis:** 코드를 줄 단위로 분석하여 GC 발생 지점, 레거시 API, 구조적 결함을 찾으십시오.
+        2. **Refactoring Strategy:** - `Coroutine` -> `Awaitable` (Unity 6)
+           - `LINQ/New` in Update -> `NativeArray`, `Object Pooling`
+           - `GetComponent` -> `Cached Reference`
+        3. **Output Generation:** 아래 [출력 형식]을 엄격히 준수하십시오.
+
+        [출력 형식]
+        반드시 **JSON 블록**을 먼저 출력하고, 그 뒤에 **리팩토링된 전체 코드**를 마크다운으로 출력하세요.
+
+        ```json
+        {
+            "score": 0~100 사이 정수,
+            "summary": "평가 요약 (한 줄)",
+            "issues": [
+                {
+                    "severity": "Critical/Warning/Info",
+                    "line": "관련 라인 번호",
+                    "description": "구체적인 문제점"
+                }
+            ],
+            "review_comment": "기술적 조언 및 수정 이유"
+        }
+        ```
+
+        ### Refactored Code
+        ```csharp
+        // 여기에 리팩토링된 전체 코드를 작성하세요.
+        // 주석으로 변경 사유를 달아주세요.
+        ```
+        """
+
+        # 레거시 프롬프트
+        '''system_prompt = """
         당신은 15년 경력의 유니티(Unity) 수석 최적화 엔지니어이자 당신은 Unity 6.3 (LTS) 엔진 아키텍트이자 퍼포먼스 최적화 전문가이며, 코드 리뷰어입니다.
         입력된 C# 코드를 분석하여 성능, 메모리, 구조적 문제를 진단하고 개선된 코드를 제시하세요.        
         입력된 코드를 **Unity 6.3 최신 스펙**과 **Zero-GC(Garbage Collection) 원칙**에 따라 리뷰하고 리팩토링하세요.
@@ -119,7 +158,7 @@ def main():
             "refactored_code": "Unity 6.3 API가 적용된, GC가 발생하지 않는 개선된 전체 C# 코드 (주석으로 변경 사항 설명 포함)",
             "review_comment": "리팩토링에 대한 상세한 설명과 조언, Awaitable 도입 이유, 구조 변경 사유 등 기술적 설명"
         }
-        """
+        """'''
         
         full_prompt = [system_prompt, f"[Input Code]\n{code_content}"]
 

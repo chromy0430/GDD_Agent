@@ -172,8 +172,19 @@ def summarize_large_text_if_needed(text, api_key, chunk_size=30000):
     progress_bar = st.progress(0)
     for idx, chunk in enumerate(chunks):
         try:
-            prompt = f"아래 텍스트는 게임 기획서의 일부입니다... (중략) ...:\n\n{chunk}"
+            #레거시 프롬프트
+            #prompt = f"아래 텍스트는 게임 기획서의 일부입니다... (중략) ...:\n\n{chunk}"
+            prompt = f"""
+            [지시사항]
+            당신은 게임 기획서 데이터를 압축하는 역할을 맡았습니다.
+            아래 텍스트에서 **시스템 규칙, 수치 데이터, 클래스 구조, 고유 명사**는 절대 생략하지 말고 보존하십시오.
+            서술형 문장은 간결한 개조식(Bullet point)으로 변환하여 토큰을 절약하십시오.
             
+            [원본 텍스트]
+            {chunk}
+            """
+
+
             # [변경] generate_content 호출 방식 변경
             response = safe_generate_content(client, model_name, prompt)
             '''response = client.models.generate_content(

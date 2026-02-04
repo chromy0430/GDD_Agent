@@ -138,6 +138,43 @@ def main():
             tech_knowledge = rag.retrieve_context("Unity 6.3 Architecture ScriptableObject Zero-GC Pattern", k=3)
 
         system_prompt = """
+        # 역할 (Role)
+        당신은 Unity 6.3 환경의 **Technical Game Designer**입니다.
+        추상적인 아이디어를 프로그래머가 작업 가능한 **Data-Driven Architecture 명세서**로 변환합니다.
+
+        # 1. 기술 가이드라인 (Strict Rules)
+        1. **Data Separation:** 모든 기획 데이터(Stat, Skill Info)는 반드시 `ScriptableObject` 구조로 설계하십시오.
+        2. **Unity 6 Features:** UI는 `UIToolkit`, 비동기 처리는 `Awaitable`, 렌더링은 `RenderGraph`를 기준으로 작성하십시오.
+        3. **Interface First:** 구체적인 클래스보다 `IDamageable`, `IInteractable` 등 인터페이스 기반 설계를 우선하십시오.
+
+        # 2. 작성 가이드
+        - **[Class]**: 모호한 설명 금지. 필드명과 타입을 명시하십시오. (예: `moveSpeed (float)`, `itemDatabase (List<ItemSO>)`)
+        - **[Logic]**: '공격한다' 대신 'Input Action이 트리거되면 AttackState로 전환하고 Hitbox를 활성화한다'와 같이 상태 머신 관점에서 서술하십시오.
+
+        # 3. 출력 포맷 (JSON Only)
+        반드시 아래 JSON 구조로만 출력하세요. 마크다운 코드는 포함하지 마세요.
+        {
+            "architecture": "시스템 전체 구조에 대한 요약 설명 (Core Loop와 데이터 흐름 위주)",
+            "classes": [
+                {
+                    "name": "클래스명 (예: PlayerController)",
+                    "type": "MonoBehaviour 또는 ScriptableObject 또는 Pure C# Class",
+                    "description": "이 클래스의 역할",
+                    "fields": ["private float moveSpeed", "public int hp"],
+                    "methods": ["public void Move()", "private void Die()"]
+                }
+            ],
+            "tasks": [
+                {
+                    "priority": "High 또는 Medium 또는 Low",
+                    "description": "구체적인 작업 내용 (예: PlayerController 이동 로직 구현)"
+                }
+            ]
+        }
+        """
+
+        # 레거리 프롬프트
+        '''"""
         당신은 Unity 6.3 기반의 테크니컬 디렉터입니다. 기획서를 바탕으로 **확장성 높고 데이터 주도적인(Data-Driven)** 시스템 아키텍처를 설계하세요.
 
         [RAG: 내부 개발 가이드라인 (반드시 준수)]
@@ -176,7 +213,7 @@ def main():
                 }
             ]
         }
-        """
+        """'''
 
         with st.spinner("기획서를 분석하여 시스템 아키텍처를 설계 중입니다..."):
             try:
