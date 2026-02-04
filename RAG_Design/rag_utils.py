@@ -18,7 +18,7 @@ from utils import load_config
 # 설정
 DB_PATH = "./db/chroma_db"
 KNOWLEDGE_PATH = "./knowledge_base"
-MODEL_NAME = "gemini-2.5-flash-lite" 
+MODEL_NAME = "gemini-3-flash-preview" 
 
 class UnityRAG:
     def __init__(self, api_key_input=None):

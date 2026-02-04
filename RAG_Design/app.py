@@ -10,7 +10,7 @@ from datetime import datetime
 from io import StringIO
 from pypdf import PdfReader
 import tempfile
-from utils import log_usage, render_sidebar_settings
+from utils import log_usage, render_sidebar_settings, safe_generate_content
 from rag_utils import UnityRAG
 
 # ==========================================
@@ -175,10 +175,11 @@ def summarize_large_text_if_needed(text, api_key, chunk_size=30000):
             prompt = f"아래 텍스트는 게임 기획서의 일부입니다... (중략) ...:\n\n{chunk}"
             
             # [변경] generate_content 호출 방식 변경
-            response = client.models.generate_content(
+            response = safe_generate_content(client, model_name, prompt)
+            '''response = client.models.generate_content(
                 model=model_name,
                 contents=prompt
-            )
+            )'''
             summaries.append(response.text)
             progress_bar.progress((idx + 1) / len(chunks))
         except Exception as e:

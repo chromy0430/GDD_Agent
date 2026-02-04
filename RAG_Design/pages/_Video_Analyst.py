@@ -6,7 +6,7 @@ import time
 import json
 import tempfile
 # utils.py의 설정을 그대로 가져옵니다.
-from utils import render_sidebar_settings
+from utils import render_sidebar_settings, retry_with_backoff
 
 # ==========================================
 # 1. 설정
@@ -16,6 +16,7 @@ st.set_page_config(layout="wide", page_title="영상 분석 에이전트 (Video 
 # ==========================================
 # 2. 유틸리티 함수 (영상 처리)
 # ==========================================
+@retry_with_backoff(max_retries=3, initial_delay=4)
 def upload_video_to_gemini(uploaded_file, api_key):
     """
     Streamlit 메모리 파일을 로컬 임시 파일로 저장 후 Gemini에 업로드합니다.

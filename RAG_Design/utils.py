@@ -4,6 +4,8 @@ import json
 import os
 import csv
 from datetime import datetime
+import random
+import time
 
 # ==========================================
 # 1. 공통 상수 (모델 목록 관리)
@@ -72,6 +74,46 @@ def search_google(query, api_key, cx_id, num_results=5):
     except Exception as e:
         return f"구글 검색 오류: {e}"
     pass
+
+def retry_with_backoff(max_retries=3, initial_delay=2, backoff_factor=2):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            retries = 0
+            delay = initial_delay
+            while retries < max_retries:
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    # 429(ResourceExhausted) 에러 체크
+                    error_str = str(e)
+                    if "429" in error_str or "ResourceExhausted" in error_str or "quota" in error_str.lower():
+                        retries += 1
+                        if retries >= max_retries:
+                            raise e # 최대 재시도 초과 시 에러 발생
+                        
+                        # 지수 백오프 + Jitter(분산) 적용
+                        sleep_time = delay + random.uniform(0, 1)
+                        print(f"⚠️ Quota Exceeded. Retrying in {sleep_time:.1f}s... ({retries}/{max_retries})")
+                        time.sleep(sleep_time)
+                        delay *= backoff_factor
+                    else:
+                        raise e # 다른 에러는 즉시 발생
+            return None
+        return wrapper
+    return decorator
+
+# 2. 래퍼 함수 (다른 파일에서 가져다 쓰기 편하게 만듦)
+@retry_with_backoff(max_retries=3)
+def safe_generate_content(client, model_name, contents, config=None):
+    """
+    model.generate_content 대신 사용할 안전한 함수
+    """
+    return client.models.generate_content(
+        model=model_name,
+        contents=contents,
+        config=config
+    )
+
 
 # ==========================================
 # 3. 공통 사이드바 UI (모든 봇에서 호출)
