@@ -235,7 +235,7 @@ def main():
             {raw_ideas}
             """
             
-            with st.spinner("배틀쉽 게임 아이디어를 샘플 양식에 맞추는 중..."):
+            with st.spinner("게임 아이디어를 샘플 양식에 맞추는 중..."):
                 try:
                     response = model.generate_content(full_prompt)
                     st.success("완료!")

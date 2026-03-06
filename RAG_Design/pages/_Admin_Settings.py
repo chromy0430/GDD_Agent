@@ -1,49 +1,108 @@
-import streamlit as st
 import os
-from rag_utils import UnityRAG
+import json
+import streamlit as st
+
+from rag_utils import UnityRAG, MANIFEST_PATH, FAILED_PATH, DB_PATH
 from utils import render_sidebar_settings
 
 st.set_page_config(page_title="관리자 설정", layout="wide")
 
+
+def load_json(path, default):
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
+
+
+def get_lightweight_status():
+    manifest = load_json(MANIFEST_PATH, {})
+    failed_data = load_json(FAILED_PATH, {"failed_files": []})
+    failed_files = failed_data.get("failed_files", [])
+
+    total_chunks = sum(int(v.get("chunk_count", 0)) for v in manifest.values())
+    db_exists = os.path.exists(os.path.join(DB_PATH, "chroma.sqlite3"))
+
+    knowledge_files = 0
+    if os.path.exists("./knowledge_base"):
+        for root, _, files in os.walk("./knowledge_base"):
+            for file in files:
+                ext = os.path.splitext(file)[1].lower()
+                if ext in [".md", ".txt", ".pdf"]:
+                    knowledge_files += 1
+
+    return {
+        "db_exists": db_exists,
+        "indexed_files": len(manifest),
+        "failed_files": len(failed_files),
+        "total_chunks": total_chunks,
+        "knowledge_files": knowledge_files,
+    }
+
+
 def main():
     st.title("⚙️ 시스템 관리")
-    
-    # API 키 설정
+
     api_key, _, _ = render_sidebar_settings()
-    
+
     st.divider()
     st.header("📚 RAG 지식 베이스 관리")
 
-    # DB 상태 확인
-    db_exists = os.path.exists("./db/chroma_db") and len(os.listdir("./db/chroma_db")) > 0
-    st.metric("벡터 DB 상태", "✅ 연결됨" if db_exists else "❌ 없음 (구축 필요)")
+    status = get_lightweight_status()
 
-    st.write("### 🚀 지식 베이스 구축")
-    st.info("버튼을 누르면 모든 문서를 읽고 DB를 새로 만듭니다. (문서 양에 따라 시간이 소요됩니다)")
-    
-    if st.button("🧠 지식 베이스 구축하기 (Rebuild)", type="primary"):
+    col1, col2, col3, col4, col5 = st.columns(5)
+    col1.metric("DB 존재", "✅ 있음" if status["db_exists"] else "❌ 없음")
+    col2.metric("knowledge_base 파일 수", status["knowledge_files"])
+    col3.metric("색인 완료 파일 수", status["indexed_files"])
+    col4.metric("실패 파일 수", status["failed_files"])
+    col5.metric("총 청크 수", status["total_chunks"])
+
+    st.write("### 🚀 작업 실행")
+
+    col_a, col_b, col_c = st.columns(3)
+
+    if col_a.button("➕ 증분 업데이트", type="primary", use_container_width=True):
         if not api_key:
             st.error("API Key가 없습니다.")
             return
 
-        rag = UnityRAG(api_key)
-        
-        with st.spinner("🚀 문서를 분석하고 DB를 구축하는 중입니다... (잠시만 기다려주세요)"):
+        with st.spinner("변경된 파일만 분석하여 벡터 DB를 업데이트하는 중입니다..."):
             try:
-                # 인자 없이 호출 (원래 방식)
-                result_msg = rag.ingest_knowledge()
+                rag = UnityRAG(api_key_input=api_key)
+                result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False)
                 st.success(result_msg)
-                st.balloons()
             except Exception as e:
                 st.error(f"오류 발생: {e}")
 
-    # (선택) 문서 목록 미리보기
-    with st.expander("📂 학습 대상 파일 목록 보기"):
-        kb_files = []
-        for root, dirs, files in os.walk("./knowledge_base"):
-            for file in files:
-                kb_files.append(file)
-        st.write(kb_files)
+    if col_b.button("🔁 실패 파일만 재시도", use_container_width=True):
+        if not api_key:
+            st.error("API Key가 없습니다.")
+            return
+
+        with st.spinner("이전에 실패했던 파일만 다시 시도하는 중입니다..."):
+            try:
+                rag = UnityRAG(api_key_input=api_key)
+                result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=True)
+                st.success(result_msg)
+            except Exception as e:
+                st.error(f"오류 발생: {e}")
+
+    if col_c.button("🧨 전체 재구축", use_container_width=True):
+        if not api_key:
+            st.error("API Key가 없습니다.")
+            return
+
+        with st.spinner("모든 문서를 다시 분석하여 DB를 새로 구축하는 중입니다..."):
+            try:
+                rag = UnityRAG(api_key_input=api_key)
+                result_msg = rag.ingest_knowledge(full_rebuild=True, only_failed=False)
+                st.success(result_msg)
+            except Exception as e:
+                st.error(f"오류 발생: {e}")
+
 
 if __name__ == "__main__":
     main()

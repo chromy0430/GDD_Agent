@@ -1,226 +1,594 @@
-import streamlit as st
-from google import genai
-from google.genai import types
+import os
 import time
 import json
 import tempfile
-import os
+from typing import Dict, Any, List, Optional
+
+import streamlit as st
+from google import genai
+
 from rag_utils import UnityRAG
 from foundry import guard
-from utils import render_sidebar_settings, retry_with_backoff
+from utils import render_sidebar_settings, retry_with_backoff, log_usage
 
-# ==========================================
-# 1. 설정 및 헬퍼 함수
-# ==========================================
+
+# =========================================================
+# 1. 설정
+# =========================================================
 st.set_page_config(layout="wide", page_title="Agent Headquarters")
 
+
+# =========================================================
+# 2. Agent Registry
+# =========================================================
+AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
+    "Video_Analyst": {
+        "description": "영상 파일 분석, 시각 효과/메카닉/UI/연출 역설계",
+        "supported_inputs": {"video", "mixed"},
+        "supported_outputs": {"analysis_report", "reverse_engineering_notes", "shader_graph_brief"},
+        "needs_attachment": True,
+    },
+    "Spec_Generator": {
+        "description": "기획서, 명세서, 구조화 문서 생성",
+        "supported_inputs": {"text", "document", "mixed"},
+        "supported_outputs": {"spec", "design_doc", "summary_report"},
+        "needs_attachment": False,
+    },
+    "Code_Reviewer": {
+        "description": "코드 분석, 리뷰, 리팩토링 제안",
+        "supported_inputs": {"code", "mixed", "text"},
+        "supported_outputs": {"code_review", "refactor_plan", "patch_notes"},
+        "needs_attachment": False,
+    },
+    "Graphics_Expert": {
+        "description": "URP/Shader Graph/렌더링 구현 설명",
+        "supported_inputs": {"text", "document", "mixed", "video"},
+        "supported_outputs": {"graphics_plan", "shader_graph_brief", "rendering_notes"},
+        "needs_attachment": False,
+    },
+    "Market_Analyst": {
+        "description": "시장 조사, 비교 분석, 포지셔닝",
+        "supported_inputs": {"text", "document", "mixed"},
+        "supported_outputs": {"market_report", "comparison", "strategy_notes"},
+        "needs_attachment": False,
+    },
+}
+
+
+# =========================================================
+# 3. 파일 처리
+# =========================================================
+def classify_uploaded_file(uploaded_file) -> str:
+    file_type = uploaded_file.type or ""
+    file_name = uploaded_file.name.lower()
+
+    if file_name.endswith(".py") or file_name.endswith(".cs"):
+        return "code"
+    if "video" in file_type or file_name.endswith(".mp4") or file_name.endswith(".mov"):
+        return "video"
+    if file_name.endswith(".pdf") or file_name.endswith(".md") or file_name.endswith(".txt"):
+        return "document"
+    return "text"
+
+
+@retry_with_backoff(max_retries=3, initial_delay=3)
 def process_uploaded_file(uploaded_file, client):
-    """
-    업로드된 파일을 유형별로 처리하여 Gemini가 이해할 수 있는 형태(Text 또는 File Object)로 변환합니다.
-    """
-    file_type = uploaded_file.type
+    file_type = uploaded_file.type or ""
     file_name = uploaded_file.name
-    
-    # 1. 텍스트 파일 (MD, TXT, Code)
-    if file_type in ["text/plain", "text/markdown", "text/x-python"]:
+    classified_type = classify_uploaded_file(uploaded_file)
+
+    # 텍스트 / 코드 계열은 바로 읽기
+    if classified_type in {"text", "document", "code"} and not file_name.lower().endswith(".pdf"):
+        try:
+            content = uploaded_file.getvalue().decode("utf-8")
+        except Exception:
+            content = uploaded_file.getvalue().decode("utf-8", errors="ignore")
+
         return {
             "type": "text",
-            "content": uploaded_file.getvalue().decode("utf-8"),
-            "desc": f"텍스트 문서 ({file_name})"
+            "classified_type": classified_type,
+            "content": content,
+            "desc": f"{classified_type} 파일 ({file_name})",
+            "name": file_name,
+            "mime_type": file_type,
         }
-    
-    # 2. 멀티모달 파일 (PDF, Video) - Gemini 서버 업로드 필요
+
+    # PDF / Video 는 파일 업로드
+    suffix = ".mp4" if classified_type == "video" else ".pdf"
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
+        tmp.write(uploaded_file.getvalue())
+        tmp_path = tmp.name
+
+    try:
+        with st.spinner(f"📡 '{file_name}' 파일을 AI 서버로 전송 및 인덱싱 중..."):
+            file_ref = client.files.upload(file=tmp_path)
+
+            while file_ref.state.name == "PROCESSING":
+                time.sleep(2)
+                file_ref = client.files.get(name=file_ref.name)
+
+            if file_ref.state.name != "ACTIVE":
+                st.error(f"파일 처리 실패: {file_ref.state.name}")
+                return None
+
+            return {
+                "type": "file_ref",
+                "classified_type": classified_type,
+                "content": file_ref,
+                "desc": f"멀티모달 파일 ({file_name}, Type: {file_type})",
+                "name": file_name,
+                "mime_type": file_type,
+            }
+    finally:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
+# =========================================================
+# 4. 프롬프트 / 라우팅
+# =========================================================
+def make_agent_list_text() -> str:
+    lines = []
+    for name, meta in AGENT_REGISTRY.items():
+        lines.append(
+            f"- {name}: {meta['description']} / "
+            f"supported_inputs={sorted(list(meta['supported_inputs']))} / "
+            f"supported_outputs={sorted(list(meta['supported_outputs']))}"
+        )
+    return "\n".join(lines)
+
+
+def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Optional[str], user_context: str) -> str:
+    return f"""
+당신은 멀티 에이전트 오케스트레이터의 플래너입니다.
+사용자 요청과 첨부 정보를 보고, 가장 합리적인 실행 계획을 JSON 하나로만 출력하세요.
+설명문, 마크다운, 코드블록 없이 JSON 객체만 반환하세요.
+
+[Available Agents]
+{make_agent_list_text()}
+
+[User Request]
+{prompt}
+
+[Attachment Info]
+{attachment_info}
+
+[Attachment Type]
+{attachment_type or "none"}
+
+[RAG Context]
+{user_context}
+
+[계획 원칙]
+- 영상 첨부가 있으면 보통 Video_Analyst를 먼저 고려
+- 코드 요청이나 코드 첨부가 있으면 Code_Reviewer를 우선 고려
+- 문서/PDF 요약 또는 기획서 작성이면 Spec_Generator 활용
+- 그래픽/쉐이더/URP 질문이면 Graphics_Expert 고려
+- 필요 없는 step는 만들지 말 것
+- step 수는 1~4개 권장
+- 이전 결과가 다음 step에 필요한 경우 depends_on에 step id를 적을 것
+- 첨부가 꼭 필요한 step만 use_attachment=true
+- 최종 보고서 형식을 final_output에 적을 것
+
+[출력 스키마]
+{{
+  "intent": "사용자 의도 요약",
+  "task_type": "analysis/spec/code/graphics/market/mixed",
+  "thought": "왜 이런 순서인지 짧게 설명",
+  "steps": [
+    {{
+      "id": "step1",
+      "agent": "Video_Analyst",
+      "instruction": "이 영상의 메카닉, UI, 연출, 핵심 그래픽 구현 포인트를 분석해줘.",
+      "depends_on": [],
+      "input_mode": "video",
+      "use_attachment": true,
+      "expected_output": "analysis_report"
+    }},
+    {{
+      "id": "step2",
+      "agent": "Spec_Generator",
+      "instruction": "step1 결과를 바탕으로 개발 명세서 초안을 작성해줘.",
+      "depends_on": ["step1"],
+      "input_mode": "text",
+      "use_attachment": false,
+      "expected_output": "spec"
+    }}
+  ],
+  "final_output": {{
+    "format": "report",
+    "sections": ["executive_summary", "step_results", "final_recommendation"]
+  }}
+}}
+"""
+
+
+def build_agent_prompt(
+    agent_name: str,
+    instruction: str,
+    global_context: str,
+    dependency_outputs: List[Dict[str, Any]],
+    attachment_summary: str,
+) -> str:
+    return f"""
+당신은 {agent_name}입니다.
+아래 지시를 수행하고 반드시 JSON 객체 하나만 출력하세요.
+마크다운, 코드블록, 장황한 머리말은 쓰지 마세요.
+
+[Agent Role]
+{AGENT_REGISTRY[agent_name]["description"]}
+
+[Instruction]
+{instruction}
+
+[Global Context]
+{global_context}
+
+[Dependency Outputs]
+{json.dumps(dependency_outputs, ensure_ascii=False, indent=2)}
+
+[Attachment Summary]
+{attachment_summary}
+
+[출력 스키마]
+{{
+  "summary": "이번 step 결과 요약",
+  "key_findings": ["핵심 발견 1", "핵심 발견 2"],
+  "deliverable": "실제 산출물 본문",
+  "next_step_hint": "다음 step이 활용해야 할 핵심 한 줄",
+  "artifacts": {{
+    "format": "text",
+    "tags": ["analysis", "spec", "code", "graphics"]
+  }}
+}}
+"""
+
+
+def route_attachment_to_step(file_data: Optional[Dict[str, Any]], step: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    step에 전달할 첨부 정보를 고른다.
+    """
+    if not file_data or not step.get("use_attachment", False):
+        return {"summary": "첨부 없음", "contents": []}
+
+    classified_type = file_data.get("classified_type")
+    input_mode = step.get("input_mode")
+
+    # 타입이 너무 안 맞으면 첨부 안 넘김
+    if input_mode != "mixed" and classified_type != input_mode:
+        return {
+            "summary": f"첨부 파일({classified_type})이 있으나 이 step input_mode={input_mode}와 맞지 않아 전달하지 않음",
+            "contents": []
+        }
+
+    if file_data["type"] == "text":
+        return {
+            "summary": f"텍스트 첨부 전달: {file_data['desc']}",
+            "contents": [f"[첨부 파일 내용]\n{file_data['content']}"]
+        }
+
+    return {
+        "summary": f"멀티모달 첨부 전달: {file_data['desc']}",
+        "contents": [file_data["content"]]
+    }
+
+
+# =========================================================
+# 5. 실행기
+# =========================================================
+def collect_dependency_outputs(execution_state: Dict[str, Any], depends_on: List[str]) -> List[Dict[str, Any]]:
+    results = []
+    for dep_id in depends_on:
+        if dep_id in execution_state["step_outputs"]:
+            results.append(execution_state["step_outputs"][dep_id])
+    return results
+
+
+@retry_with_backoff(max_retries=2, initial_delay=2)
+def safe_generate(client, model_name: str, contents):
+    return client.models.generate_content(model=model_name, contents=contents)
+
+
+def execute_agent_step(
+    client,
+    model_name: str,
+    step: Dict[str, Any],
+    file_data: Optional[Dict[str, Any]],
+    global_context: str,
+    execution_state: Dict[str, Any],
+) -> Dict[str, Any]:
+    agent_name = step["agent"]
+    instruction = step["instruction"]
+    depends_on = step.get("depends_on", []) or []
+
+    dependency_outputs = collect_dependency_outputs(execution_state, depends_on)
+    routed_attachment = route_attachment_to_step(file_data, step)
+
+    prompt = build_agent_prompt(
+        agent_name=agent_name,
+        instruction=instruction,
+        global_context=global_context,
+        dependency_outputs=dependency_outputs,
+        attachment_summary=routed_attachment["summary"],
+    )
+
+    contents = [prompt]
+    contents.extend(routed_attachment["contents"])
+
+    res = safe_generate(client, model_name, contents)
+    raw_text = res.text if hasattr(res, "text") else ""
+
+    parsed = guard.extract_json_object(raw_text)
+    if not parsed["valid"]:
+        raise ValueError(f"{agent_name} JSON 파싱 실패: {parsed.get('error')}")
+
+    validated = guard.validate_agent_output(parsed["data"])
+    if not validated["valid"]:
+        raise ValueError(f"{agent_name} output schema 오류: {validated['errors']}")
+
+    return {
+        "agent": agent_name,
+        "step_id": step["id"],
+        "instruction": instruction,
+        "data": parsed["data"],
+        "raw_text": raw_text,
+    }
+
+
+def try_repair_plan_once(client, model_name: str, raw_plan_text: str, validation_errors: List[str]) -> Dict[str, Any]:
+    repair_prompt = f"""
+이전 planner 응답은 invalid입니다.
+오류:
+{json.dumps(validation_errors, ensure_ascii=False, indent=2)}
+
+이전 응답:
+{raw_plan_text}
+
+오류를 수정해서 JSON 객체 하나만 다시 출력하세요.
+"""
+    res = safe_generate(client, model_name, repair_prompt)
+    repaired = guard.extract_json_object(res.text if hasattr(res, "text") else "")
+    return repaired
+
+
+# =========================================================
+# 6. 결과 조합
+# =========================================================
+def build_final_report(plan: Dict[str, Any], execution_state: Dict[str, Any]) -> str:
+    lines = []
+    lines.append("## 🧭 실행 개요")
+    lines.append(f"- 의도: {plan.get('intent', '-')}")
+    lines.append(f"- 작업 유형: {plan.get('task_type', '-')}")
+    lines.append(f"- 전략: {plan.get('thought', '-')}")
+
+    lines.append("\n## ✅ Step 결과")
+    for item in execution_state["ordered_results"]:
+        data = item["data"]
+        lines.append(f"\n### {item['step_id']} · {item['agent']}")
+        lines.append(f"- 요약: {data.get('summary', '-')}")
+        findings = data.get("key_findings", [])
+        if findings:
+            for finding in findings:
+                lines.append(f"  - {finding}")
+        deliverable = data.get("deliverable", "")
+        if deliverable:
+            lines.append(f"\n{deliverable}")
+
+    lines.append("\n## 🧩 최종 권장")
+    if execution_state["ordered_results"]:
+        last = execution_state["ordered_results"][-1]["data"]
+        lines.append(last.get("next_step_hint", "추가 권장사항 없음"))
     else:
-        # 임시 파일로 저장 (접미사 자동 감지)
-        suffix = ".mp4" if "video" in file_type else ".pdf"
-        with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
-            tmp.write(uploaded_file.getvalue())
-            tmp_path = tmp.name
+        lines.append("실행 결과 없음")
 
-        try:
-            with st.spinner(f"📡 '{file_name}' 파일을 AI 서버로 전송 및 인덱싱 중..."):
-                # [수정] 신규 SDK 방식 (path 기반 업로드)
-                file_ref = client.files.upload(file=tmp_path)
-                
-                # 처리 대기 (Active 상태가 될 때까지)
-                while file_ref.state.name == "PROCESSING":
-                    time.sleep(2)
-                    file_ref = client.files.get(name=file_ref.name)
-                
-                if file_ref.state.name != "ACTIVE":
-                    st.error(f"파일 처리 실패: {file_ref.state.name}")
-                    return None
-                
-                return {
-                    "type": "file_ref",
-                    "content": file_ref,
-                    "desc": f"멀티모달 파일 ({file_name}, Type: {file_type})"
-                }
-        finally:
-            if os.path.exists(tmp_path):
-                os.remove(tmp_path)
+    return "\n".join(lines)
 
-# ==========================================
-# 2. 메인 로직
-# ==========================================
+
+# =========================================================
+# 7. 메인
+# =========================================================
 def main():
     st.title("🧠 Agent 365: 통합 지휘 통제실 (Orchestrator)")
-    st.markdown("텍스트, PDF, 영상을 업로드하면 **오케스트레이터**가 내용을 보고 적절한 전문가(Agent)를 호출합니다.")
+    st.markdown(
+        "텍스트, PDF, 영상, 코드 파일을 업로드하면 **오케스트레이터**가 의도를 파악하고 "
+        "**적절한 전문가 Agent**를 순서대로 호출합니다."
+    )
 
     api_key, _, model_name = render_sidebar_settings()
-    
-    # 세션 초기화
+
     if "messages" not in st.session_state:
         st.session_state.messages = []
+    if "last_plan" not in st.session_state:
+        st.session_state.last_plan = None
+    if "last_execution" not in st.session_state:
+        st.session_state.last_execution = None
 
-    # ---------------------------------------------------------
-    # [UI] 파일 업로더 & 채팅 인터페이스
-    # ---------------------------------------------------------
-    with st.expander("📂 파일 첨부 (PDF, 문서, 영상)", expanded=True):
+    with st.expander("📂 파일 첨부 (문서 / 영상 / 코드)", expanded=True):
         uploaded_file = st.file_uploader(
-            "분석할 자료를 여기에 드래그하세요.", 
-            type=['txt', 'md', 'pdf', 'mp4', 'mov', 'py']
+            "분석할 자료를 드래그하세요.",
+            type=["txt", "md", "pdf", "mp4", "mov", "py", "cs"]
         )
 
-    # 채팅 기록 표시
+    preview_only = st.toggle("실행 전 계획 먼저 보기", value=True)
+
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
             if "file_info" in msg:
                 st.caption(f"📎 첨부: {msg['file_info']}")
             st.markdown(msg["content"])
 
-    # 사용자 입력
     if prompt := st.chat_input("명령을 입력하세요 (예: 이 영상 분석해서 기획서로 만들어줘)"):
         if not api_key:
             st.warning("API Key가 필요합니다.")
             return
 
-        # [수정] Client 인스턴스 생성 (신규 SDK)
         client = genai.Client(api_key=api_key)
-        
-        # 1. 파일 처리 (있다면)
+
         file_data = None
         if uploaded_file:
             file_data = process_uploaded_file(uploaded_file, client)
-            # 에러 발생 시(None 반환) 중단
-            if uploaded_file and not file_data: return 
+            if uploaded_file and not file_data:
+                return
 
-        # 메시지 기록 저장
         user_msg_obj = {"role": "user", "content": prompt}
         if file_data:
             user_msg_obj["file_info"] = file_data["desc"]
-        
+
         st.session_state.messages.append(user_msg_obj)
+
         with st.chat_message("user"):
-            if file_data: st.caption(f"📎 {file_data['desc']}")
+            if file_data:
+                st.caption(f"📎 {file_data['desc']}")
             st.markdown(prompt)
 
-        # ---------------------------------------------------------
-        # [Step 1] Fabric IQ: 지식 검색
-        # ---------------------------------------------------------
         rag = UnityRAG(api_key)
         with st.spinner("💾 Fabric IQ: 관련 지식 검색 중..."):
-            user_context = rag.retrieve_context(prompt, k=2)
+            user_context = rag.retrieve_context(prompt, k=3)
 
-        # ---------------------------------------------------------
-        # [Step 2] Work IQ: 계획 수립 (Planning)
-        # ---------------------------------------------------------
-        # 파일 존재 여부 메시지 구성
-        attachment_info = f"사용자가 파일({file_data['desc']})을 첨부했습니다. 내용을 분석해야 합니다." if file_data else "첨부된 파일이 없습니다."
+        attachment_info = (
+            f"사용자가 파일({file_data['desc']})을 첨부했습니다."
+            if file_data else
+            "첨부된 파일이 없습니다."
+        )
+        attachment_type = file_data.get("classified_type") if file_data else None
 
-        plan_prompt = f"""
-        당신은 AI 에이전트 매니저입니다.
-        사용자의 [요청]과 [첨부파일]을 보고, 어떤 에이전트에게 일을 시킬지 결정하세요.
-
-        [Available Agents]
-        1. **Video_Analyst**: 영상 파일(.mp4, .mov)이 첨부되었을 때 시각적 분석 담당.
-        2. **Spec_Generator**: 기획서 작성, 문서(PDF/TXT) 분석, 텍스트 요약.
-        3. **Code_Reviewer**: 코드 파일(.py) 분석, 프로그래밍 질문 해결.
-        4. **Market_Analyst**: 시장 조사, 데이터 분석.
-
-        [Input Info]
-        - Request: {prompt}
-        - Attachment: {attachment_info}
-
-        [Output Format (JSON)]
-        {{
-            "thought": "사용자가 영상을 올렸으므로 Video_Analyst에게 먼저 분석을 시키고, 그 결과를 바탕으로 Spec_Generator에게 문서를 쓰게 해야 함.",
-            "steps": [
-                {{
-                    "agent": "Video_Analyst",
-                    "instruction": "이 영상의 게임플레이 메카닉과 UI 구조를 상세히 분석해줘."
-                }},
-                {{
-                    "agent": "Spec_Generator",
-                    "instruction": "위 영상 분석 내용을 바탕으로 개발 명세서를 작성해줘."
-                }}
-            ]
-        }}
-        """
+        plan_prompt = build_plan_prompt(
+            prompt=prompt,
+            attachment_info=attachment_info,
+            attachment_type=attachment_type,
+            user_context=user_context,
+        )
 
         with st.chat_message("assistant"):
-            status_box = st.status("🤖 오케스트레이터가 작업을 조율 중...", expanded=True)
-            
-            try:
-                # [수정] client.models.generate_content 사용 (GenerativeModel 클래스 X)
-                plan_res = client.models.generate_content(
-                    model=model_name,
-                    contents=plan_prompt
-                )
-                
-                validated_plan = guard.validate_json_structure(plan_res.text)
-                
-                if not validated_plan["valid"]:
-                    st.error("계획 수립 오류 발생: JSON 파싱 실패")
-                    st.stop()
-                
-                plan = validated_plan["data"]
-                status_box.write(f"📋 **전략:** {plan['thought']}")
-                
-                final_report = "## 📝 통합 실행 리포트\n"
-                
-                # 에이전트 실행 루프
-                for i, step in enumerate(plan["steps"]):
-                    agent_name = step["agent"]
-                    instruction = step["instruction"]
-                    status_box.write(f"🔄 **[Step {i+1}] {agent_name}** 가 작업 중...")
-                    
-                    # 에이전트에게 보낼 컨텐츠 구성 (시스템 프롬프트 + 맥락 + 지시사항 + 파일)
-                    agent_contents = [
-                        f"당신은 {agent_name}입니다. 아래 지시를 수행하세요.\n[지시]: {instruction}\n[참고 지식]: {user_context}"
-                    ]
-                    
-                    # 파일 데이터가 있고, 첫 번째 스텝이거나 파일 분석이 필요한 경우 전달
-                    # (여기서는 단순하게 모든 스텝에 파일을 보여주되, 텍스트/객체 구분)
-                    if file_data:
-                        if file_data["type"] == "text":
-                            agent_contents[0] += f"\n\n[첨부 문서 내용]:\n{file_data['content']}"
-                        elif file_data["type"] == "file_ref":
-                            agent_contents.append(file_data["content"]) # 파일 객체 추가
-                    
-                    # [수정] 에이전트 실행도 client.models.generate_content 사용
-                    agent_res = client.models.generate_content(
-                        model=model_name,
-                        contents=agent_contents
-                    )
-                    
-                    # 결과 누적
-                    output_text = agent_res.text
-                    final_report += f"\n---\n### 👤 {agent_name} 결과\n{output_text}\n"
-                    
-                    # 이전 에이전트의 결과를 컨텍스트에 추가 (정보 전달)
-                    user_context += f"\n\n[Previous Agent Output ({agent_name})]:\n{output_text}"
-                    
-                    time.sleep(1)
+            status_box = st.status("🤖 오케스트레이터가 계획을 수립 중...", expanded=True)
 
-                status_box.update(label="✅ 모든 작업 완료!", state="complete", expanded=False)
-                st.markdown(final_report)
-                
-                # 결과 기록
-                st.session_state.messages.append({"role": "assistant", "content": final_report})
+            try:
+                plan_res = safe_generate(client, model_name, plan_prompt)
+                raw_plan_text = plan_res.text if hasattr(plan_res, "text") else ""
+
+                parsed_plan = guard.extract_json_object(raw_plan_text)
+                if not parsed_plan["valid"]:
+                    st.error(f"계획 수립 오류: {parsed_plan.get('error')}")
+                    with st.expander("Planner 원문"):
+                        st.code(raw_plan_text)
+                    return
+
+                plan = parsed_plan["data"]
+                plan_check = guard.validate_plan_schema(plan, attachment_type=attachment_type)
+
+                if not plan_check["valid"]:
+                    status_box.write("⚠️ 계획이 invalid하여 자동 수정 시도 중...")
+                    repaired = try_repair_plan_once(client, model_name, raw_plan_text, plan_check["errors"])
+                    if not repaired["valid"]:
+                        st.error("Planner 자동 수정 실패")
+                        with st.expander("Planner 원문"):
+                            st.code(raw_plan_text)
+                        return
+
+                    plan = repaired["data"]
+                    plan_check = guard.validate_plan_schema(plan, attachment_type=attachment_type)
+
+                if not plan_check["valid"]:
+                    st.error("계획 검증 실패")
+                    st.json({"errors": plan_check["errors"], "warnings": plan_check["warnings"]})
+                    with st.expander("Planner 원문"):
+                        st.code(raw_plan_text)
+                    return
+
+                st.session_state.last_plan = plan
+
+                status_box.write(f"📋 전략: {plan.get('thought', '-')}")
+                if plan_check["warnings"]:
+                    status_box.write(f"⚠️ 경고: {', '.join(plan_check['warnings'])}")
+
+                st.subheader("🗺️ 실행 계획")
+                st.json(plan)
+
+                execution_bundle = {
+                    "ready_to_run": True,
+                    "prompt": prompt,
+                    "file_data": file_data,
+                    "user_context": user_context,
+                }
+
+                st.session_state.last_execution = execution_bundle
+
+                if preview_only:
+                    status_box.update(label="📝 계획 수립 완료 (실행 대기)", state="complete", expanded=False)
+                    st.info("계획 먼저 보기 모드입니다. 아래 버튼으로 실행하세요.")
 
             except Exception as e:
-                st.error(f"작업 실행 중 오류: {e}")
+                st.error(f"계획 수립 중 오류: {e}")
+                return
+
+    # ---------------------------------------------------------
+    # 계획 실행
+    # ---------------------------------------------------------
+    if st.session_state.last_plan and st.session_state.last_execution:
+        if st.button("🚀 현재 계획 실행", type="primary", use_container_width=True):
+            if not api_key:
+                st.warning("API Key가 필요합니다.")
+                return
+
+            client = genai.Client(api_key=api_key)
+            plan = st.session_state.last_plan
+            execution_bundle = st.session_state.last_execution
+
+            with st.chat_message("assistant"):
+                status_box = st.status("🔄 계획 실행 중...", expanded=True)
+
+                execution_state = {
+                    "step_outputs": {},
+                    "ordered_results": [],
+                }
+
+                try:
+                    for idx, step in enumerate(plan["steps"], start=1):
+                        status_box.write(f"🔄 [Step {idx}] {step['agent']} 실행 중...")
+                        step_result = execute_agent_step(
+                            client=client,
+                            model_name=model_name,
+                            step=step,
+                            file_data=execution_bundle["file_data"],
+                            global_context=execution_bundle["user_context"],
+                            execution_state=execution_state,
+                        )
+
+                        execution_state["step_outputs"][step["id"]] = step_result["data"]
+                        execution_state["ordered_results"].append(step_result)
+
+                        status_box.write(f"✅ [Step {idx}] {step['agent']} 완료: {step_result['data'].get('summary', '')}")
+
+                        # 다음 step용 컨텍스트에 최소 요약만 누적
+                        execution_bundle["user_context"] += (
+                            f"\n\n[Step Output Summary: {step['id']} / {step['agent']}]\n"
+                            f"{step_result['data'].get('summary', '')}\n"
+                            f"Key Findings: {json.dumps(step_result['data'].get('key_findings', []), ensure_ascii=False)}"
+                        )
+
+                    final_report = build_final_report(plan, execution_state)
+
+                    status_box.update(label="✅ 모든 작업 완료!", state="complete", expanded=False)
+
+                    st.markdown(final_report)
+
+                    with st.expander("🔎 Step 원문 JSON 보기"):
+                        raw_dump = {
+                            item["step_id"]: item["data"]
+                            for item in execution_state["ordered_results"]
+                        }
+                        st.code(json.dumps(raw_dump, ensure_ascii=False, indent=2), language="json")
+
+                    st.session_state.messages.append(
+                        {"role": "assistant", "content": final_report}
+                    )
+
+                    log_usage("Agent Orchestrator")
+
+                except Exception as e:
+                    st.error(f"작업 실행 중 오류: {e}")
+
 
 if __name__ == "__main__":
     main()

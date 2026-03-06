@@ -171,49 +171,7 @@ def main():
                 }
             ]
         }
-        """
-
-        # 레거리 프롬프트
-        '''"""
-        당신은 Unity 6.3 기반의 테크니컬 디렉터입니다. 기획서를 바탕으로 **확장성 높고 데이터 주도적인(Data-Driven)** 시스템 아키텍처를 설계하세요.
-
-        [RAG: 내부 개발 가이드라인 (반드시 준수)]
-        아래 내용은 우리 팀의 핵심 기술 규칙입니다. 설계 시 최우선으로 반영하세요.
-        {tech_knowledge}
-
-        [설계 원칙]
-        1. **데이터와 로직의 분리:**
-        - 모든 기획 데이터(스탯, 설정값)는 `ScriptableObject`로 정의하여 에디터에서 관리하기 쉽게 설계하십시오.
-        - 런타임 데이터는 `struct` 기반으로 설계하여 메모리 레이아웃 효율을 높이십시오.
-        2. **느슨한 결합 (Loose Coupling):**
-        - 클래스 간 직접 참조를 피하고, `Interface` 주입 방식이나 `Event Channel` 패턴(SO 기반 이벤트)을 활용하십시오.
-        3. **Unity 6 기능 활용:**
-        - UI 시스템은 **UIToolkit** 기준으로 설계하고, 뷰와 데이터 바인딩 구조를 고려하십시오.
-        - 물리 연산이 많다면 Unity Physics(DOTS) 도입 가능성을 검토하십시오. 하지만 대부분은 기존 물리 엔진으로 충분합니다.
-        - 멀티스레딩은 `Unity Jobs System`과 `Burst Compiler`를 활용하여 성능을 극대화하십시오.        
-        4. 싱글톤 남발을 자제하고, 매니저 클래스와 데이터 컨테이너를 명확히 분리하세요.
-
-        [출력 포맷 (JSON Only)]
-        반드시 아래 JSON 구조로만 출력하세요. 마크다운 코드는 포함하지 마세요.
-        {
-            "architecture": "시스템 전체 구조에 대한 요약 설명 (Core Loop와 데이터 흐름 위주)",
-            "classes": [
-                {
-                    "name": "클래스명 (예: PlayerController)",
-                    "type": "MonoBehaviour 또는 ScriptableObject 또는 Pure C# Class",
-                    "description": "이 클래스의 역할",
-                    "fields": ["private float moveSpeed", "public int hp"],
-                    "methods": ["public void Move()", "private void Die()"]
-                }
-            ],
-            "tasks": [
-                {
-                    "priority": "High 또는 Medium 또는 Low",
-                    "description": "구체적인 작업 내용 (예: PlayerController 이동 로직 구현)"
-                }
-            ]
-        }
-        """'''
+        """        
 
         with st.spinner("기획서를 분석하여 시스템 아키텍처를 설계 중입니다..."):
             try:

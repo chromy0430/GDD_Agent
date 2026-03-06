@@ -65,61 +65,29 @@ def main():
         model = genai.GenerativeModel(model_name) # [핵심] model_name
 
         prompt = f"""
-        당신은 데이터 기반의 **Game Business Analyst**입니다.
-        반드시 제공된 [구글 검색 결과]에 기반하여 사실만을 분석해야 합니다. **검색 결과에 없는 내용은 '데이터 부족'으로 표기하십시오.**
+            당신은 데이터 기반의 **Game Business Analyst**입니다.
+            반드시 제공된 [구글 검색 결과]에 기반하여 사실만을 분석해야 합니다. **검색 결과에 없는 내용은 '데이터 부족'으로 표기하십시오.**
 
-        [구글 검색 결과]
-        {search_context}
+            [구글 검색 결과]
+            {search_context}
 
-        [분석 프레임워크]
-        1. **Fact Check:** 언급하는 모든 경쟁작은 실제 검색 결과에 존재하는 게임이어야 합니다.
-        2. **BM & Retention:** 경쟁작들이 어떻게 수익을 내고(Ads, IAP), 유저를 붙잡아두는지(Daily Quest, Season Pass) 분석하세요.
-        3. **Gap Analysis:** 시장의 포화된 부분(Red Ocean)과 기회 요소(Blue Ocean)를 명확히 구분하세요.
+            [분석 프레임워크]
+            1. **Fact Check:** 언급하는 모든 경쟁작은 실제 검색 결과에 존재하는 게임이어야 합니다.
+            2. **BM & Retention:** 경쟁작들이 어떻게 수익을 내고(Ads, IAP), 유저를 붙잡아두는지(Daily Quest, Season Pass) 분석하세요.
+            3. **Gap Analysis:** 시장의 포화된 부분(Red Ocean)과 기회 요소(Blue Ocean)를 명확히 구분하세요.
 
-        [출력 포맷 (JSON)]
-        {{
-            "search_trend": "검색 결과 기반 시장 동향 요약",
-            "top_competitors": ["게임A (Steam)", "게임B (Mobile)"],
-            "usp": "경쟁작 대비 확실한 차별점 (Core Mechanic 위주)",
-            "swot": {{
-                "strengths": [], "weaknesses": [], "opportunities": [], "threats": []
-            }},
-            "verdict": "S/A/B/C 등급 및 냉철한 평가"
-        }}
-        """
-        
-        # 레거시 프롬프트
-        '''f"""
-        당신은 실시간 시장 데이터를 분석하는 게임 사업 PM입니다.
-        아래 [구글 검색 결과]를 바탕으로 시장 트렌드와 경쟁작 현황을 분석하세요.
-
-        [구글 검색 결과]
-        {search_context}
-
-        [입력 정보]
-        - 장르: {genre}
-        - 타겟: {target}
-        - 사용자 입력 경쟁작: {competitors}
-        - 컨셉: {concept}
-
-        [지시사항]
-        1. 검색 결과에 언급된 최신 게임이나 트렌드를 반영하여 분석하세요.
-        2. 경쟁작들의 성공/실패 요인을 분석하여 '핵심 차별점(USP)'을 제안하세요.
-        3. SWOT 분석을 수행하세요.
-        
-        [출력 포맷 (JSON)]
-        반드시 아래 JSON 포맷으로 출력하세요.
-        {{
-            "search_trend": "검색 결과 기반 시장 동향 요약",
-            "top_competitors": ["경쟁작1", "경쟁작2"],
-            "usp": "차별화된 세일즈 포인트",
-            "swot": {{
-                "strengths": [], "weaknesses": [], "opportunities": [], "threats": []
-            }},
-            "verdict": "시장성 평가 (S/A/B/C) 및 총평"
-        }}
-        """'''
-
+            [출력 포맷 (JSON)]
+            {{
+                "search_trend": "검색 결과 기반 시장 동향 요약",
+                "top_competitors": ["게임A (Steam)", "게임B (Mobile)"],
+                "usp": "경쟁작 대비 확실한 차별점 (Core Mechanic 위주)",
+                "swot": {{
+                    "strengths": [], "weaknesses": [], "opportunities": [], "threats": []
+                }},
+                "verdict": "S/A/B/C 등급 및 냉철한 평가"
+            }}
+        """        
+       
         try:
             log_usage("시장 분석 봇") # 로그 기록
             response = model.generate_content(prompt)
