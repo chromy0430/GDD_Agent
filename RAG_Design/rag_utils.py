@@ -18,7 +18,7 @@ from utils import load_config
 # 설정
 DB_PATH = "./db/chroma_db"
 KNOWLEDGE_PATH = "./knowledge_base"
-MODEL_NAME = "gemini-3-flash-preview" 
+MODEL_NAME = "gemini-3.1-flash-lite-preview" 
 
 class UnityRAG:
     def __init__(self, api_key_input=None):
@@ -37,7 +37,7 @@ class UnityRAG:
         # 2. 클라이언트 초기화
         self.client = genai.Client(api_key=self.api_key)
         self.embedding_model = GoogleGenerativeAIEmbeddings(
-            model="models/embedding-001", 
+            model="models/gemini-embedding-001", 
             google_api_key=self.api_key
         )
         self.vector_db = None
@@ -143,14 +143,41 @@ class UnityRAG:
 
         # DB 저장
         try:
-            self.vector_db = Chroma.from_documents(
-                documents=chunks,
-                embedding=self.embedding_model,
+            # 먼저 빈 DB 구조를 초기화합니다.
+            self.vector_db = Chroma(
+                embedding_function=self.embedding_model,
                 persist_directory=DB_PATH
             )
-            return f"✅ 지식 베이스 구축 완료! (총 {len(chunks)} 청크 / 일부 PDF는 스킵되었을 수 있음)"
+            
+            total_chunks = len(chunks)
+            batch_size = 80 # 분당 제한(100회) 대비 안전 마진 설정
+            
+            # 청크 리스트를 batch_size만큼 잘라서 순차 처리
+            for i in range(0, total_chunks, batch_size):
+                batch_chunks = chunks[i : i + batch_size]
+                
+                # 내부 재시도 로직 (순간적인 네트워크 오류 방어)
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        self.vector_db.add_documents(batch_chunks)
+                        print(f"✅ DB 배치 : {i + len(batch_chunks)} / {total_chunks}")
+                        break # 성공 시 재시도 루프 탈출
+                    except Exception as batch_e:
+                        if attempt == max_retries - 1:
+                            return f"❌ DB 저장 중 치명적 오류 발생 (Batch {i}): {batch_e}"
+                        print(f"⚠️ 배치 저장 실패. 10초 대기 후 재시도... ({batch_e})")
+                        time.sleep(10)
+
+                # 마지막 배치가 아니라면 Rate Limit(429) 회피를 위해 카운트 리셋 시간(1분) 강제 대기
+                if i + batch_size < total_chunks:
+                    print(f"⏳ RPM 회피를 위해 62초 대기 중... (현재 진행률: {((i + len(batch_chunks)) / total_chunks) * 100:.1f}%)")
+                    time.sleep(62) 
+
+            return f"✅ 지식 베이스 구축 완료! (총 {len(chunks)} 청크 / 배치 처리 완료)"
+
         except Exception as e:
-            return f"❌ DB 저장 중 치명적 오류 발생: {e}"
+            return f"❌ DB 생성 중 오류 발생: {e}"
 
     # [복구됨] 검색 기능
     def retrieve_context(self, query, k=3):
