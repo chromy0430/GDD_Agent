@@ -35,7 +35,8 @@ CACHE_DIR = "./db/cache"
 MANIFEST_PATH = os.path.join(CACHE_DIR, "manifest.json")
 FAILED_PATH = os.path.join(CACHE_DIR, "failed_files.json")
 
-EMBED_MODEL_NAME = "models/gemini-embedding-001"
+#EMBED_MODEL_NAME = "models/gemini-embedding-001"
+EMBED_MODEL_NAME = "models/gemini-embedding-2-preview"
 
 SUPPORTED_TEXT_EXTS = {".md", ".txt"}
 SUPPORTED_PDF_EXTS = {".pdf"}

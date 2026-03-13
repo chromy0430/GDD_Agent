@@ -2744,5 +2744,4071 @@
     ],
     "chunk_count": 1,
     "updated_at": "2026-03-06T10:30:21"
+  },
+  "unity_manual/LicenseOverview.md": {
+    "sha256": "1ddfb5447981903b452873777f2295981df0d1ce69031829bb7e425a80617b5d",
+    "chunk_ids": [
+      "d2bd3d25ab28de4ad2b6ce53ecd50667:0",
+      "d2bd3d25ab28de4ad2b6ce53ecd50667:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:45"
+  },
+  "unity_manual/LicensesAndActivation.md": {
+    "sha256": "d6af17ee35639830e3dad0b6fb7fca144a475a4c395c6b5554459e2271097f99",
+    "chunk_ids": [
+      "52a97e2d53d94b1f5753562ec8d1d541:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:58:46"
+  },
+  "unity_manual/LightExplorerExtension.md": {
+    "sha256": "dc945895aceb8d341b944f42ca71c74ff1b1389012fbcba0ae19f11d821ad865",
+    "chunk_ids": [
+      "80475e47a7f8bd16fe552508e7897df2:0",
+      "80475e47a7f8bd16fe552508e7897df2:1",
+      "80475e47a7f8bd16fe552508e7897df2:2",
+      "80475e47a7f8bd16fe552508e7897df2:3",
+      "80475e47a7f8bd16fe552508e7897df2:4",
+      "80475e47a7f8bd16fe552508e7897df2:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T13:58:46"
+  },
+  "unity_manual/LightMode-Scene.md": {
+    "sha256": "98e9e35c34b18c06897256b0423038b711f6e77816c986b02392d65c3e14c0a9",
+    "chunk_ids": [
+      "922af8afe799c7729f77c1d90596049a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:58:47"
+  },
+  "unity_manual/LightModes-choose.md": {
+    "sha256": "580dd621d8a9f86e0e54caa951327651e0f7a4fb738f35c3bb95288b0256873e",
+    "chunk_ids": [
+      "037f8c94c6b9fa10f2b58a54f7ae5264:0",
+      "037f8c94c6b9fa10f2b58a54f7ae5264:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:48"
+  },
+  "unity_manual/LightModes-introduction.md": {
+    "sha256": "97932bf9e7adbfbcda5c93584a425515a9cec506b26bb03179310740dbfce07d",
+    "chunk_ids": [
+      "cd183697626a439d91fc9599dd1d4e83:0",
+      "cd183697626a439d91fc9599dd1d4e83:1",
+      "cd183697626a439d91fc9599dd1d4e83:2",
+      "cd183697626a439d91fc9599dd1d4e83:3",
+      "cd183697626a439d91fc9599dd1d4e83:4",
+      "cd183697626a439d91fc9599dd1d4e83:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T13:58:49"
+  },
+  "unity_manual/LightModes-landing.md": {
+    "sha256": "3e9198c2ca0afed6355222d5e31a18e9463475a1905ee19f152ecd62c190e920",
+    "chunk_ids": [
+      "57c8c2d9bcff99867e5ad2c72c781f11:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:58:49"
+  },
+  "unity_manual/LightModes.md": {
+    "sha256": "ad5feb3b78ca9f2b16b1279f518e35a0ef171031c9e6ec3da647006b4336e019",
+    "chunk_ids": [
+      "cbf37bc9decb017f9728cdc47923c41b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:58:50"
+  },
+  "unity_manual/LightProbeProxyVolume-landing.md": {
+    "sha256": "27ad37b2209698f460df1becd933bc72d396e3941c7c70ce14db86bd7d91e482",
+    "chunk_ids": [
+      "9ca5ea31a29af31e238105583013344f:0",
+      "9ca5ea31a29af31e238105583013344f:1",
+      "9ca5ea31a29af31e238105583013344f:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:58:51"
+  },
+  "unity_manual/LightProbes-MeshRenderer.md": {
+    "sha256": "68829206f710d8c44ca5a187ca9ac0bbda29001e69c7ab7505ebf9f9d4edd31d",
+    "chunk_ids": [
+      "82f185b8e3d66de02ac9b9ff18a7c912:0",
+      "82f185b8e3d66de02ac9b9ff18a7c912:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:51"
+  },
+  "unity_manual/LightProbes-Moving.md": {
+    "sha256": "8f42b1b564a18ffa1a6d1223f18624ee6fd9068c2e2458fccc1188fd41a7c24f",
+    "chunk_ids": [
+      "7aad63a4f68641c835ff32fdf3dba4ed:0",
+      "7aad63a4f68641c835ff32fdf3dba4ed:1",
+      "7aad63a4f68641c835ff32fdf3dba4ed:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:58:52"
+  },
+  "unity_manual/LightProbes-MovingObjects.md": {
+    "sha256": "9bd5d1bf076d6a486808bbf1ca9e02a8626363f2e612142d02f43a1d29b9e150",
+    "chunk_ids": [
+      "f60fd170685238e14c2e4c3171663913:0",
+      "f60fd170685238e14c2e4c3171663913:1",
+      "f60fd170685238e14c2e4c3171663913:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:58:53"
+  },
+  "unity_manual/LightProbes-Placing-Scripting.md": {
+    "sha256": "b802190a3ce3856094a4928dde61a9060b93c8ebc712fe423faf7cf427a03117",
+    "chunk_ids": [
+      "05dd2a537e9e60e1840c9979e49fe95c:0",
+      "05dd2a537e9e60e1840c9979e49fe95c:1",
+      "05dd2a537e9e60e1840c9979e49fe95c:2",
+      "05dd2a537e9e60e1840c9979e49fe95c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T13:58:54"
+  },
+  "unity_manual/LightProbes-Reference.md": {
+    "sha256": "fd327b57fb101abf76d86c1d994c380afb2bdeba2c3bae5a882dd7af9418fdbf",
+    "chunk_ids": [
+      "890470f841cd631acb90fccc15c6a1af:0",
+      "890470f841cd631acb90fccc15c6a1af:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:55"
+  },
+  "unity_manual/LightProbes-TechnicalInformation.md": {
+    "sha256": "3078dffe4d2154d0de7c6de2b280dd85dbd2b0ae3d487b2d7821d9f9dcf60e6f",
+    "chunk_ids": [
+      "d83a08ff183f62f74098b7915de44a85:0",
+      "d83a08ff183f62f74098b7915de44a85:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:55"
+  },
+  "unity_manual/LightProbes-landing.md": {
+    "sha256": "ea0658cce1bd578956ddce75d2c7637c700cd3b78cb63839f96b5b08b9383d81",
+    "chunk_ids": [
+      "20c6852c3da721969f0ff343e2cacfff:0",
+      "20c6852c3da721969f0ff343e2cacfff:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:56"
+  },
+  "unity_manual/LightProbes.md": {
+    "sha256": "4e6f0a9a84b4432955068076fdfb03032e0b917cd0c8db7cf7203fef6b9c140c",
+    "chunk_ids": [
+      "040f4e7d1b5aa7e7282575995d0e561d:0",
+      "040f4e7d1b5aa7e7282575995d0e561d:1",
+      "040f4e7d1b5aa7e7282575995d0e561d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:58:57"
+  },
+  "unity_manual/Lighting.md": {
+    "sha256": "ce30c514abfad7481f3d7cf213ca471e7323b1bfc62fe9e4f5c8637644c9a917",
+    "chunk_ids": [
+      "2a14b1ff1dd266211a9fb7e6c4093533:0",
+      "2a14b1ff1dd266211a9fb7e6c4093533:1",
+      "2a14b1ff1dd266211a9fb7e6c4093533:2",
+      "2a14b1ff1dd266211a9fb7e6c4093533:3",
+      "2a14b1ff1dd266211a9fb7e6c4093533:4",
+      "2a14b1ff1dd266211a9fb7e6c4093533:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T13:58:58"
+  },
+  "unity_manual/LightingBakedAmbientOcclusion.md": {
+    "sha256": "050bf33427eb309f4959d8520cea6a0a844b2787c25826d481f3a785708c6b0f",
+    "chunk_ids": [
+      "2e9d8d5ae0482b8298abc4b2f239189b:0",
+      "2e9d8d5ae0482b8298abc4b2f239189b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:58:59"
+  },
+  "unity_manual/LightingExplorer-landing.md": {
+    "sha256": "2b766cb98f9550867d861e3a1b05c8e73755f0339ee3e035a64ea96af2ad97a8",
+    "chunk_ids": [
+      "25ed0aadf0ab8f6d3ceb1b62373d84b1:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:58:59"
+  },
+  "unity_manual/LightingExplorer.md": {
+    "sha256": "3880bf2cb5880d980c3d575929c73a7117aec048c66141fc274d5860d5c11232",
+    "chunk_ids": [
+      "841dfc95e6bb932947315de20d427991:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:00"
+  },
+  "unity_manual/LightingGiUvs-GeneratingLightmappingUVs.md": {
+    "sha256": "e5f39bb84b9149b62203bd17b7fbb5632e756133c26a9c40fa9ed5af21b1c5dc",
+    "chunk_ids": [
+      "0c0d862d8acdde4793b8e3f6416fedcc:0",
+      "0c0d862d8acdde4793b8e3f6416fedcc:1",
+      "0c0d862d8acdde4793b8e3f6416fedcc:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:59:00"
+  },
+  "unity_manual/LightingGiUvs-Reference.md": {
+    "sha256": "9750375cfff903dc7e256c14e32d139829c3ab1162f70cf8aae4a15884bdc8c4",
+    "chunk_ids": [
+      "2c06db8930936b0e3d461bc1bb95ed89:0",
+      "2c06db8930936b0e3d461bc1bb95ed89:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:59:01"
+  },
+  "unity_manual/LightingGiUvs-landing.md": {
+    "sha256": "89d0c02edb1d74487cb2d62e30513641466d3d9e1461dcf1b0303f0e8eb9889b",
+    "chunk_ids": [
+      "a6aabf796b3a8130260b8a79a74e1976:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:02"
+  },
+  "unity_manual/LightingGiUvs-visualizing.md": {
+    "sha256": "2759c04676033cd0b80556ceb1030fe77171a7dd922ee0739606a4690002a69b",
+    "chunk_ids": [
+      "30e942fdfc2975df897594bc6cbc1559:0",
+      "30e942fdfc2975df897594bc6cbc1559:1",
+      "30e942fdfc2975df897594bc6cbc1559:2",
+      "30e942fdfc2975df897594bc6cbc1559:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T13:59:03"
+  },
+  "unity_manual/LightingGiUvs.md": {
+    "sha256": "ea8cc62b16605356bea6e431be1b0c6d57e51ddc045f666e4c61b9417ec55723",
+    "chunk_ids": [
+      "80254aaa3ac14a5428ebbc5ab29047e1:0",
+      "80254aaa3ac14a5428ebbc5ab29047e1:1",
+      "80254aaa3ac14a5428ebbc5ab29047e1:2",
+      "80254aaa3ac14a5428ebbc5ab29047e1:3",
+      "80254aaa3ac14a5428ebbc5ab29047e1:4",
+      "80254aaa3ac14a5428ebbc5ab29047e1:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T13:59:03"
+  },
+  "unity_manual/LightingInUnity.md": {
+    "sha256": "6e0dab3d62f5f602a23fd44cc501485f6ed5fc7621669c12bec3e5848cb1cdf7",
+    "chunk_ids": [
+      "4d54c56988a33f83cbadf52bb9eaf18e:0",
+      "4d54c56988a33f83cbadf52bb9eaf18e:1",
+      "4d54c56988a33f83cbadf52bb9eaf18e:2",
+      "4d54c56988a33f83cbadf52bb9eaf18e:3",
+      "4d54c56988a33f83cbadf52bb9eaf18e:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T13:59:04"
+  },
+  "unity_manual/LightingOverview.md": {
+    "sha256": "27eb7d9e36deceb7b987ef3fe4c33ce2223dda732b12833929b5f3f92e7ee819",
+    "chunk_ids": [
+      "bd00583f0118d6e06c2e12e2661d9bc2:0",
+      "bd00583f0118d6e06c2e12e2661d9bc2:1",
+      "bd00583f0118d6e06c2e12e2661d9bc2:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:59:05"
+  },
+  "unity_manual/Lightmap-data-landing.md": {
+    "sha256": "d2dc63f6e52c68525c3f677ccf5ee56aa57cf6c69c7754d719772484b1245ba6",
+    "chunk_ids": [
+      "74b2b8026078b11ed1080bb4df5f1bfa:0",
+      "74b2b8026078b11ed1080bb4df5f1bfa:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:59:06"
+  },
+  "unity_manual/LightmapSnapshot.md": {
+    "sha256": "ff47e8b77284e6e86b95d289da287a54bf75fa614a82f98dcef51940c8caa825",
+    "chunk_ids": [
+      "7d31fdbcb62fa1c47e9ef44a0f2f0e59:0",
+      "7d31fdbcb62fa1c47e9ef44a0f2f0e59:1",
+      "7d31fdbcb62fa1c47e9ef44a0f2f0e59:2",
+      "7d31fdbcb62fa1c47e9ef44a0f2f0e59:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T13:59:06"
+  },
+  "unity_manual/Lightmappers.md": {
+    "sha256": "aeb9aef0bf3e609eb7fe8b061314746d2a88c95afc6c547138268c5e1eafeed8",
+    "chunk_ids": [
+      "ad793f92b23e25f45e6b1bb437316e14:0",
+      "ad793f92b23e25f45e6b1bb437316e14:1",
+      "ad793f92b23e25f45e6b1bb437316e14:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:59:07"
+  },
+  "unity_manual/Lightmapping-bake.md": {
+    "sha256": "04b00547f9daee6fa01891bf879e3192d25815abe85a359538d6e75d8a8ac35f",
+    "chunk_ids": [
+      "49a1a2556d59082cff28bbf66fe9ba23:0",
+      "49a1a2556d59082cff28bbf66fe9ba23:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T13:59:08"
+  },
+  "unity_manual/Lightmapping-baked-tags.md": {
+    "sha256": "8418d6b5fd371cce3c305653cb03b4760e8a1b969816370fef7a859951680838",
+    "chunk_ids": [
+      "229d3c700f65f75610aab2178bc8703e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:08"
+  },
+  "unity_manual/Lightmapping-baking-before-runtime.md": {
+    "sha256": "c62dbf27a387786744b923c3d661507801fc430b572ecfdcde24382d6212bc4e",
+    "chunk_ids": [
+      "53450665f946fef675e421d8f818f68d:0",
+      "53450665f946fef675e421d8f818f68d:1",
+      "53450665f946fef675e421d8f818f68d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T13:59:09"
+  },
+  "unity_manual/Lightmapping-configure.md": {
+    "sha256": "fa20e84218b0c4f7b04e9ca5d752596ea545625059563d92e237fcc4aaa6b2f5",
+    "chunk_ids": [
+      "f473ac734b22b8aaeacea62ede8563dd:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:10"
+  },
+  "unity_manual/Lightmapping-landing.md": {
+    "sha256": "2e2705894f6876de098ebbe84ed8069fe06c7ff2e8cb4db723f2ca10b6d63dff",
+    "chunk_ids": [
+      "1b4640cb973b64696928003d9b42cb83:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:11"
+  },
+  "unity_manual/Lightmapping-preview.md": {
+    "sha256": "2cb8cf82fc82d4ae3cd513b9f850cdd2d13a6b14aaf2d9ab05a31b1491d73f1f",
+    "chunk_ids": [
+      "4c237a0a9be8f7ca09a5b59ac465c7b0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T13:59:11"
+  },
+  "unity_manual/Lightmapping-troubleshooting.md": {
+    "sha256": "c48e92785ad61233ba4f254607d1609a03a33c337e6df4521106690922793db9",
+    "chunk_ids": [
+      "f007ff6ec047b6305702854969734b0c:0",
+      "f007ff6ec047b6305702854969734b0c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:00"
+  },
+  "unity_manual/Lightmapping.md": {
+    "sha256": "b68cc4436d06f9bb99d995421e69211c62ec92b6396916740ed4197b0d55404d",
+    "chunk_ids": [
+      "12dec376b339b1d96a0b4c4b70e6f664:0",
+      "12dec376b339b1d96a0b4c4b70e6f664:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:00"
+  },
+  "unity_manual/LightmappingDirectional.md": {
+    "sha256": "079d9f77880daf37ee8838b5098fb56cc85eefe30d7b1f6ba48ed53181422dac",
+    "chunk_ids": [
+      "39bac0eb6370950567e4225d4ff4e52e:0",
+      "39bac0eb6370950567e4225d4ff4e52e:1",
+      "39bac0eb6370950567e4225d4ff4e52e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:00:01"
+  },
+  "unity_manual/Lightmaps-TechnicalInformation.md": {
+    "sha256": "4027a3fac7c5e0497be69aef8c50a3e78a53272115a44d9d653eb5f5e4ff0ff6",
+    "chunk_ids": [
+      "80580cce3aebe23619b2effef342c339:0",
+      "80580cce3aebe23619b2effef342c339:1",
+      "80580cce3aebe23619b2effef342c339:2",
+      "80580cce3aebe23619b2effef342c339:3",
+      "80580cce3aebe23619b2effef342c339:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:00:02"
+  },
+  "unity_manual/Lightmaps-reference.md": {
+    "sha256": "3b020efcd5acc61c38be6687d8eaec81d85c99359fd49a78b56404b5a6feaffe",
+    "chunk_ids": [
+      "62c739314d649da4c3bf0e81fa98eef5:0",
+      "62c739314d649da4c3bf0e81fa98eef5:1",
+      "62c739314d649da4c3bf0e81fa98eef5:2",
+      "62c739314d649da4c3bf0e81fa98eef5:3",
+      "62c739314d649da4c3bf0e81fa98eef5:4",
+      "62c739314d649da4c3bf0e81fa98eef5:5",
+      "62c739314d649da4c3bf0e81fa98eef5:6",
+      "62c739314d649da4c3bf0e81fa98eef5:7",
+      "62c739314d649da4c3bf0e81fa98eef5:8",
+      "62c739314d649da4c3bf0e81fa98eef5:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-13T14:00:03"
+  },
+  "unity_manual/LoadingResourcesatRuntime.md": {
+    "sha256": "41c50bb6e0007062ddb76353e88a807a6d1f223a45979d164fa94b2094584aba",
+    "chunk_ids": [
+      "16f2c8b3d62e40ce63f4b10881563e92:0",
+      "16f2c8b3d62e40ce63f4b10881563e92:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:04"
+  },
+  "unity_manual/LoadingTextureandMeshData-introduction.md": {
+    "sha256": "fcb4817820c572deaeab87bf6102ea523909a258ca137e90531848c096298544",
+    "chunk_ids": [
+      "5cf01d315e4be633f416cc790c2dbf64:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:05"
+  },
+  "unity_manual/LoadingTextureandMeshData-make-compatible.md": {
+    "sha256": "827592f67aa5f2b2f4c48409df7cf690dc3276899fb7ce0ef702dc54ec44f3c5",
+    "chunk_ids": [
+      "12b93f7b63eaaa7fdd64795249359a1b:0",
+      "12b93f7b63eaaa7fdd64795249359a1b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:05"
+  },
+  "unity_manual/LoadingTextureandMeshData.md": {
+    "sha256": "b95685ed8b0bbfa6440b8df7dc5bce6df5ebdbc5d596e8a866eb9b89fb9f0388",
+    "chunk_ids": [
+      "08af6a85f40903eb02c3e3f937bdf8c2:0",
+      "08af6a85f40903eb02c3e3f937bdf8c2:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:06"
+  },
+  "unity_manual/LoopingAnimationClips.md": {
+    "sha256": "4db51832fa93398b753c3672d24626bb4b348f809fe3fce2ad6b1f28b1e89ff9",
+    "chunk_ids": [
+      "b9feb3d34769a28ce802ef4965f17ba4:0",
+      "b9feb3d34769a28ce802ef4965f17ba4:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:07"
+  },
+  "unity_manual/LowLevelNativePluginProfiler.md": {
+    "sha256": "805ecd13c27fa65217aefe62fc76b4f06ee942bf924ea92cabfc17ad6cfb631e",
+    "chunk_ids": [
+      "15489653d2cd49bca035251fa2433c1d:0",
+      "15489653d2cd49bca035251fa2433c1d:1",
+      "15489653d2cd49bca035251fa2433c1d:2",
+      "15489653d2cd49bca035251fa2433c1d:3",
+      "15489653d2cd49bca035251fa2433c1d:4",
+      "15489653d2cd49bca035251fa2433c1d:5",
+      "15489653d2cd49bca035251fa2433c1d:6",
+      "15489653d2cd49bca035251fa2433c1d:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-13T14:00:08"
+  },
+  "unity_manual/ManagingYourUnityLicense.md": {
+    "sha256": "e97deea7e834b93e5a5292b09763d057227fe1c926c8c92f7affd64730fd7879",
+    "chunk_ids": [
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:0",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:1",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:2",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:3",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:4",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:5",
+      "14d93e7b0f3e36bdd9ad99db3068cbaf:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:00:10"
+  },
+  "unity_manual/ManualActivationCmdMac.md": {
+    "sha256": "b9759e0a7f52f6321eedfbcef252c55be203f5197fd165e6107c4a941ca91da9",
+    "chunk_ids": [
+      "3cea859b8bf3ad41e933ccb732115a84:0",
+      "3cea859b8bf3ad41e933ccb732115a84:1",
+      "3cea859b8bf3ad41e933ccb732115a84:2",
+      "3cea859b8bf3ad41e933ccb732115a84:3",
+      "3cea859b8bf3ad41e933ccb732115a84:4",
+      "3cea859b8bf3ad41e933ccb732115a84:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:00:11"
+  },
+  "unity_manual/ManualActivationCmdWin.md": {
+    "sha256": "28db6d8083429dcb7712caacb5c455a8716029129ff522b976f1346343e4081e",
+    "chunk_ids": [
+      "60dee14cac961c8cb08dd204a5f23532:0",
+      "60dee14cac961c8cb08dd204a5f23532:1",
+      "60dee14cac961c8cb08dd204a5f23532:2",
+      "60dee14cac961c8cb08dd204a5f23532:3",
+      "60dee14cac961c8cb08dd204a5f23532:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:00:12"
+  },
+  "unity_manual/ManualActivationGuide.md": {
+    "sha256": "659de7a8a6a648a9abd5a8079bfca98dd5a62f8d760483f5e89d16e2796b132e",
+    "chunk_ids": [
+      "3bd5676ee9044177597026b6814d8332:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:12"
+  },
+  "unity_manual/ManualActivationHub.md": {
+    "sha256": "00a41e26dd0fc21ffc620d753be45417cfb3cf611b3c495e42defae8a0b4e14e",
+    "chunk_ids": [
+      "cba358a4cbe33852dd1ffc314aa36b15:0",
+      "cba358a4cbe33852dd1ffc314aa36b15:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:13"
+  },
+  "unity_manual/ManualVersions.md": {
+    "sha256": "411ee171ef3b1baee097ea41e3fb46659691d7ac9968b2c04d6cc8dfbce2b352",
+    "chunk_ids": [
+      "41e2abfcc67f19666588b839cbc2349b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:14"
+  },
+  "unity_manual/MaterialValidator.md": {
+    "sha256": "8eb4f2b716558d98466202aef1429ccc4614fb2c2acf1b07f1fb6c0da5f81c59",
+    "chunk_ids": [
+      "225673e6e31d7a8813c9aec678409a60:0",
+      "225673e6e31d7a8813c9aec678409a60:1",
+      "225673e6e31d7a8813c9aec678409a60:2",
+      "225673e6e31d7a8813c9aec678409a60:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:00:15"
+  },
+  "unity_manual/Materials.md": {
+    "sha256": "98eeb634c6b05c30a61f1953fe46c58dd46db7dbeceea1dd2cec3ddfd71e4b4f",
+    "chunk_ids": [
+      "f15cb32b7a778a078432835036c3dc5c:0",
+      "f15cb32b7a778a078432835036c3dc5c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:00:15"
+  },
+  "unity_manual/MaterialsAccessingViaScript.md": {
+    "sha256": "dd399c0f94719e61b83bf9b8e9c352fbefc4cbaf10b77c4870745e1fff8b5c88",
+    "chunk_ids": [
+      "1cb67435a0923c1388c4168bc47b8f89:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:16"
+  },
+  "unity_manual/MecanimFAQ.md": {
+    "sha256": "f31b364c2b3fb9c1fd78bbac06647d2ea48ff791fa4481745b04c4abd63b6b0b",
+    "chunk_ids": [
+      "badd5487f86bbd60a79b2eca964817b2:0",
+      "badd5487f86bbd60a79b2eca964817b2:1",
+      "badd5487f86bbd60a79b2eca964817b2:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:00:17"
+  },
+  "unity_manual/MecanimPeformanceandOptimization.md": {
+    "sha256": "849b7a4fb559ad4675048ba92129be82873c6dece662526f3b7e5af077ed46c0",
+    "chunk_ids": [
+      "5e232cdfc17261f24000cb94ee6eb77c:0",
+      "5e232cdfc17261f24000cb94ee6eb77c:1",
+      "5e232cdfc17261f24000cb94ee6eb77c:2",
+      "5e232cdfc17261f24000cb94ee6eb77c:3",
+      "5e232cdfc17261f24000cb94ee6eb77c:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:00:17"
+  },
+  "unity_manual/MetaPass.md": {
+    "sha256": "1dcdd4ae5b5e43e065d6fbda51b3594044d80de433df3beb6e8c2a29eaa15b12",
+    "chunk_ids": [
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:0",
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:1",
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:2",
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:3",
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:4",
+      "f45caf32bdb6ac2e5f4ae6abac8abfa8:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:00:18"
+  },
+  "unity_manual/Metal.md": {
+    "sha256": "58b41edfda3310dbba78e34a080a4951b2d5b5af6609cefdb00e9e8951ef8854",
+    "chunk_ids": [
+      "d6865860ec88d108b3da574531432143:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:19"
+  },
+  "unity_manual/MobileFeature.md": {
+    "sha256": "e2b0e56e95e7a8ef3a86f5f91dfafe54e1cf8bd4c77deeefd362ab5b31ed5441",
+    "chunk_ids": [
+      "df9265840276ba3a954e0adb6242fe99:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:00:20"
+  },
+  "unity_manual/MobileInput.md": {
+    "sha256": "6d51feb3736fda16056778d7e913e8f930e630d97e998ed902e3b93ae472babc",
+    "chunk_ids": [
+      "da74cd080d6713f81ab04ca7881dacbe:0",
+      "da74cd080d6713f81ab04ca7881dacbe:1",
+      "da74cd080d6713f81ab04ca7881dacbe:2",
+      "da74cd080d6713f81ab04ca7881dacbe:3",
+      "da74cd080d6713f81ab04ca7881dacbe:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:00:20"
+  },
+  "unity_manual/MobileKeyboard.md": {
+    "sha256": "30761817d3c94042ae939fb4aced8b114bd17b0df46c0f1c8d8f0ff643fdb84a",
+    "chunk_ids": [
+      "d8253f42a550e65d04c2ead3d906e282:0",
+      "d8253f42a550e65d04c2ead3d906e282:1",
+      "d8253f42a550e65d04c2ead3d906e282:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:09"
+  },
+  "unity_manual/ModelingOptimizedCharacters.md": {
+    "sha256": "37361b9e3ae515057bb043389899f0346ede43546eec2fce0dfae3c4a4eb9e54",
+    "chunk_ids": [
+      "f85caf981b81d276e6a5951ac9bd5bdc:0",
+      "f85caf981b81d276e6a5951ac9bd5bdc:1",
+      "f85caf981b81d276e6a5951ac9bd5bdc:2",
+      "f85caf981b81d276e6a5951ac9bd5bdc:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:10"
+  },
+  "unity_manual/ModifyingSourceAssetsThroughScripting.md": {
+    "sha256": "b694f737b5e8b0cb7df2b9047373543adf0cc6960dea1195fd01b208c80562a6",
+    "chunk_ids": [
+      "e1fb03f5d2e9f607fcf0bc14e9a8981a:0",
+      "e1fb03f5d2e9f607fcf0bc14e9a8981a:1",
+      "e1fb03f5d2e9f607fcf0bc14e9a8981a:2",
+      "e1fb03f5d2e9f607fcf0bc14e9a8981a:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:11"
+  },
+  "unity_manual/MovieTexture-create.md": {
+    "sha256": "81f0d945af8f3f43831019f80866dfcaa4919ecb8ffa59aede87a2c68b829560",
+    "chunk_ids": [
+      "17da1d96ac79f78f9a32093291db9552:0",
+      "17da1d96ac79f78f9a32093291db9552:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:11"
+  },
+  "unity_manual/MovieTexture-landing.md": {
+    "sha256": "4e576b16119fa8fc516d425b51a35b1ad0c165879df27060679ec1dd6bfd254e",
+    "chunk_ids": [
+      "9eddc278c2d4ef24e4d4cabd590d0c06:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:12"
+  },
+  "unity_manual/MovieTexture-mobile.md": {
+    "sha256": "040f741fc819083ddeaf2d2e95b018a52fc4b1e9ed31ff9b893e14fdb68a5ed1",
+    "chunk_ids": [
+      "0597adff9c0b74d7e4afc6ed6f106d96:0",
+      "0597adff9c0b74d7e4afc6ed6f106d96:1",
+      "0597adff9c0b74d7e4afc6ed6f106d96:2",
+      "0597adff9c0b74d7e4afc6ed6f106d96:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:13"
+  },
+  "unity_manual/MultiDisplay.md": {
+    "sha256": "1ba4101c494b33843ade9c463c5201c072a9d92d00e895d8c8883d8bbc75f860",
+    "chunk_ids": [
+      "6279fdbf26517b02e8794d7ee3a5637d:0",
+      "6279fdbf26517b02e8794d7ee3a5637d:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:14"
+  },
+  "unity_manual/MultiSceneEditing.md": {
+    "sha256": "b3de3a8a2377c94c9c03b0355366212c26c61f65af49f98e1ca65e6432f2431e",
+    "chunk_ids": [
+      "d04d82fca5e819116197940224bbe7cf:0",
+      "d04d82fca5e819116197940224bbe7cf:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:14"
+  },
+  "unity_manual/MultipleCameras-landing.md": {
+    "sha256": "4b172bf0bb9735cee56003e4fb6a185c5ed41093a7c73bd8034f596ce2638846",
+    "chunk_ids": [
+      "2062725180a8f2201cd9e2dfca3847ef:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:15"
+  },
+  "unity_manual/MultipleCameras.md": {
+    "sha256": "bfdcb557001070e2e4caa08952290d630b127366e660d06d09b6a0cfef099ccc",
+    "chunk_ids": [
+      "6c1b34374d9dce98f117c3e4f52b25cc:0",
+      "6c1b34374d9dce98f117c3e4f52b25cc:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:16"
+  },
+  "unity_manual/MuscleDefinitions.md": {
+    "sha256": "2538d18931db30a72625c0c447b7ab0e27ae0ae4dacb20da8a8185bae346f395",
+    "chunk_ids": [
+      "4b8c443472e6164398f19d9e0bfa40b4:0",
+      "4b8c443472e6164398f19d9e0bfa40b4:1",
+      "4b8c443472e6164398f19d9e0bfa40b4:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:16"
+  },
+  "unity_manual/NestedPrefabs.md": {
+    "sha256": "244ae9992d1245b5b1892a5ef37b55c63ca8be87c1f6fe8787afdde3dd43256b",
+    "chunk_ids": [
+      "46edcb74a526c0dcf162ea540d7e695c:0",
+      "46edcb74a526c0dcf162ea540d7e695c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:17"
+  },
+  "unity_manual/NestedStateMachines.md": {
+    "sha256": "7f288aa04183aef9eb26d6cd44ac5a0d9c969d980edc9b49b0c7df01873c3d62",
+    "chunk_ids": [
+      "9d5ddca993bac2fcad94a7e36c3df035:0",
+      "9d5ddca993bac2fcad94a7e36c3df035:1",
+      "9d5ddca993bac2fcad94a7e36c3df035:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:18"
+  },
+  "unity_manual/ObliqueFrustum.md": {
+    "sha256": "8315309df73fc5c24269511c5adecac5a7cb77319d415de2e85e02760ddb4ebe",
+    "chunk_ids": [
+      "e7a1114c3509ed33cfd4348a9b3edede:0",
+      "e7a1114c3509ed33cfd4348a9b3edede:1",
+      "e7a1114c3509ed33cfd4348a9b3edede:2",
+      "e7a1114c3509ed33cfd4348a9b3edede:3",
+      "e7a1114c3509ed33cfd4348a9b3edede:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:01:19"
+  },
+  "unity_manual/OcclusionCulling-landing.md": {
+    "sha256": "301121cac6c150426ef24eb371281277fafbf307bce1eeffdcf2617160aab4e1",
+    "chunk_ids": [
+      "b99c679298908cf86851b975d221276b:0",
+      "b99c679298908cf86851b975d221276b:1",
+      "b99c679298908cf86851b975d221276b:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:19"
+  },
+  "unity_manual/OcclusionCulling.md": {
+    "sha256": "ec143882455af78f2bf1cb4efcf40a01657b4b7b36fec38c488b163e1d745711",
+    "chunk_ids": [
+      "c4e9515b4fea430cafac044a4ff2ff6c:0",
+      "c4e9515b4fea430cafac044a4ff2ff6c:1",
+      "c4e9515b4fea430cafac044a4ff2ff6c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:20"
+  },
+  "unity_manual/OfflineDocumentation.md": {
+    "sha256": "66622610b45d321cbb2d9e89ccdefabb9e5963d5cfbe49579bf2f84f2e59c4a7",
+    "chunk_ids": [
+      "e94642b061e2569ab98ef0f77758c38b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:21"
+  },
+  "unity_manual/OpenGLCoreDetails.md": {
+    "sha256": "4ee6c7380cf81a1728e5edf80cb3975b1e6d9c7f11b06cb4905190fb71fb852d",
+    "chunk_ids": [
+      "0faaa22a040abdc919fdae6729cfc4c5:0",
+      "0faaa22a040abdc919fdae6729cfc4c5:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:21"
+  },
+  "unity_manual/OptimizingGraphicsPerformance.md": {
+    "sha256": "8253d9056bcfa44c3f025cba560387263fbbd36bac9bbbc2eec9fda8edf8c81d",
+    "chunk_ids": [
+      "6121df9eca1f4d6bcbfab61bc5de45a9:0",
+      "6121df9eca1f4d6bcbfab61bc5de45a9:1",
+      "6121df9eca1f4d6bcbfab61bc5de45a9:2",
+      "6121df9eca1f4d6bcbfab61bc5de45a9:3",
+      "6121df9eca1f4d6bcbfab61bc5de45a9:4",
+      "6121df9eca1f4d6bcbfab61bc5de45a9:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:01:22"
+  },
+  "unity_manual/OtherViews.md": {
+    "sha256": "f91d6f291ac40fd32bcf933febe3ce430027f1a6a5b34de79c993df3af3c2971",
+    "chunk_ids": [
+      "c51b00b31c7e37ef7e5170b3db1f160f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:23"
+  },
+  "unity_manual/Packages-all.md": {
+    "sha256": "7b5e62ccadde9b49bbe3a6848de1e4e1cf47a5f8bc43f08976946d9ffda8938c",
+    "chunk_ids": [
+      "5fbb13d54a4db313e4f36a6ce4bc0a2f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:24"
+  },
+  "unity_manual/Packages.md": {
+    "sha256": "b6a871c3c40b3f6c706b5dacf001009cf36bcb7064dd7ce8b545b2c1a7582b4b",
+    "chunk_ids": [
+      "d871192a28311e8d3cb4d973099ff34a:0",
+      "d871192a28311e8d3cb4d973099ff34a:1",
+      "d871192a28311e8d3cb4d973099ff34a:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:24"
+  },
+  "unity_manual/PackagesList.md": {
+    "sha256": "5790848752a70b93894a5088594fce8190f363c73bdbe23590ae2f4da5054a5d",
+    "chunk_ids": [
+      "97ea1df90b3391cd37c2b1913d8823f3:0",
+      "97ea1df90b3391cd37c2b1913d8823f3:1",
+      "97ea1df90b3391cd37c2b1913d8823f3:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:25"
+  },
+  "unity_manual/ParallelImport.md": {
+    "sha256": "942228fee3371e9b39c143fb1ef7359a6f07e22d7f1daae32ea997932325b9eb",
+    "chunk_ids": [
+      "c879236229ccc5da1a6b5e5becf8217f:0",
+      "c879236229ccc5da1a6b5e5becf8217f:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:26"
+  },
+  "unity_manual/PartSysCollisionModule.md": {
+    "sha256": "69c93dd066785ad46585cbc89b648894033346e1720c142e92b3ff47523f462d",
+    "chunk_ids": [
+      "591b749c1ee40a5a0e15931f7b57befb:0",
+      "591b749c1ee40a5a0e15931f7b57befb:1",
+      "591b749c1ee40a5a0e15931f7b57befb:2",
+      "591b749c1ee40a5a0e15931f7b57befb:3",
+      "591b749c1ee40a5a0e15931f7b57befb:4",
+      "591b749c1ee40a5a0e15931f7b57befb:5",
+      "591b749c1ee40a5a0e15931f7b57befb:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:01:27"
+  },
+  "unity_manual/PartSysColorBySpeedModule.md": {
+    "sha256": "1c01c90232256f6f71d45e485eab3487c5d4311932ff027bd2b719f6e220589c",
+    "chunk_ids": [
+      "3f90dfe47c35b0b72722ece0ec1081d4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:27"
+  },
+  "unity_manual/PartSysColorOverLifeModule.md": {
+    "sha256": "f1c46c61824b2ca42683aba1d79df8e5f305edc739b110470d062aaf0a5ff9ec",
+    "chunk_ids": [
+      "a8ed58f4fb84038a984016d4144a62a7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:28"
+  },
+  "unity_manual/PartSysCustomDataModule.md": {
+    "sha256": "2135ca53c804ec39a6a31eada8fe1f01d7be4c36a2d12e8e92057338a5e2aa01",
+    "chunk_ids": [
+      "5e59e0d0a8fa7b6c6eb80fca9c36061f:0",
+      "5e59e0d0a8fa7b6c6eb80fca9c36061f:1",
+      "5e59e0d0a8fa7b6c6eb80fca9c36061f:2",
+      "5e59e0d0a8fa7b6c6eb80fca9c36061f:3",
+      "5e59e0d0a8fa7b6c6eb80fca9c36061f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:01:29"
+  },
+  "unity_manual/PartSysEmissionModule.md": {
+    "sha256": "c1dea4f61764bd01900eb96c198c66c410353f24befaf9248297501d0c0b8048",
+    "chunk_ids": [
+      "b47b351d82f8a49fd04dd908cdcf5653:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:30"
+  },
+  "unity_manual/PartSysExtForceModule.md": {
+    "sha256": "ca6f95521f841ccdbcb1f32188b2642fb478bf1994db8cff1e44da180b743876",
+    "chunk_ids": [
+      "78b14cf48ea8e9b2163db1b9d6d64999:0",
+      "78b14cf48ea8e9b2163db1b9d6d64999:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:30"
+  },
+  "unity_manual/PartSysForceOverLifeModule.md": {
+    "sha256": "2f24e538f9d20066aa56353285c159d292b13a84e64a818401e4199dc3a68361",
+    "chunk_ids": [
+      "c3665c6eaa52367f29ede9369f483131:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:31"
+  },
+  "unity_manual/PartSysInheritVelocity.md": {
+    "sha256": "2b12adc7f9847a72082f8d47c52006122ffd5b3da2a416f5fa17e9905ffbbce5",
+    "chunk_ids": [
+      "2f4f93e759652911c2f09b5c733f4a40:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:32"
+  },
+  "unity_manual/PartSysInstancing.md": {
+    "sha256": "7d74d3cda266bcedad99a2f31ce6ca2e8f07cfd00feaa116c66f175da6f8c886",
+    "chunk_ids": [
+      "e9a14b8c42e785594d4dfe11a5eac7aa:0",
+      "e9a14b8c42e785594d4dfe11a5eac7aa:1",
+      "e9a14b8c42e785594d4dfe11a5eac7aa:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:32"
+  },
+  "unity_manual/PartSysLifetimeByEmitterSpeedModule.md": {
+    "sha256": "eff8f5772786d8853f52f3f3c932692ce8d3a885bf65126f51ec9ea6f3863ea2",
+    "chunk_ids": [
+      "ef85f90f3da32de78122a1fed2643e03:0",
+      "ef85f90f3da32de78122a1fed2643e03:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:33"
+  },
+  "unity_manual/PartSysLightsModule.md": {
+    "sha256": "c80a53054e539ff7212af395bcd5fc498e338940f5a8d77cc450371cc163fa3d",
+    "chunk_ids": [
+      "864945078bf2a22005b864c32fcfe677:0",
+      "864945078bf2a22005b864c32fcfe677:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:34"
+  },
+  "unity_manual/PartSysLimitVelOverLifeModule.md": {
+    "sha256": "7dd746bc7c6227933d4d5adb2708a3cab242ee0daab2e04b57a222e4e056da4e",
+    "chunk_ids": [
+      "0c37f42286d82c70c0557db24d12253b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:34"
+  },
+  "unity_manual/PartSysMainModule.md": {
+    "sha256": "63112920cb453fc7879b5f4bb4e671ccc35b6612cc12f25b51fe7db0f238fc7e",
+    "chunk_ids": [
+      "521f2c686fb7504cc976e023bd7dd9a0:0",
+      "521f2c686fb7504cc976e023bd7dd9a0:1",
+      "521f2c686fb7504cc976e023bd7dd9a0:2",
+      "521f2c686fb7504cc976e023bd7dd9a0:3",
+      "521f2c686fb7504cc976e023bd7dd9a0:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:01:35"
+  },
+  "unity_manual/PartSysNoiseModule.md": {
+    "sha256": "a94d78b4234970be6f8bb736ce551c1d49f132ed93cd6795d1e79fa7e9bd4827",
+    "chunk_ids": [
+      "73f82f0dcefee390d7f156a95f3a31fa:0",
+      "73f82f0dcefee390d7f156a95f3a31fa:1",
+      "73f82f0dcefee390d7f156a95f3a31fa:2",
+      "73f82f0dcefee390d7f156a95f3a31fa:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:46"
+  },
+  "unity_manual/PartSysRendererModule.md": {
+    "sha256": "1b39748c3915e304caea318de2c442a91077a25f232f4eb1bf0117de35548629",
+    "chunk_ids": [
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:0",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:1",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:2",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:3",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:4",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:5",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:6",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:7",
+      "e75c0951dd86ca11e70e9bdc0dfe4b4c:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:01:47"
+  },
+  "unity_manual/PartSysRotBySpeedModule.md": {
+    "sha256": "d2f7720562bbc06fc54032f0d9f1bba64c2b4d5cb20c759b354988ad352eaaaa",
+    "chunk_ids": [
+      "724b1f38bad147b6900eb7f3ace64eb6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:48"
+  },
+  "unity_manual/PartSysRotOverLifeModule.md": {
+    "sha256": "35cce60e477c885f7c38863be3fe57f0beba23b1b2e7aace65a4d81082969305",
+    "chunk_ids": [
+      "4a9de7c9ed6f4148f26ef9ef8d48ba65:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:49"
+  },
+  "unity_manual/PartSysShapeModule.md": {
+    "sha256": "4287eebbe5f78268bb3d3a48eac4cc3d4498533a9f6ae8fd9114c19b98348e4f",
+    "chunk_ids": [
+      "e4a1779cf98ecb033012290e3d73690b:0",
+      "e4a1779cf98ecb033012290e3d73690b:1",
+      "e4a1779cf98ecb033012290e3d73690b:2",
+      "e4a1779cf98ecb033012290e3d73690b:3",
+      "e4a1779cf98ecb033012290e3d73690b:4",
+      "e4a1779cf98ecb033012290e3d73690b:5",
+      "e4a1779cf98ecb033012290e3d73690b:6",
+      "e4a1779cf98ecb033012290e3d73690b:7",
+      "e4a1779cf98ecb033012290e3d73690b:8",
+      "e4a1779cf98ecb033012290e3d73690b:9",
+      "e4a1779cf98ecb033012290e3d73690b:10",
+      "e4a1779cf98ecb033012290e3d73690b:11",
+      "e4a1779cf98ecb033012290e3d73690b:12",
+      "e4a1779cf98ecb033012290e3d73690b:13",
+      "e4a1779cf98ecb033012290e3d73690b:14",
+      "e4a1779cf98ecb033012290e3d73690b:15",
+      "e4a1779cf98ecb033012290e3d73690b:16",
+      "e4a1779cf98ecb033012290e3d73690b:17"
+    ],
+    "chunk_count": 18,
+    "updated_at": "2026-03-13T14:01:50"
+  },
+  "unity_manual/PartSysSizeBySpeedModule.md": {
+    "sha256": "f4a5f68608ae8c63866a9f18854377ae2901aaa6138bea06c077f1e4b7b0c4cd",
+    "chunk_ids": [
+      "33bb7b4e0d3da646ded21d9e417bc050:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:51"
+  },
+  "unity_manual/PartSysSizeOverLifeModule.md": {
+    "sha256": "8e2aec8c46f1edb25729a2d15cd673256dc3321b4bcb9bfeba620caa55a8cf3b",
+    "chunk_ids": [
+      "eb90d991748129291ec454689da70dc7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:51"
+  },
+  "unity_manual/PartSysSubEmitModule.md": {
+    "sha256": "06c4db240e719f441300995507b30311a9b8cbc65c601d68ea3dae17f5fbdcd7",
+    "chunk_ids": [
+      "00bef48a075c9615feb24fbf110ee1a8:0",
+      "00bef48a075c9615feb24fbf110ee1a8:1",
+      "00bef48a075c9615feb24fbf110ee1a8:2",
+      "00bef48a075c9615feb24fbf110ee1a8:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:52"
+  },
+  "unity_manual/PartSysTexSheetAnimModule.md": {
+    "sha256": "0f2d6f468c2c0a5ddfbe2641c7834bc6333634ae6fe38076731baebc0c1aa6bd",
+    "chunk_ids": [
+      "8e029b33ac6d8902a6db1b22ceef52c8:0",
+      "8e029b33ac6d8902a6db1b22ceef52c8:1",
+      "8e029b33ac6d8902a6db1b22ceef52c8:2",
+      "8e029b33ac6d8902a6db1b22ceef52c8:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:53"
+  },
+  "unity_manual/PartSysTrailsModule.md": {
+    "sha256": "3866fe427e204bd90b337644391c6b8294e21a8ffeb36b4e0a65ccf9bbb928ce",
+    "chunk_ids": [
+      "ecf99b734898cba81103ba2b8ad53667:0",
+      "ecf99b734898cba81103ba2b8ad53667:1",
+      "ecf99b734898cba81103ba2b8ad53667:2",
+      "ecf99b734898cba81103ba2b8ad53667:3",
+      "ecf99b734898cba81103ba2b8ad53667:4",
+      "ecf99b734898cba81103ba2b8ad53667:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:01:54"
+  },
+  "unity_manual/PartSysTriggersModule.md": {
+    "sha256": "80f113fa0df0fb410765e47ccfa52d7431a64e89b933cbc303329a50e3b2c527",
+    "chunk_ids": [
+      "c0d5d321c71cf0c7012226d9a6ddeea8:0",
+      "c0d5d321c71cf0c7012226d9a6ddeea8:1",
+      "c0d5d321c71cf0c7012226d9a6ddeea8:2",
+      "c0d5d321c71cf0c7012226d9a6ddeea8:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:55"
+  },
+  "unity_manual/PartSysUsage.md": {
+    "sha256": "b82bf82dc60626649fc84de1088b6c754e552bb24e212de3427f2190d35eadd7",
+    "chunk_ids": [
+      "800b46484777cae87fd73d7683110c97:0",
+      "800b46484777cae87fd73d7683110c97:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:56"
+  },
+  "unity_manual/PartSysVelOverLifeModule.md": {
+    "sha256": "19b1aa7eac15d41e97daca16e68440f890399aba3387208d9bf8e28d304eca5d",
+    "chunk_ids": [
+      "bad72586efba8fb15d23a6282ec56678:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:56"
+  },
+  "unity_manual/PartSysVertexStreams.md": {
+    "sha256": "da32c8de3d0b386094a2a1ff718bebce27159467b470fa534f94f3fd086400ad",
+    "chunk_ids": [
+      "36ae405cd01921359e955f2dd7283f3c:0",
+      "36ae405cd01921359e955f2dd7283f3c:1",
+      "36ae405cd01921359e955f2dd7283f3c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:01:57"
+  },
+  "unity_manual/ParticleSystemModules.md": {
+    "sha256": "1c9969ba8e14928523ccba503e42ee86e1360183d077cfcaf3c96be2bd6ad44a",
+    "chunk_ids": [
+      "ce217d558b340356ad1b292bbda17964:0",
+      "ce217d558b340356ad1b292bbda17964:1",
+      "ce217d558b340356ad1b292bbda17964:2",
+      "ce217d558b340356ad1b292bbda17964:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:01:58"
+  },
+  "unity_manual/ParticleSystems.md": {
+    "sha256": "9d310c1323df5978a5624a23cdd89f0c79863d19bdec3f372695e0f1ffed52b8",
+    "chunk_ids": [
+      "f70668204eef050fe6a811841caabe76:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:01:58"
+  },
+  "unity_manual/PerPixelLights-BuiltIn.md": {
+    "sha256": "c4398857de71817e438639ea926d58f7ac83eb3f385d8f8a01d0aa457a44531a",
+    "chunk_ids": [
+      "59ba0cf10f16501d6f16ee7039e15404:0",
+      "59ba0cf10f16501d6f16ee7039e15404:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:01:59"
+  },
+  "unity_manual/PerPixelLights.md": {
+    "sha256": "326eb49c5f353044a53d5cbb4534b3996520d1f8303393f98b1655360522b8ce",
+    "chunk_ids": [
+      "80783ade7e81f938bcf7c28c94d638fe:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:00"
+  },
+  "unity_manual/PhysicalCameras-GateFit-Configure.md": {
+    "sha256": "f464072cabbee1dc5bbb570e5c47879f72c6ab40b6fa2b86a398680546c27bcb",
+    "chunk_ids": [
+      "2a2ae5d25963d043c245e3401ffb7918:0",
+      "2a2ae5d25963d043c245e3401ffb7918:1",
+      "2a2ae5d25963d043c245e3401ffb7918:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:02:00"
+  },
+  "unity_manual/PhysicalCameras-GateFit-Landing.md": {
+    "sha256": "90dc06cf6b4d76c238a9043ecb1b9e320a6cc2504ce3c94cff3cfd6470967cef",
+    "chunk_ids": [
+      "42130e6182f941c88b25529aef74ce02:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:01"
+  },
+  "unity_manual/PhysicalCameras-GateFit.md": {
+    "sha256": "f03f1424604718e1959bf5a01cba64228680ffbf09644d8f6e9d432bc3053c19",
+    "chunk_ids": [
+      "6f49fe51c2cd72b507ff80f147843633:0",
+      "6f49fe51c2cd72b507ff80f147843633:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:02:02"
+  },
+  "unity_manual/PhysicalCameras-LensShift.md": {
+    "sha256": "4cac6ece67244c502511b99a7686dc79ba6158235f724040697bf8b4aaeecc78",
+    "chunk_ids": [
+      "9d86553751db12eeae394ebc076282b1:0",
+      "9d86553751db12eeae394ebc076282b1:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:02:02"
+  },
+  "unity_manual/PhysicalCameras-introduction.md": {
+    "sha256": "682b110d52818f11fcfb86a4d852705402fcc2774ce681403615929c957ffde4",
+    "chunk_ids": [
+      "f7189b8cdfe9ac6769a2032a54697d7b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:03"
+  },
+  "unity_manual/PhysicalCameras.md": {
+    "sha256": "b6a174a9ae42b6dc613739a4e3ed711ab22dcb0e467294f4e0547a6de34985f2",
+    "chunk_ids": [
+      "a62f4226b03b7c80c8fc42696332a6ee:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:04"
+  },
+  "unity_manual/PhysicsDebugVisualization.md": {
+    "sha256": "0b13204b23a152c36f3e54412f9b8ef7c83612889d91befc704d4d2c8060c0d6",
+    "chunk_ids": [
+      "d7755571d222ec2df9b1fcb7499b2f58:0",
+      "d7755571d222ec2df9b1fcb7499b2f58:1",
+      "d7755571d222ec2df9b1fcb7499b2f58:2",
+      "d7755571d222ec2df9b1fcb7499b2f58:3",
+      "d7755571d222ec2df9b1fcb7499b2f58:4",
+      "d7755571d222ec2df9b1fcb7499b2f58:5",
+      "d7755571d222ec2df9b1fcb7499b2f58:6",
+      "d7755571d222ec2df9b1fcb7499b2f58:7",
+      "d7755571d222ec2df9b1fcb7499b2f58:8",
+      "d7755571d222ec2df9b1fcb7499b2f58:9",
+      "d7755571d222ec2df9b1fcb7499b2f58:10",
+      "d7755571d222ec2df9b1fcb7499b2f58:11",
+      "d7755571d222ec2df9b1fcb7499b2f58:12",
+      "d7755571d222ec2df9b1fcb7499b2f58:13"
+    ],
+    "chunk_count": 14,
+    "updated_at": "2026-03-13T14:02:05"
+  },
+  "unity_manual/PhysicsOverview.md": {
+    "sha256": "5b30b55283845ca9ecae2c024453462bddd6732cdf532151b95cdcc317b0c1f2",
+    "chunk_ids": [
+      "41bd65b19c1461b6ac3c8ac5f1bcce66:0",
+      "41bd65b19c1461b6ac3c8ac5f1bcce66:1",
+      "41bd65b19c1461b6ac3c8ac5f1bcce66:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:02:06"
+  },
+  "unity_manual/PhysicsSection.md": {
+    "sha256": "4027e47ce2bac617cc6dc28ec32d602301bcdaed26cf63378e4c6ce7244db8b2",
+    "chunk_ids": [
+      "078f2bc4d5bb2e2b3866c6aab8ebb260:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:07"
+  },
+  "unity_manual/PlatformSpecific.md": {
+    "sha256": "40b8c4c80b5fae547c7f4c47d791d3b3ff80f49a6999f18e96f4c6047b125a22",
+    "chunk_ids": [
+      "a74863645a7a16bf833f591338530496:0",
+      "a74863645a7a16bf833f591338530496:1",
+      "a74863645a7a16bf833f591338530496:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:02:07"
+  },
+  "unity_manual/Playables-Examples.md": {
+    "sha256": "325ffd6e4072e36fd6b75b07e86a6497e20ca7937ae245df33f8b1d7a5eebc6a",
+    "chunk_ids": [
+      "1ba25481edafe8637532473aabbe14b9:0",
+      "1ba25481edafe8637532473aabbe14b9:1",
+      "1ba25481edafe8637532473aabbe14b9:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:02:08"
+  },
+  "unity_manual/Playables-Graph.md": {
+    "sha256": "69d115213480e9b08fa74c0788a2c26c5c5f60ae1b96333a6df16bb170de3aa1",
+    "chunk_ids": [
+      "507f9e1d1c2d23e3f31eb5671c340904:0",
+      "507f9e1d1c2d23e3f31eb5671c340904:1",
+      "507f9e1d1c2d23e3f31eb5671c340904:2",
+      "507f9e1d1c2d23e3f31eb5671c340904:3",
+      "507f9e1d1c2d23e3f31eb5671c340904:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:02:57"
+  },
+  "unity_manual/Playables-ScriptPlayable.md": {
+    "sha256": "ebcea0e45e6572e22af8cd9e7cebbb0d0d7d3fb5724201de8bad4305dd8eec56",
+    "chunk_ids": [
+      "532f87143d1c7eac9e00e5a8f5ef01f2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:02:58"
+  },
+  "unity_manual/Playables.md": {
+    "sha256": "39840354f277f054249ed42a225a8458b32888ef55fe5876642a3a7e34c0a488",
+    "chunk_ids": [
+      "aaed5aaa9bf8f1c38a58b59db3646748:0",
+      "aaed5aaa9bf8f1c38a58b59db3646748:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:02:59"
+  },
+  "unity_manual/PlayerCommandLineArguments.md": {
+    "sha256": "c5af0465f44b10c93306fccb9d8fbcabfd4727c8d476379c11dacd548f2b394b",
+    "chunk_ids": [
+      "e9f9509a4b127d1ba961f303c736928f:0",
+      "e9f9509a4b127d1ba961f303c736928f:1",
+      "e9f9509a4b127d1ba961f303c736928f:2",
+      "e9f9509a4b127d1ba961f303c736928f:3",
+      "e9f9509a4b127d1ba961f303c736928f:4",
+      "e9f9509a4b127d1ba961f303c736928f:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:03:00"
+  },
+  "unity_manual/PlayerSettings-linux.md": {
+    "sha256": "9c426c4d6cbb6afe86a814b2b3136617843771de365247168037a0006d5f9d57",
+    "chunk_ids": [
+      "a07e681429b0430d930135356b6908b5:0",
+      "a07e681429b0430d930135356b6908b5:1",
+      "a07e681429b0430d930135356b6908b5:2",
+      "a07e681429b0430d930135356b6908b5:3",
+      "a07e681429b0430d930135356b6908b5:4",
+      "a07e681429b0430d930135356b6908b5:5",
+      "a07e681429b0430d930135356b6908b5:6",
+      "a07e681429b0430d930135356b6908b5:7",
+      "a07e681429b0430d930135356b6908b5:8",
+      "a07e681429b0430d930135356b6908b5:9",
+      "a07e681429b0430d930135356b6908b5:10",
+      "a07e681429b0430d930135356b6908b5:11",
+      "a07e681429b0430d930135356b6908b5:12",
+      "a07e681429b0430d930135356b6908b5:13",
+      "a07e681429b0430d930135356b6908b5:14",
+      "a07e681429b0430d930135356b6908b5:15",
+      "a07e681429b0430d930135356b6908b5:16",
+      "a07e681429b0430d930135356b6908b5:17",
+      "a07e681429b0430d930135356b6908b5:18",
+      "a07e681429b0430d930135356b6908b5:19",
+      "a07e681429b0430d930135356b6908b5:20"
+    ],
+    "chunk_count": 21,
+    "updated_at": "2026-03-13T14:03:02"
+  },
+  "unity_manual/PlayerSettings-macOS.md": {
+    "sha256": "3cb515f40341cb12985aee4d57a39194f1f257ede6e43a7be031cdedcbf58d2c",
+    "chunk_ids": [
+      "f57cb3bfeead4bdbb5e15810781b5ab0:0",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:1",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:2",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:3",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:4",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:5",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:6",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:7",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:8",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:9",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:10",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:11",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:12",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:13",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:14",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:15",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:16",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:17",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:18",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:19",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:20",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:21",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:22",
+      "f57cb3bfeead4bdbb5e15810781b5ab0:23"
+    ],
+    "chunk_count": 24,
+    "updated_at": "2026-03-13T14:03:04"
+  },
+  "unity_manual/PluginsForAndroid.md": {
+    "sha256": "d7153897796004b32c677fb745cc3d005f08fe36ab3e35a6a59fb1a97c5962a6",
+    "chunk_ids": [
+      "682e158db0d87c1f311042a1fad1ba43:0",
+      "682e158db0d87c1f311042a1fad1ba43:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:03:05"
+  },
+  "unity_manual/PluginsForIOS.md": {
+    "sha256": "96e1b396862dded9e34ef1d807c6861a1bc3ec495dd20eb91d3bc1c770c9e1f4",
+    "chunk_ids": [
+      "4023249a273f1ed099897a1b9b7bd126:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:03:06"
+  },
+  "unity_manual/PositioningGameObjects.md": {
+    "sha256": "b90137cf57633dd85024d16b60f2dbcd3ddb8170eef5e7992ce09516257dc57e",
+    "chunk_ids": [
+      "b27bc381236a4c3d83eb6719eb9ac7c0:0",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:1",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:2",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:3",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:4",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:5",
+      "b27bc381236a4c3d83eb6719eb9ac7c0:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:03:06"
+  },
+  "unity_manual/PostProcessingOverview.md": {
+    "sha256": "b3bec02f435bd2a4bec3ab75385c40c13567018f5afb46404a5105c63a294b0e",
+    "chunk_ids": [
+      "38a4dc20f54c5a17f58b1f96dd62089c:0",
+      "38a4dc20f54c5a17f58b1f96dd62089c:1",
+      "38a4dc20f54c5a17f58b1f96dd62089c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:03:07"
+  },
+  "unity_manual/PrefabInstanceOverrides.md": {
+    "sha256": "fb13b49876828fa33aaebd448ba40e9d9e0cf49a68a90a961bc4fa32f11c1724",
+    "chunk_ids": [
+      "fc0c725343e977871f495193fcaefee5:0",
+      "fc0c725343e977871f495193fcaefee5:1",
+      "fc0c725343e977871f495193fcaefee5:2",
+      "fc0c725343e977871f495193fcaefee5:3",
+      "fc0c725343e977871f495193fcaefee5:4",
+      "fc0c725343e977871f495193fcaefee5:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:03:08"
+  },
+  "unity_manual/PrefabVariants.md": {
+    "sha256": "d209fcf45ee19007426bca9b466d27e519fe420d6bafbe9a95faae6ed53d5bf0",
+    "chunk_ids": [
+      "14b79dfe5ea36125f6a0c6c15073f525:0",
+      "14b79dfe5ea36125f6a0c6c15073f525:1",
+      "14b79dfe5ea36125f6a0c6c15073f525:2",
+      "14b79dfe5ea36125f6a0c6c15073f525:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:03:09"
+  },
+  "unity_manual/Prefabs.md": {
+    "sha256": "b7fbc0572a67ea99e91bd46fa52105b1edb259ec0fcaa5b8a266a36042d87c8d",
+    "chunk_ids": [
+      "8505bec61928b52fb1551ad487e13147:0",
+      "8505bec61928b52fb1551ad487e13147:1",
+      "8505bec61928b52fb1551ad487e13147:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:03:09"
+  },
+  "unity_manual/Preferences.md": {
+    "sha256": "56cef8f928a71c45115259277fac650a607dd1b7c83561aefcdb63dd0a8bc92f",
+    "chunk_ids": [
+      "ca2b2e909db9fb73c5e37e6717c88d88:0",
+      "ca2b2e909db9fb73c5e37e6717c88d88:1",
+      "ca2b2e909db9fb73c5e37e6717c88d88:2",
+      "ca2b2e909db9fb73c5e37e6717c88d88:3",
+      "ca2b2e909db9fb73c5e37e6717c88d88:4",
+      "ca2b2e909db9fb73c5e37e6717c88d88:5",
+      "ca2b2e909db9fb73c5e37e6717c88d88:6",
+      "ca2b2e909db9fb73c5e37e6717c88d88:7",
+      "ca2b2e909db9fb73c5e37e6717c88d88:8",
+      "ca2b2e909db9fb73c5e37e6717c88d88:9",
+      "ca2b2e909db9fb73c5e37e6717c88d88:10",
+      "ca2b2e909db9fb73c5e37e6717c88d88:11",
+      "ca2b2e909db9fb73c5e37e6717c88d88:12",
+      "ca2b2e909db9fb73c5e37e6717c88d88:13",
+      "ca2b2e909db9fb73c5e37e6717c88d88:14",
+      "ca2b2e909db9fb73c5e37e6717c88d88:15",
+      "ca2b2e909db9fb73c5e37e6717c88d88:16",
+      "ca2b2e909db9fb73c5e37e6717c88d88:17",
+      "ca2b2e909db9fb73c5e37e6717c88d88:18",
+      "ca2b2e909db9fb73c5e37e6717c88d88:19",
+      "ca2b2e909db9fb73c5e37e6717c88d88:20",
+      "ca2b2e909db9fb73c5e37e6717c88d88:21",
+      "ca2b2e909db9fb73c5e37e6717c88d88:22",
+      "ca2b2e909db9fb73c5e37e6717c88d88:23",
+      "ca2b2e909db9fb73c5e37e6717c88d88:24",
+      "ca2b2e909db9fb73c5e37e6717c88d88:25",
+      "ca2b2e909db9fb73c5e37e6717c88d88:26",
+      "ca2b2e909db9fb73c5e37e6717c88d88:27",
+      "ca2b2e909db9fb73c5e37e6717c88d88:28"
+    ],
+    "chunk_count": 29,
+    "updated_at": "2026-03-13T14:04:00"
+  },
+  "unity_manual/Presets.md": {
+    "sha256": "37b54f6232f054c6c92986d92dec615f8cb6c4f2c70685a584339cc15dba0497",
+    "chunk_ids": [
+      "932c760094a45b0cf55a1264ef74f52e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:04:01"
+  },
+  "unity_manual/PrimitiveObjects.md": {
+    "sha256": "c62cb2927b22262a8a7cf415b51ffa98930179bfae09088f3652dabbf979eac8",
+    "chunk_ids": [
+      "d74accbb9eec32c532d4950072c56642:0",
+      "d74accbb9eec32c532d4950072c56642:1",
+      "d74accbb9eec32c532d4950072c56642:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:02"
+  },
+  "unity_manual/Profiler.md": {
+    "sha256": "7fc9b10e2ae4ff6d07fd6077067ff09ea98be851c1701d46ca6bf93e52c1f7dc",
+    "chunk_ids": [
+      "fad63cfae7fe9cd0ad03654b742e2933:0",
+      "fad63cfae7fe9cd0ad03654b742e2933:1",
+      "fad63cfae7fe9cd0ad03654b742e2933:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:03"
+  },
+  "unity_manual/ProfilerAudio.md": {
+    "sha256": "a157c840384208445eaf5d791380b8242345b98350a09e458d209f370fe2798e",
+    "chunk_ids": [
+      "26e914b05430e40aca0ef41d868c55ba:0",
+      "26e914b05430e40aca0ef41d868c55ba:1",
+      "26e914b05430e40aca0ef41d868c55ba:2",
+      "26e914b05430e40aca0ef41d868c55ba:3",
+      "26e914b05430e40aca0ef41d868c55ba:4",
+      "26e914b05430e40aca0ef41d868c55ba:5",
+      "26e914b05430e40aca0ef41d868c55ba:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:04:03"
+  },
+  "unity_manual/ProfilerCPU.md": {
+    "sha256": "1732fefa9f90ce6d15a223dbc3fae0b01cb7df2a8c84c42502786ed1f6a77b44",
+    "chunk_ids": [
+      "a677e38d7de0dfd8fb4abad8cf8bf996:0",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:1",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:2",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:3",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:4",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:5",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:6",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:7",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:8",
+      "a677e38d7de0dfd8fb4abad8cf8bf996:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-13T14:04:05"
+  },
+  "unity_manual/ProfilerGI.md": {
+    "sha256": "9c08e1dac0b75214e01daadc75d963a42cd96ab01d5ba8f580cb109e431ebc01",
+    "chunk_ids": [
+      "a148f0bec7663ad89dd1261633534eb1:0",
+      "a148f0bec7663ad89dd1261633534eb1:1",
+      "a148f0bec7663ad89dd1261633534eb1:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:06"
+  },
+  "unity_manual/ProfilerGPU.md": {
+    "sha256": "609fe3fa2a0641911cd0a782ae27789c2d00a6a1fef0f86e6ba3c6f26f118a28",
+    "chunk_ids": [
+      "efdd956145ec9cf503d91aa42db98ec0:0",
+      "efdd956145ec9cf503d91aa42db98ec0:1",
+      "efdd956145ec9cf503d91aa42db98ec0:2",
+      "efdd956145ec9cf503d91aa42db98ec0:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:04:06"
+  },
+  "unity_manual/ProfilerHighlights.md": {
+    "sha256": "06b143f2a2acd17ee9b24e52b053cbc5a25dafd767805ae26fcdb73fdf410b00",
+    "chunk_ids": [
+      "64f9f9a48f4bd1e62119ddc60764dd7c:0",
+      "64f9f9a48f4bd1e62119ddc60764dd7c:1",
+      "64f9f9a48f4bd1e62119ddc60764dd7c:2",
+      "64f9f9a48f4bd1e62119ddc60764dd7c:3",
+      "64f9f9a48f4bd1e62119ddc60764dd7c:4",
+      "64f9f9a48f4bd1e62119ddc60764dd7c:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:04:07"
+  },
+  "unity_manual/ProfilerMemory.md": {
+    "sha256": "14ecc546b1952be99743a41797d4a688890d9abe5135cd3493cd3f1164a4af13",
+    "chunk_ids": [
+      "14a6797aae40de64f2e1c16072c1bb1b:0",
+      "14a6797aae40de64f2e1c16072c1bb1b:1",
+      "14a6797aae40de64f2e1c16072c1bb1b:2",
+      "14a6797aae40de64f2e1c16072c1bb1b:3",
+      "14a6797aae40de64f2e1c16072c1bb1b:4",
+      "14a6797aae40de64f2e1c16072c1bb1b:5",
+      "14a6797aae40de64f2e1c16072c1bb1b:6",
+      "14a6797aae40de64f2e1c16072c1bb1b:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-13T14:04:09"
+  },
+  "unity_manual/ProfilerPhysics.md": {
+    "sha256": "e0621aa4ab6841015aaa27df58475410f444ac62114ab5d2c137232291495ce2",
+    "chunk_ids": [
+      "ecfcece4af6c7dd006b8cbc3c1185843:0",
+      "ecfcece4af6c7dd006b8cbc3c1185843:1",
+      "ecfcece4af6c7dd006b8cbc3c1185843:2",
+      "ecfcece4af6c7dd006b8cbc3c1185843:3",
+      "ecfcece4af6c7dd006b8cbc3c1185843:4",
+      "ecfcece4af6c7dd006b8cbc3c1185843:5",
+      "ecfcece4af6c7dd006b8cbc3c1185843:6",
+      "ecfcece4af6c7dd006b8cbc3c1185843:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-13T14:04:10"
+  },
+  "unity_manual/ProfilerRendering.md": {
+    "sha256": "47428b4f7ca54423daf1fcc0cc1c8ba1237707473ba774aff90212349435e2f0",
+    "chunk_ids": [
+      "2150d662e1da3e007811a511338ab77d:0",
+      "2150d662e1da3e007811a511338ab77d:1",
+      "2150d662e1da3e007811a511338ab77d:2",
+      "2150d662e1da3e007811a511338ab77d:3",
+      "2150d662e1da3e007811a511338ab77d:4",
+      "2150d662e1da3e007811a511338ab77d:5",
+      "2150d662e1da3e007811a511338ab77d:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:04:11"
+  },
+  "unity_manual/ProfilerWindow.md": {
+    "sha256": "f8f78e43d7cf5c5150a008babba3521992561551f4da3799cc9aa640867bd09b",
+    "chunk_ids": [
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:0",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:1",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:2",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:3",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:4",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:5",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:6",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:7",
+      "ac42116cd8ba6ad8c9a57ae7a90fe50d:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:04:13"
+  },
+  "unity_manual/ProgressiveLightmapper-CustomFallOff.md": {
+    "sha256": "3ce2ce3790bc9ba2e8dc3f9bfb0054913fd517527ef6b3a5c2788c4faab99842",
+    "chunk_ids": [
+      "f451e891c178c800e6b551ca28d00090:0",
+      "f451e891c178c800e6b551ca28d00090:1",
+      "f451e891c178c800e6b551ca28d00090:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:53"
+  },
+  "unity_manual/ProjectView.md": {
+    "sha256": "ea844bd80b3ed2701ad483cbdc4066773cd7e1b280ff289e7597182dad804078",
+    "chunk_ids": [
+      "a84629843295f7edfb655dbda8736f5a:0",
+      "a84629843295f7edfb655dbda8736f5a:1",
+      "a84629843295f7edfb655dbda8736f5a:2",
+      "a84629843295f7edfb655dbda8736f5a:3",
+      "a84629843295f7edfb655dbda8736f5a:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:04:54"
+  },
+  "unity_manual/QuaternionAndEulerRotationsInUnity.md": {
+    "sha256": "0df007671423d1599731ba88aba3121c3527724c0839ee9d308c264882d62cd5",
+    "chunk_ids": [
+      "200ea61724a4a92e11b2492b71c7d410:0",
+      "200ea61724a4a92e11b2492b71c7d410:1",
+      "200ea61724a4a92e11b2492b71c7d410:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:55"
+  },
+  "unity_manual/Quickstart3D.md": {
+    "sha256": "59ad8e0a4f01b3350caab4e4c3d3d9fe2f518a8e935e0fcf822fc09dc693924c",
+    "chunk_ids": [
+      "dbd9daf2958a219791ed47606e6155ba:0",
+      "dbd9daf2958a219791ed47606e6155ba:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:04:56"
+  },
+  "unity_manual/RagdollStability.md": {
+    "sha256": "bc6381330ddca6af7263a5947d94f911e077f20062b605d494019ac55a48db8e",
+    "chunk_ids": [
+      "7b46fbde424682b89de386fa0a410a11:0",
+      "7b46fbde424682b89de386fa0a410a11:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:04:56"
+  },
+  "unity_manual/ReducingFilesize.md": {
+    "sha256": "b4e4bff2d34eb1b77d00a126549c05d9ce1d2839d0f99db56761baf9fc423b0e",
+    "chunk_ids": [
+      "032970c23e1f76d28d2452278fb5332b:0",
+      "032970c23e1f76d28d2452278fb5332b:1",
+      "032970c23e1f76d28d2452278fb5332b:2",
+      "032970c23e1f76d28d2452278fb5332b:3",
+      "032970c23e1f76d28d2452278fb5332b:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:04:57"
+  },
+  "unity_manual/RefProbePerformance.md": {
+    "sha256": "1ef1ccc59f7127f9060f68d0388fc8c94537cbabd7b27276a743a5058296c178",
+    "chunk_ids": [
+      "ff06edceceb96c38d9f33254acd47144:0",
+      "ff06edceceb96c38d9f33254acd47144:1",
+      "ff06edceceb96c38d9f33254acd47144:2",
+      "ff06edceceb96c38d9f33254acd47144:3",
+      "ff06edceceb96c38d9f33254acd47144:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:04:58"
+  },
+  "unity_manual/RefProbeTypes.md": {
+    "sha256": "481b559ee23ca0960f178cacabc6961b27529769ce1c73d490cf7f2ac85e415d",
+    "chunk_ids": [
+      "5dc1c112d4f24cae37953c34c7d50a97:0",
+      "5dc1c112d4f24cae37953c34c7d50a97:1",
+      "5dc1c112d4f24cae37953c34c7d50a97:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:04:59"
+  },
+  "unity_manual/ReflectionProbes-EnableReflectionsOfReflections.md": {
+    "sha256": "5919b93dffbcff311e647ccfeb6049e016d3b6db3f9e2018f2f58817fe0bc630",
+    "chunk_ids": [
+      "2bbf31076116a806f022e742a8a65711:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:04:59"
+  },
+  "unity_manual/ReflectionProbes-set-gameobjects-use.md": {
+    "sha256": "b9e5cd6a0746a2d3cc44c398dda664320760107337f8be75670b16d80b1ae9a5",
+    "chunk_ids": [
+      "e1aace28e28977f1a0354e48c2df7c24:0",
+      "e1aace28e28977f1a0354e48c2df7c24:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:05:00"
+  },
+  "unity_manual/ReflectionProbes-set-gameobjects.md": {
+    "sha256": "0e1128980db0e6a4efd46d56bdb9b258e4d6e789bf66ad3da6928a949beffe9c",
+    "chunk_ids": [
+      "7315b8d3bb63a97d8ecb93e9b3a71eb2:0",
+      "7315b8d3bb63a97d8ecb93e9b3a71eb2:1",
+      "7315b8d3bb63a97d8ecb93e9b3a71eb2:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:05:01"
+  },
+  "unity_manual/ReflectionProbes.md": {
+    "sha256": "334ae3690897418c0e04c75f974565e9848620bdf31fd6ab5dd4b8ac8285f711",
+    "chunk_ids": [
+      "3867b1248879083eee546415264af83d:0",
+      "3867b1248879083eee546415264af83d:1",
+      "3867b1248879083eee546415264af83d:2",
+      "3867b1248879083eee546415264af83d:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:02"
+  },
+  "unity_manual/RenderDocIntegration.md": {
+    "sha256": "58639d5609d3bad54088d98540df31da46a4034ff82598ef4a8582836a45a842",
+    "chunk_ids": [
+      "1f197ace4346dda405a64027370638a2:0",
+      "1f197ace4346dda405a64027370638a2:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:05:02"
+  },
+  "unity_manual/RenderTech-DeferredShading.md": {
+    "sha256": "794d1325dfd1e9310b56e077204235d62fb8125ed5e3c49cb7d888eb623ae3d7",
+    "chunk_ids": [
+      "d79f5c2a3e99d47d4861309e03d29390:0",
+      "d79f5c2a3e99d47d4861309e03d29390:1",
+      "d79f5c2a3e99d47d4861309e03d29390:2",
+      "d79f5c2a3e99d47d4861309e03d29390:3",
+      "d79f5c2a3e99d47d4861309e03d29390:4",
+      "d79f5c2a3e99d47d4861309e03d29390:5",
+      "d79f5c2a3e99d47d4861309e03d29390:6",
+      "d79f5c2a3e99d47d4861309e03d29390:7",
+      "d79f5c2a3e99d47d4861309e03d29390:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:05:04"
+  },
+  "unity_manual/RenderTech-ForwardRendering.md": {
+    "sha256": "ca44e183a97f7def16fbf00c6625c1018c4b0e9e3edc658625ffc5b55f0b7b6d",
+    "chunk_ids": [
+      "0a31693ab1abf7c80be760e40b2f2c3d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:05:05"
+  },
+  "unity_manual/RenderTech-HardwareRequirements.md": {
+    "sha256": "09b1df85dfa9132c337881ca24ac3115c707221fd49b3fa153e590d2ae31ba0a",
+    "chunk_ids": [
+      "aa2956a65026fb8e4890d94355c754b3:0",
+      "aa2956a65026fb8e4890d94355c754b3:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:05:05"
+  },
+  "unity_manual/RenderTech-VertexLit.md": {
+    "sha256": "1376123b6219b28ef1fee0bde7d95ed98d0c1df1227a9b436295afa3f50545a3",
+    "chunk_ids": [
+      "c135e55673bc3e21dea4a2369651f5a4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:05:06"
+  },
+  "unity_manual/RenderingPaths.md": {
+    "sha256": "c5742c8251622f1d32fb497dcdc60d6e8c06d01bd29ef9ed434322a526554e02",
+    "chunk_ids": [
+      "6e8702900412292c8e4e7b95e8ecaab7:0",
+      "6e8702900412292c8e4e7b95e8ecaab7:1",
+      "6e8702900412292c8e4e7b95e8ecaab7:2",
+      "6e8702900412292c8e4e7b95e8ecaab7:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:07"
+  },
+  "unity_manual/RenderingStatistics.md": {
+    "sha256": "a3bd63d305d9f6f05a2fe1a00f6072af63fdc59e75a286bfaca8df10bdbd4514",
+    "chunk_ids": [
+      "174020887bd75cd64324117f3c3e4237:0",
+      "174020887bd75cd64324117f3c3e4237:1",
+      "174020887bd75cd64324117f3c3e4237:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:05:08"
+  },
+  "unity_manual/Retargeting.md": {
+    "sha256": "91b98676f06119d8d8a4beb2e95974a13a3f998df55ceb19eff8b004cc22ed22",
+    "chunk_ids": [
+      "27fa8026e21507ff016edb2335671f81:0",
+      "27fa8026e21507ff016edb2335671f81:1",
+      "27fa8026e21507ff016edb2335671f81:2",
+      "27fa8026e21507ff016edb2335671f81:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:09"
+  },
+  "unity_manual/RigidbodiesOverview.md": {
+    "sha256": "543316d6cf9d1807574f28cfab0bbab799fb8db64fb33a53b1e54adc94e04fbe",
+    "chunk_ids": [
+      "d84ab1457809dcfeeacb2e5f891ecf39:0",
+      "d84ab1457809dcfeeacb2e5f891ecf39:1",
+      "d84ab1457809dcfeeacb2e5f891ecf39:2",
+      "d84ab1457809dcfeeacb2e5f891ecf39:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:09"
+  },
+  "unity_manual/RootMotion.md": {
+    "sha256": "8cd396f4978b0b268af8db33b07d914810c345dda1135de9514d2deec6ea0fc0",
+    "chunk_ids": [
+      "476c0314e7f8163842a7559e418c7be3:0",
+      "476c0314e7f8163842a7559e418c7be3:1",
+      "476c0314e7f8163842a7559e418c7be3:2",
+      "476c0314e7f8163842a7559e418c7be3:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:10"
+  },
+  "unity_manual/SL-AlphaTest.md": {
+    "sha256": "247433efaf236935ac665f65fafffe1b1555e2b2797305f2f27fd4ed325622b6",
+    "chunk_ids": [
+      "ac5fc540eceb9fd67fe6ebe5ddd17b2a:0",
+      "ac5fc540eceb9fd67fe6ebe5ddd17b2a:1",
+      "ac5fc540eceb9fd67fe6ebe5ddd17b2a:2",
+      "ac5fc540eceb9fd67fe6ebe5ddd17b2a:3",
+      "ac5fc540eceb9fd67fe6ebe5ddd17b2a:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:05:11"
+  },
+  "unity_manual/SL-AlphaToMask.md": {
+    "sha256": "ca7ba12f140bc33abab90647fb8a29d6fe4b4611194f060b723cd448ecc02090",
+    "chunk_ids": [
+      "a89b8f4a0fb13e22215dde1f20c05f18:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:05:12"
+  },
+  "unity_manual/SL-BindChannels.md": {
+    "sha256": "6c384c9d5d90af93aa94998c8b52f9407bc3f40ddc0f59e7ca7dbefdc296b790",
+    "chunk_ids": [
+      "f6c8fbc1fbdf84720d33e84be75e6291:0",
+      "f6c8fbc1fbdf84720d33e84be75e6291:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:05:12"
+  },
+  "unity_manual/SL-Blend.md": {
+    "sha256": "2fec820e7549f60957087c59f07b3b74f173fabea4abf0a535adda8a5c195098",
+    "chunk_ids": [
+      "53bc305947a94d820c29386adc5a4a5e:0",
+      "53bc305947a94d820c29386adc5a4a5e:1",
+      "53bc305947a94d820c29386adc5a4a5e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:05:13"
+  },
+  "unity_manual/SL-BlendOp.md": {
+    "sha256": "3c1375ec43022e7d2967eec33ee1116eddf8caee769692c563a430c16a7bfd0f",
+    "chunk_ids": [
+      "2f4f160f3e6bc8f15081f63c7a01b927:0",
+      "2f4f160f3e6bc8f15081f63c7a01b927:1",
+      "2f4f160f3e6bc8f15081f63c7a01b927:2",
+      "2f4f160f3e6bc8f15081f63c7a01b927:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:05:14"
+  },
+  "unity_manual/SL-BuiltinFunctions.md": {
+    "sha256": "d8ea8cd2f1e387168912ef40db38b2ae5564b5b178db94f71350ccab3162646f",
+    "chunk_ids": [
+      "cbeadea90174cf55c23ad5a951eb8e42:0",
+      "cbeadea90174cf55c23ad5a951eb8e42:1",
+      "cbeadea90174cf55c23ad5a951eb8e42:2",
+      "cbeadea90174cf55c23ad5a951eb8e42:3",
+      "cbeadea90174cf55c23ad5a951eb8e42:4",
+      "cbeadea90174cf55c23ad5a951eb8e42:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:05:15"
+  },
+  "unity_manual/SL-BuiltinIncludes.md": {
+    "sha256": "5c1520cac9ae865c2602d2b2aaf191bfc024b11e1da0a70a31e512b41fd90d46",
+    "chunk_ids": [
+      "e2a0e5a6e6ae033e2f640f3970afc1f2:0",
+      "e2a0e5a6e6ae033e2f640f3970afc1f2:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:03"
+  },
+  "unity_manual/SL-CameraDepthTexture-motionvectors.md": {
+    "sha256": "9837f874f9f8ffbf35645922bd804461e534cbb216b433dbe4422beb50225781",
+    "chunk_ids": [
+      "22cf64aac5d4c6f9551b54f20fa2b02a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:04"
+  },
+  "unity_manual/SL-CameraDepthTexture.md": {
+    "sha256": "11adcddc2f1a797835a17e951f6161f4cdd97c8f102916c7d98c0c275a255dbb",
+    "chunk_ids": [
+      "3ce3ef2c7b0dfb387a75171ab78d49ab:0",
+      "3ce3ef2c7b0dfb387a75171ab78d49ab:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:04"
+  },
+  "unity_manual/SL-ColorMask.md": {
+    "sha256": "d39ea7e4121110bc686f7fdce4c339626cf8ff4c5853143c25f370f60f4dadc8",
+    "chunk_ids": [
+      "5c1e4f9efe7d23ef447b312e72dfe3cb:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:05"
+  },
+  "unity_manual/SL-Commands.md": {
+    "sha256": "a5d30289af789e2f92391ff148436d21b119ac950be57042ade9e7023e409652",
+    "chunk_ids": [
+      "c0e5c52dfee4c9ca91a97ec722df3030:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:06"
+  },
+  "unity_manual/SL-Conservative.md": {
+    "sha256": "2fa9970cf7b2a89edb28ce11d548d8ae7154c204d496f7a0b34e7c283d8b1901",
+    "chunk_ids": [
+      "ea14ee507ab8ac141f09d98b5834125a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:07"
+  },
+  "unity_manual/SL-Cull.md": {
+    "sha256": "84dd2664a09e1331f89807e553b1476e0c158cee4d7c1a44f78fbef98b4a5f07",
+    "chunk_ids": [
+      "c5f993d320c535abcc59831eddc813b7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:08"
+  },
+  "unity_manual/SL-CustomEditor.md": {
+    "sha256": "9c78f2336ad02852d7cb7c7263ea1dc41bc9329919d3f41f838ae9c465139d67",
+    "chunk_ids": [
+      "5b85552872c427d8a1e398ac134804a6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:08"
+  },
+  "unity_manual/SL-DebuggingD3D11ShadersWithVS.md": {
+    "sha256": "0904e30cd0c39bb9a02986df5c5e1551b160743c8df741f299801f6e1ec43f25",
+    "chunk_ids": [
+      "3ead6b51b5a01077df50ed7f74f51c43:0",
+      "3ead6b51b5a01077df50ed7f74f51c43:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:09"
+  },
+  "unity_manual/SL-Fallback.md": {
+    "sha256": "aed48b5e50c6f7dde0650fcd6a2ead75fef4490048aed9126f3cc90357f3c881",
+    "chunk_ids": [
+      "7c8668e2c0b5a5e997f7eb6ffe94393d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:10"
+  },
+  "unity_manual/SL-Fog.md": {
+    "sha256": "2cb56e7ac72087fc363ff1e3e103df14cffa763f578bf21fc11d3b82c45278c0",
+    "chunk_ids": [
+      "b251e28f3182dd18ebea522e977a7502:0",
+      "b251e28f3182dd18ebea522e977a7502:1",
+      "b251e28f3182dd18ebea522e977a7502:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:06:10"
+  },
+  "unity_manual/SL-GLSLShaderPrograms.md": {
+    "sha256": "0103d63fcfb6d93827f38764d19de7f81ad18e9531cba1fcc3323a6173adc512",
+    "chunk_ids": [
+      "c3363b0fe08d8bb8a36a573558fd2fe8:0",
+      "c3363b0fe08d8bb8a36a573558fd2fe8:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:11"
+  },
+  "unity_manual/SL-GrabPass.md": {
+    "sha256": "aad6a3968b4f9afe35e03764c37473d48c3dac19c0be3f9e17992b421a8531c4",
+    "chunk_ids": [
+      "e87e065970fe962dbe3c510bb7e1e6ed:0",
+      "e87e065970fe962dbe3c510bb7e1e6ed:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:12"
+  },
+  "unity_manual/SL-HLSLSemantics.md": {
+    "sha256": "6d5b0f6cf5511cd7cc8beade49278e1c5506f48a1650c00ca0a45273da913590",
+    "chunk_ids": [
+      "bbd9f1f20932e906203e90d37ae088c0:0",
+      "bbd9f1f20932e906203e90d37ae088c0:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:13"
+  },
+  "unity_manual/SL-Material.md": {
+    "sha256": "4d9063d9bc1785b84c361b88acc70e2a88ebaadf7e27cc2133b8f85a89d060ab",
+    "chunk_ids": [
+      "5c8e0915b15aa9d07e7a6fb9c5c567ef:0",
+      "5c8e0915b15aa9d07e7a6fb9c5c567ef:1",
+      "5c8e0915b15aa9d07e7a6fb9c5c567ef:2",
+      "5c8e0915b15aa9d07e7a6fb9c5c567ef:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:06:14"
+  },
+  "unity_manual/SL-MultipleProgramVariants-declare.md": {
+    "sha256": "6685f5bad56471be195f0082876a2854c1def56e4b72e6b575c0905282180d78",
+    "chunk_ids": [
+      "5246d732b0467e4d4a0afdf8df6164ad:0",
+      "5246d732b0467e4d4a0afdf8df6164ad:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:14"
+  },
+  "unity_manual/SL-MultipleProgramVariants-make-conditionals.md": {
+    "sha256": "f2ef3096d65ba10af59af91994331c0671c4c67a0612b1a75718c46f5491f749",
+    "chunk_ids": [
+      "add3d133440c4aa2eb6169b6b1d1b596:0",
+      "add3d133440c4aa2eb6169b6b1d1b596:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:15"
+  },
+  "unity_manual/SL-MultipleProgramVariants-shortcuts.md": {
+    "sha256": "3e4cff98a6c320b85f7501d09e02885a4fa58bf227852ef3936c3878af16c7b0",
+    "chunk_ids": [
+      "61ae26a4f59795c604aa038cbd84ec57:0",
+      "61ae26a4f59795c604aa038cbd84ec57:1",
+      "61ae26a4f59795c604aa038cbd84ec57:2",
+      "61ae26a4f59795c604aa038cbd84ec57:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:06:16"
+  },
+  "unity_manual/SL-MultipleProgramVariants.md": {
+    "sha256": "d8c901a253e5db99cc6eb79c86d5a508dec24162de20ccf472eee5c5360c1580",
+    "chunk_ids": [
+      "433de4ff2c0a08316dfbf82d819a2741:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:17"
+  },
+  "unity_manual/SL-Name.md": {
+    "sha256": "93e1a1381471deb4d6f992fd41c2cc46521044ef31af3fc6a855686d999222fe",
+    "chunk_ids": [
+      "251b08463c8af07c78de42f39bead25e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:17"
+  },
+  "unity_manual/SL-Offset.md": {
+    "sha256": "f0a5f01dd76417f8b0da3b4e619c2a10113d346e72b46c23c9d01bf9746c2189",
+    "chunk_ids": [
+      "6179c2d64cf3037cd3ceb39db690e5fd:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:18"
+  },
+  "unity_manual/SL-Other.md": {
+    "sha256": "6a8f97ad0236b2a48915d3951e9477e77eab2dade2f4f1e415840707e56a97f4",
+    "chunk_ids": [
+      "033516f51e5ea0d1ace6db6db2873e17:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:19"
+  },
+  "unity_manual/SL-PackageRequirements.md": {
+    "sha256": "2e63ee6d8ed93cace0ea416f03112352eae72f4ea9d97c57464640f6c8e76324",
+    "chunk_ids": [
+      "c41643cc17a75077a205dd7960f1c53a:0",
+      "c41643cc17a75077a205dd7960f1c53a:1",
+      "c41643cc17a75077a205dd7960f1c53a:2",
+      "c41643cc17a75077a205dd7960f1c53a:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:06:19"
+  },
+  "unity_manual/SL-Pass.md": {
+    "sha256": "40a5d3e0b9604b3eb4766f5533c4f2980cf1460523e969d1e01e07450149cd15",
+    "chunk_ids": [
+      "5dd6db61a99f7f0cad3cc39cf255b8e5:0",
+      "5dd6db61a99f7f0cad3cc39cf255b8e5:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:20"
+  },
+  "unity_manual/SL-PassTags.md": {
+    "sha256": "ad653e6260a93c11f75263944009364fd813b0d4cc35b79220a6c83e459802a6",
+    "chunk_ids": [
+      "8cde077fa5fc1591c39a2211d1af577f:0",
+      "8cde077fa5fc1591c39a2211d1af577f:1",
+      "8cde077fa5fc1591c39a2211d1af577f:2",
+      "8cde077fa5fc1591c39a2211d1af577f:3",
+      "8cde077fa5fc1591c39a2211d1af577f:4",
+      "8cde077fa5fc1591c39a2211d1af577f:5",
+      "8cde077fa5fc1591c39a2211d1af577f:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:06:22"
+  },
+  "unity_manual/SL-PlatformDifferences.md": {
+    "sha256": "d72013c1aca4311de2de59dc97963bd8c64781312f3ab287e584e7cb0ebcfd44",
+    "chunk_ids": [
+      "7a4ecdc60e0a83b745d8bb628b08b638:0",
+      "7a4ecdc60e0a83b745d8bb628b08b638:1",
+      "7a4ecdc60e0a83b745d8bb628b08b638:2",
+      "7a4ecdc60e0a83b745d8bb628b08b638:3",
+      "7a4ecdc60e0a83b745d8bb628b08b638:4",
+      "7a4ecdc60e0a83b745d8bb628b08b638:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T14:06:23"
+  },
+  "unity_manual/SL-Pragma-require.md": {
+    "sha256": "c41847ab1caa2070679c7dfc10e60cb0a3c721331a97db6a3d4912b2b9b467dd",
+    "chunk_ids": [
+      "5bac82f5976acf8d152cd3f812610485:0",
+      "5bac82f5976acf8d152cd3f812610485:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:24"
+  },
+  "unity_manual/SL-Pragma-target.md": {
+    "sha256": "5025c63d7b05e3d495c38eb7ad933fa30783d82fd581917b4d22a47cf9f2d6b5",
+    "chunk_ids": [
+      "7eb3a10137ce38cee0f00b0ca31191ef:0",
+      "7eb3a10137ce38cee0f00b0ca31191ef:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:25"
+  },
+  "unity_manual/SL-PragmaDirectives.md": {
+    "sha256": "526ca01fb6f8e697125caee358e8d1f25c1a1d08cc2f601d368dee6769ad50e9",
+    "chunk_ids": [
+      "7d5827021202979f49a3f447969d7d5f:0",
+      "7d5827021202979f49a3f447969d7d5f:1",
+      "7d5827021202979f49a3f447969d7d5f:2",
+      "7d5827021202979f49a3f447969d7d5f:3",
+      "7d5827021202979f49a3f447969d7d5f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:06:25"
+  },
+  "unity_manual/SL-Properties.md": {
+    "sha256": "aa5a3e74278d8623a32821261e9f403bc69054f2e67d8ba782fab54514e0a58a",
+    "chunk_ids": [
+      "09ce521f8812130a86b88638abc2f286:0",
+      "09ce521f8812130a86b88638abc2f286:1",
+      "09ce521f8812130a86b88638abc2f286:2",
+      "09ce521f8812130a86b88638abc2f286:3",
+      "09ce521f8812130a86b88638abc2f286:4",
+      "09ce521f8812130a86b88638abc2f286:5",
+      "09ce521f8812130a86b88638abc2f286:6",
+      "09ce521f8812130a86b88638abc2f286:7",
+      "09ce521f8812130a86b88638abc2f286:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:06:27"
+  },
+  "unity_manual/SL-PropertiesInPrograms.md": {
+    "sha256": "c97842c36652ea08d03f13879028a51b567d7e9e64ddf94f1817676d646ba9a1",
+    "chunk_ids": [
+      "1fb351b70e20ccae6e83580d016dd748:0",
+      "1fb351b70e20ccae6e83580d016dd748:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:27"
+  },
+  "unity_manual/SL-Reference.md": {
+    "sha256": "12a203099da9d7511c03f363f830b2cdc9300344a07e4c19498110bce9fc1c95",
+    "chunk_ids": [
+      "5be47ca66a6ef4a656ecd6ae4e6d1f3f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:28"
+  },
+  "unity_manual/SL-RenderPipeline.md": {
+    "sha256": "8466e0177789eb4658db4dafeb4060185f1f79083d4161657a5954881806a964",
+    "chunk_ids": [
+      "7086436352bb232b66a87298bec31371:0",
+      "7086436352bb232b66a87298bec31371:1",
+      "7086436352bb232b66a87298bec31371:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:06:29"
+  },
+  "unity_manual/SL-SamplerStates.md": {
+    "sha256": "a556281192499cfbd20e096797b8b59ce84452cbc4923be901eddb5a2c40ad22",
+    "chunk_ids": [
+      "dfbbe2c5118f1d56dfadb392669bc9aa:0",
+      "dfbbe2c5118f1d56dfadb392669bc9aa:1",
+      "dfbbe2c5118f1d56dfadb392669bc9aa:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:06:30"
+  },
+  "unity_manual/SL-SetTexture.md": {
+    "sha256": "588fee679ab5cb16956ceda692727c35ea6cd14364413a37cd38ded188fc4203",
+    "chunk_ids": [
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:0",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:1",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:2",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:3",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:4",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:5",
+      "0ffcdb7c1f9cfca7b11dc9074b1826ea:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:06:31"
+  },
+  "unity_manual/SL-Shader-object.md": {
+    "sha256": "4994cee54e84ee41eec5f1eee7bbebf9ae33a715200c36e20546bf5015a0225a",
+    "chunk_ids": [
+      "7833d2dd1984378be6897033a6ecd660:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:54"
+  },
+  "unity_manual/SL-Shader.md": {
+    "sha256": "14dfaf7bff36114307f62ce35fe1657ef6d13c0a59654ab660ad893aff476e47",
+    "chunk_ids": [
+      "8972d3016263db241fe6c58c1ea8b44c:0",
+      "8972d3016263db241fe6c58c1ea8b44c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:54"
+  },
+  "unity_manual/SL-ShaderCompilationAPIs.md": {
+    "sha256": "3ec93d86d354029d6077f4208e890845844c02f5237a719575b23deff045d2d6",
+    "chunk_ids": [
+      "591d6c9a9c42c50aa31e34fabee7ce31:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:06:55"
+  },
+  "unity_manual/SL-ShaderCompileTargets.md": {
+    "sha256": "cfdbd67dc49167eee250d47193b052e275cd0beddc85fd66090babee32b7d347",
+    "chunk_ids": [
+      "3dc2608b6f80d15ca07b169e25259aae:0",
+      "3dc2608b6f80d15ca07b169e25259aae:1",
+      "3dc2608b6f80d15ca07b169e25259aae:2",
+      "3dc2608b6f80d15ca07b169e25259aae:3",
+      "3dc2608b6f80d15ca07b169e25259aae:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:06:56"
+  },
+  "unity_manual/SL-ShaderLOD.md": {
+    "sha256": "43238000afa2eb429d8c494e471ec3e9b7762767491af3cb2b266cbf37153035",
+    "chunk_ids": [
+      "bcd274901e9026baa407e607f5b2c7c9:0",
+      "bcd274901e9026baa407e607f5b2c7c9:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:06:57"
+  },
+  "unity_manual/SL-ShaderPerformance.md": {
+    "sha256": "ef8d67cbbbbcfb90ca5fe1921055f24fb1540686bd9ce226035ecf55c99d6985",
+    "chunk_ids": [
+      "c1d647441be8498ccb97f5c955691bb1:0",
+      "c1d647441be8498ccb97f5c955691bb1:1",
+      "c1d647441be8498ccb97f5c955691bb1:2",
+      "c1d647441be8498ccb97f5c955691bb1:3",
+      "c1d647441be8498ccb97f5c955691bb1:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:06:58"
+  },
+  "unity_manual/SL-ShaderReplacement.md": {
+    "sha256": "8c3e0e389f74831825d3368240b3f368b0ed409adcfd78e04107e7c40eb6b67f",
+    "chunk_ids": [
+      "91f34a08e7e18a02e82a350c0de24bab:0",
+      "91f34a08e7e18a02e82a350c0de24bab:1",
+      "91f34a08e7e18a02e82a350c0de24bab:2",
+      "91f34a08e7e18a02e82a350c0de24bab:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:06:58"
+  },
+  "unity_manual/SL-ShadingLanguage.md": {
+    "sha256": "adf6f8c3168a556d865689213099649aebebcd3b27f177218c95c87f7100aea0",
+    "chunk_ids": [
+      "0d8924bde4c7e40f9360bf8ff963b9e1:0",
+      "0d8924bde4c7e40f9360bf8ff963b9e1:1",
+      "0d8924bde4c7e40f9360bf8ff963b9e1:2",
+      "0d8924bde4c7e40f9360bf8ff963b9e1:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:06:59"
+  },
+  "unity_manual/SL-Stencil.md": {
+    "sha256": "f653d5f2d5aa44787b39a760bd50dfa7875a90a958b6aaa152d4527cc918074c",
+    "chunk_ids": [
+      "270a2c307c26c1102bc3d7f9aaff27ed:0",
+      "270a2c307c26c1102bc3d7f9aaff27ed:1",
+      "270a2c307c26c1102bc3d7f9aaff27ed:2",
+      "270a2c307c26c1102bc3d7f9aaff27ed:3",
+      "270a2c307c26c1102bc3d7f9aaff27ed:4",
+      "270a2c307c26c1102bc3d7f9aaff27ed:5",
+      "270a2c307c26c1102bc3d7f9aaff27ed:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:07:01"
+  },
+  "unity_manual/SL-SubShader-object.md": {
+    "sha256": "da0f9c4b5971735790526d0fd6dcdc4da064785eed3d52b13c679af0dbd8d700",
+    "chunk_ids": [
+      "c20be3e0d5973a2244a3af1a00476038:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:01"
+  },
+  "unity_manual/SL-SubShader-pass.md": {
+    "sha256": "0f65f136778246174a3507bc8c220bad12551f27dd0d669f0be9934e05e63948",
+    "chunk_ids": [
+      "23928f663d0ca80508a10af4cec0f903:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:02"
+  },
+  "unity_manual/SL-SubShader.md": {
+    "sha256": "0e44925975fcd34bba0c2eec8af6e75bb7460d001145ce1bd6eaa7064c513a02",
+    "chunk_ids": [
+      "98f555047f80bdaf8a69e4ff99bc21e4:0",
+      "98f555047f80bdaf8a69e4ff99bc21e4:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:03"
+  },
+  "unity_manual/SL-SubShaderTags.md": {
+    "sha256": "4001f751e60645a1981ecfd48565ae5f8584a335b6638f44ac7e7bdce7facdf2",
+    "chunk_ids": [
+      "8e29f911888ef1610c6a0bc9d763f4c2:0",
+      "8e29f911888ef1610c6a0bc9d763f4c2:1",
+      "8e29f911888ef1610c6a0bc9d763f4c2:2",
+      "8e29f911888ef1610c6a0bc9d763f4c2:3",
+      "8e29f911888ef1610c6a0bc9d763f4c2:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:07:04"
+  },
+  "unity_manual/SL-SurfaceShader-create.md": {
+    "sha256": "919305f65f7feb0b3540a5dd44fca9733613843884948870a5643f2bacc617da",
+    "chunk_ids": [
+      "6f2b886708f1a36409a933a0966414f3:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:04"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-CustomData.md": {
+    "sha256": "c68fd5b6a7e44be605fbf8c851e75cc0356e2ab5ada8144a6173c1eaadc6cb95",
+    "chunk_ids": [
+      "93bdde3e66f132eb82bcfbd679e730bc:0",
+      "93bdde3e66f132eb82bcfbd679e730bc:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:05"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-Decals.md": {
+    "sha256": "646f141d5db2737e8123a7d6d475bbe48384c60f6cb5c60a9de75851ecdf45f8",
+    "chunk_ids": [
+      "87d9e012e3a1a6275d5391ead69bb3bf:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:06"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-FinalColor.md": {
+    "sha256": "64ec1b6082a36ca05a522dc3688f988cf9d24d2ef8c1c14bf601c62a196be26e",
+    "chunk_ids": [
+      "aa2fe06e1b9d5587a97125740ed86599:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:07"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-GlobalIllumination.md": {
+    "sha256": "f615ccc82a79b13bd12b2456d6e7dbec7a93e028be41fafcb9ec6b950e6075d5",
+    "chunk_ids": [
+      "36f1ba253150c0353b65486f8664daff:0",
+      "36f1ba253150c0353b65486f8664daff:1",
+      "36f1ba253150c0353b65486f8664daff:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:07:07"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-NormalMapping.md": {
+    "sha256": "30fae251138fb01910b297e26352befbadda4072778173aa5a094875230e9f90",
+    "chunk_ids": [
+      "be17fcd15c5f780e471225f921855779:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:08"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-Reflection.md": {
+    "sha256": "ecd1e7596cb83985ee5195fff253282b13600a895131d1bf0844b3aee43091d7",
+    "chunk_ids": [
+      "baa79707ee6c3fda99bcea3ba48c8c29:0",
+      "baa79707ee6c3fda99bcea3ba48c8c29:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:09"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-ToonRamp.md": {
+    "sha256": "186b7ee24ca2a764bd5264c8a45192d638e4e37d28716a1558e7bced4143ed47",
+    "chunk_ids": [
+      "56f201ad54e6fd9bf12dc73d4f6ed2fb:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:09"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-VertexModifier.md": {
+    "sha256": "410ee543b06f85c4f23c549ec72472d62786eaade81ef10090d9db92c7a4c5dc",
+    "chunk_ids": [
+      "be82f02bfc140bb0a963bf00f93bef4a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:10"
+  },
+  "unity_manual/SL-SurfaceShaderExamples-WrappedDiffuse.md": {
+    "sha256": "c301d3f1d76bce92f221db6aec3b4c012854bc981a4689b718ef897463afee7b",
+    "chunk_ids": [
+      "5c0cbe9c3a90073e3adcae941fe38da3:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:11"
+  },
+  "unity_manual/SL-SurfaceShaderExamples.md": {
+    "sha256": "86669b9d274a87d61e11744677bd355f08f66afc0892bb5cc5e9845f4b99962a",
+    "chunk_ids": [
+      "ccab2e7ed98302f31df328eb1c2ebb06:0",
+      "ccab2e7ed98302f31df328eb1c2ebb06:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:12"
+  },
+  "unity_manual/SL-SurfaceShaderLighting.md": {
+    "sha256": "13c3341585e9fc1b9d3fab2df1b90e6c405c2c5117bb5ed9f59ec13aa52eb20e",
+    "chunk_ids": [
+      "86bb5390f6a8d11095196c25fa5c53d2:0",
+      "86bb5390f6a8d11095196c25fa5c53d2:1",
+      "86bb5390f6a8d11095196c25fa5c53d2:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:07:12"
+  },
+  "unity_manual/SL-SurfaceShaderOptimize.md": {
+    "sha256": "69f48a1c456939a56894e12840a8c1896f55b42d3afa7774a1449d0da3819511",
+    "chunk_ids": [
+      "c2cf24c705d08eb62a8b932839f0a447:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:13"
+  },
+  "unity_manual/SL-SurfaceShaderTessellation.md": {
+    "sha256": "43877d3935a2009cf139fd9cec9f36c2b9880ccc0fabf58b74b41efcaefc5f6e",
+    "chunk_ids": [
+      "781f3ccde4de59a49a2804236b065e5b:0",
+      "781f3ccde4de59a49a2804236b065e5b:1",
+      "781f3ccde4de59a49a2804236b065e5b:2",
+      "781f3ccde4de59a49a2804236b065e5b:3",
+      "781f3ccde4de59a49a2804236b065e5b:4",
+      "781f3ccde4de59a49a2804236b065e5b:5",
+      "781f3ccde4de59a49a2804236b065e5b:6",
+      "781f3ccde4de59a49a2804236b065e5b:7",
+      "781f3ccde4de59a49a2804236b065e5b:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:07:15"
+  },
+  "unity_manual/SL-SurfaceShaders-output.md": {
+    "sha256": "9711b28bfaf87d00d5ae679c89770279a38313fd3ef54dcfea41ec4255d6fcbe",
+    "chunk_ids": [
+      "fd8b7eb370450aa61ce2dd181e984ca0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:15"
+  },
+  "unity_manual/SL-SurfaceShaders.md": {
+    "sha256": "e1e4e5f62c9607d53a564dcee1bf04db91ad5ec448a3bccfa71168180628b04f",
+    "chunk_ids": [
+      "9e52a4dd094263e2fd420a44fa27e8eb:0",
+      "9e52a4dd094263e2fd420a44fa27e8eb:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:16"
+  },
+  "unity_manual/SL-UnityShaderVariables.md": {
+    "sha256": "4c85ba262744d3fbdd2e9a8cc4826be9c98cfdeeee31e4a5903baefb3b724135",
+    "chunk_ids": [
+      "8ba306bb1a0703e78563f4b4f327349f:0",
+      "8ba306bb1a0703e78563f4b4f327349f:1",
+      "8ba306bb1a0703e78563f4b4f327349f:2",
+      "8ba306bb1a0703e78563f4b4f327349f:3",
+      "8ba306bb1a0703e78563f4b4f327349f:4",
+      "8ba306bb1a0703e78563f4b4f327349f:5",
+      "8ba306bb1a0703e78563f4b4f327349f:6",
+      "8ba306bb1a0703e78563f4b4f327349f:7",
+      "8ba306bb1a0703e78563f4b4f327349f:8",
+      "8ba306bb1a0703e78563f4b4f327349f:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-13T14:07:17"
+  },
+  "unity_manual/SL-Use16BitPrecisionInShaders.md": {
+    "sha256": "fde84af25b5b92cd580939427d6cea774fb8527db659492d4aa4a581d8ffc43b",
+    "chunk_ids": [
+      "45e6a54af4f3fec94ca3d6f9eba7ddf8:0",
+      "45e6a54af4f3fec94ca3d6f9eba7ddf8:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:07:18"
+  },
+  "unity_manual/SL-UsePass.md": {
+    "sha256": "87c2eb3bd07b6c49e2ffb756aac4d2c88df3e666a7928cd1093853009eeb7366",
+    "chunk_ids": [
+      "7e4fc1437e559ce034af5cb7e8f326f0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:07:19"
+  },
+  "unity_manual/SL-VertexProgramInputs.md": {
+    "sha256": "824cf044d8d4bef00d086330879ec5d608126579023323515a4d9de37fa2859e",
+    "chunk_ids": [
+      "6085f5fd0ef270b0d31d1f9f61f7d26e:0",
+      "6085f5fd0ef270b0d31d1f9f61f7d26e:1",
+      "6085f5fd0ef270b0d31d1f9f61f7d26e:2",
+      "6085f5fd0ef270b0d31d1f9f61f7d26e:3",
+      "6085f5fd0ef270b0d31d1f9f61f7d26e:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:08:07"
+  },
+  "unity_manual/SL-ZClip.md": {
+    "sha256": "41a11f7197d9953d23090a1dc2f875c73b71bb467c04444f19a25cd501133865",
+    "chunk_ids": [
+      "494b6e16c38e21e946fc391f3cc780a6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:07"
+  },
+  "unity_manual/SL-ZTest.md": {
+    "sha256": "95302161bebc4a501fcbe9b9a7d8b00805606758d3be6001f695c4fe0618fb6c",
+    "chunk_ids": [
+      "08753ec4369d040474b28aa1c4225cc7:0",
+      "08753ec4369d040474b28aa1c4225cc7:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:08:08"
+  },
+  "unity_manual/SL-ZWrite.md": {
+    "sha256": "091337412e34378bf805b7bc3936db8e0d1d9d11cbd70cd0adfd8288e260695f",
+    "chunk_ids": [
+      "adc7a58d6afa5a18bf3b2f003d327835:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:09"
+  },
+  "unity_manual/SL-landing.md": {
+    "sha256": "a5674684042636ffb4f41979dcc3976b61a17cc36d59e359d4ddf5a484c02e87",
+    "chunk_ids": [
+      "050fcb5f56d226e79511e62838e18766:0",
+      "050fcb5f56d226e79511e62838e18766:1",
+      "050fcb5f56d226e79511e62838e18766:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:10"
+  },
+  "unity_manual/SRPBatcher-Enable.md": {
+    "sha256": "b5556aa7ac0ff259fa585efd3c1aa0a32a68e66d3ce5e02ee15bd21cd4264964",
+    "chunk_ids": [
+      "f18cb905fdeee0e3b32aaee108fbf993:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:10"
+  },
+  "unity_manual/SRPBatcher-Incompatible.md": {
+    "sha256": "30601c252ca6929c037dff6efbb9007190234ac6e0547d49f449112ce1a880cc",
+    "chunk_ids": [
+      "d2b44314e9b68bb0c5bfddc717d1108e:0",
+      "d2b44314e9b68bb0c5bfddc717d1108e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:08:11"
+  },
+  "unity_manual/SRPBatcher-Materials.md": {
+    "sha256": "91cea937395397ccf985f6848329c890b6f8c6087f06e501fa9636261c317d2e",
+    "chunk_ids": [
+      "7019db763ce04c31493123669be66d9d:0",
+      "7019db763ce04c31493123669be66d9d:1",
+      "7019db763ce04c31493123669be66d9d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:12"
+  },
+  "unity_manual/SRPBatcher-Profile.md": {
+    "sha256": "33866d9941cfe302aadaaebaeec48c64ce54fa0a988f3a956042abdf1d3e3ca3",
+    "chunk_ids": [
+      "fd5584df2b535a66ffe013d5eca5a6ec:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:13"
+  },
+  "unity_manual/SRPBatcher-landing.md": {
+    "sha256": "223ed40f7b4ce102c9cbdec508b486e3a81a9a2a8426ecb2f347384b1aeec0a6",
+    "chunk_ids": [
+      "d07416146262fc23657483ad3d51c0b4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:13"
+  },
+  "unity_manual/SRPBatcher.md": {
+    "sha256": "48461668d021749becb0f5b76e3419aa27487881498de7a29b815dae85789bf9",
+    "chunk_ids": [
+      "7d400dc77d892c1eb5ac3ff55b6b21df:0",
+      "7d400dc77d892c1eb5ac3ff55b6b21df:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:08:14"
+  },
+  "unity_manual/SafeMode.md": {
+    "sha256": "c9b1acfbefc14b202a4acbce25cdc92a7c2530f9706c0bb38c59ee109b743fbc",
+    "chunk_ids": [
+      "a80ad4b5656bd410ad38cbda5c15e80c:0",
+      "a80ad4b5656bd410ad38cbda5c15e80c:1",
+      "a80ad4b5656bd410ad38cbda5c15e80c:2",
+      "a80ad4b5656bd410ad38cbda5c15e80c:3",
+      "a80ad4b5656bd410ad38cbda5c15e80c:4",
+      "a80ad4b5656bd410ad38cbda5c15e80c:5",
+      "a80ad4b5656bd410ad38cbda5c15e80c:6",
+      "a80ad4b5656bd410ad38cbda5c15e80c:7",
+      "a80ad4b5656bd410ad38cbda5c15e80c:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:08:15"
+  },
+  "unity_manual/Saving.md": {
+    "sha256": "b9ef2473652a14393eb5f4b5d013310b43ee6125e38fef704dd13b25bb82f45d",
+    "chunk_ids": [
+      "feaf51f28a4aea5af2ebd79d1c4d5691:0",
+      "feaf51f28a4aea5af2ebd79d1c4d5691:1",
+      "feaf51f28a4aea5af2ebd79d1c4d5691:2",
+      "feaf51f28a4aea5af2ebd79d1c4d5691:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:08:16"
+  },
+  "unity_manual/ScenePicking.md": {
+    "sha256": "17651ecc4633c7d991beeca3bb0a2a53504a2e651e2c14c7c102956b0760f873",
+    "chunk_ids": [
+      "5c0ff5618e00bd36e0fbdfc98ebd56be:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:17"
+  },
+  "unity_manual/ScenePickingControls.md": {
+    "sha256": "c59bcb1ef8b6de2a52cde55e85badb4ef563a7f0e2a28e2827d4e6d0be42f82d",
+    "chunk_ids": [
+      "beed81a296f898fff803d5afa0cd47fd:0",
+      "beed81a296f898fff803d5afa0cd47fd:1",
+      "beed81a296f898fff803d5afa0cd47fd:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:18"
+  },
+  "unity_manual/SceneViewCamera.md": {
+    "sha256": "9c5f264d8aa2a7a2afaed54d9b02b48d8f394f0df4133d42771b3774f97a88de",
+    "chunk_ids": [
+      "5d111286273947a056287ef4d23a4083:0",
+      "5d111286273947a056287ef4d23a4083:1",
+      "5d111286273947a056287ef4d23a4083:2",
+      "5d111286273947a056287ef4d23a4083:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:08:19"
+  },
+  "unity_manual/SceneViewContextMenu.md": {
+    "sha256": "b4127fbf07f87758e10909336e3a06e3999f468e10748c77f6fcd91dc1a0cd9a",
+    "chunk_ids": [
+      "8dd611562fa1d02e715a1dce252e0cd6:0",
+      "8dd611562fa1d02e715a1dce252e0cd6:1",
+      "8dd611562fa1d02e715a1dce252e0cd6:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:19"
+  },
+  "unity_manual/SceneViewNavigation.md": {
+    "sha256": "d87f759e3c76fa377fbf5e96976e65c0abba6def22026c744cf535dc30416c10",
+    "chunk_ids": [
+      "05ba9adb989dc385334203ad20e1c927:0",
+      "05ba9adb989dc385334203ad20e1c927:1",
+      "05ba9adb989dc385334203ad20e1c927:2",
+      "05ba9adb989dc385334203ad20e1c927:3",
+      "05ba9adb989dc385334203ad20e1c927:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:08:20"
+  },
+  "unity_manual/SceneVisibility.md": {
+    "sha256": "a0303679cf67154de3567149506668d4f81775006d7e8aeffdc30d4e130f7b34",
+    "chunk_ids": [
+      "8b078ba33543da18519a868d9e5ffa43:0",
+      "8b078ba33543da18519a868d9e5ffa43:1",
+      "8b078ba33543da18519a868d9e5ffa43:2",
+      "8b078ba33543da18519a868d9e5ffa43:3",
+      "8b078ba33543da18519a868d9e5ffa43:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:08:21"
+  },
+  "unity_manual/ScriptedImporters.md": {
+    "sha256": "aa2fa31b3cb1efb2679c3a049bb87fd242b37afba4e26ce7304b0cb41c5d24a7",
+    "chunk_ids": [
+      "615f56b81873effc0980326d20406e1c:0",
+      "615f56b81873effc0980326d20406e1c:1",
+      "615f56b81873effc0980326d20406e1c:2",
+      "615f56b81873effc0980326d20406e1c:3",
+      "615f56b81873effc0980326d20406e1c:4",
+      "615f56b81873effc0980326d20406e1c:5",
+      "615f56b81873effc0980326d20406e1c:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:08:22"
+  },
+  "unity_manual/ScriptingAssets.md": {
+    "sha256": "c6a7c9997f5c83028337145e009e6e25632f451c3e96d6f86e06a37d74ba3241",
+    "chunk_ids": [
+      "27d296245754766b717d98f9ae24e1fc:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:23"
+  },
+  "unity_manual/ScriptingRootMotion.md": {
+    "sha256": "9341295f713ef26b324fe8dbf11357e0ee0f01cb98ab6f6b2de517681d004ac2",
+    "chunk_ids": [
+      "37c91d8f29e96d8b0a66d0aa4841fd7a:0",
+      "37c91d8f29e96d8b0a66d0aa4841fd7a:1",
+      "37c91d8f29e96d8b0a66d0aa4841fd7a:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:24"
+  },
+  "unity_manual/Searching.md": {
+    "sha256": "30cf936e04cd8d4e0b5d3fec5bd6a3ac39725f99380130ae741292d4b8290109",
+    "chunk_ids": [
+      "306999a9f55a49ec2bbab3fe5de07f47:0",
+      "306999a9f55a49ec2bbab3fe5de07f47:1",
+      "306999a9f55a49ec2bbab3fe5de07f47:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:24"
+  },
+  "unity_manual/SelectGameObjects.md": {
+    "sha256": "d108ef47b293dcdcb8da61a4ac731a2ad6cb587126f5e8bd8b64ad922602cc3b",
+    "chunk_ids": [
+      "fffb987e7393c463604344d8c120a6fe:0",
+      "fffb987e7393c463604344d8c120a6fe:1",
+      "fffb987e7393c463604344d8c120a6fe:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:25"
+  },
+  "unity_manual/SelectionPiercingMenu.md": {
+    "sha256": "88f15e2fe1738e0e3630e2833ef2bae416df3e3a0eccc5811af6dfecd5401b9f",
+    "chunk_ids": [
+      "e98186b9c7fb9e66d33f6102ef3e83e3:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:26"
+  },
+  "unity_manual/Shader-Autodesk-Interactive.md": {
+    "sha256": "789f52ff46d56d19998a1d316d22b5e604b3d98e346ce39df6057e2ec8f7e628",
+    "chunk_ids": [
+      "728a42ce8d98ae64934b791f12cc33a7:0",
+      "728a42ce8d98ae64934b791f12cc33a7:1",
+      "728a42ce8d98ae64934b791f12cc33a7:2",
+      "728a42ce8d98ae64934b791f12cc33a7:3",
+      "728a42ce8d98ae64934b791f12cc33a7:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:08:27"
+  },
+  "unity_manual/Shaders.md": {
+    "sha256": "24e9fa15333e87473e7b03075544db9d5350cd5caa7625a51580b555b4a1d643",
+    "chunk_ids": [
+      "b4b618cfcf64f8a22a16e98c94d7b8fa:0",
+      "b4b618cfcf64f8a22a16e98c94d7b8fa:1",
+      "b4b618cfcf64f8a22a16e98c94d7b8fa:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:28"
+  },
+  "unity_manual/ShadowPerformance.md": {
+    "sha256": "5c34f2b270e12e17ac77ddec77f59f109245c1e3c325d8ef6f9232658209b735",
+    "chunk_ids": [
+      "bab343f9184d56f7260fd98ce66847b1:0",
+      "bab343f9184d56f7260fd98ce66847b1:1",
+      "bab343f9184d56f7260fd98ce66847b1:2",
+      "bab343f9184d56f7260fd98ce66847b1:3",
+      "bab343f9184d56f7260fd98ce66847b1:4",
+      "bab343f9184d56f7260fd98ce66847b1:5",
+      "bab343f9184d56f7260fd98ce66847b1:6",
+      "bab343f9184d56f7260fd98ce66847b1:7",
+      "bab343f9184d56f7260fd98ce66847b1:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T14:08:29"
+  },
+  "unity_manual/Shadows.md": {
+    "sha256": "f1681ac8c04732fa66c6f82c23df702621a03937448f3929b4bc5c40a3a7d8dd",
+    "chunk_ids": [
+      "15fa2985a14af2628faeff6b9a0e46e4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:30"
+  },
+  "unity_manual/ShortcutsManager.md": {
+    "sha256": "2edfa9547d4140893af50650ff5761eb422bcbe0e4f432f0597b87a035501ad4",
+    "chunk_ids": [
+      "c1b3cfc350e376639dbaec852e5f24b8:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:31"
+  },
+  "unity_manual/SinglePassInstancing.md": {
+    "sha256": "0ab16e9e85d0fd1722ef1daa7e60a4a9c05c19df1242c2cf73d2a6b2953ad7cf",
+    "chunk_ids": [
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:0",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:1",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:2",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:3",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:4",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:5",
+      "0f56724789d3e5e1c6dfb54c57ecd8b5:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:08:32"
+  },
+  "unity_manual/SinglePassStereoRendering.md": {
+    "sha256": "5f0d8336f9a384182f2d3cfa17b4fcd88e5878371645877e8baa1b39601c7508",
+    "chunk_ids": [
+      "4ab4b93654f9dc8b72a48f76ae674597:0",
+      "4ab4b93654f9dc8b72a48f76ae674597:1",
+      "4ab4b93654f9dc8b72a48f76ae674597:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:55"
+  },
+  "unity_manual/SmartMerge.md": {
+    "sha256": "6e0ab0bf238dcaf18fe7a0eb47db89205d50e5ae4bd015fdb270b032f2428012",
+    "chunk_ids": [
+      "6749cdf20c42ddca233d0d4195874ff3:0",
+      "6749cdf20c42ddca233d0d4195874ff3:1",
+      "6749cdf20c42ddca233d0d4195874ff3:2",
+      "6749cdf20c42ddca233d0d4195874ff3:3",
+      "6749cdf20c42ddca233d0d4195874ff3:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T14:08:56"
+  },
+  "unity_manual/SnapIncrements.md": {
+    "sha256": "66858cc997a9eaee613132acdac22e8d95d12a6d314aea1a4e2de3d72dba6b77",
+    "chunk_ids": [
+      "15418b70269ba07e0dc7efd11f35a0a4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:56"
+  },
+  "unity_manual/SparseTextures.md": {
+    "sha256": "25a7996bbcfecd04cd18a4b4c25d6f564ff2932de99aa4979e23a2d781cac283",
+    "chunk_ids": [
+      "ba52f14613dd359133db7aad018bb1a8:0",
+      "ba52f14613dd359133db7aad018bb1a8:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:08:57"
+  },
+  "unity_manual/SpecialFolders.md": {
+    "sha256": "5acc1fb4eca780358e987a13a9f27a7cf080e56e43ab91960eaf88a9b8caea68",
+    "chunk_ids": [
+      "d4806367452d1a63978c20e7dba11b82:0",
+      "d4806367452d1a63978c20e7dba11b82:1",
+      "d4806367452d1a63978c20e7dba11b82:2",
+      "d4806367452d1a63978c20e7dba11b82:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:08:58"
+  },
+  "unity_manual/SpeedTree-landing.md": {
+    "sha256": "80bbbea6bdb516e37904613594f0a198749b8937e5807416bdf9866ad8d8eaa7",
+    "chunk_ids": [
+      "3fd6d0d7dfa7a532a9a0295ecb4f3dcb:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:08:58"
+  },
+  "unity_manual/SpeedTree.md": {
+    "sha256": "5d196f40bb8fe803429eb6941325be22a3f9a555355c696147e6a21e8f3fffff",
+    "chunk_ids": [
+      "fa6d93d3a20e1e8588477e7ca3bccb21:0",
+      "fa6d93d3a20e1e8588477e7ca3bccb21:1",
+      "fa6d93d3a20e1e8588477e7ca3bccb21:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:08:59"
+  },
+  "unity_manual/SpeedTreeImporter-Materials.md": {
+    "sha256": "db7b4725af0a502d3610d66b1876ab04bc88ac011bf9843bd1d068280a9252ca",
+    "chunk_ids": [
+      "f829511ca85da63ee9a2245170b8d043:0",
+      "f829511ca85da63ee9a2245170b8d043:1",
+      "f829511ca85da63ee9a2245170b8d043:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:00"
+  },
+  "unity_manual/SpeedTreeImporter-Model.md": {
+    "sha256": "805fef2e2187f1c0845d530c7883b81818568de79d3377536fa20ee2a3b314e2",
+    "chunk_ids": [
+      "2f8f5140e60183c461391f64bee2ebaf:0",
+      "2f8f5140e60183c461391f64bee2ebaf:1",
+      "2f8f5140e60183c461391f64bee2ebaf:2",
+      "2f8f5140e60183c461391f64bee2ebaf:3",
+      "2f8f5140e60183c461391f64bee2ebaf:4",
+      "2f8f5140e60183c461391f64bee2ebaf:5",
+      "2f8f5140e60183c461391f64bee2ebaf:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:09:01"
+  },
+  "unity_manual/Splittinganimations.md": {
+    "sha256": "6c63dd21979d4abf20eb365b02a25a10f2e1dc0e6faef8dcb126991130ba7330",
+    "chunk_ids": [
+      "cf93e4ab22af19b918ea8a65afe4d235:0",
+      "cf93e4ab22af19b918ea8a65afe4d235:1",
+      "cf93e4ab22af19b918ea8a65afe4d235:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:02"
+  },
+  "unity_manual/StandardShaderChangeProperties.md": {
+    "sha256": "56c7f91b0b0119fb810a5a91a595bcb6b597912d56c64235497a0bfb59337237",
+    "chunk_ids": [
+      "30666204e9ebac0a9150f79bf443f098:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:02"
+  },
+  "unity_manual/StandardShaderFresnel.md": {
+    "sha256": "2331a687bd34c0d93992b5e3e84696b852207ec11326686325fd512078e5099f",
+    "chunk_ids": [
+      "36683ac9aa800fca73dcc20f2acb4961:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:03"
+  },
+  "unity_manual/StandardShaderMakeYourOwn.md": {
+    "sha256": "d4658d3623f26f350acf2f917ecd6074fb1c4dc6e6411c6036e618b8dcb1d19a",
+    "chunk_ids": [
+      "29a228e702cb9d7043f3996c50354240:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:04"
+  },
+  "unity_manual/StandardShaderMaterialCharts.md": {
+    "sha256": "31b1e5eef1383cb54a7119e9ed1b3ff02181f79a0062264b54eb07ac711fabb9",
+    "chunk_ids": [
+      "22719a7ece2703ca5b2bfcf31204c254:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:04"
+  },
+  "unity_manual/StandardShaderMaterialParameterAlbedoColor.md": {
+    "sha256": "f7d84190778f9fa2f751974e57f568ef6df8cf1b0a82e1af6babc35c5eaa9e5c",
+    "chunk_ids": [
+      "0d3e445342c13092568ce732e29c5617:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:05"
+  },
+  "unity_manual/StandardShaderMaterialParameterDetail.md": {
+    "sha256": "9408864987deec26ac3fbfdfba1fe779cd7a9dcd0926ae59d3453bbceb433bd3",
+    "chunk_ids": [
+      "dd61449f5e56742d5b9243051c4723e2:0",
+      "dd61449f5e56742d5b9243051c4723e2:1",
+      "dd61449f5e56742d5b9243051c4723e2:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:06"
+  },
+  "unity_manual/StandardShaderMaterialParameterEmission.md": {
+    "sha256": "bbaffc1464108ae7bfe1cf30d53924f6caa2379646e7cc315d434dbdee1d9f24",
+    "chunk_ids": [
+      "cdf4600399b3ef9a3c50965f9552c9b4:0",
+      "cdf4600399b3ef9a3c50965f9552c9b4:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:09:07"
+  },
+  "unity_manual/StandardShaderMaterialParameterHeightMap.md": {
+    "sha256": "6f1622e9f0421498f8fb8e96788a12246b26e97ab990a325523987994fc1ec49",
+    "chunk_ids": [
+      "6476d7ed146082ef97edc3365e37ccab:0",
+      "6476d7ed146082ef97edc3365e37ccab:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T14:09:07"
+  },
+  "unity_manual/StandardShaderMaterialParameterMetallic.md": {
+    "sha256": "95b4634a65a1ef1e738e5beb86ba68b6101291ac3af6b3fd1ab1580dcbdadcfb",
+    "chunk_ids": [
+      "8168820093def902b72b937c1112d698:0",
+      "8168820093def902b72b937c1112d698:1",
+      "8168820093def902b72b937c1112d698:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:08"
+  },
+  "unity_manual/StandardShaderMaterialParameterNormalMap.md": {
+    "sha256": "2847bb2d751932d7b6452ff9027b5fee202323af47d20256bd503f1ae259ec83",
+    "chunk_ids": [
+      "1e25d33dee844e95bda9d77d81c7e44a:0",
+      "1e25d33dee844e95bda9d77d81c7e44a:1",
+      "1e25d33dee844e95bda9d77d81c7e44a:2",
+      "1e25d33dee844e95bda9d77d81c7e44a:3",
+      "1e25d33dee844e95bda9d77d81c7e44a:4",
+      "1e25d33dee844e95bda9d77d81c7e44a:5",
+      "1e25d33dee844e95bda9d77d81c7e44a:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T14:09:09"
+  },
+  "unity_manual/StandardShaderMaterialParameterNormalMapImport.md": {
+    "sha256": "71a8f4cfc71ece41322e4932e04c79c06af73053ad65a18f108fe6268c1b456e",
+    "chunk_ids": [
+      "fecacad9caee9ca12d248783ab6c40a3:0",
+      "fecacad9caee9ca12d248783ab6c40a3:1",
+      "fecacad9caee9ca12d248783ab6c40a3:2",
+      "fecacad9caee9ca12d248783ab6c40a3:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T14:09:10"
+  },
+  "unity_manual/StandardShaderMaterialParameterNormalMapLanding.md": {
+    "sha256": "b66f6e99c76166829f9efc7cd556e9360837c68f8fa99557173b2683fb126975",
+    "chunk_ids": [
+      "58327f990876cf8f0f0306de1f025480:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T14:09:11"
+  },
+  "unity_manual/StandardShaderMaterialParameterNormalMapSurfaceNormals.md": {
+    "sha256": "8cfd926a2fd0f2117742a41aeba9eae207bbd61408213a344311162d684d6478",
+    "chunk_ids": [
+      "3ad87019531daac76dee160660de1b10:0",
+      "3ad87019531daac76dee160660de1b10:1",
+      "3ad87019531daac76dee160660de1b10:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:12"
+  },
+  "unity_manual/StandardShaderMaterialParameterOcclusionMap.md": {
+    "sha256": "3d90f13b7acad3e107c021ba679837e3bf65c4192514987e044323360fbfdb01",
+    "chunk_ids": [
+      "6c7ddd892691c5b34ff72bab436ccd90:0",
+      "6c7ddd892691c5b34ff72bab436ccd90:1",
+      "6c7ddd892691c5b34ff72bab436ccd90:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:12"
+  },
+  "unity_manual/StandardShaderMaterialParameterRenderingMode.md": {
+    "sha256": "1a4dd58138dfa6496d23a9c069ebd67640de3de87f0f2da3a868948766b1c761",
+    "chunk_ids": [
+      "2d336e8c0a263377726df273693137af:0",
+      "2d336e8c0a263377726df273693137af:1",
+      "2d336e8c0a263377726df273693137af:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T14:09:13"
+  },
+  "unity_manual/StandardShaderMaterialParameters.md": {
+    "sha256": "3e1ffe1a7f85551c6f7228ec01d2508e158b5ce9d7e23bddf7350d8145a6c65f",
+    "chunk_ids": [
+      "379edef2d84492cb9ca2a1da3dae15f5:0",
+      "379edef2d84492cb9ca2a1da3dae15f5:1",
+      "379edef2d84492cb9ca2a1da3dae15f5:2",
+      "379edef2d84492cb9ca2a1da3dae15f5:3",
+      "379edef2d84492cb9ca2a1da3dae15f5:4",
+      "379edef2d84492cb9ca2a1da3dae15f5:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T16:36:52"
+  },
+  "unity_manual/StandardShaderMetallicVsSpecular.md": {
+    "sha256": "19a116372c3514cfbc010487cabd1935c8639802bf164ba3446b046fa83a93d9",
+    "chunk_ids": [
+      "3d20acc40975790744719ac86767f27d:0",
+      "3d20acc40975790744719ac86767f27d:1",
+      "3d20acc40975790744719ac86767f27d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:36:53"
+  },
+  "unity_manual/StandardShaderTextureMaps.md": {
+    "sha256": "9aa4eb30df32a592ec21913bed134debda4c922be17a6a67aaf015d0bc6b4e9d",
+    "chunk_ids": [
+      "dfff3ae54eee3523cd894c1ec90922c8:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:36:54"
+  },
+  "unity_manual/StandardShaderTransparency.md": {
+    "sha256": "4729550c46935bf13f353d063d46ebdf5961bd13810af2a7e65696d322ba4aec",
+    "chunk_ids": [
+      "0f4ed588874a73be3c40a2b1539fca28:0",
+      "0f4ed588874a73be3c40a2b1539fca28:1",
+      "0f4ed588874a73be3c40a2b1539fca28:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:36:54"
+  },
+  "unity_manual/StateMachineBasics.md": {
+    "sha256": "b7fe264f971afad0150912d2b42369b0640ae54cb143d2361e735c1f38cf2052",
+    "chunk_ids": [
+      "7b587c88c8533affe79df5011a15b071:0",
+      "7b587c88c8533affe79df5011a15b071:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:36:55"
+  },
+  "unity_manual/StateMachineBehaviours.md": {
+    "sha256": "76a2b6e66b5a7cba98cd029195c4804ea33912f3a2825df17cc7d187045a729b",
+    "chunk_ids": [
+      "31db83363c7a0ab402ee306d422de01e:0",
+      "31db83363c7a0ab402ee306d422de01e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:36:56"
+  },
+  "unity_manual/StateMachineTransitions.md": {
+    "sha256": "f5546cf18ed54007c670082ea14fa34d8a7218cd9cb4687a7c66df165d1909d9",
+    "chunk_ids": [
+      "fa131c4e6da615eaf84a59a7253e6ac5:0",
+      "fa131c4e6da615eaf84a59a7253e6ac5:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:36:57"
+  },
+  "unity_manual/StaticObjects.md": {
+    "sha256": "f61c5b26c8b6cd61117784f3134f81f1336e9057436c6a5521b14c037c181e83",
+    "chunk_ids": [
+      "1bc9151b1d0902561fd0129c77e6d07a:0",
+      "1bc9151b1d0902561fd0129c77e6d07a:1",
+      "1bc9151b1d0902561fd0129c77e6d07a:2",
+      "1bc9151b1d0902561fd0129c77e6d07a:3",
+      "1bc9151b1d0902561fd0129c77e6d07a:4",
+      "1bc9151b1d0902561fd0129c77e6d07a:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T16:36:58"
+  },
+  "unity_manual/StatusBar.md": {
+    "sha256": "179ca34c3365f9c95d2894f6cbb9c3c899718a79cf0f93ccde9896c2cad3a274",
+    "chunk_ids": [
+      "c2d526ec542f6a2b3ef6a16ff531502f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:36:58"
+  },
+  "unity_manual/StreamingAssets.md": {
+    "sha256": "7c50231777bb7662c264364b153803efd355f4db0f79fd33eafe806824ca59aa",
+    "chunk_ids": [
+      "538cedd12746e3ae9ff69d69258cbe96:0",
+      "538cedd12746e3ae9ff69d69258cbe96:1",
+      "538cedd12746e3ae9ff69d69258cbe96:2",
+      "538cedd12746e3ae9ff69d69258cbe96:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:36:59"
+  },
+  "unity_manual/StructureOfXcodeProject.md": {
+    "sha256": "72a00c6fe79848dca1c909bedf892ee14a33a3b5132855522fe1095a5104dc89",
+    "chunk_ids": [
+      "53757f9de480e9528c3d22f193423f04:0",
+      "53757f9de480e9528c3d22f193423f04:1",
+      "53757f9de480e9528c3d22f193423f04:2",
+      "53757f9de480e9528c3d22f193423f04:3",
+      "53757f9de480e9528c3d22f193423f04:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:37:00"
+  },
+  "unity_manual/SupportingPresets.md": {
+    "sha256": "954db0613e0ff5f0f2424c00200191ab0cfe7f7db4bedc48ccf03cd1a6c3bb16",
+    "chunk_ids": [
+      "d31ad1493b05dbafa59cca7710336e39:0",
+      "d31ad1493b05dbafa59cca7710336e39:1",
+      "d31ad1493b05dbafa59cca7710336e39:2",
+      "d31ad1493b05dbafa59cca7710336e39:3",
+      "d31ad1493b05dbafa59cca7710336e39:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:37:01"
+  },
+  "unity_manual/Tags.md": {
+    "sha256": "da02d7036b3968547962b35577206a94f486efc234b1e1d406a4f715aea11465",
+    "chunk_ids": [
+      "2012b77c827d80c70df081d77868b8ba:0",
+      "2012b77c827d80c70df081d77868b8ba:1",
+      "2012b77c827d80c70df081d77868b8ba:2",
+      "2012b77c827d80c70df081d77868b8ba:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:37:02"
+  },
+  "unity_manual/TargetMatching.md": {
+    "sha256": "260f2ca68cb773e547937c295fff5ed9d1adf5e34df3313fae01acb0e8e14047",
+    "chunk_ids": [
+      "a66c0f7bf6f608d79e79190700fabffb:0",
+      "a66c0f7bf6f608d79e79190700fabffb:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:37:02"
+  },
+  "unity_manual/TermsOfUse.md": {
+    "sha256": "3dc51da4ac1cfc58e18d02a27d3c1f1b9d7ab48464663975403e59004c8d503d",
+    "chunk_ids": [
+      "85b56675971db59fc2180b75ac018536:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:03"
+  },
+  "unity_manual/TerrainTools.md": {
+    "sha256": "5c87753ad448a3f69931c453080b6235e097686feac63107d60f916fef9b42c2",
+    "chunk_ids": [
+      "ad4b25a5d792c610a2fdde4609a6a899:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:04"
+  },
+  "unity_manual/TextSceneFormat.md": {
+    "sha256": "49604f9d60be8e03c975d564a3ce44ba765ed55b858bff3abfaae7ea2faeb6d1",
+    "chunk_ids": [
+      "39767351cdaadb378ea33984cb108ba4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:05"
+  },
+  "unity_manual/TextureLoading.md": {
+    "sha256": "83dd1518d8994ce157026399daf1a038a43870baed55ed549d9631f049496264",
+    "chunk_ids": [
+      "e06e41904c737c1a8ffe25dee5dcc1a9:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:05"
+  },
+  "unity_manual/TextureStreaming-analyze.md": {
+    "sha256": "7ff1aeab77d280bd05af5e06156b7c6cbc8eac0ff8acb1ee91c8c69a770f8881",
+    "chunk_ids": [
+      "0e84d9ac9059609b91d349851631c5ed:0",
+      "0e84d9ac9059609b91d349851631c5ed:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:37:06"
+  },
+  "unity_manual/TextureStreaming-configure.md": {
+    "sha256": "ef02d1664e33567613b8780637174cb3f0c83b1c964dcdc686f7f70df71af91f",
+    "chunk_ids": [
+      "bebbe3b11e8a1736db2e567178d4354c:0",
+      "bebbe3b11e8a1736db2e567178d4354c:1",
+      "bebbe3b11e8a1736db2e567178d4354c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:37:07"
+  },
+  "unity_manual/TextureStreaming-introduction.md": {
+    "sha256": "c3b668a4696ed767a157d6173a174f322553269e6c1ef4b5e381cedefe6716bb",
+    "chunk_ids": [
+      "4842337fe55b01d3cb63777c1e88e48e:0",
+      "4842337fe55b01d3cb63777c1e88e48e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:37:08"
+  },
+  "unity_manual/TextureStreaming-override-mipmap-level.md": {
+    "sha256": "b5cb620874dd5f3c4332e662d1f4540611a3d45fe376c7df71102fc486054521",
+    "chunk_ids": [
+      "b51f4ec4aa2bab3eb38d6b642e783e0b:0",
+      "b51f4ec4aa2bab3eb38d6b642e783e0b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:37:08"
+  },
+  "unity_manual/TextureStreaming-preload.md": {
+    "sha256": "020eb039615298bcce3dee6f08109623e5eb5e766baf1d1dbd08f19e5de502ee",
+    "chunk_ids": [
+      "662ce523487bdf4e645c4ca4f86b4f2e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:09"
+  },
+  "unity_manual/TextureStreaming-use.md": {
+    "sha256": "efae9ea8dd4fbe63fadeddae6613b5d9368112c5b3be71f68344af3aa737306a",
+    "chunk_ids": [
+      "dbd3cd9596bd44f21c0f7ecc66e8af00:0",
+      "dbd3cd9596bd44f21c0f7ecc66e8af00:1",
+      "dbd3cd9596bd44f21c0f7ecc66e8af00:2",
+      "dbd3cd9596bd44f21c0f7ecc66e8af00:3",
+      "dbd3cd9596bd44f21c0f7ecc66e8af00:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:37:10"
+  },
+  "unity_manual/TextureStreaming.md": {
+    "sha256": "b3d6fe507be38f6dc3e32d69d8ac47e413020321397260fcd4615f0535afa0f0",
+    "chunk_ids": [
+      "099e1ac8997e87b99c2d35cd1ba9eb16:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:11"
+  },
+  "unity_manual/Textures-landing.md": {
+    "sha256": "63853dda614f64f35c83c895fa5bbbf8adddce79db80165215b713f894a2241c",
+    "chunk_ids": [
+      "75bda85e9e75511da940733bbe2d8fec:0",
+      "75bda85e9e75511da940733bbe2d8fec:1",
+      "75bda85e9e75511da940733bbe2d8fec:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:37:11"
+  },
+  "unity_manual/Textures.md": {
+    "sha256": "be2de51a1e15222fa09ee4779d2b18e1e70daab3a54c9afaa6651fcadd750992",
+    "chunk_ids": [
+      "dcc6e86f546e4247c703c52e370a5c44:0",
+      "dcc6e86f546e4247c703c52e370a5c44:1",
+      "dcc6e86f546e4247c703c52e370a5c44:2",
+      "dcc6e86f546e4247c703c52e370a5c44:3",
+      "dcc6e86f546e4247c703c52e370a5c44:4",
+      "dcc6e86f546e4247c703c52e370a5c44:5",
+      "dcc6e86f546e4247c703c52e370a5c44:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T16:37:12"
+  },
+  "unity_manual/Toolbar-reference.md": {
+    "sha256": "3d5b5940c5a39c97e706402f88efd9e0a177af8019afca9d3d2795a2e7e39128",
+    "chunk_ids": [
+      "629a0e8f58f31de2e0be2f4d8f98db54:0",
+      "629a0e8f58f31de2e0be2f4d8f98db54:1",
+      "629a0e8f58f31de2e0be2f4d8f98db54:2",
+      "629a0e8f58f31de2e0be2f4d8f98db54:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:37:13"
+  },
+  "unity_manual/Toolbar.md": {
+    "sha256": "f511fb3c4bb3020d86dcb030ffec42c34b60eebf8fa9d0c1e2866e9c61fd4fed",
+    "chunk_ids": [
+      "45fe6236129d16becdafeaa3baea5a3e:0",
+      "45fe6236129d16becdafeaa3baea5a3e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:37:14"
+  },
+  "unity_manual/TrackerModules.md": {
+    "sha256": "d7b295dccd9020c97684f58c186071f29854ae8cb17bb00211d8385006a47b40",
+    "chunk_ids": [
+      "4bebceee24783d9b23ce03df99181016:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:37:15"
+  },
+  "unity_manual/TreeViewAPI.md": {
+    "sha256": "d370f27b73b00225039d0298b101ad305572f039183e11c77e7a6e6a9807ea8b",
+    "chunk_ids": [
+      "4148f5867799e4bdee200714d838dae3:0",
+      "4148f5867799e4bdee200714d838dae3:1",
+      "4148f5867799e4bdee200714d838dae3:2",
+      "4148f5867799e4bdee200714d838dae3:3",
+      "4148f5867799e4bdee200714d838dae3:4",
+      "4148f5867799e4bdee200714d838dae3:5",
+      "4148f5867799e4bdee200714d838dae3:6",
+      "4148f5867799e4bdee200714d838dae3:7",
+      "4148f5867799e4bdee200714d838dae3:8",
+      "4148f5867799e4bdee200714d838dae3:9",
+      "4148f5867799e4bdee200714d838dae3:10",
+      "4148f5867799e4bdee200714d838dae3:11",
+      "4148f5867799e4bdee200714d838dae3:12",
+      "4148f5867799e4bdee200714d838dae3:13"
+    ],
+    "chunk_count": 14,
+    "updated_at": "2026-03-13T16:37:16"
+  },
+  "unity_manual/TroubleShooting.md": {
+    "sha256": "e3e6e73bd1320e505cfc413286ab1d79f5ea4731d6dd6b3593ab5ea836278f1d",
+    "chunk_ids": [
+      "fd2807748815d5fd28b52570750dcaf2:0",
+      "fd2807748815d5fd28b52570750dcaf2:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:38:05"
+  },
+  "unity_manual/TroubleShootingEditor.md": {
+    "sha256": "07591f49198ac5df2478443ef38b4fef67cb36b30c289636ff238324bc8f16fd",
+    "chunk_ids": [
+      "9303a48056086ef37d9180e998a720b2:0",
+      "9303a48056086ef37d9180e998a720b2:1",
+      "9303a48056086ef37d9180e998a720b2:2",
+      "9303a48056086ef37d9180e998a720b2:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:38:06"
+  },
+  "unity_manual/TroubleShootingIPhone.md": {
+    "sha256": "08e4c9c13e3910a1e1d5a2b2db666e6138fec7dd55afa4cb470e6345cf14807d",
+    "chunk_ids": [
+      "1d3dee45ea1b7596b6e3095021b6afc4:0",
+      "1d3dee45ea1b7596b6e3095021b6afc4:1",
+      "1d3dee45ea1b7596b6e3095021b6afc4:2",
+      "1d3dee45ea1b7596b6e3095021b6afc4:3",
+      "1d3dee45ea1b7596b6e3095021b6afc4:4",
+      "1d3dee45ea1b7596b6e3095021b6afc4:5",
+      "1d3dee45ea1b7596b6e3095021b6afc4:6",
+      "1d3dee45ea1b7596b6e3095021b6afc4:7",
+      "1d3dee45ea1b7596b6e3095021b6afc4:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T16:38:06"
+  },
+  "unity_manual/UI-system-compare.md": {
+    "sha256": "1126e85a42994ad1e9dcff943ab79f4b1fb1fbad2d0452b9aa7adfd3d7d8f535",
+    "chunk_ids": [
+      "30e5a3aff725bf6c5371e51bf1ce11e2:0",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:1",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:2",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:3",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:4",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:5",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:6",
+      "30e5a3aff725bf6c5371e51bf1ce11e2:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-13T16:38:08"
+  },
+  "unity_manual/UIB-getting-started.md": {
+    "sha256": "b9512d5bd3d4e80d2307daaeb23e0d599751e70bb17202323e14fe81a9ef7835",
+    "chunk_ids": [
+      "cd2264870d0c655639d7d6a575f4f42c:0",
+      "cd2264870d0c655639d7d6a575f4f42c:1",
+      "cd2264870d0c655639d7d6a575f4f42c:2",
+      "cd2264870d0c655639d7d6a575f4f42c:3",
+      "cd2264870d0c655639d7d6a575f4f42c:4",
+      "cd2264870d0c655639d7d6a575f4f42c:5",
+      "cd2264870d0c655639d7d6a575f4f42c:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T16:38:09"
+  },
+  "unity_manual/UIB-interface-overview.md": {
+    "sha256": "39671b0770a8827c13400e929efe5fe0164a6eb4352e2411e8ec63cfb7b79a46",
+    "chunk_ids": [
+      "6c8e1420ead17e30a15f19699ec660e4:0",
+      "6c8e1420ead17e30a15f19699ec660e4:1",
+      "6c8e1420ead17e30a15f19699ec660e4:2",
+      "6c8e1420ead17e30a15f19699ec660e4:3",
+      "6c8e1420ead17e30a15f19699ec660e4:4",
+      "6c8e1420ead17e30a15f19699ec660e4:5",
+      "6c8e1420ead17e30a15f19699ec660e4:6",
+      "6c8e1420ead17e30a15f19699ec660e4:7",
+      "6c8e1420ead17e30a15f19699ec660e4:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T16:38:11"
+  },
+  "unity_manual/UIB-project-setting.md": {
+    "sha256": "f3d6a1bd32fe21fd0b6e4ac8d837136c56bf3e9cfb9815e425f294cbfcafe828",
+    "chunk_ids": [
+      "521a07c50f56833ff51d726ec1dcaa7f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:38:11"
+  },
+  "unity_manual/UIB-structuring-ui-custom-elements.md": {
+    "sha256": "1dc1725a4ae5e101cef751e327f1b51540aad2578ef055cec3baff87af9c73b8",
+    "chunk_ids": [
+      "4cf82cd721e89ea0ea652cfd57eb817b:0",
+      "4cf82cd721e89ea0ea652cfd57eb817b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:38:12"
+  },
+  "unity_manual/UIB-structuring-ui-elements.md": {
+    "sha256": "148fc2697fbe390efc3be551d80292a761ca942ecfbc8de20dd8f114f606e607",
+    "chunk_ids": [
+      "34e3183bb27bbd929d645fc02b56a937:0",
+      "34e3183bb27bbd929d645fc02b56a937:1",
+      "34e3183bb27bbd929d645fc02b56a937:2",
+      "34e3183bb27bbd929d645fc02b56a937:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:38:13"
+  },
+  "unity_manual/UIB-structuring-ui-templates.md": {
+    "sha256": "e02bc4f4c839f9f8c31d528232336f0ccc7da883e46bf28c2f0ce24fb75206ac",
+    "chunk_ids": [
+      "787229cedfd5fe9e21214a2e55765c9c:0",
+      "787229cedfd5fe9e21214a2e55765c9c:1",
+      "787229cedfd5fe9e21214a2e55765c9c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:38:14"
+  },
+  "unity_manual/UIB-styling-ui-backgrounds.md": {
+    "sha256": "87f752b436a700cbcf6c5e27e72afb8ee92a3310aeec5de110d5dc9c8c995a59",
+    "chunk_ids": [
+      "c06261d2cca61cb6806d3241fe6e7c9a:0",
+      "c06261d2cca61cb6806d3241fe6e7c9a:1",
+      "c06261d2cca61cb6806d3241fe6e7c9a:2",
+      "c06261d2cca61cb6806d3241fe6e7c9a:3",
+      "c06261d2cca61cb6806d3241fe6e7c9a:4",
+      "c06261d2cca61cb6806d3241fe6e7c9a:5",
+      "c06261d2cca61cb6806d3241fe6e7c9a:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T16:38:15"
+  },
+  "unity_manual/UIB-styling-ui-text.md": {
+    "sha256": "1fce49677469f4f1305aabeb7f1716f241c4dd074c567b626d4a6298a40c9255",
+    "chunk_ids": [
+      "019e308cf8ef6fd321f4009a5718c070:0",
+      "019e308cf8ef6fd321f4009a5718c070:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:38:16"
+  },
+  "unity_manual/UIB-styling-ui-using-uss-selectors.md": {
+    "sha256": "da9e9594bbc1bebe44cd000724ea18d00df199a722cb70fcb2eb5985ede303ab",
+    "chunk_ids": [
+      "30f18772acde93a058389ab837d0bce4:0",
+      "30f18772acde93a058389ab837d0bce4:1",
+      "30f18772acde93a058389ab837d0bce4:2",
+      "30f18772acde93a058389ab837d0bce4:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:38:17"
+  },
+  "unity_manual/UIB-styling-ui-using-uss-variables.md": {
+    "sha256": "5da19228ab508437ffc1fd6eaff863d3ef9d4965bc4281dd2ae138ca0934da65",
+    "chunk_ids": [
+      "0aed86fe61cc05a0e182a6324277635f:0",
+      "0aed86fe61cc05a0e182a6324277635f:1",
+      "0aed86fe61cc05a0e182a6324277635f:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:38:17"
+  },
+  "unity_manual/UIB-testing-ui.md": {
+    "sha256": "78f2a84ffb9a4b9c6ce4081a9f037739c26eafb28f1228d0549eaea1c8e3154c",
+    "chunk_ids": [
+      "7b08667f79880f0250d880ad4c3a0a7a:0",
+      "7b08667f79880f0250d880ad4c3a0a7a:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:38:18"
+  },
+  "unity_manual/UIBuilder.md": {
+    "sha256": "f0a039f3080adecf559f0eb58ffe91acb4cadd52a786e207929422a908db5ab0",
+    "chunk_ids": [
+      "61292d410d880cc26aea10cda4113afd:0",
+      "61292d410d880cc26aea10cda4113afd:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:38:19"
+  },
+  "unity_manual/UIE-Binding.md": {
+    "sha256": "9c981317c4660509180b6c90362fa2e60a32fdf4d827a332abd223a96c416a03",
+    "chunk_ids": [
+      "86061aa9f305aa1346bfc6371136e7a3:0",
+      "86061aa9f305aa1346bfc6371136e7a3:1",
+      "86061aa9f305aa1346bfc6371136e7a3:2",
+      "86061aa9f305aa1346bfc6371136e7a3:3",
+      "86061aa9f305aa1346bfc6371136e7a3:4",
+      "86061aa9f305aa1346bfc6371136e7a3:5",
+      "86061aa9f305aa1346bfc6371136e7a3:6",
+      "86061aa9f305aa1346bfc6371136e7a3:7",
+      "86061aa9f305aa1346bfc6371136e7a3:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T16:38:20"
+  },
+  "unity_manual/UIE-Capture-Events.md": {
+    "sha256": "d63444c94c170db9323fa2a072305d1e0a00e6165267ccce2af20f146b5540d1",
+    "chunk_ids": [
+      "356cddc6386a838aea752cb8d0f55a42:0",
+      "356cddc6386a838aea752cb8d0f55a42:1",
+      "356cddc6386a838aea752cb8d0f55a42:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:38:21"
+  },
+  "unity_manual/UIE-Change-Events.md": {
+    "sha256": "a8b30c8e04624175e3e862bf9a83e13f89974e1bc4a20b0c9e80f1cdedf685a7",
+    "chunk_ids": [
+      "92c8dd3ce804bd778a36f61e3c157d83:0",
+      "92c8dd3ce804bd778a36f61e3c157d83:1",
+      "92c8dd3ce804bd778a36f61e3c157d83:2",
+      "92c8dd3ce804bd778a36f61e3c157d83:3",
+      "92c8dd3ce804bd778a36f61e3c157d83:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:39:10"
+  },
+  "unity_manual/UIE-Click-Events.md": {
+    "sha256": "514f6b1875087b96181a5c275b75a2f35ea46221f3b4c8acf1ede11a52e9314e",
+    "chunk_ids": [
+      "beea1051da057004bcb9a87a964ed735:0",
+      "beea1051da057004bcb9a87a964ed735:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:39:10"
+  },
+  "unity_manual/UIE-Command-Events.md": {
+    "sha256": "8e494d6fd25f29bcb50695aa245a49148d9f75a8079a6dd363da00234600f4cd",
+    "chunk_ids": [
+      "af52a2c96ed20d86b70e4c9df0c66802:0",
+      "af52a2c96ed20d86b70e4c9df0c66802:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-13T16:39:11"
+  },
+  "unity_manual/UIE-Controls.md": {
+    "sha256": "98bab78b9ada5ab770f805d7350212dfd9bcff0db989cff27c7ce3b71370128d",
+    "chunk_ids": [
+      "e5f478376c21d6669294ad2362e18f30:0",
+      "e5f478376c21d6669294ad2362e18f30:1",
+      "e5f478376c21d6669294ad2362e18f30:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:39:12"
+  },
+  "unity_manual/UIE-Drag-Events.md": {
+    "sha256": "2e0a68982eb273be4e5514cdfb229d33d87d6b3d648356551ef495dd94a2f039",
+    "chunk_ids": [
+      "235387fa9e43c1b45faf20678de013dc:0",
+      "235387fa9e43c1b45faf20678de013dc:1",
+      "235387fa9e43c1b45faf20678de013dc:2",
+      "235387fa9e43c1b45faf20678de013dc:3",
+      "235387fa9e43c1b45faf20678de013dc:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:39:13"
+  },
+  "unity_manual/UIE-ElementRef.md": {
+    "sha256": "a43b0349a6812d02f1a7a436bc07df3f2c7d0a5150963d89d3d3cb61c7edc34a",
+    "chunk_ids": [
+      "07cc9e8ecf1c2996480522986d56e2a0:0",
+      "07cc9e8ecf1c2996480522986d56e2a0:1",
+      "07cc9e8ecf1c2996480522986d56e2a0:2",
+      "07cc9e8ecf1c2996480522986d56e2a0:3",
+      "07cc9e8ecf1c2996480522986d56e2a0:4",
+      "07cc9e8ecf1c2996480522986d56e2a0:5",
+      "07cc9e8ecf1c2996480522986d56e2a0:6",
+      "07cc9e8ecf1c2996480522986d56e2a0:7",
+      "07cc9e8ecf1c2996480522986d56e2a0:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T16:39:14"
+  },
+  "unity_manual/UIE-Events-Dispatching.md": {
+    "sha256": "0ec7fce2dc30d92ad481dc45836c90089532f09cbfbd45c3d962ca84d6804cad",
+    "chunk_ids": [
+      "63cbd0a8742ed57d6f22cd7212241539:0",
+      "63cbd0a8742ed57d6f22cd7212241539:1",
+      "63cbd0a8742ed57d6f22cd7212241539:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:39:15"
+  },
+  "unity_manual/UIE-Events-Handling.md": {
+    "sha256": "7cbc8d4f7752a6b32ef998066dcfa91fb624e1db66927f443a1731cd4046d6ba",
+    "chunk_ids": [
+      "f9af39d846a25563229328270478a922:0",
+      "f9af39d846a25563229328270478a922:1",
+      "f9af39d846a25563229328270478a922:2",
+      "f9af39d846a25563229328270478a922:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:39:16"
+  },
+  "unity_manual/UIE-Events-Reference.md": {
+    "sha256": "6e561f5db76b65761decbe07e447496fc1e3c43d40eaa752ae63ac3fbd771db1",
+    "chunk_ids": [
+      "4389aeedc9d84962732ea2e5fc186288:0",
+      "4389aeedc9d84962732ea2e5fc186288:1",
+      "4389aeedc9d84962732ea2e5fc186288:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:39:16"
+  },
+  "unity_manual/UIE-Events-Synthesizing.md": {
+    "sha256": "66924df9337c5b9d352ed4196f649652254ca82f843f3f38553cfffd18cb69e1",
+    "chunk_ids": [
+      "b033e8eacaba1795324f195bc61972c9:0",
+      "b033e8eacaba1795324f195bc61972c9:1",
+      "b033e8eacaba1795324f195bc61972c9:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:39:17"
+  },
+  "unity_manual/UIE-Events.md": {
+    "sha256": "6184ad0e41b12c079297218f4d509c0051e57473e2f31754fb71f8e07d0f8745",
+    "chunk_ids": [
+      "a04753a8950337e6dd54b90ea92fb3e8:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:39:18"
+  },
+  "unity_manual/UIE-Focus-Events.md": {
+    "sha256": "aad9f35dcc89e862a87360d1f59ae65a28c334a18fc00f0b243784986a7d5fd8",
+    "chunk_ids": [
+      "99ec8826876cee85aaa8abf9562da2ca:0",
+      "99ec8826876cee85aaa8abf9562da2ca:1",
+      "99ec8826876cee85aaa8abf9562da2ca:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:39:19"
+  },
+  "unity_manual/UIE-HowTo-CreateCustomInspector.md": {
+    "sha256": "e388a7c443b5ed883a89249a1d4d645f53cec272a3ad1b7199a4e0d9adea4343",
+    "chunk_ids": [
+      "374ef61650ff3b35f9f44e1720ba5f8a:0",
+      "374ef61650ff3b35f9f44e1720ba5f8a:1",
+      "374ef61650ff3b35f9f44e1720ba5f8a:2",
+      "374ef61650ff3b35f9f44e1720ba5f8a:3",
+      "374ef61650ff3b35f9f44e1720ba5f8a:4",
+      "374ef61650ff3b35f9f44e1720ba5f8a:5",
+      "374ef61650ff3b35f9f44e1720ba5f8a:6",
+      "374ef61650ff3b35f9f44e1720ba5f8a:7",
+      "374ef61650ff3b35f9f44e1720ba5f8a:8",
+      "374ef61650ff3b35f9f44e1720ba5f8a:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-13T16:39:20"
+  },
+  "unity_manual/UIE-HowTo-CreateEditorWindow.md": {
+    "sha256": "fd7b7390067b2b01cff604f9fbc8ed441f7209abe837ea3701c076305e328617",
+    "chunk_ids": [
+      "29def49c8c1cbb1734fa71bb21f05753:0",
+      "29def49c8c1cbb1734fa71bb21f05753:1",
+      "29def49c8c1cbb1734fa71bb21f05753:2",
+      "29def49c8c1cbb1734fa71bb21f05753:3",
+      "29def49c8c1cbb1734fa71bb21f05753:4",
+      "29def49c8c1cbb1734fa71bb21f05753:5",
+      "29def49c8c1cbb1734fa71bb21f05753:6",
+      "29def49c8c1cbb1734fa71bb21f05753:7",
+      "29def49c8c1cbb1734fa71bb21f05753:8",
+      "29def49c8c1cbb1734fa71bb21f05753:9",
+      "29def49c8c1cbb1734fa71bb21f05753:10"
+    ],
+    "chunk_count": 11,
+    "updated_at": "2026-03-13T16:39:22"
+  },
+  "unity_manual/UIE-HowTo-CreateRuntimeUI.md": {
+    "sha256": "a7f9953d6035aa5d621ae6e95c7fd0fe81c501ccd2e5a16ba5e7aabae8516a55",
+    "chunk_ids": [
+      "50fd2bdefa8bb2b2638955b4c59f5838:0",
+      "50fd2bdefa8bb2b2638955b4c59f5838:1",
+      "50fd2bdefa8bb2b2638955b4c59f5838:2",
+      "50fd2bdefa8bb2b2638955b4c59f5838:3",
+      "50fd2bdefa8bb2b2638955b4c59f5838:4",
+      "50fd2bdefa8bb2b2638955b4c59f5838:5",
+      "50fd2bdefa8bb2b2638955b4c59f5838:6",
+      "50fd2bdefa8bb2b2638955b4c59f5838:7",
+      "50fd2bdefa8bb2b2638955b4c59f5838:8",
+      "50fd2bdefa8bb2b2638955b4c59f5838:9",
+      "50fd2bdefa8bb2b2638955b4c59f5838:10"
+    ],
+    "chunk_count": 11,
+    "updated_at": "2026-03-13T16:39:23"
+  },
+  "unity_manual/UIE-IMGUI-Events.md": {
+    "sha256": "626fb50e407a51637db4a959d50a3b05ec26f22f7d78564c80cabd586707edef",
+    "chunk_ids": [
+      "e06e597408dc55ec0de687cae24a6a84:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:40:11"
+  },
+  "unity_manual/UIE-IMGUI-migration.md": {
+    "sha256": "a18acf62fa8fb09f7b95d999382cd8aa79b3ac84875e78ec08b960a7f4811961",
+    "chunk_ids": [
+      "c25dcda16815dee06e05a6df4baa23f9:0",
+      "c25dcda16815dee06e05a6df4baa23f9:1",
+      "c25dcda16815dee06e05a6df4baa23f9:2",
+      "c25dcda16815dee06e05a6df4baa23f9:3",
+      "c25dcda16815dee06e05a6df4baa23f9:4",
+      "c25dcda16815dee06e05a6df4baa23f9:5",
+      "c25dcda16815dee06e05a6df4baa23f9:6",
+      "c25dcda16815dee06e05a6df4baa23f9:7",
+      "c25dcda16815dee06e05a6df4baa23f9:8",
+      "c25dcda16815dee06e05a6df4baa23f9:9",
+      "c25dcda16815dee06e05a6df4baa23f9:10",
+      "c25dcda16815dee06e05a6df4baa23f9:11",
+      "c25dcda16815dee06e05a6df4baa23f9:12",
+      "c25dcda16815dee06e05a6df4baa23f9:13",
+      "c25dcda16815dee06e05a6df4baa23f9:14",
+      "c25dcda16815dee06e05a6df4baa23f9:15",
+      "c25dcda16815dee06e05a6df4baa23f9:16",
+      "c25dcda16815dee06e05a6df4baa23f9:17"
+    ],
+    "chunk_count": 18,
+    "updated_at": "2026-03-13T16:40:13"
+  },
+  "unity_manual/UIE-Input-Events.md": {
+    "sha256": "760f09f95acfec40954ac6eb019a3236593570a54740059f2b096665a8cf2f02",
+    "chunk_ids": [
+      "97793e4d8c89e1e7b286100e212153f1:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:40:14"
+  },
+  "unity_manual/UIE-Keyboard-Events.md": {
+    "sha256": "d0c41a89460c5c0eb95b91683b942ea5cf3b0ad54c9b24d791a6ff00ca6e0c94",
+    "chunk_ids": [
+      "867a379e098df5f8e4e1d8aa46abbb94:0",
+      "867a379e098df5f8e4e1d8aa46abbb94:1",
+      "867a379e098df5f8e4e1d8aa46abbb94:2",
+      "867a379e098df5f8e4e1d8aa46abbb94:3",
+      "867a379e098df5f8e4e1d8aa46abbb94:4",
+      "867a379e098df5f8e4e1d8aa46abbb94:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T16:40:15"
+  },
+  "unity_manual/UIE-Layout-Events.md": {
+    "sha256": "8ac55cc6378a7931e8e6a9a440632f9064e5d5701d980ffa5ebbee330555f351",
+    "chunk_ids": [
+      "be080e770f1965411e6c2de5928946ad:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:40:16"
+  },
+  "unity_manual/UIE-LayoutEngine.md": {
+    "sha256": "e281c86ebc6b973903dfd71227b01ccc2347e2501977c30e3ea95a9638740925",
+    "chunk_ids": [
+      "f5565d27f21f6f1172f9676bccd243af:0",
+      "f5565d27f21f6f1172f9676bccd243af:1",
+      "f5565d27f21f6f1172f9676bccd243af:2",
+      "f5565d27f21f6f1172f9676bccd243af:3",
+      "f5565d27f21f6f1172f9676bccd243af:4",
+      "f5565d27f21f6f1172f9676bccd243af:5",
+      "f5565d27f21f6f1172f9676bccd243af:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T16:40:17"
+  },
+  "unity_manual/UIE-ListView-TreeView.md": {
+    "sha256": "9c8f56f4522774c11fd861f2aac63ca8fc20c593335d26e30f70b54521cfa261",
+    "chunk_ids": [
+      "b307e20594196a34c429e9ec2b89a54d:0",
+      "b307e20594196a34c429e9ec2b89a54d:1",
+      "b307e20594196a34c429e9ec2b89a54d:2",
+      "b307e20594196a34c429e9ec2b89a54d:3",
+      "b307e20594196a34c429e9ec2b89a54d:4",
+      "b307e20594196a34c429e9ec2b89a54d:5",
+      "b307e20594196a34c429e9ec2b89a54d:6",
+      "b307e20594196a34c429e9ec2b89a54d:7",
+      "b307e20594196a34c429e9ec2b89a54d:8",
+      "b307e20594196a34c429e9ec2b89a54d:9",
+      "b307e20594196a34c429e9ec2b89a54d:10",
+      "b307e20594196a34c429e9ec2b89a54d:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-03-13T16:40:19"
+  },
+  "unity_manual/UIE-LoadingUXMLcsharp.md": {
+    "sha256": "f094876a1ada18dc86c21576da9ab1ba967d7bd6b4a0a479208458b18beca1a8",
+    "chunk_ids": [
+      "1ae29cc8104a6c53f7f2c4d5ea6aa7d2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-13T16:40:20"
+  },
+  "unity_manual/UIE-Mouse-Events.md": {
+    "sha256": "a5a6c9059f86332155d6d3a1b12b2a5781b3f13033e762dc2967faeeee7ec754",
+    "chunk_ids": [
+      "dc7ea321fcff771495106c56d045221e:0",
+      "dc7ea321fcff771495106c56d045221e:1",
+      "dc7ea321fcff771495106c56d045221e:2",
+      "dc7ea321fcff771495106c56d045221e:3",
+      "dc7ea321fcff771495106c56d045221e:4",
+      "dc7ea321fcff771495106c56d045221e:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-13T16:40:20"
+  },
+  "unity_manual/UIE-Navigation-Events.md": {
+    "sha256": "db5e771e314c5347b05e405b10adb97f5ddb5f8f30463fdb0710728f062473db",
+    "chunk_ids": [
+      "8b6139cc2b91412108591e151bb5ec9f:0",
+      "8b6139cc2b91412108591e151bb5ec9f:1",
+      "8b6139cc2b91412108591e151bb5ec9f:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-13T16:40:21"
+  },
+  "unity_manual/UIE-Panel-Events.md": {
+    "sha256": "68b85a2335cba1cc94110b4d9b65c780284e3c2921d97ab2ea8e332cc7b26ef8",
+    "chunk_ids": [
+      "60c9ae9605e0cfb98b96a504ce9d58f0:0",
+      "60c9ae9605e0cfb98b96a504ce9d58f0:1",
+      "60c9ae9605e0cfb98b96a504ce9d58f0:2",
+      "60c9ae9605e0cfb98b96a504ce9d58f0:3",
+      "60c9ae9605e0cfb98b96a504ce9d58f0:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-13T16:40:22"
+  },
+  "unity_manual/UIE-Pointer-Events.md": {
+    "sha256": "4c30b0ad52fa28450a86e143ba42587fdac30eab493d1ea668cb6724a3b3bfc3",
+    "chunk_ids": [
+      "f2515e44e48b44d3e37e96294b9e8133:0",
+      "f2515e44e48b44d3e37e96294b9e8133:1",
+      "f2515e44e48b44d3e37e96294b9e8133:2",
+      "f2515e44e48b44d3e37e96294b9e8133:3",
+      "f2515e44e48b44d3e37e96294b9e8133:4",
+      "f2515e44e48b44d3e37e96294b9e8133:5",
+      "f2515e44e48b44d3e37e96294b9e8133:6",
+      "f2515e44e48b44d3e37e96294b9e8133:7",
+      "f2515e44e48b44d3e37e96294b9e8133:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-13T16:40:23"
+  },
+  "unity_manual/UIE-Runtime-Event-System.md": {
+    "sha256": "05c3b57718bd87d637bcf6b6e2bb0bbfe61d3abe8704e5306cd68eb58c49edca",
+    "chunk_ids": [
+      "022189f66599c2d0b6e3a3365ff5cbf8:0",
+      "022189f66599c2d0b6e3a3365ff5cbf8:1",
+      "022189f66599c2d0b6e3a3365ff5cbf8:2",
+      "022189f66599c2d0b6e3a3365ff5cbf8:3",
+      "022189f66599c2d0b6e3a3365ff5cbf8:4",
+      "022189f66599c2d0b6e3a3365ff5cbf8:5",
+      "022189f66599c2d0b6e3a3365ff5cbf8:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-13T16:40:25"
+  },
+  "unity_manual/UIE-Runtime-Panel-Settings.md": {
+    "sha256": "8a2a244e7894aea0ad8a2596b69c58afcb1f0e96e5530d4283629dd0bcaf3c69",
+    "chunk_ids": [
+      "21abf593ecf26d321c6efd2b3cffa808:0",
+      "21abf593ecf26d321c6efd2b3cffa808:1",
+      "21abf593ecf26d321c6efd2b3cffa808:2",
+      "21abf593ecf26d321c6efd2b3cffa808:3",
+      "21abf593ecf26d321c6efd2b3cffa808:4",
+      "21abf593ecf26d321c6efd2b3cffa808:5",
+      "21abf593ecf26d321c6efd2b3cffa808:6",
+      "21abf593ecf26d321c6efd2b3cffa808:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-13T16:40:26"
+  },
+  "unity_manual/UIE-Tooltip-Events.md": {
+    "sha256": "28e5112a9766d8e1f7e38d06dc37b27c5d32c927a4b57e63ec7954c8ea5c9e7b",
+    "chunk_ids": [
+      "1553b29a4f6dbe75efd49d695a8c61fb:0",
+      "1553b29a4f6dbe75efd49d695a8c61fb:1",
+      "1553b29a4f6dbe75efd49d695a8c61fb:2",
+      "1553b29a4f6dbe75efd49d695a8c61fb:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:41:15"
+  },
+  "unity_manual/UIE-Transform.md": {
+    "sha256": "831b0df6c763ccd68a9d669ae3dee589a09658e62d06a4b36c36edd9e6cce91c",
+    "chunk_ids": [
+      "5b55c4069321031c67e8c242b8d00f96:0",
+      "5b55c4069321031c67e8c242b8d00f96:1",
+      "5b55c4069321031c67e8c242b8d00f96:2",
+      "5b55c4069321031c67e8c242b8d00f96:3",
+      "5b55c4069321031c67e8c242b8d00f96:4",
+      "5b55c4069321031c67e8c242b8d00f96:5",
+      "5b55c4069321031c67e8c242b8d00f96:6",
+      "5b55c4069321031c67e8c242b8d00f96:7",
+      "5b55c4069321031c67e8c242b8d00f96:8",
+      "5b55c4069321031c67e8c242b8d00f96:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-13T16:41:16"
+  },
+  "unity_manual/UIE-Transition-Events.md": {
+    "sha256": "fc5d64cfb24106e6ba3c8de506fbfd49217185f030c4e89e2368812f4b3df6fa",
+    "chunk_ids": [
+      "886e55d713472e71a9da511ff88cf42f:0",
+      "886e55d713472e71a9da511ff88cf42f:1",
+      "886e55d713472e71a9da511ff88cf42f:2",
+      "886e55d713472e71a9da511ff88cf42f:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-13T16:41:17"
   }
 }
