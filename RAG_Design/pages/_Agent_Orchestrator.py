@@ -298,29 +298,41 @@ def build_agent_prompt(
 
 def route_attachment_to_step(file_data: Optional[Dict[str, Any]], step: Dict[str, Any]) -> Dict[str, Any]:
     """
-    step에 전달할 첨부 정보를 고른다.
+    step에 전달할 첨부 정보를 고른다. (텍스트 호환성 로직 강화)
     """
     if not file_data or not step.get("use_attachment", False):
         return {"summary": "첨부 없음", "contents": []}
 
-    classified_type = file_data.get("classified_type")
-    input_mode = step.get("input_mode")
+    classified_type = file_data.get("classified_type", "unknown")
+    input_mode = step.get("input_mode", "text")
 
-    # 타입이 너무 안 맞으면 첨부 안 넘김
-    if input_mode != "mixed" and classified_type != input_mode:
+    # 1. 텍스트 호환 타입 그룹핑 (문서, 코드, 텍스트, CSV는 모두 텍스트로 취급하여 상호 호환)
+    text_compatible_types = {"text", "document", "code", "csv"}
+    
+    # 혼합 모드이거나, 타입이 정확히 일치하거나, 둘 다 텍스트 기반 포맷일 경우 통과
+    is_compatible = (
+        (input_mode == "mixed") or 
+        (classified_type == input_mode) or 
+        (classified_type in text_compatible_types and input_mode in text_compatible_types)
+    )
+
+    # 2. 타입이 호환되지 않으면 첨부 제외
+    if not is_compatible:
         return {
-            "summary": f"첨부 파일({classified_type})이 있으나 이 step input_mode={input_mode}와 맞지 않아 전달하지 않음",
+            "summary": f"⚠️ 첨부 파일({classified_type})이 있으나 이 step의 input_mode({input_mode})와 호환되지 않아 전달 제외됨",
             "contents": []
         }
 
+    # 3. 텍스트 기반 데이터의 경우 프롬프트 하단에 문자열로 결합하여 전달
     if file_data["type"] == "text":
         return {
-            "summary": f"텍스트 첨부 전달: {file_data['desc']}",
-            "contents": [f"[첨부 파일 내용]\n{file_data['content']}"]
+            "summary": f"✅ 텍스트 호환 첨부 전달됨: {file_data['desc']}",
+            "contents": [f"\n\n[첨부 파일 원문 데이터]\n{file_data['content']}\n\n"]
         }
 
+    # 4. 멀티모달 (PDF, Video 등 Google GenAI File API 객체) 처리
     return {
-        "summary": f"멀티모달 첨부 전달: {file_data['desc']}",
+        "summary": f"✅ 멀티모달 첨부(File API) 전달됨: {file_data['desc']}",
         "contents": [file_data["content"]]
     }
 
