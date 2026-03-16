@@ -6810,5 +6810,3671 @@
     ],
     "chunk_count": 4,
     "updated_at": "2026-03-13T16:41:17"
+  },
+  "unity_manual/UIE-Transitioning-From-UGUI.md": {
+    "sha256": "891173b7bc028e5da94ec43dba46ea76841bc0b62b86b049cc1f73d4d752362b",
+    "chunk_ids": [
+      "89b971b8dbf74414e5886657686b108d:0",
+      "89b971b8dbf74414e5886657686b108d:1",
+      "89b971b8dbf74414e5886657686b108d:2",
+      "89b971b8dbf74414e5886657686b108d:3",
+      "89b971b8dbf74414e5886657686b108d:4",
+      "89b971b8dbf74414e5886657686b108d:5",
+      "89b971b8dbf74414e5886657686b108d:6",
+      "89b971b8dbf74414e5886657686b108d:7",
+      "89b971b8dbf74414e5886657686b108d:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:29:02"
+  },
+  "unity_manual/UIE-Transitions.md": {
+    "sha256": "0011d384ebb2fb950153337c03b8780bbd58b9955d22459b5e170e13ff11c147",
+    "chunk_ids": [
+      "40d56a5d4681563fee5391b5f8d925e6:0",
+      "40d56a5d4681563fee5391b5f8d925e6:1",
+      "40d56a5d4681563fee5391b5f8d925e6:2",
+      "40d56a5d4681563fee5391b5f8d925e6:3",
+      "40d56a5d4681563fee5391b5f8d925e6:4",
+      "40d56a5d4681563fee5391b5f8d925e6:5",
+      "40d56a5d4681563fee5391b5f8d925e6:6",
+      "40d56a5d4681563fee5391b5f8d925e6:7",
+      "40d56a5d4681563fee5391b5f8d925e6:8",
+      "40d56a5d4681563fee5391b5f8d925e6:9",
+      "40d56a5d4681563fee5391b5f8d925e6:10",
+      "40d56a5d4681563fee5391b5f8d925e6:11",
+      "40d56a5d4681563fee5391b5f8d925e6:12",
+      "40d56a5d4681563fee5391b5f8d925e6:13",
+      "40d56a5d4681563fee5391b5f8d925e6:14"
+    ],
+    "chunk_count": 15,
+    "updated_at": "2026-03-14T12:29:04"
+  },
+  "unity_manual/UIE-UQuery.md": {
+    "sha256": "b60757e8accb75379f02b62588d92444b5a7d28a03417fb288a36fc82fe9456b",
+    "chunk_ids": [
+      "76446ce26be7ba33840cfe872e8f1cdb:0",
+      "76446ce26be7ba33840cfe872e8f1cdb:1",
+      "76446ce26be7ba33840cfe872e8f1cdb:2",
+      "76446ce26be7ba33840cfe872e8f1cdb:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:29:04"
+  },
+  "unity_manual/UIE-USS-CustomProperties.md": {
+    "sha256": "f6055f94fd03e10bd9800ed46d621637324bd58a917ca02960dbd28aff7a868f",
+    "chunk_ids": [
+      "ecd48baa919d158e01be8fe19102776e:0",
+      "ecd48baa919d158e01be8fe19102776e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:29:05"
+  },
+  "unity_manual/UIE-USS-Properties-Reference.md": {
+    "sha256": "b1d13faf0995853074e4cafe20e17426fc1bbfc549ae8bbc96194339f606f151",
+    "chunk_ids": [
+      "e35c47e57ec0b948aec91be5a0af7791:0",
+      "e35c47e57ec0b948aec91be5a0af7791:1",
+      "e35c47e57ec0b948aec91be5a0af7791:2",
+      "e35c47e57ec0b948aec91be5a0af7791:3",
+      "e35c47e57ec0b948aec91be5a0af7791:4",
+      "e35c47e57ec0b948aec91be5a0af7791:5",
+      "e35c47e57ec0b948aec91be5a0af7791:6",
+      "e35c47e57ec0b948aec91be5a0af7791:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:29:06"
+  },
+  "unity_manual/UIE-USS-PropertyTypes.md": {
+    "sha256": "ab2c5cf304b267a1951ee4c7512c69a34efca3f4349c47cf8c20e4539796837e",
+    "chunk_ids": [
+      "2661c02541d141e339a58aaec312e792:0",
+      "2661c02541d141e339a58aaec312e792:1",
+      "2661c02541d141e339a58aaec312e792:2",
+      "2661c02541d141e339a58aaec312e792:3",
+      "2661c02541d141e339a58aaec312e792:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:29:07"
+  },
+  "unity_manual/UIE-USS-Selectors-Pseudo-Classes.md": {
+    "sha256": "5afef7b1185c5ba73946d38fd1464e470b1f19fa38925e9ae182be97db2e3e26",
+    "chunk_ids": [
+      "660a4dbc2596135484c65be28b054738:0",
+      "660a4dbc2596135484c65be28b054738:1",
+      "660a4dbc2596135484c65be28b054738:2",
+      "660a4dbc2596135484c65be28b054738:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:29:08"
+  },
+  "unity_manual/UIE-USS-Selectors-child.md": {
+    "sha256": "c6442f8afc3514d63181906d78a3e4bd9021c462c8a7bb3444da4832c4d60667",
+    "chunk_ids": [
+      "419ba7f8cac8dd38cf748f582063e7b0:0",
+      "419ba7f8cac8dd38cf748f582063e7b0:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:29:09"
+  },
+  "unity_manual/UIE-USS-Selectors-class.md": {
+    "sha256": "43f4d82dbc980b2978fd3de65441c69a86b0c6271b044ffe6027271d27f62ffc",
+    "chunk_ids": [
+      "1edca1d0ba68e21134b6154eaf6bf8ce:0",
+      "1edca1d0ba68e21134b6154eaf6bf8ce:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:29:09"
+  },
+  "unity_manual/UIE-USS-Selectors-descendant.md": {
+    "sha256": "eebe3193c7ee028979396985a7e9c87b7c33cdfd09f00da0cdd58751e9e58e3f",
+    "chunk_ids": [
+      "fd4f39a4e31942d32c9324eb3fb7c098:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:10"
+  },
+  "unity_manual/UIE-USS-Selectors-list.md": {
+    "sha256": "a51a2e7926267581ba397d5ab45d216cd126a47f0ebd4d34a9e74c5e52d87517",
+    "chunk_ids": [
+      "e9b4f99f933fbd0ed99e500f37598c0c:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:11"
+  },
+  "unity_manual/UIE-USS-Selectors-multiple.md": {
+    "sha256": "5794cce10b98534c64d5d8b839254ec329333289e72bdb51518e7c6b05da7e06",
+    "chunk_ids": [
+      "31a70d87d2b6e2c12bfbbd72dde6ad35:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:11"
+  },
+  "unity_manual/UIE-USS-Selectors-name.md": {
+    "sha256": "4fe58ef373b2164d6adb8ac4dbed7cc07a23f82ae1cfca5b22e148aa1c2d413e",
+    "chunk_ids": [
+      "24916b12e4b573a33effb13079c20509:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:12"
+  },
+  "unity_manual/UIE-USS-Selectors-type.md": {
+    "sha256": "c3a97ea7ee309e66eb61f22e12f9b29f7759c219498160f71e97b7c3fd562ccf",
+    "chunk_ids": [
+      "b47682d09187c98ce1c5ee05b0ae3e07:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:13"
+  },
+  "unity_manual/UIE-USS-Selectors-universal.md": {
+    "sha256": "a4eb7c8f8e6419822595b470bb59073ca6bb06147ae3b944a01aa6d6d9da59d7",
+    "chunk_ids": [
+      "e2f27152c7f2859a5b5a5e32426ab5b7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:13"
+  },
+  "unity_manual/UIE-USS-Selectors.md": {
+    "sha256": "194811ac390bb084d99e27df92387a3c69507683c5367e228e198e5fcfa9e1ac",
+    "chunk_ids": [
+      "0d0747ae33bc2192f04548514dec7aff:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:29:14"
+  },
+  "unity_manual/UIE-USS-SupportedProperties.md": {
+    "sha256": "430470ef666b38eec5283516f51bb86c9ad62f32a4ca63c6bf324617b0fc3723",
+    "chunk_ids": [
+      "7d26c34307f8d12b8311e239adb2e44d:0",
+      "7d26c34307f8d12b8311e239adb2e44d:1",
+      "7d26c34307f8d12b8311e239adb2e44d:2",
+      "7d26c34307f8d12b8311e239adb2e44d:3",
+      "7d26c34307f8d12b8311e239adb2e44d:4",
+      "7d26c34307f8d12b8311e239adb2e44d:5",
+      "7d26c34307f8d12b8311e239adb2e44d:6",
+      "7d26c34307f8d12b8311e239adb2e44d:7",
+      "7d26c34307f8d12b8311e239adb2e44d:8",
+      "7d26c34307f8d12b8311e239adb2e44d:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-14T12:29:16"
+  },
+  "unity_manual/UIE-USS-UnityVariables.md": {
+    "sha256": "8734e0d6d8df20b14eaa2304093a02e3ab48ac2c57afd55642a7e85bcb04157c",
+    "chunk_ids": [
+      "ec38be60924b57c730094e1a799e1d03:0",
+      "ec38be60924b57c730094e1a799e1d03:1",
+      "ec38be60924b57c730094e1a799e1d03:2",
+      "ec38be60924b57c730094e1a799e1d03:3",
+      "ec38be60924b57c730094e1a799e1d03:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:29:17"
+  },
+  "unity_manual/UIE-USS-WritingStyleSheets.md": {
+    "sha256": "e662a588c49e43aa27c0843f9436c0907d6a64e5a717f07ce42c285d78fa2ab7",
+    "chunk_ids": [
+      "a0a29c6a987bc5a6cb88413903c3f472:0",
+      "a0a29c6a987bc5a6cb88413903c3f472:1",
+      "a0a29c6a987bc5a6cb88413903c3f472:2",
+      "a0a29c6a987bc5a6cb88413903c3f472:3",
+      "a0a29c6a987bc5a6cb88413903c3f472:4",
+      "a0a29c6a987bc5a6cb88413903c3f472:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:29:18"
+  },
+  "unity_manual/UIE-USS-variables.md": {
+    "sha256": "8bdbe4c3acf8562ab5a89c989596bf4a12189ac2c337a8680ccd27bfb09b48c2",
+    "chunk_ids": [
+      "31400952109b605c04c9213fe67c71a2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:07"
+  },
+  "unity_manual/UIE-USS.md": {
+    "sha256": "c051f8d6379bbc28465f3b2d9608e0eb65ebe851f8023867c4d8736f240cd11b",
+    "chunk_ids": [
+      "6e0c11a8076c20a88c32f93ebefacf9f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:08"
+  },
+  "unity_manual/UIE-UXML.md": {
+    "sha256": "3778d04c8476340c5e88dfb8511a6a59b4b664c3aaf99203addce2da42d30c42",
+    "chunk_ids": [
+      "95696f362182aaabd0b24b7735e71004:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:09"
+  },
+  "unity_manual/UIE-ViewData.md": {
+    "sha256": "93895b2595f26a7a98386f10f65e51fba1ed325f39335db3ce45224597ac708a",
+    "chunk_ids": [
+      "31255615a1a57f1a847d74c5f918776c:0",
+      "31255615a1a57f1a847d74c5f918776c:1",
+      "31255615a1a57f1a847d74c5f918776c:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:30:10"
+  },
+  "unity_manual/UIE-VisualTree-landing.md": {
+    "sha256": "35e7b40c605a80000cb72fdf93ecbe0e3a98355f4a3ce50ac321faa945132c58",
+    "chunk_ids": [
+      "b7f74738db161442fed85b37c9010a77:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:10"
+  },
+  "unity_manual/UIE-VisualTree.md": {
+    "sha256": "1ab18b506f7ace02a9ac6461332dc7f234dd079b395c0b27d7089a1bcd4184e6",
+    "chunk_ids": [
+      "91a791f2385c9d48fb7d26af55dfdf2f:0",
+      "91a791f2385c9d48fb7d26af55dfdf2f:1",
+      "91a791f2385c9d48fb7d26af55dfdf2f:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:30:11"
+  },
+  "unity_manual/UIE-WritingUXMLTemplate.md": {
+    "sha256": "c393c87a8559c992d7978682146ec9cd247e100361c80bc14a6c3d6c87153d50",
+    "chunk_ids": [
+      "d6866344025270afe5f65c0ae3b23359:0",
+      "d6866344025270afe5f65c0ae3b23359:1",
+      "d6866344025270afe5f65c0ae3b23359:2",
+      "d6866344025270afe5f65c0ae3b23359:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:30:12"
+  },
+  "unity_manual/UIE-about-uss.md": {
+    "sha256": "5ce53b3b0add81960ebd73a642280bbe63b0641b92afb68d32b74666f9ced075",
+    "chunk_ids": [
+      "f2a19412eac25062d63b55c685a26de6:0",
+      "f2a19412eac25062d63b55c685a26de6:1",
+      "f2a19412eac25062d63b55c685a26de6:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:30:13"
+  },
+  "unity_manual/UIE-add-style-to-uxml.md": {
+    "sha256": "f06de056e436816196b830d84883ba040d57924d13c28d6757dcafe0d850edbd",
+    "chunk_ids": [
+      "ac255cc2e2489e30c5eaab2ceb6ba9e7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:13"
+  },
+  "unity_manual/UIE-advanced-text-generator.md": {
+    "sha256": "d2bf00b7da2722cfe9eb60b2cb3a3094aea28f951cbd7d53aee923a7f2e7f9e3",
+    "chunk_ids": [
+      "02b157fcc6bfd8400571fb4c5b231ab0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:14"
+  },
+  "unity_manual/UIE-apply-styles-with-csharp.md": {
+    "sha256": "304345170222a966d8d4a8aa9e990477df873921883021aff15822ee696af2ef",
+    "chunk_ids": [
+      "6ae330d6dafc5e9790d3c5cb1383c008:0",
+      "6ae330d6dafc5e9790d3c5cb1383c008:1",
+      "6ae330d6dafc5e9790d3c5cb1383c008:2",
+      "6ae330d6dafc5e9790d3c5cb1383c008:3",
+      "6ae330d6dafc5e9790d3c5cb1383c008:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:15"
+  },
+  "unity_manual/UIE-best-practices-for-managing-elements.md": {
+    "sha256": "0457ca6d206e74db5a4bfb60068059884a74b4b5e3f9fa534a6ecdd6e75a9227",
+    "chunk_ids": [
+      "bc284f81b60609d4df6c2118181a194b:0",
+      "bc284f81b60609d4df6c2118181a194b:1",
+      "bc284f81b60609d4df6c2118181a194b:2",
+      "bc284f81b60609d4df6c2118181a194b:3",
+      "bc284f81b60609d4df6c2118181a194b:4",
+      "bc284f81b60609d4df6c2118181a194b:5",
+      "bc284f81b60609d4df6c2118181a194b:6",
+      "bc284f81b60609d4df6c2118181a194b:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:30:16"
+  },
+  "unity_manual/UIE-bind-custom-control-to-data.md": {
+    "sha256": "13abc44355a251375193841a4572f1f2a08fceddbdde5d3cb3daa808967b215a",
+    "chunk_ids": [
+      "392ea5664db90720c892435d840a1c00:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:17"
+  },
+  "unity_manual/UIE-bind-custom-control.md": {
+    "sha256": "e6ffec59f607fe62c73e95f3f0267694722cf1e36d26c487fe4862d9094945f2",
+    "chunk_ids": [
+      "55e91df4a73ea32322881d48216687f8:0",
+      "55e91df4a73ea32322881d48216687f8:1",
+      "55e91df4a73ea32322881d48216687f8:2",
+      "55e91df4a73ea32322881d48216687f8:3",
+      "55e91df4a73ea32322881d48216687f8:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:18"
+  },
+  "unity_manual/UIE-bind-to-custom-data-type.md": {
+    "sha256": "a17b6c660cbea9299677151e35be424264552fc5dcc64f21106064d0e7b3bfb5",
+    "chunk_ids": [
+      "55ad56f517624dffa94169553495a445:0",
+      "55ad56f517624dffa94169553495a445:1",
+      "55ad56f517624dffa94169553495a445:2",
+      "55ad56f517624dffa94169553495a445:3",
+      "55ad56f517624dffa94169553495a445:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:19"
+  },
+  "unity_manual/UIE-bind-to-list-without-listview.md": {
+    "sha256": "05d246d8def38acbd032fb9fab362a6fd50b5f4c544962b5be50d710397d34ee",
+    "chunk_ids": [
+      "e72557d829abcf8c880eeeafcc22039b:0",
+      "e72557d829abcf8c880eeeafcc22039b:1",
+      "e72557d829abcf8c880eeeafcc22039b:2",
+      "e72557d829abcf8c880eeeafcc22039b:3",
+      "e72557d829abcf8c880eeeafcc22039b:4",
+      "e72557d829abcf8c880eeeafcc22039b:5",
+      "e72557d829abcf8c880eeeafcc22039b:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:30:20"
+  },
+  "unity_manual/UIE-bind-to-list.md": {
+    "sha256": "a844d94f912cbfc33f7c698530e7ec264316084ff727389e402d490030c7274f",
+    "chunk_ids": [
+      "1d1ccde51e55ca8d6e8c3823736633ef:0",
+      "1d1ccde51e55ca8d6e8c3823736633ef:1",
+      "1d1ccde51e55ca8d6e8c3823736633ef:2",
+      "1d1ccde51e55ca8d6e8c3823736633ef:3",
+      "1d1ccde51e55ca8d6e8c3823736633ef:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:20"
+  },
+  "unity_manual/UIE-bind-to-multiple-properties-with-runtime-binding.md": {
+    "sha256": "dbe4307d54f2bd4529759416409cff700aa6d6812235ef8a6e3b0083eea8cc1f",
+    "chunk_ids": [
+      "93b2d8a1b3749d5a09f2dec4f4bfb272:0",
+      "93b2d8a1b3749d5a09f2dec4f4bfb272:1",
+      "93b2d8a1b3749d5a09f2dec4f4bfb272:2",
+      "93b2d8a1b3749d5a09f2dec4f4bfb272:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:30:21"
+  },
+  "unity_manual/UIE-bind-to-nested-properties.md": {
+    "sha256": "d1ebfa1833e6d86523628ce1cae9aece703f9fea286e6c0039fc1861b4f8fe5a",
+    "chunk_ids": [
+      "f6210345a9699e0802deffb8e14a2f27:0",
+      "f6210345a9699e0802deffb8e14a2f27:1",
+      "f6210345a9699e0802deffb8e14a2f27:2",
+      "f6210345a9699e0802deffb8e14a2f27:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:30:22"
+  },
+  "unity_manual/UIE-bind-uxml-template.md": {
+    "sha256": "f1f010dbddbe468e1b97a287220c6ae003347e4ad635b0f82d9dd1b674e5ca76",
+    "chunk_ids": [
+      "02b613630b5d59b2732e3f95cf47cb47:0",
+      "02b613630b5d59b2732e3f95cf47cb47:1",
+      "02b613630b5d59b2732e3f95cf47cb47:2",
+      "02b613630b5d59b2732e3f95cf47cb47:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:30:23"
+  },
+  "unity_manual/UIE-bind-without-bindpath.md": {
+    "sha256": "98bb1ee96af7b2d88d6c1af3867b5ff9792d29912019916f0a3e2faacc682e46",
+    "chunk_ids": [
+      "3235dac0b8c90ae472028f75a5534464:0",
+      "3235dac0b8c90ae472028f75a5534464:1",
+      "3235dac0b8c90ae472028f75a5534464:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:30:24"
+  },
+  "unity_manual/UIE-bindable-elements.md": {
+    "sha256": "7303c304113a7ca683c933374df333fb792dbb3cfe7d0ff6b622d140c4d65936",
+    "chunk_ids": [
+      "17c02eb8f8c63f1ba617183470492ffe:0",
+      "17c02eb8f8c63f1ba617183470492ffe:1",
+      "17c02eb8f8c63f1ba617183470492ffe:2",
+      "17c02eb8f8c63f1ba617183470492ffe:3",
+      "17c02eb8f8c63f1ba617183470492ffe:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:25"
+  },
+  "unity_manual/UIE-binding-data-type-conversion.md": {
+    "sha256": "c5d93cb9a2cd1646658eb9b2339d22f820a5b0665512457d2b1a63739bca5a55",
+    "chunk_ids": [
+      "6a6665f1e76327828f539b767ad11c43:0",
+      "6a6665f1e76327828f539b767ad11c43:1",
+      "6a6665f1e76327828f539b767ad11c43:2",
+      "6a6665f1e76327828f539b767ad11c43:3",
+      "6a6665f1e76327828f539b767ad11c43:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:30:25"
+  },
+  "unity_manual/UIE-binding-examples.md": {
+    "sha256": "c468df7ab21cdec9a7bc61b6e2d21a231512258aaf73286acfc04d7a1e40ec14",
+    "chunk_ids": [
+      "727f0562e2bab1cb2f42472fd2f000a6:0",
+      "727f0562e2bab1cb2f42472fd2f000a6:1",
+      "727f0562e2bab1cb2f42472fd2f000a6:2",
+      "727f0562e2bab1cb2f42472fd2f000a6:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:30:26"
+  },
+  "unity_manual/UIE-binding-implementation-details.md": {
+    "sha256": "a36746835d6ae7a9264f7c9b4a5379b224317e8658fa427033bd0be75f8b10ec",
+    "chunk_ids": [
+      "6581fb706560806514999c2a46550a17:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:30:27"
+  },
+  "unity_manual/UIE-capture-the-pointer.md": {
+    "sha256": "857870e6444ac7549f9d71611d9f4582b41971087c41e23c80b2c39cfc69a9b5",
+    "chunk_ids": [
+      "020583c550eae6680a929bd8ea10186e:0",
+      "020583c550eae6680a929bd8ea10186e:1",
+      "020583c550eae6680a929bd8ea10186e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:31:15"
+  },
+  "unity_manual/UIE-color-emojis.md": {
+    "sha256": "6dd6a3cc4d115e4b63d7da4298b5c395839ada4ffe8ea7f4866185852c385b39",
+    "chunk_ids": [
+      "df6e7df98c67fa74842dd42652044e99:0",
+      "df6e7df98c67fa74842dd42652044e99:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:31:16"
+  },
+  "unity_manual/UIE-color-gradient.md": {
+    "sha256": "6f6f1e1ebaf49248d0df9e66367d79b758d0defcf1f228a5fe645c927e444863",
+    "chunk_ids": [
+      "5ba4a8703be8f9fc1c363b1388388cca:0",
+      "5ba4a8703be8f9fc1c363b1388388cca:1",
+      "5ba4a8703be8f9fc1c363b1388388cca:2",
+      "5ba4a8703be8f9fc1c363b1388388cca:3",
+      "5ba4a8703be8f9fc1c363b1388388cca:4",
+      "5ba4a8703be8f9fc1c363b1388388cca:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:31:18"
+  },
+  "unity_manual/UIE-comparison-binding.md": {
+    "sha256": "01f468532feb4050b16cefb56856801945464799400dbb755348e3f737ac01a6",
+    "chunk_ids": [
+      "dd59b9342a652db35935af13ab6b025c:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:31:18"
+  },
+  "unity_manual/UIE-contextual-menus.md": {
+    "sha256": "31629eba68ea7c0e0cc57c740f0cfd457d50240da5968afeb18aa275c33c6656",
+    "chunk_ids": [
+      "f1656833c4edd633bba8835585bbc698:0",
+      "f1656833c4edd633bba8835585bbc698:1",
+      "f1656833c4edd633bba8835585bbc698:2",
+      "f1656833c4edd633bba8835585bbc698:3",
+      "f1656833c4edd633bba8835585bbc698:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:31:19"
+  },
+  "unity_manual/UIE-control-textures-of-the-dynamic-atlas.md": {
+    "sha256": "28eb6fa44113bcaefd58804b8f81ea51e9f145a1288da762186b9c9a2df14665",
+    "chunk_ids": [
+      "0bea711d7b6834328986f10498056c59:0",
+      "0bea711d7b6834328986f10498056c59:1",
+      "0bea711d7b6834328986f10498056c59:2",
+      "0bea711d7b6834328986f10498056c59:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:20"
+  },
+  "unity_manual/UIE-coordinate-and-position-system.md": {
+    "sha256": "2bf79584d3d34288408bbd1b7937ebbf25b924ecb56a636ccfd57710125344b0",
+    "chunk_ids": [
+      "67f727c2be6de4caa025018dfc5f3636:0",
+      "67f727c2be6de4caa025018dfc5f3636:1",
+      "67f727c2be6de4caa025018dfc5f3636:2",
+      "67f727c2be6de4caa025018dfc5f3636:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:21"
+  },
+  "unity_manual/UIE-create-a-binding-callback-any-properties.md": {
+    "sha256": "5451b52fffe70d0c00a74ecc64fb537ae98cf020dd407b938d813c1283d661dd",
+    "chunk_ids": [
+      "601fd48edadacf775ef8656540f04fb1:0",
+      "601fd48edadacf775ef8656540f04fb1:1",
+      "601fd48edadacf775ef8656540f04fb1:2",
+      "601fd48edadacf775ef8656540f04fb1:3",
+      "601fd48edadacf775ef8656540f04fb1:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:31:22"
+  },
+  "unity_manual/UIE-create-a-binding-callback.md": {
+    "sha256": "d57271578712f5209e5816cee88da3ebfcd4876b937e2eff4ae99856b85666bb",
+    "chunk_ids": [
+      "5b4ad5c36c053a6357df164661a0dd97:0",
+      "5b4ad5c36c053a6357df164661a0dd97:1",
+      "5b4ad5c36c053a6357df164661a0dd97:2",
+      "5b4ad5c36c053a6357df164661a0dd97:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:23"
+  },
+  "unity_manual/UIE-create-a-binding-csharp.md": {
+    "sha256": "eb8e856fab573b9563aca04797c2d4df9e93e4b459e2a84697ed6cd3ac50ca1b",
+    "chunk_ids": [
+      "f53bd7aa39d69612b8bf2c1daa4ef8ce:0",
+      "f53bd7aa39d69612b8bf2c1daa4ef8ce:1",
+      "f53bd7aa39d69612b8bf2c1daa4ef8ce:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:31:23"
+  },
+  "unity_manual/UIE-create-a-binding-uxml-bind.md": {
+    "sha256": "741af96a55f9d7aa4d1a30a0c4d8dbcfe3e77c3ee952105218e9d47947555276",
+    "chunk_ids": [
+      "f3059d43f6884e97ef112487cb357427:0",
+      "f3059d43f6884e97ef112487cb357427:1",
+      "f3059d43f6884e97ef112487cb357427:2",
+      "f3059d43f6884e97ef112487cb357427:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:24"
+  },
+  "unity_manual/UIE-create-a-binding-uxml-inspector.md": {
+    "sha256": "2d7ff4666988f036e4d0f461f156d90858680d55b7da6ddcce894ff2d68382e1",
+    "chunk_ids": [
+      "be8e865925303b77f346a88eb6ffe8ce:0",
+      "be8e865925303b77f346a88eb6ffe8ce:1",
+      "be8e865925303b77f346a88eb6ffe8ce:2",
+      "be8e865925303b77f346a88eb6ffe8ce:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:25"
+  },
+  "unity_manual/UIE-create-a-conditional-ui.md": {
+    "sha256": "8278f3a51d75f7e24998896d179eff5a5ef90cc7d9851c52d9c011bdb3cdce41",
+    "chunk_ids": [
+      "32e8523bcffa9797feaaeabaef9b5662:0",
+      "32e8523bcffa9797feaaeabaef9b5662:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:31:26"
+  },
+  "unity_manual/UIE-create-a-popup-window.md": {
+    "sha256": "ce93a498bb037b532f89cd3ad5634cd657e134c8bc3e19068a076f50f1de3c4d",
+    "chunk_ids": [
+      "2b416b40d27bf9531220a885515e6673:0",
+      "2b416b40d27bf9531220a885515e6673:1",
+      "2b416b40d27bf9531220a885515e6673:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:31:27"
+  },
+  "unity_manual/UIE-create-aspect-ratios-custom-control.md": {
+    "sha256": "3791daf6779c03320a077322a81a634d886efb8151c98afc335773c97cdd5e05",
+    "chunk_ids": [
+      "0ffcebd91df9be62753ce3e957f58644:0",
+      "0ffcebd91df9be62753ce3e957f58644:1",
+      "0ffcebd91df9be62753ce3e957f58644:2",
+      "0ffcebd91df9be62753ce3e957f58644:3",
+      "0ffcebd91df9be62753ce3e957f58644:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:31:27"
+  },
+  "unity_manual/UIE-create-bindable-custom-control.md": {
+    "sha256": "29ac7a10e1f23ca4fb43bfa640dee8ce7767804da349bdbbf701b50edf3badb4",
+    "chunk_ids": [
+      "e965cf9a8ded132b5bd6c5876b14a35d:0",
+      "e965cf9a8ded132b5bd6c5876b14a35d:1",
+      "e965cf9a8ded132b5bd6c5876b14a35d:2",
+      "e965cf9a8ded132b5bd6c5876b14a35d:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:31:28"
+  },
+  "unity_manual/UIE-create-custom-controls.md": {
+    "sha256": "b80f6422c4db658b2af43908e7e748a63c80d1a85d6f41b46b0415938277df17",
+    "chunk_ids": [
+      "3306def6a6980916a4827d7a168ce051:0",
+      "3306def6a6980916a4827d7a168ce051:1",
+      "3306def6a6980916a4827d7a168ce051:2",
+      "3306def6a6980916a4827d7a168ce051:3",
+      "3306def6a6980916a4827d7a168ce051:4",
+      "3306def6a6980916a4827d7a168ce051:5",
+      "3306def6a6980916a4827d7a168ce051:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:31:29"
+  },
+  "unity_manual/UIE-create-custom-style-custom-control.md": {
+    "sha256": "ce7bd26b6da74d3f909c3b5f54f79b36edc49302dcc3b19661f6e8c2cbae6624",
+    "chunk_ids": [
+      "b69a3cddeb41e99147a5ab2a4dc3182a:0",
+      "b69a3cddeb41e99147a5ab2a4dc3182a:1",
+      "b69a3cddeb41e99147a5ab2a4dc3182a:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:31:30"
+  },
+  "unity_manual/UIE-create-drag-and-drop-list-treeview-between-windows.md": {
+    "sha256": "b685b848152f7ea425eb69a98a47ff505627ac395d33246e4cdf4abbc9795504",
+    "chunk_ids": [
+      "40707fa0ab8d3d38cec6fff10418f381:0",
+      "40707fa0ab8d3d38cec6fff10418f381:1",
+      "40707fa0ab8d3d38cec6fff10418f381:2",
+      "40707fa0ab8d3d38cec6fff10418f381:3",
+      "40707fa0ab8d3d38cec6fff10418f381:4",
+      "40707fa0ab8d3d38cec6fff10418f381:5",
+      "40707fa0ab8d3d38cec6fff10418f381:6",
+      "40707fa0ab8d3d38cec6fff10418f381:7",
+      "40707fa0ab8d3d38cec6fff10418f381:8",
+      "40707fa0ab8d3d38cec6fff10418f381:9",
+      "40707fa0ab8d3d38cec6fff10418f381:10",
+      "40707fa0ab8d3d38cec6fff10418f381:11",
+      "40707fa0ab8d3d38cec6fff10418f381:12"
+    ],
+    "chunk_count": 13,
+    "updated_at": "2026-03-14T12:31:32"
+  },
+  "unity_manual/UIE-create-drag-and-drop-ui.md": {
+    "sha256": "c53a09806485a6fd7d6f3380b00fb92d11d10b08f623a4b5c0860b91df16fe5b",
+    "chunk_ids": [
+      "ae73b6dd417adbd2d9e2c138c30fa373:0",
+      "ae73b6dd417adbd2d9e2c138c30fa373:1",
+      "ae73b6dd417adbd2d9e2c138c30fa373:2",
+      "ae73b6dd417adbd2d9e2c138c30fa373:3",
+      "ae73b6dd417adbd2d9e2c138c30fa373:4",
+      "ae73b6dd417adbd2d9e2c138c30fa373:5",
+      "ae73b6dd417adbd2d9e2c138c30fa373:6",
+      "ae73b6dd417adbd2d9e2c138c30fa373:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:31:33"
+  },
+  "unity_manual/UIE-create-list-view-complex.md": {
+    "sha256": "2d8f6e6aa31ce8e0b0cb62504167f68a1804c514dae4147a6ea36386f9ab14b2",
+    "chunk_ids": [
+      "918b9b5b6a3861129ca0f547b65393ba:0",
+      "918b9b5b6a3861129ca0f547b65393ba:1",
+      "918b9b5b6a3861129ca0f547b65393ba:2",
+      "918b9b5b6a3861129ca0f547b65393ba:3",
+      "918b9b5b6a3861129ca0f547b65393ba:4",
+      "918b9b5b6a3861129ca0f547b65393ba:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:32:23"
+  },
+  "unity_manual/UIE-create-panel.md": {
+    "sha256": "903bb82d271deba82a6ac382177ad7fe3a84ecefa02418fa0d3fa732f24e66b5",
+    "chunk_ids": [
+      "65485f2781f284fc71fe6156aeb54b5e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:24"
+  },
+  "unity_manual/UIE-create-runtime-binding-type-converter.md": {
+    "sha256": "d8f1c2a60e8c0a20c3447f4493926999a166c96dd8ae0ed1b246ae4878b46a64",
+    "chunk_ids": [
+      "6e260f03cffd8705c3f1624f4ab22ad7:0",
+      "6e260f03cffd8705c3f1624f4ab22ad7:1",
+      "6e260f03cffd8705c3f1624f4ab22ad7:2",
+      "6e260f03cffd8705c3f1624f4ab22ad7:3",
+      "6e260f03cffd8705c3f1624f4ab22ad7:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:32:25"
+  },
+  "unity_manual/UIE-create-tabbed-menu-for-runtime.md": {
+    "sha256": "3a72951b2d0ae227ca9f5981c5923f4098f2ef7be10aadf4479b5e35998a6a29",
+    "chunk_ids": [
+      "6e24475184817538d6ddca9e8a88d7fe:0",
+      "6e24475184817538d6ddca9e8a88d7fe:1",
+      "6e24475184817538d6ddca9e8a88d7fe:2",
+      "6e24475184817538d6ddca9e8a88d7fe:3",
+      "6e24475184817538d6ddca9e8a88d7fe:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:32:26"
+  },
+  "unity_manual/UIE-create-ui-document-component.md": {
+    "sha256": "3b3fcddc270ad9c3cadf813a207dd9aaebf87ec8e63451354efd078f1aebdf76",
+    "chunk_ids": [
+      "f2993e92f94b11722d12f746d4b36020:0",
+      "f2993e92f94b11722d12f746d4b36020:1",
+      "f2993e92f94b11722d12f746d4b36020:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:32:27"
+  },
+  "unity_manual/UIE-custom-controls.md": {
+    "sha256": "2afb37621e8fb036cfb7e22a62c559a9ff107f872a4a3844df35c46189b022f3",
+    "chunk_ids": [
+      "f90e1826a8b7c6092e9a2255f65f6d1f:0",
+      "f90e1826a8b7c6092e9a2255f65f6d1f:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:32:27"
+  },
+  "unity_manual/UIE-data-binding.md": {
+    "sha256": "a37dafc5902a097601d0645e3c5497f0effb88e928a42346892b2e7ed5e4cb0d",
+    "chunk_ids": [
+      "55a304ab5e449cf0a52e08f36ea434fa:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:28"
+  },
+  "unity_manual/UIE-define-a-namespace-prefix.md": {
+    "sha256": "36cc7b3662bcb527fd2cd8454306f6115754ea91b32f7e618eda2d3bb938eff1",
+    "chunk_ids": [
+      "9cf609b11a65268de704e6d8b6b8d35a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:29"
+  },
+  "unity_manual/UIE-drag-across-windows.md": {
+    "sha256": "0caa998a2fd8bc58f206ae911969ca201f8abc582bd4c029a1502f45068fb41d",
+    "chunk_ids": [
+      "ef8971d8a3d157a7931c5433442b374b:0",
+      "ef8971d8a3d157a7931c5433442b374b:1",
+      "ef8971d8a3d157a7931c5433442b374b:2",
+      "ef8971d8a3d157a7931c5433442b374b:3",
+      "ef8971d8a3d157a7931c5433442b374b:4",
+      "ef8971d8a3d157a7931c5433442b374b:5",
+      "ef8971d8a3d157a7931c5433442b374b:6",
+      "ef8971d8a3d157a7931c5433442b374b:7",
+      "ef8971d8a3d157a7931c5433442b374b:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:32:30"
+  },
+  "unity_manual/UIE-draw-order.md": {
+    "sha256": "434992f1b194fae60b9d5f77d689dc7ef04af2ca967a9580a682cd782541ff18",
+    "chunk_ids": [
+      "df1848770c5f6a76b45bd4eb329bccc2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:31"
+  },
+  "unity_manual/UIE-editor-binding.md": {
+    "sha256": "40150d6eff228cba615c2b56e9be8af9a464fcc75ad5074f6ed7be0db25fc9d5",
+    "chunk_ids": [
+      "e7ba7827f5819949d5ca1b456fac1b53:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:32"
+  },
+  "unity_manual/UIE-encapsulate-uxml-with-logic.md": {
+    "sha256": "c04a65046c4f519f97cdc60fa581685f28a4ab506ce8560c3a6804147eeaa36d",
+    "chunk_ids": [
+      "e8239cd1ca848ae75e1b28f6789ac128:0",
+      "e8239cd1ca848ae75e1b28f6789ac128:1",
+      "e8239cd1ca848ae75e1b28f6789ac128:2",
+      "e8239cd1ca848ae75e1b28f6789ac128:3",
+      "e8239cd1ca848ae75e1b28f6789ac128:4",
+      "e8239cd1ca848ae75e1b28f6789ac128:5",
+      "e8239cd1ca848ae75e1b28f6789ac128:6",
+      "e8239cd1ca848ae75e1b28f6789ac128:7",
+      "e8239cd1ca848ae75e1b28f6789ac128:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:32:33"
+  },
+  "unity_manual/UIE-event-examples.md": {
+    "sha256": "b2477f82fc274ea599cf7d8fd051f3ac948bf9703d1fb6cf397a8eed5a57419c",
+    "chunk_ids": [
+      "7b1d7396f3308d33b97dcb8ffb116bff:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:34"
+  },
+  "unity_manual/UIE-events-handling-custom-control.md": {
+    "sha256": "52f2e02a12a2695c90257ca75fc4901fe52fe4b11b134706bb00c1b64e3b4914",
+    "chunk_ids": [
+      "ee1f74a6a4286fb107b5f1919b39636d:0",
+      "ee1f74a6a4286fb107b5f1919b39636d:1",
+      "ee1f74a6a4286fb107b5f1919b39636d:2",
+      "ee1f74a6a4286fb107b5f1919b39636d:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:32:35"
+  },
+  "unity_manual/UIE-examples.md": {
+    "sha256": "0041ce8a8eeed6c087da303dd900e9fc02f3c483e89912970ad5031b290df984",
+    "chunk_ids": [
+      "581bf4b28ccea6e9e74451521838500a:0",
+      "581bf4b28ccea6e9e74451521838500a:1",
+      "581bf4b28ccea6e9e74451521838500a:2",
+      "581bf4b28ccea6e9e74451521838500a:3",
+      "581bf4b28ccea6e9e74451521838500a:4",
+      "581bf4b28ccea6e9e74451521838500a:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:32:36"
+  },
+  "unity_manual/UIE-fallback-font.md": {
+    "sha256": "4ac48733e63022d3589e43ef6f57fc508e45bfebe121214ea5fe1809f6149a73",
+    "chunk_ids": [
+      "5fa4801ed10f6a39c34d81691b03ec2c:0",
+      "5fa4801ed10f6a39c34d81691b03ec2c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:32:37"
+  },
+  "unity_manual/UIE-faq-event-and-input-system.md": {
+    "sha256": "746f9b534cdd4cdc03a7a1dfe3b913392b443dab734ab0fb8f11938e138ce66c",
+    "chunk_ids": [
+      "08a0917c48b074f5ed6a1fef9f30e9a1:0",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:1",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:2",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:3",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:4",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:5",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:6",
+      "08a0917c48b074f5ed6a1fef9f30e9a1:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:32:38"
+  },
+  "unity_manual/UIE-focus-order.md": {
+    "sha256": "48b75aeb9d7b941610c82390a9ebb96fbf62182207ea99f0ac022f998d8797f4",
+    "chunk_ids": [
+      "7610a4dbb8eb934db2f4c1ebf5d6ea36:0",
+      "7610a4dbb8eb934db2f4c1ebf5d6ea36:1",
+      "7610a4dbb8eb934db2f4c1ebf5d6ea36:2",
+      "7610a4dbb8eb934db2f4c1ebf5d6ea36:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:32:39"
+  },
+  "unity_manual/UIE-font-asset-landing.md": {
+    "sha256": "04b18d393700720210233a0cf8bd9187fa53f3aa102e8cbfe4ca151096263654",
+    "chunk_ids": [
+      "d5d1ff51a3c02ec88d6088af59a2c331:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:32:40"
+  },
+  "unity_manual/UIE-font-asset-properties.md": {
+    "sha256": "2ff331a3076585608427be2f11af5fc103b334244bcb4b451a71309b3da5f023",
+    "chunk_ids": [
+      "3e91126b7064ae57e031588d0368437c:0",
+      "3e91126b7064ae57e031588d0368437c:1",
+      "3e91126b7064ae57e031588d0368437c:2",
+      "3e91126b7064ae57e031588d0368437c:3",
+      "3e91126b7064ae57e031588d0368437c:4",
+      "3e91126b7064ae57e031588d0368437c:5",
+      "3e91126b7064ae57e031588d0368437c:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:32:41"
+  },
+  "unity_manual/UIE-font-asset.md": {
+    "sha256": "b14e32bd363cc7853b2a7d621a89d7392b8d8cf85e3c488cb248be7808c03701",
+    "chunk_ids": [
+      "28ca4643120654a81c2e634602f153a1:0",
+      "28ca4643120654a81c2e634602f153a1:1",
+      "28ca4643120654a81c2e634602f153a1:2",
+      "28ca4643120654a81c2e634602f153a1:3",
+      "28ca4643120654a81c2e634602f153a1:4",
+      "28ca4643120654a81c2e634602f153a1:5",
+      "28ca4643120654a81c2e634602f153a1:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:32:42"
+  },
+  "unity_manual/UIE-font-creator-properties.md": {
+    "sha256": "d7f83931c1e55855842fa78031e4ae5fdb054374c9fe3076b925af488a92bdbb",
+    "chunk_ids": [
+      "2f47a552010542e553c250ff2c90c1ec:0",
+      "2f47a552010542e553c250ff2c90c1ec:1",
+      "2f47a552010542e553c250ff2c90c1ec:2",
+      "2f47a552010542e553c250ff2c90c1ec:3",
+      "2f47a552010542e553c250ff2c90c1ec:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:32:43"
+  },
+  "unity_manual/UIE-font-subsetting.md": {
+    "sha256": "618ec99e9c2a34e787e0a09e038cb87e473d496772fca7955993ea2b315579fe",
+    "chunk_ids": [
+      "e795c184cdf95b65bc8a06c03bf25c26:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:33:06"
+  },
+  "unity_manual/UIE-generate-2d-visual-content.md": {
+    "sha256": "1425d32fbb4a18f5de224c0140f371945d678634efdd7a5b82522256a1f1a5b7",
+    "chunk_ids": [
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:0",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:1",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:2",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:3",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:4",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:5",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:6",
+      "e2b26fd90f7cf0f131a6bdc470ad1aa4:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:33:07"
+  },
+  "unity_manual/UIE-get-custom-styles.md": {
+    "sha256": "c43eea5cada90940bde9cc41015001084341b4449bc88eb093b26cd0aac19cca",
+    "chunk_ids": [
+      "205762797a8ccee01d0e129bedbad147:0",
+      "205762797a8ccee01d0e129bedbad147:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:33:08"
+  },
+  "unity_manual/UIE-get-started-runtime-binding.md": {
+    "sha256": "dc19df464646184f64b209fedda681e0a7043c213418a3a5dbaaa4e60aa75cc4",
+    "chunk_ids": [
+      "64c4a512136deea4215f6c4adc94c38b:0",
+      "64c4a512136deea4215f6c4adc94c38b:1",
+      "64c4a512136deea4215f6c4adc94c38b:2",
+      "64c4a512136deea4215f6c4adc94c38b:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:33:09"
+  },
+  "unity_manual/UIE-get-started-with-runtime-ui.md": {
+    "sha256": "de8caa6ac0ebd83b5396d65cacddb627fb0fbf7db875cd5168775f60c6db9d14",
+    "chunk_ids": [
+      "91293ae67d53f8c8fc4b7cb78419965f:0",
+      "91293ae67d53f8c8fc4b7cb78419965f:1",
+      "91293ae67d53f8c8fc4b7cb78419965f:2",
+      "91293ae67d53f8c8fc4b7cb78419965f:3",
+      "91293ae67d53f8c8fc4b7cb78419965f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:33:10"
+  },
+  "unity_manual/UIE-get-started-with-text.md": {
+    "sha256": "6817a736f1d82e18b5808fb2938d8d352ef44eec297328ab1f7d76f64a626da5",
+    "chunk_ids": [
+      "78759d3171db9fd06fe35324c0d10523:0",
+      "78759d3171db9fd06fe35324c0d10523:1",
+      "78759d3171db9fd06fe35324c0d10523:2",
+      "78759d3171db9fd06fe35324c0d10523:3",
+      "78759d3171db9fd06fe35324c0d10523:4",
+      "78759d3171db9fd06fe35324c0d10523:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:33:11"
+  },
+  "unity_manual/UIE-image-import-settings.md": {
+    "sha256": "9a3fd670bdd4921f773d155bbaad8a4b5cca305797cbc6a0ebe92219fe69e8e6",
+    "chunk_ids": [
+      "20cf3960e1315cb91d54eaf5d6bf05dd:0",
+      "20cf3960e1315cb91d54eaf5d6bf05dd:1",
+      "20cf3960e1315cb91d54eaf5d6bf05dd:2",
+      "20cf3960e1315cb91d54eaf5d6bf05dd:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:33:12"
+  },
+  "unity_manual/UIE-manage-asset-reference.md": {
+    "sha256": "e4cae2c6d02cf7b3c060643f65221a8ca3d07754637551cda9849f2043498a03",
+    "chunk_ids": [
+      "d66ffb57940bd99a3e7fa094f50947e0:0",
+      "d66ffb57940bd99a3e7fa094f50947e0:1",
+      "d66ffb57940bd99a3e7fa094f50947e0:2",
+      "d66ffb57940bd99a3e7fa094f50947e0:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:33:13"
+  },
+  "unity_manual/UIE-manipulators.md": {
+    "sha256": "06263ebd904f26414a7e88661aad0a1a950394a336b916ddf77d13fe0bbeac3c",
+    "chunk_ids": [
+      "332d2a6ab8cf3c00197dec1032523d39:0",
+      "332d2a6ab8cf3c00197dec1032523d39:1",
+      "332d2a6ab8cf3c00197dec1032523d39:2",
+      "332d2a6ab8cf3c00197dec1032523d39:3",
+      "332d2a6ab8cf3c00197dec1032523d39:4",
+      "332d2a6ab8cf3c00197dec1032523d39:5",
+      "332d2a6ab8cf3c00197dec1032523d39:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:33:14"
+  },
+  "unity_manual/UIE-masking.md": {
+    "sha256": "8f13b399bccdfc8e020b4aefc2113e367f6f83b31c3cf5c55cd532043f5137c3",
+    "chunk_ids": [
+      "6c4e156fd9ad2b4087720d4b6dd9a7d2:0",
+      "6c4e156fd9ad2b4087720d4b6dd9a7d2:1",
+      "6c4e156fd9ad2b4087720d4b6dd9a7d2:2",
+      "6c4e156fd9ad2b4087720d4b6dd9a7d2:3",
+      "6c4e156fd9ad2b4087720d4b6dd9a7d2:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:33:15"
+  },
+  "unity_manual/UIE-migration-guides.md": {
+    "sha256": "d796cbb5a5c74091c7dc1b49de27103905f41a7cf842b3806d00dc05e4510a72",
+    "chunk_ids": [
+      "0f924aa4eeb495aeb25e7553c7286255:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:33:15"
+  },
+  "unity_manual/UIE-move-elements-at-runtime.md": {
+    "sha256": "3f3e175eeebeb9d36e3d7ad5251af2ec3f6e3fd079edaaeade8a2f0f28f18852",
+    "chunk_ids": [
+      "a45da2a4bd8abf69872c55e2603de085:0",
+      "a45da2a4bd8abf69872c55e2603de085:1",
+      "a45da2a4bd8abf69872c55e2603de085:2",
+      "a45da2a4bd8abf69872c55e2603de085:3",
+      "a45da2a4bd8abf69872c55e2603de085:4",
+      "a45da2a4bd8abf69872c55e2603de085:5",
+      "a45da2a4bd8abf69872c55e2603de085:6",
+      "a45da2a4bd8abf69872c55e2603de085:7",
+      "a45da2a4bd8abf69872c55e2603de085:8",
+      "a45da2a4bd8abf69872c55e2603de085:9",
+      "a45da2a4bd8abf69872c55e2603de085:10",
+      "a45da2a4bd8abf69872c55e2603de085:11",
+      "a45da2a4bd8abf69872c55e2603de085:12"
+    ],
+    "chunk_count": 13,
+    "updated_at": "2026-03-14T12:33:17"
+  },
+  "unity_manual/UIE-panels.md": {
+    "sha256": "dea5692afa655fe9ccb404a30c8dc2c26614fb86653ddf79c7a137af26e64abd",
+    "chunk_ids": [
+      "e5ee400a05845594e77c5884ca163e34:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:33:17"
+  },
+  "unity_manual/UIE-parallel-tessellation.md": {
+    "sha256": "50369bd8ba1f50b16dfc01383ce8b066be49080bb4b5dffea1f85054408881ce",
+    "chunk_ids": [
+      "0424efa115ef8c24c67dac33f8f82b6d:0",
+      "0424efa115ef8c24c67dac33f8f82b6d:1",
+      "0424efa115ef8c24c67dac33f8f82b6d:2",
+      "0424efa115ef8c24c67dac33f8f82b6d:3",
+      "0424efa115ef8c24c67dac33f8f82b6d:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:33:18"
+  },
+  "unity_manual/UIE-performance-consideration-runtime.md": {
+    "sha256": "038f77e36bedee600544ba2669a5bd271c78eb8188f1fa8e624c08b9b9f8e483",
+    "chunk_ids": [
+      "d0874f7e85d15c0e42d3597fa93482d7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:33:19"
+  },
+  "unity_manual/UIE-pie-chart.md": {
+    "sha256": "5673bade2f1eccc61cbb8b1e31e93aac30c0967d5dd00c660c1fa0b610c388b4",
+    "chunk_ids": [
+      "8161ac73bef3a1e97bd0d1b0df9c486f:0",
+      "8161ac73bef3a1e97bd0d1b0df9c486f:1",
+      "8161ac73bef3a1e97bd0d1b0df9c486f:2",
+      "8161ac73bef3a1e97bd0d1b0df9c486f:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:33:20"
+  },
+  "unity_manual/UIE-platform-and-mesh.md": {
+    "sha256": "853027149d528702790315ce5ab7d68d4f8debc30f9bb805a6668ed9aaee132d",
+    "chunk_ids": [
+      "8e8fad8008dd37e4d657da4305c3899b:0",
+      "8e8fad8008dd37e4d657da4305c3899b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:33:21"
+  },
+  "unity_manual/UIE-profiler-markers.md": {
+    "sha256": "cd03b187b60510894f19d14b622c3d60165e859621b7009f0d44e195b2958a2c",
+    "chunk_ids": [
+      "15a578f47a171185c94aac62bf84a41e:0",
+      "15a578f47a171185c94aac62bf84a41e:1",
+      "15a578f47a171185c94aac62bf84a41e:2",
+      "15a578f47a171185c94aac62bf84a41e:3",
+      "15a578f47a171185c94aac62bf84a41e:4",
+      "15a578f47a171185c94aac62bf84a41e:5",
+      "15a578f47a171185c94aac62bf84a41e:6",
+      "15a578f47a171185c94aac62bf84a41e:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:33:22"
+  },
+  "unity_manual/UIE-radial-progress-use-vector-api.md": {
+    "sha256": "264f244bbac3ca9ef6da8dd1caceef06120072a33ea07097cb2526e6bf94ec78",
+    "chunk_ids": [
+      "62a6f3b67e54cd45a7a2141f06578e4a:0",
+      "62a6f3b67e54cd45a7a2141f06578e4a:1",
+      "62a6f3b67e54cd45a7a2141f06578e4a:2",
+      "62a6f3b67e54cd45a7a2141f06578e4a:3",
+      "62a6f3b67e54cd45a7a2141f06578e4a:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:33:23"
+  },
+  "unity_manual/UIE-radial-progress.md": {
+    "sha256": "8f41cbd2933ebaf5c2e0807a15ab6d211e6958c9238672cdf9e01a623a936f01",
+    "chunk_ids": [
+      "1582c6be5807ae7e8446bba686cdab71:0",
+      "1582c6be5807ae7e8446bba686cdab71:1",
+      "1582c6be5807ae7e8446bba686cdab71:2",
+      "1582c6be5807ae7e8446bba686cdab71:3",
+      "1582c6be5807ae7e8446bba686cdab71:4",
+      "1582c6be5807ae7e8446bba686cdab71:5",
+      "1582c6be5807ae7e8446bba686cdab71:6",
+      "1582c6be5807ae7e8446bba686cdab71:7",
+      "1582c6be5807ae7e8446bba686cdab71:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:34:14"
+  },
+  "unity_manual/UIE-reference-other-files-from-uxml.md": {
+    "sha256": "e1017507acfe42f013171e4a861a67a6231424f797425b87630eb75cf4198a07",
+    "chunk_ids": [
+      "78cf65f240c5ab0d5ab873a01c7cef1e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:15"
+  },
+  "unity_manual/UIE-relative-absolute-positioning-example.md": {
+    "sha256": "ef867cce82738b7d3cc34781785ae174701a72a2c0c8931fcdb038d6b39d5942",
+    "chunk_ids": [
+      "8493b8b24ad64958537ae4cd48aedd39:0",
+      "8493b8b24ad64958537ae4cd48aedd39:1",
+      "8493b8b24ad64958537ae4cd48aedd39:2",
+      "8493b8b24ad64958537ae4cd48aedd39:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:34:16"
+  },
+  "unity_manual/UIE-render-runtime-ui.md": {
+    "sha256": "f085983eeb28dd3cd73124c06500f38f9f7360c9cc6f6e4c5f5c3ef2677a8495",
+    "chunk_ids": [
+      "1573c340da905ed735619e372abcad1b:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:17"
+  },
+  "unity_manual/UIE-reuse-uxml-files.md": {
+    "sha256": "65fce9305494e2e5cfe9a4baa5d7da310925b5ef95602fa05feb270db5cf5152",
+    "chunk_ids": [
+      "ebb4af9a28b66688992a4dbe32c441d9:0",
+      "ebb4af9a28b66688992a4dbe32c441d9:1",
+      "ebb4af9a28b66688992a4dbe32c441d9:2",
+      "ebb4af9a28b66688992a4dbe32c441d9:3",
+      "ebb4af9a28b66688992a4dbe32c441d9:4",
+      "ebb4af9a28b66688992a4dbe32c441d9:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:34:17"
+  },
+  "unity_manual/UIE-rich-text-tags.md": {
+    "sha256": "10c03f493bd55ca51c872466e783db5b81fa9bd34375efd509eef207804d2880",
+    "chunk_ids": [
+      "05d7f53b35bd731dff906c0b9e50ac25:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:18"
+  },
+  "unity_manual/UIE-runtime-binding-custom-types.md": {
+    "sha256": "1b6cc85e47c7604998246bd47e9b10b483e6ee4b7a7c7d804ff2b4e48748fe56",
+    "chunk_ids": [
+      "87b048e0097f39dd9a877669868638c1:0",
+      "87b048e0097f39dd9a877669868638c1:1",
+      "87b048e0097f39dd9a877669868638c1:2",
+      "87b048e0097f39dd9a877669868638c1:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:34:19"
+  },
+  "unity_manual/UIE-runtime-binding-data-type-conversion.md": {
+    "sha256": "3aee68c74f9b3847f6d5d1d6ad14fa6effae9fdab8c07dc02d33acd91ca310e1",
+    "chunk_ids": [
+      "82e15145c996ab3b7c26c90d173c9c03:0",
+      "82e15145c996ab3b7c26c90d173c9c03:1",
+      "82e15145c996ab3b7c26c90d173c9c03:2",
+      "82e15145c996ab3b7c26c90d173c9c03:3",
+      "82e15145c996ab3b7c26c90d173c9c03:4",
+      "82e15145c996ab3b7c26c90d173c9c03:5",
+      "82e15145c996ab3b7c26c90d173c9c03:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:34:20"
+  },
+  "unity_manual/UIE-runtime-binding-define-data-source.md": {
+    "sha256": "9d2b104fc04e6820b33eafa5630a45577f29d4774efa700d8970aa08a1237982",
+    "chunk_ids": [
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:0",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:1",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:2",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:3",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:4",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:5",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:6",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:7",
+      "1cad2df1f4b34dbffa770e7cebcaa8b5:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:34:21"
+  },
+  "unity_manual/UIE-runtime-binding-examples.md": {
+    "sha256": "4e8f90a7dde73135c1c5f4959716c43c08f0aba7f048b0ea6f4ad5e807576be6",
+    "chunk_ids": [
+      "efe3f76a7701cf309923a4c2dd182c85:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:22"
+  },
+  "unity_manual/UIE-runtime-binding-list-view.md": {
+    "sha256": "2518599337b16cb8f6ae3d636f86358781a897dd5ef4a8b99ccf3a695b501874",
+    "chunk_ids": [
+      "b4ed10efef4acaa0d56926018e500ccc:0",
+      "b4ed10efef4acaa0d56926018e500ccc:1",
+      "b4ed10efef4acaa0d56926018e500ccc:2",
+      "b4ed10efef4acaa0d56926018e500ccc:3",
+      "b4ed10efef4acaa0d56926018e500ccc:4",
+      "b4ed10efef4acaa0d56926018e500ccc:5",
+      "b4ed10efef4acaa0d56926018e500ccc:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:34:23"
+  },
+  "unity_manual/UIE-runtime-binding-logging-levels.md": {
+    "sha256": "6aadf2f8c52ff76934f73d3ce8bd0aaeb377dc9238e73cacb1085e3ae6b92329",
+    "chunk_ids": [
+      "475688d1992b30ef51a5a35441c7f290:0",
+      "475688d1992b30ef51a5a35441c7f290:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:34:24"
+  },
+  "unity_manual/UIE-runtime-binding-mode-update.md": {
+    "sha256": "67ef10354ec3f6de7ef122f45ca85c022acc64ccd9e879afe15907fc6916fdf8",
+    "chunk_ids": [
+      "8f68417b9dcea6d3041b397e55f75704:0",
+      "8f68417b9dcea6d3041b397e55f75704:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:34:24"
+  },
+  "unity_manual/UIE-runtime-binding-types.md": {
+    "sha256": "643bb4ff4d77336e50910d8aa30fa38e3c29a6a00ccb1ebb72ebe42d84aa941e",
+    "chunk_ids": [
+      "b48f5e365696a7a3ec2bff8bcc88eb28:0",
+      "b48f5e365696a7a3ec2bff8bcc88eb28:1",
+      "b48f5e365696a7a3ec2bff8bcc88eb28:2",
+      "b48f5e365696a7a3ec2bff8bcc88eb28:3",
+      "b48f5e365696a7a3ec2bff8bcc88eb28:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:34:25"
+  },
+  "unity_manual/UIE-runtime-binding.md": {
+    "sha256": "ee99e7a6436aeb81a2759dee76f6c6f69ea4720e800ac1cf7d9c27e8bed8868b",
+    "chunk_ids": [
+      "14dd265b43b75069cb3973c6de87ff04:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:26"
+  },
+  "unity_manual/UIE-runtime-custom-binding-bind-uss.md": {
+    "sha256": "31eb4229c9ba8265cf9bdc41bb80bc40389753718063a345d93e80821bf258e7",
+    "chunk_ids": [
+      "dbcb7ba4acf859a8dd5ebfd8f1a14c27:0",
+      "dbcb7ba4acf859a8dd5ebfd8f1a14c27:1",
+      "dbcb7ba4acf859a8dd5ebfd8f1a14c27:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:34:27"
+  },
+  "unity_manual/UIE-runtime-examples.md": {
+    "sha256": "e9f7d6689f036b43562eb453df82ec378a7ea4ea2718f389e992a2860b4a6c46",
+    "chunk_ids": [
+      "59387d01c2b4c42f5f3bbffb46fbc0aa:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:34:27"
+  },
+  "unity_manual/UIE-simple-ui-toolkit-workflow.md": {
+    "sha256": "9ff7c48c53e8501d35a760cd3b6d558d7692c7a83259e6d5cf8d3ad5d9b1e6ca",
+    "chunk_ids": [
+      "e8603f7be378e735a5924763fa83430c:0",
+      "e8603f7be378e735a5924763fa83430c:1",
+      "e8603f7be378e735a5924763fa83430c:2",
+      "e8603f7be378e735a5924763fa83430c:3",
+      "e8603f7be378e735a5924763fa83430c:4",
+      "e8603f7be378e735a5924763fa83430c:5",
+      "e8603f7be378e735a5924763fa83430c:6",
+      "e8603f7be378e735a5924763fa83430c:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-14T12:34:28"
+  },
+  "unity_manual/UIE-slide-toggle.md": {
+    "sha256": "bec3f7f7e36961e0a61c26f045d42ca9748423b0292e82b8692c452c0812cf99",
+    "chunk_ids": [
+      "51da3b1a44ed401e3cc4fcf80172baf4:0",
+      "51da3b1a44ed401e3cc4fcf80172baf4:1",
+      "51da3b1a44ed401e3cc4fcf80172baf4:2",
+      "51da3b1a44ed401e3cc4fcf80172baf4:3",
+      "51da3b1a44ed401e3cc4fcf80172baf4:4",
+      "51da3b1a44ed401e3cc4fcf80172baf4:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:34:30"
+  },
+  "unity_manual/UIE-sprite-asset-properties.md": {
+    "sha256": "80020b40608f35ce32bfefc37957fcce0385a5761733eafd4c67978a7342f825",
+    "chunk_ids": [
+      "c14ff82687849f3e98254e4c26489d09:0",
+      "c14ff82687849f3e98254e4c26489d09:1",
+      "c14ff82687849f3e98254e4c26489d09:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:34:31"
+  },
+  "unity_manual/UIE-sprite.md": {
+    "sha256": "ec7798587bf4165656fb140a8d9150d86bca2ee7d2c09b5f6a38543b00439c9e",
+    "chunk_ids": [
+      "1354e2957a8db59226bfe905aad38637:0",
+      "1354e2957a8db59226bfe905aad38637:1",
+      "1354e2957a8db59226bfe905aad38637:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:35:19"
+  },
+  "unity_manual/UIE-structure-ui.md": {
+    "sha256": "c05dec6801cff844e844ecddfd15969c3cea570c9be075a775105ef9589955d2",
+    "chunk_ids": [
+      "47273fbb919da49365278f0bddbd0f39:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:20"
+  },
+  "unity_manual/UIE-style-sheet.md": {
+    "sha256": "a49a52c7269e296e5f44a70e171a7c6f9b7845d56ddedcca5159e4fdb8518fc2",
+    "chunk_ids": [
+      "debbab243b1b6dc3c2605b0c8f66542a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:21"
+  },
+  "unity_manual/UIE-support-for-editor-ui.md": {
+    "sha256": "ac9a1e05dbf7a58f348b2f043e5d56f0b81cc70e599fa81ed29a43d1268e2925",
+    "chunk_ids": [
+      "3a7149bc36b87d4b4b6a306dd898392f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:22"
+  },
+  "unity_manual/UIE-support-for-runtime-ui.md": {
+    "sha256": "987754fd44714ad51f1decdcd760d4285c0fa9057dacf3790daed7497287a8d6",
+    "chunk_ids": [
+      "57f9fc7dfff6e72b073a321a90ca3bb2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:22"
+  },
+  "unity_manual/UIE-supported-tags.md": {
+    "sha256": "4d3bd35b908e35b1bdeff2b57d3f1d2184829ea54b7604671747cc73f0a0b56e",
+    "chunk_ids": [
+      "678920f6dc07d4131d7123c6ee04fc38:0",
+      "678920f6dc07d4131d7123c6ee04fc38:1",
+      "678920f6dc07d4131d7123c6ee04fc38:2",
+      "678920f6dc07d4131d7123c6ee04fc38:3",
+      "678920f6dc07d4131d7123c6ee04fc38:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-14T12:35:23"
+  },
+  "unity_manual/UIE-test-ui.md": {
+    "sha256": "7ed87b770eaa636a126f6f430648872a8720fd40324462ee269b02f8489673a9",
+    "chunk_ids": [
+      "814cd671b07df86f28b36c0764d080a4:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:24"
+  },
+  "unity_manual/UIE-text-effects.md": {
+    "sha256": "bdb7b2739843b89f2ce1631c031bf49972392312897e7ae52e2d2113f4104bf1",
+    "chunk_ids": [
+      "44649d3f06bbbc0eba48b9bb6238e8e3:0",
+      "44649d3f06bbbc0eba48b9bb6238e8e3:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:35:25"
+  },
+  "unity_manual/UIE-text-setting-asset.md": {
+    "sha256": "f1cb260ef304175afe36bf5a406a2f6f5894e805fd06d1bd940c898b6b873f60",
+    "chunk_ids": [
+      "b493bb73c73adca29761565a6bf5030e:0",
+      "b493bb73c73adca29761565a6bf5030e:1",
+      "b493bb73c73adca29761565a6bf5030e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:35:26"
+  },
+  "unity_manual/UIE-transition-event-example.md": {
+    "sha256": "1dd77b223ee37ac97a03454ae931715113387ea44e1f74939d3e8da8bf893b97",
+    "chunk_ids": [
+      "94301fbe9d0b8aebb8d35eca83a02620:0",
+      "94301fbe9d0b8aebb8d35eca83a02620:1",
+      "94301fbe9d0b8aebb8d35eca83a02620:2",
+      "94301fbe9d0b8aebb8d35eca83a02620:3",
+      "94301fbe9d0b8aebb8d35eca83a02620:4",
+      "94301fbe9d0b8aebb8d35eca83a02620:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:35:26"
+  },
+  "unity_manual/UIE-transition-event-loop-example.md": {
+    "sha256": "14e53342f4f2ac552f1325c300c64dd933a1fe38959264b8e82d53ad87e362c8",
+    "chunk_ids": [
+      "26b066cb3c7989dc018e095e8dc07920:0",
+      "26b066cb3c7989dc018e095e8dc07920:1",
+      "26b066cb3c7989dc018e095e8dc07920:2",
+      "26b066cb3c7989dc018e095e8dc07920:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:35:27"
+  },
+  "unity_manual/UIE-transition-example.md": {
+    "sha256": "3f962deca0ef9e2ae47660c6117bf837abef02814ca9a73ae22709cb3d2b2a52",
+    "chunk_ids": [
+      "ddd441f7d03f7a6f754cd30801b5d4d5:0",
+      "ddd441f7d03f7a6f754cd30801b5d4d5:1",
+      "ddd441f7d03f7a6f754cd30801b5d4d5:2",
+      "ddd441f7d03f7a6f754cd30801b5d4d5:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:35:28"
+  },
+  "unity_manual/UIE-troubleshooting-custom-control-library-compilation.md": {
+    "sha256": "a84eccbf0a8eac961cd17df2937ac62429516cc8d9592a0ebba5cceccccfdce8",
+    "chunk_ids": [
+      "09eca08907ff299ca962ec14f0adad61:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:29"
+  },
+  "unity_manual/UIE-tss.md": {
+    "sha256": "97a39654398e430ebf72779b534d0542192dcc6d90dca56e3f54dffb131bcee7",
+    "chunk_ids": [
+      "56d14faf77e8d3994cebdc8088cd66f2:0",
+      "56d14faf77e8d3994cebdc8088cd66f2:1",
+      "56d14faf77e8d3994cebdc8088cd66f2:2",
+      "56d14faf77e8d3994cebdc8088cd66f2:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:35:30"
+  },
+  "unity_manual/UIE-ui-debugger.md": {
+    "sha256": "afa51ef0fd9ce6a7aa6ae5c38189b87111ee367032ace3372c0ddb925ca366d6",
+    "chunk_ids": [
+      "50e249c025db2eaf311ad1547b90cf04:0",
+      "50e249c025db2eaf311ad1547b90cf04:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:35:30"
+  },
+  "unity_manual/UIE-ui-renderer.md": {
+    "sha256": "8125f65e96c432a07dee9c770025f919ef032c42c2e5d1ee778935f39087f45d",
+    "chunk_ids": [
+      "e5ec6eef09517a14ae38508aa82ee10e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-14T12:35:31"
+  },
+  "unity_manual/UIE-use-usage-hints-to-reduce-draw-calls-and-geometry-regeneration.md": {
+    "sha256": "fe364b9ec9469276dba8cd72a01b930df3cfe041b4cd40c06fd7199b86a02f52",
+    "chunk_ids": [
+      "f051cf1bb4ae185b64582f7652cf713e:0",
+      "f051cf1bb4ae185b64582f7652cf713e:1",
+      "f051cf1bb4ae185b64582f7652cf713e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:35:32"
+  },
+  "unity_manual/UIE-uss-built-in-variable-reference.md": {
+    "sha256": "21a1d7f4d45f0b20cf32600088c2d52661e970c057a100c8dd51b3467f44e17a",
+    "chunk_ids": [
+      "4cdbe7ca0522667e1ce6e883d6a96708:0",
+      "4cdbe7ca0522667e1ce6e883d6a96708:1",
+      "4cdbe7ca0522667e1ce6e883d6a96708:2",
+      "4cdbe7ca0522667e1ce6e883d6a96708:3",
+      "4cdbe7ca0522667e1ce6e883d6a96708:4",
+      "4cdbe7ca0522667e1ce6e883d6a96708:5",
+      "4cdbe7ca0522667e1ce6e883d6a96708:6",
+      "4cdbe7ca0522667e1ce6e883d6a96708:7",
+      "4cdbe7ca0522667e1ce6e883d6a96708:8",
+      "4cdbe7ca0522667e1ce6e883d6a96708:9",
+      "4cdbe7ca0522667e1ce6e883d6a96708:10",
+      "4cdbe7ca0522667e1ce6e883d6a96708:11",
+      "4cdbe7ca0522667e1ce6e883d6a96708:12",
+      "4cdbe7ca0522667e1ce6e883d6a96708:13",
+      "4cdbe7ca0522667e1ce6e883d6a96708:14",
+      "4cdbe7ca0522667e1ce6e883d6a96708:15",
+      "4cdbe7ca0522667e1ce6e883d6a96708:16",
+      "4cdbe7ca0522667e1ce6e883d6a96708:17"
+    ],
+    "chunk_count": 18,
+    "updated_at": "2026-03-14T12:35:35"
+  },
+  "unity_manual/UIE-uss-color-keywords.md": {
+    "sha256": "18751d7f371e2d64469c610331ef7a30de2aa9460b4495731fe37bfac78bf407",
+    "chunk_ids": [
+      "67bbc9c263b4411dd306f7ef4e95cfd9:0",
+      "67bbc9c263b4411dd306f7ef4e95cfd9:1",
+      "67bbc9c263b4411dd306f7ef4e95cfd9:2",
+      "67bbc9c263b4411dd306f7ef4e95cfd9:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-14T12:35:36"
+  },
+  "unity_manual/UIE-uss-properties.md": {
+    "sha256": "495ababc1e9f783dd2e14889aff71ff9a8b1409c435166ab21b8aa74d75508ec",
+    "chunk_ids": [
+      "afad25b2b1ebee90221e22cc129992d6:0",
+      "afad25b2b1ebee90221e22cc129992d6:1",
+      "afad25b2b1ebee90221e22cc129992d6:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-14T12:36:24"
+  },
+  "unity_manual/UIE-uss-selector-precedence.md": {
+    "sha256": "60812a75271ca37ae5a0f7e91998aa8b9a7a42f46ecff8acc01ed19155969d30",
+    "chunk_ids": [
+      "1ffdb067a4fc7a7d2cdc1af9603afcc6:0",
+      "1ffdb067a4fc7a7d2cdc1af9603afcc6:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-14T12:36:24"
+  },
+  "unity_manual/UIE-uxml-element-BindableElement.md": {
+    "sha256": "210c34c08f605bbbcf895449770e3c492473969d8c2fee73838d0bc0f919deca",
+    "chunk_ids": [
+      "94962ce13589439d46e37b2a9737de4d:0",
+      "94962ce13589439d46e37b2a9737de4d:1",
+      "94962ce13589439d46e37b2a9737de4d:2",
+      "94962ce13589439d46e37b2a9737de4d:3",
+      "94962ce13589439d46e37b2a9737de4d:4",
+      "94962ce13589439d46e37b2a9737de4d:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:36:26"
+  },
+  "unity_manual/UIE-uxml-element-BoundsField.md": {
+    "sha256": "f7452d46e3aaa92ec94e7d8aa87e2123a0bdc0b1d3e5d5528825863e3a848e38",
+    "chunk_ids": [
+      "7ccd1c3c99cfb39941962c06da2833fd:0",
+      "7ccd1c3c99cfb39941962c06da2833fd:1",
+      "7ccd1c3c99cfb39941962c06da2833fd:2",
+      "7ccd1c3c99cfb39941962c06da2833fd:3",
+      "7ccd1c3c99cfb39941962c06da2833fd:4",
+      "7ccd1c3c99cfb39941962c06da2833fd:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:36:27"
+  },
+  "unity_manual/UIE-uxml-element-BoundsIntField.md": {
+    "sha256": "52b6174c27187a7b552606fa4ba55ee82e4b12a0768bc062b166200dbbc38cf4",
+    "chunk_ids": [
+      "3d5ee70d873d7e0f6662acdfec4d5dad:0",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:1",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:2",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:3",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:4",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:5",
+      "3d5ee70d873d7e0f6662acdfec4d5dad:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:36:29"
+  },
+  "unity_manual/UIE-uxml-element-Box.md": {
+    "sha256": "5a90958334c64ebb75b5365ceb7f7a44f854502638c6772afe9f98dddc819ffe",
+    "chunk_ids": [
+      "60805bd789dd5288d93687e839819cf7:0",
+      "60805bd789dd5288d93687e839819cf7:1",
+      "60805bd789dd5288d93687e839819cf7:2",
+      "60805bd789dd5288d93687e839819cf7:3",
+      "60805bd789dd5288d93687e839819cf7:4",
+      "60805bd789dd5288d93687e839819cf7:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-14T12:36:30"
+  },
+  "unity_manual/UIE-uxml-element-Button.md": {
+    "sha256": "9a02552dd31378b0b09fda562c0e6a572c31ccfe26a5adc22a7dd327f0b601e5",
+    "chunk_ids": [
+      "99319c4422d5827f761846571cc33df4:0",
+      "99319c4422d5827f761846571cc33df4:1",
+      "99319c4422d5827f761846571cc33df4:2",
+      "99319c4422d5827f761846571cc33df4:3",
+      "99319c4422d5827f761846571cc33df4:4",
+      "99319c4422d5827f761846571cc33df4:5",
+      "99319c4422d5827f761846571cc33df4:6",
+      "99319c4422d5827f761846571cc33df4:7",
+      "99319c4422d5827f761846571cc33df4:8",
+      "99319c4422d5827f761846571cc33df4:9",
+      "99319c4422d5827f761846571cc33df4:10",
+      "99319c4422d5827f761846571cc33df4:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-03-14T12:36:32"
+  },
+  "unity_manual/UIE-uxml-element-ColorField.md": {
+    "sha256": "560db95c7a8d4b573480e46ed0d8dfaedbf9e10dd203b286b9c5fc81672b5e1b",
+    "chunk_ids": [
+      "8a9fac1a19d4ea312c332dd287a925d1:0",
+      "8a9fac1a19d4ea312c332dd287a925d1:1",
+      "8a9fac1a19d4ea312c332dd287a925d1:2",
+      "8a9fac1a19d4ea312c332dd287a925d1:3",
+      "8a9fac1a19d4ea312c332dd287a925d1:4",
+      "8a9fac1a19d4ea312c332dd287a925d1:5",
+      "8a9fac1a19d4ea312c332dd287a925d1:6",
+      "8a9fac1a19d4ea312c332dd287a925d1:7",
+      "8a9fac1a19d4ea312c332dd287a925d1:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-14T12:36:33"
+  },
+  "unity_manual/UIE-uxml-element-CurveField.md": {
+    "sha256": "18217ccfb2324db98f6199cdaaec17ea595dec8c34efd837f1afc8d75a64fbbc",
+    "chunk_ids": [
+      "29efe3cb1de3a9c819ec498c81989fa1:0",
+      "29efe3cb1de3a9c819ec498c81989fa1:1",
+      "29efe3cb1de3a9c819ec498c81989fa1:2",
+      "29efe3cb1de3a9c819ec498c81989fa1:3",
+      "29efe3cb1de3a9c819ec498c81989fa1:4",
+      "29efe3cb1de3a9c819ec498c81989fa1:5",
+      "29efe3cb1de3a9c819ec498c81989fa1:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-14T12:36:35"
+  },
+  "unity_manual/UIE-uxml-element-DoubleField.md": {
+    "sha256": "8b96544467cf4bbe836fceb1064cb94f66e74bf3e172b8235cfb597e3635b954",
+    "chunk_ids": [
+      "b5bfeb2e5974d14e586ee0fb59f499f4:0",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:1",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:2",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:3",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:4",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:5",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:6",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:7",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:8",
+      "b5bfeb2e5974d14e586ee0fb59f499f4:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-14T12:36:36"
+  },
+  "unity_manual/UIE-uxml-element-DropdownField.md": {
+    "sha256": "8e941919d56fd32977c08fcdc9b5b5bc539a63235c83d0e4e4a0ca386a36c384",
+    "chunk_ids": [
+      "45de77544e1f56019b6f2c991c11af3a:0",
+      "45de77544e1f56019b6f2c991c11af3a:1",
+      "45de77544e1f56019b6f2c991c11af3a:2",
+      "45de77544e1f56019b6f2c991c11af3a:3",
+      "45de77544e1f56019b6f2c991c11af3a:4",
+      "45de77544e1f56019b6f2c991c11af3a:5",
+      "45de77544e1f56019b6f2c991c11af3a:6",
+      "45de77544e1f56019b6f2c991c11af3a:7",
+      "45de77544e1f56019b6f2c991c11af3a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:11:45"
+  },
+  "unity_manual/UIE-uxml-element-EnumField.md": {
+    "sha256": "785bde4ee3cfa107731cf742ed2d30f7be10d75a13ad02cb0339f849833c15bc",
+    "chunk_ids": [
+      "30c2a975fcba579ec00c8bae24c7f952:0",
+      "30c2a975fcba579ec00c8bae24c7f952:1",
+      "30c2a975fcba579ec00c8bae24c7f952:2",
+      "30c2a975fcba579ec00c8bae24c7f952:3",
+      "30c2a975fcba579ec00c8bae24c7f952:4",
+      "30c2a975fcba579ec00c8bae24c7f952:5",
+      "30c2a975fcba579ec00c8bae24c7f952:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:11:46"
+  },
+  "unity_manual/UIE-uxml-element-EnumFlagsField.md": {
+    "sha256": "5d59c901350f6e173accaaea3d0d6ef8115603e594e98a3e842a1f2016bf1b90",
+    "chunk_ids": [
+      "1c06eaeacd86418e7b4706a69dd3fa18:0",
+      "1c06eaeacd86418e7b4706a69dd3fa18:1",
+      "1c06eaeacd86418e7b4706a69dd3fa18:2",
+      "1c06eaeacd86418e7b4706a69dd3fa18:3",
+      "1c06eaeacd86418e7b4706a69dd3fa18:4",
+      "1c06eaeacd86418e7b4706a69dd3fa18:5",
+      "1c06eaeacd86418e7b4706a69dd3fa18:6",
+      "1c06eaeacd86418e7b4706a69dd3fa18:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:11:48"
+  },
+  "unity_manual/UIE-uxml-element-FloatField.md": {
+    "sha256": "cbc5f37f34c7ec81bbbacfdaf0dd787bf70d59fb6ed51bd8c5051d0ad1236b2f",
+    "chunk_ids": [
+      "0015f3bdedb70aa4ed20bb9dfa51a767:0",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:1",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:2",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:3",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:4",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:5",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:6",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:7",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:8",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:9",
+      "0015f3bdedb70aa4ed20bb9dfa51a767:10"
+    ],
+    "chunk_count": 11,
+    "updated_at": "2026-03-16T10:11:49"
+  },
+  "unity_manual/UIE-uxml-element-Foldout.md": {
+    "sha256": "5b631258cd94a13b40aa9d1b5692ab485d80cacd9a0f618caa994a45c5de2dd5",
+    "chunk_ids": [
+      "54eb1179ba82bb24a040ae0be99fe42b:0",
+      "54eb1179ba82bb24a040ae0be99fe42b:1",
+      "54eb1179ba82bb24a040ae0be99fe42b:2",
+      "54eb1179ba82bb24a040ae0be99fe42b:3",
+      "54eb1179ba82bb24a040ae0be99fe42b:4",
+      "54eb1179ba82bb24a040ae0be99fe42b:5",
+      "54eb1179ba82bb24a040ae0be99fe42b:6",
+      "54eb1179ba82bb24a040ae0be99fe42b:7",
+      "54eb1179ba82bb24a040ae0be99fe42b:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:11:51"
+  },
+  "unity_manual/UIE-uxml-element-GradientField.md": {
+    "sha256": "4f5a941641e32fa9aac42bf0d3b1f386ccbd16be6a56a5c7b2a43a9ec7b34130",
+    "chunk_ids": [
+      "a993013c98fcd897856f31dc06609593:0",
+      "a993013c98fcd897856f31dc06609593:1",
+      "a993013c98fcd897856f31dc06609593:2",
+      "a993013c98fcd897856f31dc06609593:3",
+      "a993013c98fcd897856f31dc06609593:4",
+      "a993013c98fcd897856f31dc06609593:5",
+      "a993013c98fcd897856f31dc06609593:6",
+      "a993013c98fcd897856f31dc06609593:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:11:52"
+  },
+  "unity_manual/UIE-uxml-element-GroupBox.md": {
+    "sha256": "c9b7d247811c7f4bf6edc20c35e3149e88693220be6a1a3d014d45b9bb3d8251",
+    "chunk_ids": [
+      "aee74eb167550064ae4e03f0587d5e1f:0",
+      "aee74eb167550064ae4e03f0587d5e1f:1",
+      "aee74eb167550064ae4e03f0587d5e1f:2",
+      "aee74eb167550064ae4e03f0587d5e1f:3",
+      "aee74eb167550064ae4e03f0587d5e1f:4",
+      "aee74eb167550064ae4e03f0587d5e1f:5",
+      "aee74eb167550064ae4e03f0587d5e1f:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:11:54"
+  },
+  "unity_manual/UIE-uxml-element-Hash128Field.md": {
+    "sha256": "e9be178ffddbb8339af5d0bf86cbfd165f765b3934b671b808376f1b6b07b173",
+    "chunk_ids": [
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:0",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:1",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:2",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:3",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:4",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:5",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:6",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:7",
+      "bcd2e574bce3f1f5f0eb7ed878a4fc4d:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:11:55"
+  },
+  "unity_manual/UIE-uxml-element-HelpBox.md": {
+    "sha256": "8c797d8d499f25c0cc3766a0c0c55020ede3abe95c75606b13217f5cc2c0cbbb",
+    "chunk_ids": [
+      "82e66507fa5ed7652693bc0b1dfe7480:0",
+      "82e66507fa5ed7652693bc0b1dfe7480:1",
+      "82e66507fa5ed7652693bc0b1dfe7480:2",
+      "82e66507fa5ed7652693bc0b1dfe7480:3",
+      "82e66507fa5ed7652693bc0b1dfe7480:4",
+      "82e66507fa5ed7652693bc0b1dfe7480:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:11:56"
+  },
+  "unity_manual/UIE-uxml-element-IMGUIContainer.md": {
+    "sha256": "1e5c6f3e882f39834298135b3aba99bd019779e07b82f14a92894221c88ad517",
+    "chunk_ids": [
+      "2b9890bca9fe256b5e140cf115dd1ff0:0",
+      "2b9890bca9fe256b5e140cf115dd1ff0:1",
+      "2b9890bca9fe256b5e140cf115dd1ff0:2",
+      "2b9890bca9fe256b5e140cf115dd1ff0:3",
+      "2b9890bca9fe256b5e140cf115dd1ff0:4",
+      "2b9890bca9fe256b5e140cf115dd1ff0:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:11:58"
+  },
+  "unity_manual/UIE-uxml-element-Image.md": {
+    "sha256": "522421a34f427d58b0725e810da85f5832cc84b9a338bb4b78a70c678d9f85f2",
+    "chunk_ids": [
+      "6bab10840da6430bd080df04a0a9f680:0",
+      "6bab10840da6430bd080df04a0a9f680:1",
+      "6bab10840da6430bd080df04a0a9f680:2",
+      "6bab10840da6430bd080df04a0a9f680:3",
+      "6bab10840da6430bd080df04a0a9f680:4",
+      "6bab10840da6430bd080df04a0a9f680:5",
+      "6bab10840da6430bd080df04a0a9f680:6",
+      "6bab10840da6430bd080df04a0a9f680:7",
+      "6bab10840da6430bd080df04a0a9f680:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:11:59"
+  },
+  "unity_manual/UIE-uxml-element-InspectorElement.md": {
+    "sha256": "544fb85326ec1a94f3b24f73b5e4f33cbeb59991e716e747552b083f031b5fbb",
+    "chunk_ids": [
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:0",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:1",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:2",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:3",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:4",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:5",
+      "578fd4b00a1715ef5fc2e2a3874aa0aa:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:12:49"
+  },
+  "unity_manual/UIE-uxml-element-IntegerField.md": {
+    "sha256": "3856ba6cb1bee0fd5743f989ee083b8777abed14ded0b8a3c33be80318fb7169",
+    "chunk_ids": [
+      "fb64087349e829b771897e38e80079ac:0",
+      "fb64087349e829b771897e38e80079ac:1",
+      "fb64087349e829b771897e38e80079ac:2",
+      "fb64087349e829b771897e38e80079ac:3",
+      "fb64087349e829b771897e38e80079ac:4",
+      "fb64087349e829b771897e38e80079ac:5",
+      "fb64087349e829b771897e38e80079ac:6",
+      "fb64087349e829b771897e38e80079ac:7",
+      "fb64087349e829b771897e38e80079ac:8",
+      "fb64087349e829b771897e38e80079ac:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-16T10:12:51"
+  },
+  "unity_manual/UIE-uxml-element-Label.md": {
+    "sha256": "a8f3030c6a766f891185442164ef5a252e1a38276e8525148e4a77d00c9e323c",
+    "chunk_ids": [
+      "e2a53be403763a6f85c203754094c80a:0",
+      "e2a53be403763a6f85c203754094c80a:1",
+      "e2a53be403763a6f85c203754094c80a:2",
+      "e2a53be403763a6f85c203754094c80a:3",
+      "e2a53be403763a6f85c203754094c80a:4",
+      "e2a53be403763a6f85c203754094c80a:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:12:52"
+  },
+  "unity_manual/UIE-uxml-element-LayerField.md": {
+    "sha256": "9b03075d287a86ffe2ac73220bc2805f16da61f468c6ab7923b9ff63ff4a7806",
+    "chunk_ids": [
+      "f85886125d19b9d5be101d6cb601a465:0",
+      "f85886125d19b9d5be101d6cb601a465:1",
+      "f85886125d19b9d5be101d6cb601a465:2",
+      "f85886125d19b9d5be101d6cb601a465:3",
+      "f85886125d19b9d5be101d6cb601a465:4",
+      "f85886125d19b9d5be101d6cb601a465:5",
+      "f85886125d19b9d5be101d6cb601a465:6",
+      "f85886125d19b9d5be101d6cb601a465:7",
+      "f85886125d19b9d5be101d6cb601a465:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:12:53"
+  },
+  "unity_manual/UIE-uxml-element-LayerMaskField.md": {
+    "sha256": "9a10ff05656eda9b83cd096c8a76841b5eb6339fbb5555686c93cd0a6ba9239a",
+    "chunk_ids": [
+      "8762fd6d6dc0a3bd3c002b73f6f35190:0",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:1",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:2",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:3",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:4",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:5",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:6",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:7",
+      "8762fd6d6dc0a3bd3c002b73f6f35190:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:12:55"
+  },
+  "unity_manual/UIE-uxml-element-ListView.md": {
+    "sha256": "6209443911ed6b3e2d40389f517f758a852a642aed397cbd4f4a25d173c33826",
+    "chunk_ids": [
+      "6e492220d8cbd82d48531dd5009a1d94:0",
+      "6e492220d8cbd82d48531dd5009a1d94:1",
+      "6e492220d8cbd82d48531dd5009a1d94:2",
+      "6e492220d8cbd82d48531dd5009a1d94:3",
+      "6e492220d8cbd82d48531dd5009a1d94:4",
+      "6e492220d8cbd82d48531dd5009a1d94:5",
+      "6e492220d8cbd82d48531dd5009a1d94:6",
+      "6e492220d8cbd82d48531dd5009a1d94:7",
+      "6e492220d8cbd82d48531dd5009a1d94:8",
+      "6e492220d8cbd82d48531dd5009a1d94:9",
+      "6e492220d8cbd82d48531dd5009a1d94:10",
+      "6e492220d8cbd82d48531dd5009a1d94:11",
+      "6e492220d8cbd82d48531dd5009a1d94:12",
+      "6e492220d8cbd82d48531dd5009a1d94:13",
+      "6e492220d8cbd82d48531dd5009a1d94:14",
+      "6e492220d8cbd82d48531dd5009a1d94:15",
+      "6e492220d8cbd82d48531dd5009a1d94:16",
+      "6e492220d8cbd82d48531dd5009a1d94:17",
+      "6e492220d8cbd82d48531dd5009a1d94:18"
+    ],
+    "chunk_count": 19,
+    "updated_at": "2026-03-16T10:12:57"
+  },
+  "unity_manual/UIE-uxml-element-LongField.md": {
+    "sha256": "966b135cef31fd54f6768660eb1288229436ac11ebac4836c586167ce7d0e1d5",
+    "chunk_ids": [
+      "8a9143772533b08a4a9ec62f5ca359bb:0",
+      "8a9143772533b08a4a9ec62f5ca359bb:1",
+      "8a9143772533b08a4a9ec62f5ca359bb:2",
+      "8a9143772533b08a4a9ec62f5ca359bb:3",
+      "8a9143772533b08a4a9ec62f5ca359bb:4",
+      "8a9143772533b08a4a9ec62f5ca359bb:5",
+      "8a9143772533b08a4a9ec62f5ca359bb:6",
+      "8a9143772533b08a4a9ec62f5ca359bb:7",
+      "8a9143772533b08a4a9ec62f5ca359bb:8",
+      "8a9143772533b08a4a9ec62f5ca359bb:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-16T10:12:58"
+  },
+  "unity_manual/UIE-uxml-element-Mask64Field.md": {
+    "sha256": "9b831c0a8a61f597f3ff7d593b151b1a8f3a756434203ca64d86aeaa37a9155d",
+    "chunk_ids": [
+      "08bd38f8c4146f56a75ef7068d73297a:0",
+      "08bd38f8c4146f56a75ef7068d73297a:1",
+      "08bd38f8c4146f56a75ef7068d73297a:2",
+      "08bd38f8c4146f56a75ef7068d73297a:3",
+      "08bd38f8c4146f56a75ef7068d73297a:4",
+      "08bd38f8c4146f56a75ef7068d73297a:5",
+      "08bd38f8c4146f56a75ef7068d73297a:6",
+      "08bd38f8c4146f56a75ef7068d73297a:7",
+      "08bd38f8c4146f56a75ef7068d73297a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:13:00"
+  },
+  "unity_manual/UIE-uxml-element-MaskField.md": {
+    "sha256": "8b3fee978307705138721bb4245aa237b3c6c8f200b993275be83655cd9f0312",
+    "chunk_ids": [
+      "84f164a133334b07a1b63c0d84ddd5ab:0",
+      "84f164a133334b07a1b63c0d84ddd5ab:1",
+      "84f164a133334b07a1b63c0d84ddd5ab:2",
+      "84f164a133334b07a1b63c0d84ddd5ab:3",
+      "84f164a133334b07a1b63c0d84ddd5ab:4",
+      "84f164a133334b07a1b63c0d84ddd5ab:5",
+      "84f164a133334b07a1b63c0d84ddd5ab:6",
+      "84f164a133334b07a1b63c0d84ddd5ab:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:13:01"
+  },
+  "unity_manual/UIE-uxml-element-MinMaxSlider.md": {
+    "sha256": "ef49a72c9e302e30f534258db07faeb74db02301572f6c0b9f41e6049d9eee26",
+    "chunk_ids": [
+      "2faac5efbf101df84299f83bcadbdc7a:0",
+      "2faac5efbf101df84299f83bcadbdc7a:1",
+      "2faac5efbf101df84299f83bcadbdc7a:2",
+      "2faac5efbf101df84299f83bcadbdc7a:3",
+      "2faac5efbf101df84299f83bcadbdc7a:4",
+      "2faac5efbf101df84299f83bcadbdc7a:5",
+      "2faac5efbf101df84299f83bcadbdc7a:6",
+      "2faac5efbf101df84299f83bcadbdc7a:7",
+      "2faac5efbf101df84299f83bcadbdc7a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:13:52"
+  },
+  "unity_manual/UIE-uxml-element-MultiColumnListView.md": {
+    "sha256": "6cd3211354eb5d5558e3fed99bb6ad743ce0124fcc6dbf007e85be3090fdd595",
+    "chunk_ids": [
+      "97f1e8c24b1412eede5c13d5d3a2835c:0",
+      "97f1e8c24b1412eede5c13d5d3a2835c:1",
+      "97f1e8c24b1412eede5c13d5d3a2835c:2",
+      "97f1e8c24b1412eede5c13d5d3a2835c:3",
+      "97f1e8c24b1412eede5c13d5d3a2835c:4",
+      "97f1e8c24b1412eede5c13d5d3a2835c:5",
+      "97f1e8c24b1412eede5c13d5d3a2835c:6",
+      "97f1e8c24b1412eede5c13d5d3a2835c:7",
+      "97f1e8c24b1412eede5c13d5d3a2835c:8",
+      "97f1e8c24b1412eede5c13d5d3a2835c:9",
+      "97f1e8c24b1412eede5c13d5d3a2835c:10",
+      "97f1e8c24b1412eede5c13d5d3a2835c:11",
+      "97f1e8c24b1412eede5c13d5d3a2835c:12",
+      "97f1e8c24b1412eede5c13d5d3a2835c:13",
+      "97f1e8c24b1412eede5c13d5d3a2835c:14",
+      "97f1e8c24b1412eede5c13d5d3a2835c:15",
+      "97f1e8c24b1412eede5c13d5d3a2835c:16",
+      "97f1e8c24b1412eede5c13d5d3a2835c:17",
+      "97f1e8c24b1412eede5c13d5d3a2835c:18"
+    ],
+    "chunk_count": 19,
+    "updated_at": "2026-03-16T10:13:54"
+  },
+  "unity_manual/UIE-uxml-element-MultiColumnTreeView.md": {
+    "sha256": "fbbb546d72023e59d47f869b818787c3a5b6240586125bbaa6e0ae0d8edca60f",
+    "chunk_ids": [
+      "6bb233b9562cc95e453b0879d59959b6:0",
+      "6bb233b9562cc95e453b0879d59959b6:1",
+      "6bb233b9562cc95e453b0879d59959b6:2",
+      "6bb233b9562cc95e453b0879d59959b6:3",
+      "6bb233b9562cc95e453b0879d59959b6:4",
+      "6bb233b9562cc95e453b0879d59959b6:5",
+      "6bb233b9562cc95e453b0879d59959b6:6",
+      "6bb233b9562cc95e453b0879d59959b6:7",
+      "6bb233b9562cc95e453b0879d59959b6:8",
+      "6bb233b9562cc95e453b0879d59959b6:9",
+      "6bb233b9562cc95e453b0879d59959b6:10",
+      "6bb233b9562cc95e453b0879d59959b6:11",
+      "6bb233b9562cc95e453b0879d59959b6:12",
+      "6bb233b9562cc95e453b0879d59959b6:13",
+      "6bb233b9562cc95e453b0879d59959b6:14",
+      "6bb233b9562cc95e453b0879d59959b6:15"
+    ],
+    "chunk_count": 16,
+    "updated_at": "2026-03-16T10:13:56"
+  },
+  "unity_manual/UIE-uxml-element-ObjectField.md": {
+    "sha256": "a2cd81a3991146df101bcba02f609b62df66082b39ddd5be9e6c0213c792b397",
+    "chunk_ids": [
+      "8e21a3de64dc8d9c45d986be044f30b7:0",
+      "8e21a3de64dc8d9c45d986be044f30b7:1",
+      "8e21a3de64dc8d9c45d986be044f30b7:2",
+      "8e21a3de64dc8d9c45d986be044f30b7:3",
+      "8e21a3de64dc8d9c45d986be044f30b7:4",
+      "8e21a3de64dc8d9c45d986be044f30b7:5",
+      "8e21a3de64dc8d9c45d986be044f30b7:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:13:57"
+  },
+  "unity_manual/UIE-uxml-element-PopupWindow.md": {
+    "sha256": "740d12ac79e94bb6b837929c6d280b11dc5932c69ba680859ceb1970e87074bd",
+    "chunk_ids": [
+      "2f4098a85c6423f13c15a00cc5b105ad:0",
+      "2f4098a85c6423f13c15a00cc5b105ad:1",
+      "2f4098a85c6423f13c15a00cc5b105ad:2",
+      "2f4098a85c6423f13c15a00cc5b105ad:3",
+      "2f4098a85c6423f13c15a00cc5b105ad:4",
+      "2f4098a85c6423f13c15a00cc5b105ad:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:13:58"
+  },
+  "unity_manual/UIE-uxml-element-ProgressBar.md": {
+    "sha256": "c13bd2d1d2246a4ee9bbc91947c7cf3189850ef731075884c3ee6a9740513b90",
+    "chunk_ids": [
+      "5e471286a42dc8307e7e647b025f2575:0",
+      "5e471286a42dc8307e7e647b025f2575:1",
+      "5e471286a42dc8307e7e647b025f2575:2",
+      "5e471286a42dc8307e7e647b025f2575:3",
+      "5e471286a42dc8307e7e647b025f2575:4",
+      "5e471286a42dc8307e7e647b025f2575:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:14:00"
+  },
+  "unity_manual/UIE-uxml-element-PropertyField.md": {
+    "sha256": "02dfa8f8b29dfebb86e7ba77a775af473cf786fc2ad200b1f694182a2f7feb29",
+    "chunk_ids": [
+      "67f013f49ebc8c780b8d2a62eff76196:0",
+      "67f013f49ebc8c780b8d2a62eff76196:1",
+      "67f013f49ebc8c780b8d2a62eff76196:2",
+      "67f013f49ebc8c780b8d2a62eff76196:3",
+      "67f013f49ebc8c780b8d2a62eff76196:4",
+      "67f013f49ebc8c780b8d2a62eff76196:5",
+      "67f013f49ebc8c780b8d2a62eff76196:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:14:01"
+  },
+  "unity_manual/UIE-uxml-element-RadioButton.md": {
+    "sha256": "46106bbb3476343cc9b0784030dfb6bd319faef521cfbb54c413792ca97c89d4",
+    "chunk_ids": [
+      "7ffcf80acc7247b400e51131dab58081:0",
+      "7ffcf80acc7247b400e51131dab58081:1",
+      "7ffcf80acc7247b400e51131dab58081:2",
+      "7ffcf80acc7247b400e51131dab58081:3",
+      "7ffcf80acc7247b400e51131dab58081:4",
+      "7ffcf80acc7247b400e51131dab58081:5",
+      "7ffcf80acc7247b400e51131dab58081:6",
+      "7ffcf80acc7247b400e51131dab58081:7",
+      "7ffcf80acc7247b400e51131dab58081:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:14:02"
+  },
+  "unity_manual/UIE-uxml-element-RadioButtonGroup.md": {
+    "sha256": "550029d14f929ee342a1eb7db2f80f9c1998336057484ec52e83c7efddf20dcd",
+    "chunk_ids": [
+      "8dc06462cc3fcb32b002cf8cb34b6fda:0",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:1",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:2",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:3",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:4",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:5",
+      "8dc06462cc3fcb32b002cf8cb34b6fda:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:14:52"
+  },
+  "unity_manual/UIE-uxml-element-RectField.md": {
+    "sha256": "5b0ebf92980d399e1db0fac0f907826665b8a587981f0d7258fc501befadc1dc",
+    "chunk_ids": [
+      "35088b85e5feaa6d136a96519dd611a8:0",
+      "35088b85e5feaa6d136a96519dd611a8:1",
+      "35088b85e5feaa6d136a96519dd611a8:2",
+      "35088b85e5feaa6d136a96519dd611a8:3",
+      "35088b85e5feaa6d136a96519dd611a8:4",
+      "35088b85e5feaa6d136a96519dd611a8:5",
+      "35088b85e5feaa6d136a96519dd611a8:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:14:53"
+  },
+  "unity_manual/UIE-uxml-element-RectIntField.md": {
+    "sha256": "8a3394e16e3bd956e34bf51d88ca3ce25c5e7a71b35783aff87011586235bef2",
+    "chunk_ids": [
+      "7335e2a004335b8dd3b02daaa1af8533:0",
+      "7335e2a004335b8dd3b02daaa1af8533:1",
+      "7335e2a004335b8dd3b02daaa1af8533:2",
+      "7335e2a004335b8dd3b02daaa1af8533:3",
+      "7335e2a004335b8dd3b02daaa1af8533:4",
+      "7335e2a004335b8dd3b02daaa1af8533:5",
+      "7335e2a004335b8dd3b02daaa1af8533:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:14:54"
+  },
+  "unity_manual/UIE-uxml-element-RenderingLayerMaskField.md": {
+    "sha256": "3a5ceb864ea3a22936c8105c308dc9865a2fd1aaa6e5c24e31ee9916f32c4625",
+    "chunk_ids": [
+      "58b4d40470a5592ad0716a2d0288d01b:0",
+      "58b4d40470a5592ad0716a2d0288d01b:1",
+      "58b4d40470a5592ad0716a2d0288d01b:2",
+      "58b4d40470a5592ad0716a2d0288d01b:3",
+      "58b4d40470a5592ad0716a2d0288d01b:4",
+      "58b4d40470a5592ad0716a2d0288d01b:5",
+      "58b4d40470a5592ad0716a2d0288d01b:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:14:56"
+  },
+  "unity_manual/UIE-uxml-element-RepeatButton.md": {
+    "sha256": "8e82b4d17e1151aaa3873e4442568a9c6db9aab815d55a49ac6ac0fa035a9f68",
+    "chunk_ids": [
+      "6bfac03379f3f15f816b4cdea5da3b61:0",
+      "6bfac03379f3f15f816b4cdea5da3b61:1",
+      "6bfac03379f3f15f816b4cdea5da3b61:2",
+      "6bfac03379f3f15f816b4cdea5da3b61:3",
+      "6bfac03379f3f15f816b4cdea5da3b61:4",
+      "6bfac03379f3f15f816b4cdea5da3b61:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:14:57"
+  },
+  "unity_manual/UIE-uxml-element-ScrollView.md": {
+    "sha256": "4ba688c105e64b0f0c54de9783174a1792460fa3a10b2f7e9813c84ee4ccde75",
+    "chunk_ids": [
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:0",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:1",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:2",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:3",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:4",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:5",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:6",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:7",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:8",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:9",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:10",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:11",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:12",
+      "2f443d9a2292b46dec65ad1b1ac0b1f6:13"
+    ],
+    "chunk_count": 14,
+    "updated_at": "2026-03-16T10:14:59"
+  },
+  "unity_manual/UIE-uxml-element-Scroller.md": {
+    "sha256": "4e67f2be7a410fd0a498fc3275013c47240d5d6570ee1f4a5289d0aff5da44ee",
+    "chunk_ids": [
+      "d0bbede47396bf75b419cba883b416ad:0",
+      "d0bbede47396bf75b419cba883b416ad:1",
+      "d0bbede47396bf75b419cba883b416ad:2",
+      "d0bbede47396bf75b419cba883b416ad:3",
+      "d0bbede47396bf75b419cba883b416ad:4",
+      "d0bbede47396bf75b419cba883b416ad:5",
+      "d0bbede47396bf75b419cba883b416ad:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:15:00"
+  },
+  "unity_manual/UIE-uxml-element-Slider.md": {
+    "sha256": "11bf3a66a02b453470c29a486f53312e877a8d78a4be412562cfb19a62148db2",
+    "chunk_ids": [
+      "ecce1ab4d39e42d12a721c46e840a635:0",
+      "ecce1ab4d39e42d12a721c46e840a635:1",
+      "ecce1ab4d39e42d12a721c46e840a635:2",
+      "ecce1ab4d39e42d12a721c46e840a635:3",
+      "ecce1ab4d39e42d12a721c46e840a635:4",
+      "ecce1ab4d39e42d12a721c46e840a635:5",
+      "ecce1ab4d39e42d12a721c46e840a635:6",
+      "ecce1ab4d39e42d12a721c46e840a635:7",
+      "ecce1ab4d39e42d12a721c46e840a635:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:15:01"
+  },
+  "unity_manual/UIE-uxml-element-SliderInt.md": {
+    "sha256": "d7803f1fa84c818b044bd480654abf8675b20d781e13773b636405febd5e5aa1",
+    "chunk_ids": [
+      "3b5585de03ef03ae6f05adb558871b3f:0",
+      "3b5585de03ef03ae6f05adb558871b3f:1",
+      "3b5585de03ef03ae6f05adb558871b3f:2",
+      "3b5585de03ef03ae6f05adb558871b3f:3",
+      "3b5585de03ef03ae6f05adb558871b3f:4",
+      "3b5585de03ef03ae6f05adb558871b3f:5",
+      "3b5585de03ef03ae6f05adb558871b3f:6",
+      "3b5585de03ef03ae6f05adb558871b3f:7",
+      "3b5585de03ef03ae6f05adb558871b3f:8",
+      "3b5585de03ef03ae6f05adb558871b3f:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-16T10:15:03"
+  },
+  "unity_manual/UIE-uxml-element-Tab.md": {
+    "sha256": "dad76d46239db7977fa34ac98efb0793ffd74de993d441ecbebed0cbf2389f08",
+    "chunk_ids": [
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:0",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:1",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:2",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:3",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:4",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:5",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:6",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:7",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:8",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:9",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:10",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:11",
+      "80ed6a35fb3b26dc0d7a0ae9ff57575d:12"
+    ],
+    "chunk_count": 13,
+    "updated_at": "2026-03-16T10:15:04"
+  },
+  "unity_manual/UIE-uxml-element-TabView.md": {
+    "sha256": "ecff92ebe19896b0d1a49b45b22f3949871ff75ee4182b0f194a0804a280a084",
+    "chunk_ids": [
+      "32f0ea52e1daf2f1739464678013d342:0",
+      "32f0ea52e1daf2f1739464678013d342:1",
+      "32f0ea52e1daf2f1739464678013d342:2",
+      "32f0ea52e1daf2f1739464678013d342:3",
+      "32f0ea52e1daf2f1739464678013d342:4",
+      "32f0ea52e1daf2f1739464678013d342:5",
+      "32f0ea52e1daf2f1739464678013d342:6",
+      "32f0ea52e1daf2f1739464678013d342:7",
+      "32f0ea52e1daf2f1739464678013d342:8",
+      "32f0ea52e1daf2f1739464678013d342:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-16T10:15:55"
+  },
+  "unity_manual/UIE-uxml-element-TagField.md": {
+    "sha256": "2d6af84ffe8932ae812a60a82d273d747b7085aaf9b4269997ce62b6403bfb88",
+    "chunk_ids": [
+      "ec81bf89f84f43a9c09e4595eaf06d60:0",
+      "ec81bf89f84f43a9c09e4595eaf06d60:1",
+      "ec81bf89f84f43a9c09e4595eaf06d60:2",
+      "ec81bf89f84f43a9c09e4595eaf06d60:3",
+      "ec81bf89f84f43a9c09e4595eaf06d60:4",
+      "ec81bf89f84f43a9c09e4595eaf06d60:5",
+      "ec81bf89f84f43a9c09e4595eaf06d60:6",
+      "ec81bf89f84f43a9c09e4595eaf06d60:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:15:57"
+  },
+  "unity_manual/UIE-uxml-element-TemplateContainer.md": {
+    "sha256": "0e01b26d82c3f811448f52f3fb8790afc0de0a6f37acc47b85a3a9abde278107",
+    "chunk_ids": [
+      "da8059afe8ee8e9a2fa0bc42f1960265:0",
+      "da8059afe8ee8e9a2fa0bc42f1960265:1",
+      "da8059afe8ee8e9a2fa0bc42f1960265:2",
+      "da8059afe8ee8e9a2fa0bc42f1960265:3",
+      "da8059afe8ee8e9a2fa0bc42f1960265:4",
+      "da8059afe8ee8e9a2fa0bc42f1960265:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:15:58"
+  },
+  "unity_manual/UIE-uxml-element-TextElement.md": {
+    "sha256": "ca4eaacc2bd89bf67543de4dc163783670cec6e1a2f9c9cc7957ebdcd46a283e",
+    "chunk_ids": [
+      "780341b6b9532d93833fe4f3645925e0:0",
+      "780341b6b9532d93833fe4f3645925e0:1",
+      "780341b6b9532d93833fe4f3645925e0:2",
+      "780341b6b9532d93833fe4f3645925e0:3",
+      "780341b6b9532d93833fe4f3645925e0:4",
+      "780341b6b9532d93833fe4f3645925e0:5",
+      "780341b6b9532d93833fe4f3645925e0:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:16:00"
+  },
+  "unity_manual/UIE-uxml-element-TextField.md": {
+    "sha256": "8da00fcbb322a4d4536d2b3a2796e0eb7eeaeb236dc6d0ef302044c6146610a2",
+    "chunk_ids": [
+      "8be618716c87c4d72a58736cad82704c:0",
+      "8be618716c87c4d72a58736cad82704c:1",
+      "8be618716c87c4d72a58736cad82704c:2",
+      "8be618716c87c4d72a58736cad82704c:3",
+      "8be618716c87c4d72a58736cad82704c:4",
+      "8be618716c87c4d72a58736cad82704c:5",
+      "8be618716c87c4d72a58736cad82704c:6",
+      "8be618716c87c4d72a58736cad82704c:7",
+      "8be618716c87c4d72a58736cad82704c:8",
+      "8be618716c87c4d72a58736cad82704c:9",
+      "8be618716c87c4d72a58736cad82704c:10",
+      "8be618716c87c4d72a58736cad82704c:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-03-16T10:16:01"
+  },
+  "unity_manual/UIE-uxml-element-Toggle.md": {
+    "sha256": "18f5e4e4a7bdf478e02865a5816ddca751c54b78c7d50b0cd4fce4d4d78a5849",
+    "chunk_ids": [
+      "a4bbd2d1f08b9270eb945c11b6beb40a:0",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:1",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:2",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:3",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:4",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:5",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:6",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:7",
+      "a4bbd2d1f08b9270eb945c11b6beb40a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:16:02"
+  },
+  "unity_manual/UIE-uxml-element-ToggleButtonGroup.md": {
+    "sha256": "42e6222f593cbdc594e0c76480fae603e61c062068146449259cbf71c812d12b",
+    "chunk_ids": [
+      "4db4e3e81b9e668d919ada7ad640037d:0",
+      "4db4e3e81b9e668d919ada7ad640037d:1",
+      "4db4e3e81b9e668d919ada7ad640037d:2",
+      "4db4e3e81b9e668d919ada7ad640037d:3",
+      "4db4e3e81b9e668d919ada7ad640037d:4",
+      "4db4e3e81b9e668d919ada7ad640037d:5",
+      "4db4e3e81b9e668d919ada7ad640037d:6",
+      "4db4e3e81b9e668d919ada7ad640037d:7",
+      "4db4e3e81b9e668d919ada7ad640037d:8",
+      "4db4e3e81b9e668d919ada7ad640037d:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-03-16T10:16:04"
+  },
+  "unity_manual/UIE-uxml-element-Toolbar.md": {
+    "sha256": "cd01a6e15586ff6d554b65f01c6f82653843f017c7ff2564fca472fa60e7477a",
+    "chunk_ids": [
+      "3a9337c2dff1a2f46689d256afaefec6:0",
+      "3a9337c2dff1a2f46689d256afaefec6:1",
+      "3a9337c2dff1a2f46689d256afaefec6:2",
+      "3a9337c2dff1a2f46689d256afaefec6:3",
+      "3a9337c2dff1a2f46689d256afaefec6:4",
+      "3a9337c2dff1a2f46689d256afaefec6:5",
+      "3a9337c2dff1a2f46689d256afaefec6:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:16:05"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarBreadcrumbs.md": {
+    "sha256": "562d56c1600c755c2d831e2b23eec6e297ae7ef27c063b065527cf0cda7711b2",
+    "chunk_ids": [
+      "92e114f6d419f9e9ee0f7bf1d356fa62:0",
+      "92e114f6d419f9e9ee0f7bf1d356fa62:1",
+      "92e114f6d419f9e9ee0f7bf1d356fa62:2",
+      "92e114f6d419f9e9ee0f7bf1d356fa62:3",
+      "92e114f6d419f9e9ee0f7bf1d356fa62:4",
+      "92e114f6d419f9e9ee0f7bf1d356fa62:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:16:07"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarButton.md": {
+    "sha256": "70e49c48290d87477a48328d92260e902d34381c87a84f147837432b3f5b3219",
+    "chunk_ids": [
+      "c4f1a24e1f6f3f4d0529bd26c783f902:0",
+      "c4f1a24e1f6f3f4d0529bd26c783f902:1",
+      "c4f1a24e1f6f3f4d0529bd26c783f902:2",
+      "c4f1a24e1f6f3f4d0529bd26c783f902:3",
+      "c4f1a24e1f6f3f4d0529bd26c783f902:4",
+      "c4f1a24e1f6f3f4d0529bd26c783f902:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:16:08"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarMenu.md": {
+    "sha256": "dd2737a65683aee7de7391ebcc7e13ce043878cd7a50b616d3994278b6f1da88",
+    "chunk_ids": [
+      "b923ae793796af2a5bd20ab9a1da64d2:0",
+      "b923ae793796af2a5bd20ab9a1da64d2:1",
+      "b923ae793796af2a5bd20ab9a1da64d2:2",
+      "b923ae793796af2a5bd20ab9a1da64d2:3",
+      "b923ae793796af2a5bd20ab9a1da64d2:4",
+      "b923ae793796af2a5bd20ab9a1da64d2:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:16:09"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarPopupSearchField.md": {
+    "sha256": "42c6c4011a5b99c4d82b288ae368fa80a2de1af5d16494b243de45f40b4c1540",
+    "chunk_ids": [
+      "b24dfc8932418f8aebaa2ef1874b4f43:0",
+      "b24dfc8932418f8aebaa2ef1874b4f43:1",
+      "b24dfc8932418f8aebaa2ef1874b4f43:2",
+      "b24dfc8932418f8aebaa2ef1874b4f43:3",
+      "b24dfc8932418f8aebaa2ef1874b4f43:4",
+      "b24dfc8932418f8aebaa2ef1874b4f43:5",
+      "b24dfc8932418f8aebaa2ef1874b4f43:6",
+      "b24dfc8932418f8aebaa2ef1874b4f43:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:16:59"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarSearchField.md": {
+    "sha256": "4466553193538e965f724ff5b26eb5798fe5afd9920af79fa7ab232da3799d86",
+    "chunk_ids": [
+      "4fe848715dfd0634b653bde43fcca5a0:0",
+      "4fe848715dfd0634b653bde43fcca5a0:1",
+      "4fe848715dfd0634b653bde43fcca5a0:2",
+      "4fe848715dfd0634b653bde43fcca5a0:3",
+      "4fe848715dfd0634b653bde43fcca5a0:4",
+      "4fe848715dfd0634b653bde43fcca5a0:5",
+      "4fe848715dfd0634b653bde43fcca5a0:6",
+      "4fe848715dfd0634b653bde43fcca5a0:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:17:01"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarSpacer.md": {
+    "sha256": "b4fc9b391030e8b55741ea42e8814413e2d7d40df3346fa38743402aad2e89e7",
+    "chunk_ids": [
+      "7f0755e2826ee6da80864b00c728679d:0",
+      "7f0755e2826ee6da80864b00c728679d:1",
+      "7f0755e2826ee6da80864b00c728679d:2",
+      "7f0755e2826ee6da80864b00c728679d:3",
+      "7f0755e2826ee6da80864b00c728679d:4",
+      "7f0755e2826ee6da80864b00c728679d:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:17:02"
+  },
+  "unity_manual/UIE-uxml-element-ToolbarToggle.md": {
+    "sha256": "6ae58d862b709c17c11d7780eac33ffe8c6d1c4441d0a0c615161beae0c6b2d8",
+    "chunk_ids": [
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:0",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:1",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:2",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:3",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:4",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:5",
+      "2ebc8d2e3be1dfcc4790dbe3a5f2b75c:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-03-16T10:17:04"
+  },
+  "unity_manual/UIE-uxml-element-TreeView.md": {
+    "sha256": "034cd413589e7e0c6263fe0fe989415daf6702acf75d470705738851ab105a18",
+    "chunk_ids": [
+      "3ae4fe56c4bd73ed12f93392ff416219:0",
+      "3ae4fe56c4bd73ed12f93392ff416219:1",
+      "3ae4fe56c4bd73ed12f93392ff416219:2",
+      "3ae4fe56c4bd73ed12f93392ff416219:3",
+      "3ae4fe56c4bd73ed12f93392ff416219:4",
+      "3ae4fe56c4bd73ed12f93392ff416219:5",
+      "3ae4fe56c4bd73ed12f93392ff416219:6",
+      "3ae4fe56c4bd73ed12f93392ff416219:7",
+      "3ae4fe56c4bd73ed12f93392ff416219:8",
+      "3ae4fe56c4bd73ed12f93392ff416219:9",
+      "3ae4fe56c4bd73ed12f93392ff416219:10",
+      "3ae4fe56c4bd73ed12f93392ff416219:11",
+      "3ae4fe56c4bd73ed12f93392ff416219:12",
+      "3ae4fe56c4bd73ed12f93392ff416219:13",
+      "3ae4fe56c4bd73ed12f93392ff416219:14",
+      "3ae4fe56c4bd73ed12f93392ff416219:15"
+    ],
+    "chunk_count": 16,
+    "updated_at": "2026-03-16T10:17:05"
+  },
+  "unity_manual/UIE-uxml-element-TwoPaneSplitView.md": {
+    "sha256": "ea65a2438795ea9ce6cf31c04625a7188e64f06763217de3f643b692616c81cc",
+    "chunk_ids": [
+      "f9126277a164afa8646c62cdf58a4973:0",
+      "f9126277a164afa8646c62cdf58a4973:1",
+      "f9126277a164afa8646c62cdf58a4973:2",
+      "f9126277a164afa8646c62cdf58a4973:3",
+      "f9126277a164afa8646c62cdf58a4973:4",
+      "f9126277a164afa8646c62cdf58a4973:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:17:06"
+  },
+  "unity_manual/UIE-uxml-element-UnsignedIntegerField.md": {
+    "sha256": "36bad99e42e6127c4ba176de4d7d38e0ebdc7dfc41c53591b048d280fd798e29",
+    "chunk_ids": [
+      "f5634d997912749d8af8b3585395f7b6:0",
+      "f5634d997912749d8af8b3585395f7b6:1",
+      "f5634d997912749d8af8b3585395f7b6:2",
+      "f5634d997912749d8af8b3585395f7b6:3",
+      "f5634d997912749d8af8b3585395f7b6:4",
+      "f5634d997912749d8af8b3585395f7b6:5",
+      "f5634d997912749d8af8b3585395f7b6:6",
+      "f5634d997912749d8af8b3585395f7b6:7",
+      "f5634d997912749d8af8b3585395f7b6:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:17:08"
+  },
+  "unity_manual/UIE-uxml-element-UnsignedLongField.md": {
+    "sha256": "5c12c54f888d5fd4a808cbb13b1ae95c673fb6ac2f91a379599fe13d3bc4c8ee",
+    "chunk_ids": [
+      "30003142ef1ea16979a2ffa188ba6fbf:0",
+      "30003142ef1ea16979a2ffa188ba6fbf:1",
+      "30003142ef1ea16979a2ffa188ba6fbf:2",
+      "30003142ef1ea16979a2ffa188ba6fbf:3",
+      "30003142ef1ea16979a2ffa188ba6fbf:4",
+      "30003142ef1ea16979a2ffa188ba6fbf:5",
+      "30003142ef1ea16979a2ffa188ba6fbf:6",
+      "30003142ef1ea16979a2ffa188ba6fbf:7",
+      "30003142ef1ea16979a2ffa188ba6fbf:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:17:09"
+  },
+  "unity_manual/UIE-uxml-element-Vector2Field.md": {
+    "sha256": "5e1440ca391ecfd7bbcc164c93e7acd40cfde8bc7e8b656053bbb5b901f2feef",
+    "chunk_ids": [
+      "2a84baa5c3294252c00ebfa219688379:0",
+      "2a84baa5c3294252c00ebfa219688379:1",
+      "2a84baa5c3294252c00ebfa219688379:2",
+      "2a84baa5c3294252c00ebfa219688379:3",
+      "2a84baa5c3294252c00ebfa219688379:4",
+      "2a84baa5c3294252c00ebfa219688379:5",
+      "2a84baa5c3294252c00ebfa219688379:6",
+      "2a84baa5c3294252c00ebfa219688379:7",
+      "2a84baa5c3294252c00ebfa219688379:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:17:11"
+  },
+  "unity_manual/UIE-uxml-element-Vector2IntField.md": {
+    "sha256": "6fd021d3c9dea7e69a64b4dcb2e8c93a36e4c5bec5ea30eaa5e548d3b45e659b",
+    "chunk_ids": [
+      "49301cdba711237d982f69e672d09414:0",
+      "49301cdba711237d982f69e672d09414:1",
+      "49301cdba711237d982f69e672d09414:2",
+      "49301cdba711237d982f69e672d09414:3",
+      "49301cdba711237d982f69e672d09414:4",
+      "49301cdba711237d982f69e672d09414:5",
+      "49301cdba711237d982f69e672d09414:6",
+      "49301cdba711237d982f69e672d09414:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:17:12"
+  },
+  "unity_manual/UIE-uxml-element-Vector3Field.md": {
+    "sha256": "32a737468917b3c4366fddba7cc88b999b160d844308499ab08b8b6c206952f3",
+    "chunk_ids": [
+      "de8852c5f8f9a9c7aa68db47af282766:0",
+      "de8852c5f8f9a9c7aa68db47af282766:1",
+      "de8852c5f8f9a9c7aa68db47af282766:2",
+      "de8852c5f8f9a9c7aa68db47af282766:3",
+      "de8852c5f8f9a9c7aa68db47af282766:4",
+      "de8852c5f8f9a9c7aa68db47af282766:5",
+      "de8852c5f8f9a9c7aa68db47af282766:6",
+      "de8852c5f8f9a9c7aa68db47af282766:7",
+      "de8852c5f8f9a9c7aa68db47af282766:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:18:02"
+  },
+  "unity_manual/UIE-uxml-element-Vector3IntField.md": {
+    "sha256": "a85b59fd80cb2164a89df4afb1e477c503bbef90b9f940b20b5bb467540960f9",
+    "chunk_ids": [
+      "f81e2ad88e5c74768f990fe309ad6deb:0",
+      "f81e2ad88e5c74768f990fe309ad6deb:1",
+      "f81e2ad88e5c74768f990fe309ad6deb:2",
+      "f81e2ad88e5c74768f990fe309ad6deb:3",
+      "f81e2ad88e5c74768f990fe309ad6deb:4",
+      "f81e2ad88e5c74768f990fe309ad6deb:5",
+      "f81e2ad88e5c74768f990fe309ad6deb:6",
+      "f81e2ad88e5c74768f990fe309ad6deb:7",
+      "f81e2ad88e5c74768f990fe309ad6deb:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:18:04"
+  },
+  "unity_manual/UIE-uxml-element-Vector4Field.md": {
+    "sha256": "3f419205e73a466bc63175ed72b7baec2dda81b5f98651632e53ccbfabac9562",
+    "chunk_ids": [
+      "8dd57d76c6303ff007b2a434a360592a:0",
+      "8dd57d76c6303ff007b2a434a360592a:1",
+      "8dd57d76c6303ff007b2a434a360592a:2",
+      "8dd57d76c6303ff007b2a434a360592a:3",
+      "8dd57d76c6303ff007b2a434a360592a:4",
+      "8dd57d76c6303ff007b2a434a360592a:5",
+      "8dd57d76c6303ff007b2a434a360592a:6",
+      "8dd57d76c6303ff007b2a434a360592a:7",
+      "8dd57d76c6303ff007b2a434a360592a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:18:05"
+  },
+  "unity_manual/UIE-uxml-element-VisualElement.md": {
+    "sha256": "5b73dab7a0095abf41f796631eb7e696f4ce51186c68a2184c4268f4f9cd7690",
+    "chunk_ids": [
+      "41ce45dac9174dee01551c76334b855b:0",
+      "41ce45dac9174dee01551c76334b855b:1",
+      "41ce45dac9174dee01551c76334b855b:2",
+      "41ce45dac9174dee01551c76334b855b:3",
+      "41ce45dac9174dee01551c76334b855b:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:18:06"
+  },
+  "unity_manual/UIE-uxml-examples.md": {
+    "sha256": "0f8227eeeda8949d4c0e6291d70e31739c9730f4f7f5b1eecf0f2911dbf1ae68",
+    "chunk_ids": [
+      "5ab47dca21d03a26c4edae32785947da:0",
+      "5ab47dca21d03a26c4edae32785947da:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:06"
+  },
+  "unity_manual/UIE-work-with-text.md": {
+    "sha256": "3b7d0ea09db741c680bae52157b8066e2958ed08723105e2126ccc66b781e4b1",
+    "chunk_ids": [
+      "54cb0a5ad614506770fe87a584e0078e:0",
+      "54cb0a5ad614506770fe87a584e0078e:1",
+      "54cb0a5ad614506770fe87a584e0078e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:18:07"
+  },
+  "unity_manual/UIE-wrap-content-inside-scrollview.md": {
+    "sha256": "110984a7da64817951f7f3799ff0907ae8387d125921bf4c04390d6f6e16536a",
+    "chunk_ids": [
+      "a9e34b286416330e25ec53cccbe07af3:0",
+      "a9e34b286416330e25ec53cccbe07af3:1",
+      "a9e34b286416330e25ec53cccbe07af3:2",
+      "a9e34b286416330e25ec53cccbe07af3:3",
+      "a9e34b286416330e25ec53cccbe07af3:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:18:08"
+  },
+  "unity_manual/UIElements.md": {
+    "sha256": "25f75d14a0b687314ebaa9c36ec90c23f5267ad0c4c80579e9eda5907c22d888",
+    "chunk_ids": [
+      "a301e24a507edcbb98ac8f529fa8be2b:0",
+      "a301e24a507edcbb98ac8f529fa8be2b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:09"
+  },
+  "unity_manual/UIToolkits.md": {
+    "sha256": "dd21d3ee27e3179fa00c9182a8bab6794290d3230592d0c82c9fb7479961a634",
+    "chunk_ids": [
+      "f6a6e28b5b1bda8baed9895101a89e1b:0",
+      "f6a6e28b5b1bda8baed9895101a89e1b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:09"
+  },
+  "unity_manual/UnderstandingFrustum.md": {
+    "sha256": "4c469982abb3b39eda0665f0275c8edd56c6ed30e2eea243466ad155b3c6a846",
+    "chunk_ids": [
+      "96746ed2c44c3718d027973b5e540cb7:0",
+      "96746ed2c44c3718d027973b5e540cb7:1",
+      "96746ed2c44c3718d027973b5e540cb7:2",
+      "96746ed2c44c3718d027973b5e540cb7:3",
+      "96746ed2c44c3718d027973b5e540cb7:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:18:10"
+  },
+  "unity_manual/UndoWindow.md": {
+    "sha256": "2709cb9cc3bcad8dfaab11ec25dc18bc4bb55e4ded92ae38bb155dce204c9309",
+    "chunk_ids": [
+      "5f5ea51cebef24cd4b8394b2961b8390:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:18:11"
+  },
+  "unity_manual/Unity2D.md": {
+    "sha256": "66aa97919b8ce51f2f8bc4b220ff0a67d709879a216be112ab5f248792cde1ac",
+    "chunk_ids": [
+      "a93a2cde0cf02e0fa9eee861ebc9f023:0",
+      "a93a2cde0cf02e0fa9eee861ebc9f023:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:12"
+  },
+  "unity_manual/UnityAccelerator.md": {
+    "sha256": "821b7d3f1e719dc8fc478853655c99a6c49845946476a53999ad9ee9a21f65a0",
+    "chunk_ids": [
+      "46952aca045b57b0c439c0885576777d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:18:12"
+  },
+  "unity_manual/UnityManual.md": {
+    "sha256": "e75312ada08cd707a50a6dcbeebc6eb591c07024a30f0ff9e134da2ca1cddea6",
+    "chunk_ids": [
+      "c8fa90b20c5580a00de3a209a6099e15:0",
+      "c8fa90b20c5580a00de3a209a6099e15:1",
+      "c8fa90b20c5580a00de3a209a6099e15:2",
+      "c8fa90b20c5580a00de3a209a6099e15:3",
+      "c8fa90b20c5580a00de3a209a6099e15:4",
+      "c8fa90b20c5580a00de3a209a6099e15:5",
+      "c8fa90b20c5580a00de3a209a6099e15:6",
+      "c8fa90b20c5580a00de3a209a6099e15:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:18:14"
+  },
+  "unity_manual/UnityRemote5.md": {
+    "sha256": "dd62c0adbf36f5a5c0190dff3441cbfcea19dc2eeca5eb45a9eec78b03c872be",
+    "chunk_ids": [
+      "0c2135cb66740b917c9e6ed0b5a19e4f:0",
+      "0c2135cb66740b917c9e6ed0b5a19e4f:1",
+      "0c2135cb66740b917c9e6ed0b5a19e4f:2",
+      "0c2135cb66740b917c9e6ed0b5a19e4f:3",
+      "0c2135cb66740b917c9e6ed0b5a19e4f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:18:14"
+  },
+  "unity_manual/UnityServices.md": {
+    "sha256": "1e1ba7518aaa034ef906d6388456c55e49a4e6a018c8d365e95382473bc8d0df",
+    "chunk_ids": [
+      "a97f9a70475d7345273e3986f0921689:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:18:15"
+  },
+  "unity_manual/UnityYAML.md": {
+    "sha256": "46f498065127bec416e946439b613e039d7efe04f43daa6d9eb032f28164bf40",
+    "chunk_ids": [
+      "e56f7ce5318c39ff4e361942a98a0913:0",
+      "e56f7ce5318c39ff4e361942a98a0913:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:16"
+  },
+  "unity_manual/UnityasaLibrary-Android.md": {
+    "sha256": "ef7c4b72f244eb42b58c5001745ce0781fc3726b8684e5c978b5f71fa738cab8",
+    "chunk_ids": [
+      "0996827206871368882928b2ed9aca89:0",
+      "0996827206871368882928b2ed9aca89:1",
+      "0996827206871368882928b2ed9aca89:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:18:17"
+  },
+  "unity_manual/UnityasaLibrary-UWP.md": {
+    "sha256": "5aabed957ba57a8d028dfdb6dffb0fef5f3f13ed4611fa2c2445199e16828457",
+    "chunk_ids": [
+      "f9587de418de35555c5134bae0b6655d:0",
+      "f9587de418de35555c5134bae0b6655d:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:17"
+  },
+  "unity_manual/UnityasaLibrary-Windows.md": {
+    "sha256": "a4ac99c88bc7b2bf91957f73dd8f2c03e60a4a9a6d77cc183577ff91db1be144",
+    "chunk_ids": [
+      "79d4f373b2d8410431fa31fbe1dc80d3:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:18:18"
+  },
+  "unity_manual/UnityasaLibrary-iOS.md": {
+    "sha256": "884e8e067942c2d6887d3e3c89072425cafc05ed7c2fcd4236bf09ace62db2a1",
+    "chunk_ids": [
+      "513c29e22974b501cac044bb0ffd5ae7:0",
+      "513c29e22974b501cac044bb0ffd5ae7:1",
+      "513c29e22974b501cac044bb0ffd5ae7:2",
+      "513c29e22974b501cac044bb0ffd5ae7:3",
+      "513c29e22974b501cac044bb0ffd5ae7:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:18:19"
+  },
+  "unity_manual/UnityasaLibrary.md": {
+    "sha256": "797a0c9de0df8fe11c3dbc62b103fcb089a01725a86e5feeed81ff2300faa8be",
+    "chunk_ids": [
+      "804c531e4464190c10e2b7ea3e5a3c8b:0",
+      "804c531e4464190c10e2b7ea3e5a3c8b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:19"
+  },
+  "unity_manual/UnpackingPrefabInstances.md": {
+    "sha256": "23aa16e75cdf4b327c81219fdd325f576227837ee7bc02577baeda1794691071",
+    "chunk_ids": [
+      "6024079c6602712dc03b764f9c096b48:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:18:20"
+  },
+  "unity_manual/UnusedOverrides.md": {
+    "sha256": "8b02a32681c71a4b3f5f6eb76015487ef87436cbb5887119da495eb603676720",
+    "chunk_ids": [
+      "24528f9865f4b57464efc82eac85d232:0",
+      "24528f9865f4b57464efc82eac85d232:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:18:21"
+  },
+  "unity_manual/UpgradeGuide2021LTS.md": {
+    "sha256": "46bbd24b664d3a0013640cd0a65acbfb3e37815ef8cf308efc4a4aa7465252f3",
+    "chunk_ids": [
+      "29bc16f4f75cee264406c9e8da37e566:0",
+      "29bc16f4f75cee264406c9e8da37e566:1",
+      "29bc16f4f75cee264406c9e8da37e566:2",
+      "29bc16f4f75cee264406c9e8da37e566:3",
+      "29bc16f4f75cee264406c9e8da37e566:4",
+      "29bc16f4f75cee264406c9e8da37e566:5",
+      "29bc16f4f75cee264406c9e8da37e566:6",
+      "29bc16f4f75cee264406c9e8da37e566:7",
+      "29bc16f4f75cee264406c9e8da37e566:8",
+      "29bc16f4f75cee264406c9e8da37e566:9",
+      "29bc16f4f75cee264406c9e8da37e566:10",
+      "29bc16f4f75cee264406c9e8da37e566:11",
+      "29bc16f4f75cee264406c9e8da37e566:12",
+      "29bc16f4f75cee264406c9e8da37e566:13",
+      "29bc16f4f75cee264406c9e8da37e566:14",
+      "29bc16f4f75cee264406c9e8da37e566:15",
+      "29bc16f4f75cee264406c9e8da37e566:16",
+      "29bc16f4f75cee264406c9e8da37e566:17",
+      "29bc16f4f75cee264406c9e8da37e566:18",
+      "29bc16f4f75cee264406c9e8da37e566:19",
+      "29bc16f4f75cee264406c9e8da37e566:20",
+      "29bc16f4f75cee264406c9e8da37e566:21",
+      "29bc16f4f75cee264406c9e8da37e566:22",
+      "29bc16f4f75cee264406c9e8da37e566:23",
+      "29bc16f4f75cee264406c9e8da37e566:24"
+    ],
+    "chunk_count": 25,
+    "updated_at": "2026-03-16T10:18:47"
+  },
+  "unity_manual/UpgradeGuide2022LTS.md": {
+    "sha256": "3e5e90400c98deec666fb187e2897fcfd4508a060578829a13431b063b1d8848",
+    "chunk_ids": [
+      "2f46dea82c171e313aa909d1c74163ea:0",
+      "2f46dea82c171e313aa909d1c74163ea:1",
+      "2f46dea82c171e313aa909d1c74163ea:2",
+      "2f46dea82c171e313aa909d1c74163ea:3",
+      "2f46dea82c171e313aa909d1c74163ea:4",
+      "2f46dea82c171e313aa909d1c74163ea:5",
+      "2f46dea82c171e313aa909d1c74163ea:6",
+      "2f46dea82c171e313aa909d1c74163ea:7",
+      "2f46dea82c171e313aa909d1c74163ea:8",
+      "2f46dea82c171e313aa909d1c74163ea:9",
+      "2f46dea82c171e313aa909d1c74163ea:10"
+    ],
+    "chunk_count": 11,
+    "updated_at": "2026-03-16T10:18:49"
+  },
+  "unity_manual/UpgradeGuide20231.md": {
+    "sha256": "30630a0e2be9fcfd0af00ad30b14b97a105794d83a7ff34c8f7a5837d685b28c",
+    "chunk_ids": [
+      "ee22fdadf54857e7209059c77204f6d2:0",
+      "ee22fdadf54857e7209059c77204f6d2:1",
+      "ee22fdadf54857e7209059c77204f6d2:2",
+      "ee22fdadf54857e7209059c77204f6d2:3",
+      "ee22fdadf54857e7209059c77204f6d2:4",
+      "ee22fdadf54857e7209059c77204f6d2:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:18:50"
+  },
+  "unity_manual/UpgradeGuide20232.md": {
+    "sha256": "9d1271d9ca6f847ef534f508c5866c98ba3e5e8891a72247e304a9f129d72ae2",
+    "chunk_ids": [
+      "9340ffd5c694ee6a018469b98ce1dea5:0",
+      "9340ffd5c694ee6a018469b98ce1dea5:1",
+      "9340ffd5c694ee6a018469b98ce1dea5:2",
+      "9340ffd5c694ee6a018469b98ce1dea5:3",
+      "9340ffd5c694ee6a018469b98ce1dea5:4",
+      "9340ffd5c694ee6a018469b98ce1dea5:5",
+      "9340ffd5c694ee6a018469b98ce1dea5:6",
+      "9340ffd5c694ee6a018469b98ce1dea5:7",
+      "9340ffd5c694ee6a018469b98ce1dea5:8",
+      "9340ffd5c694ee6a018469b98ce1dea5:9",
+      "9340ffd5c694ee6a018469b98ce1dea5:10",
+      "9340ffd5c694ee6a018469b98ce1dea5:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-03-16T10:18:51"
+  },
+  "unity_manual/UpgradeGuideUnity6.md": {
+    "sha256": "a86086670b753e8766d0e22836c01d93aadc4103a9e8a52e830974f96a91a20f",
+    "chunk_ids": [
+      "8dfc8f3f0f2eac291238f027ac41c267:0",
+      "8dfc8f3f0f2eac291238f027ac41c267:1",
+      "8dfc8f3f0f2eac291238f027ac41c267:2",
+      "8dfc8f3f0f2eac291238f027ac41c267:3",
+      "8dfc8f3f0f2eac291238f027ac41c267:4",
+      "8dfc8f3f0f2eac291238f027ac41c267:5",
+      "8dfc8f3f0f2eac291238f027ac41c267:6",
+      "8dfc8f3f0f2eac291238f027ac41c267:7",
+      "8dfc8f3f0f2eac291238f027ac41c267:8",
+      "8dfc8f3f0f2eac291238f027ac41c267:9",
+      "8dfc8f3f0f2eac291238f027ac41c267:10",
+      "8dfc8f3f0f2eac291238f027ac41c267:11",
+      "8dfc8f3f0f2eac291238f027ac41c267:12",
+      "8dfc8f3f0f2eac291238f027ac41c267:13",
+      "8dfc8f3f0f2eac291238f027ac41c267:14",
+      "8dfc8f3f0f2eac291238f027ac41c267:15",
+      "8dfc8f3f0f2eac291238f027ac41c267:16",
+      "8dfc8f3f0f2eac291238f027ac41c267:17",
+      "8dfc8f3f0f2eac291238f027ac41c267:18",
+      "8dfc8f3f0f2eac291238f027ac41c267:19",
+      "8dfc8f3f0f2eac291238f027ac41c267:20",
+      "8dfc8f3f0f2eac291238f027ac41c267:21",
+      "8dfc8f3f0f2eac291238f027ac41c267:22"
+    ],
+    "chunk_count": 23,
+    "updated_at": "2026-03-16T10:18:53"
+  },
+  "unity_manual/UpgradeGuideUnity61.md": {
+    "sha256": "081d24b2bb805e8e7bffec8212125fe195263b2746f834b48144370714d19892",
+    "chunk_ids": [
+      "9104fe826938092540aa8ba59365876c:0",
+      "9104fe826938092540aa8ba59365876c:1",
+      "9104fe826938092540aa8ba59365876c:2",
+      "9104fe826938092540aa8ba59365876c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:18:54"
+  },
+  "unity_manual/UpgradeGuideUnity62.md": {
+    "sha256": "76dffa514c612cce6735c259869cc3e51f918fef5f96712f596a706b0e9fc1fc",
+    "chunk_ids": [
+      "f8b30a75f2b843b4ebd25136ab92e876:0",
+      "f8b30a75f2b843b4ebd25136ab92e876:1",
+      "f8b30a75f2b843b4ebd25136ab92e876:2",
+      "f8b30a75f2b843b4ebd25136ab92e876:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:18:55"
+  },
+  "unity_manual/UpgradeGuideUnity63.md": {
+    "sha256": "f0ec30c3e64225d84c8f27b0ce620ea70d0a10b77052521f9d04b0501a8acdc3",
+    "chunk_ids": [
+      "3762be8a003276ed395f4bad8fd3ca21:0",
+      "3762be8a003276ed395f4bad8fd3ca21:1",
+      "3762be8a003276ed395f4bad8fd3ca21:2",
+      "3762be8a003276ed395f4bad8fd3ca21:3",
+      "3762be8a003276ed395f4bad8fd3ca21:4",
+      "3762be8a003276ed395f4bad8fd3ca21:5",
+      "3762be8a003276ed395f4bad8fd3ca21:6",
+      "3762be8a003276ed395f4bad8fd3ca21:7",
+      "3762be8a003276ed395f4bad8fd3ca21:8",
+      "3762be8a003276ed395f4bad8fd3ca21:9",
+      "3762be8a003276ed395f4bad8fd3ca21:10",
+      "3762be8a003276ed395f4bad8fd3ca21:11",
+      "3762be8a003276ed395f4bad8fd3ca21:12",
+      "3762be8a003276ed395f4bad8fd3ca21:13",
+      "3762be8a003276ed395f4bad8fd3ca21:14"
+    ],
+    "chunk_count": 15,
+    "updated_at": "2026-03-16T10:18:56"
+  },
+  "unity_manual/UpgradeGuides.md": {
+    "sha256": "4ed2900b1ac97f59e3b1eee2027b1ff92f75087b3011cf1d2847e6dcc09fc8c6",
+    "chunk_ids": [
+      "85bc035a024da59b9c5c59e43f9c0236:0",
+      "85bc035a024da59b9c5c59e43f9c0236:1",
+      "85bc035a024da59b9c5c59e43f9c0236:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:19:44"
+  },
+  "unity_manual/UsingComponents.md": {
+    "sha256": "2bc4cb0522cc58b45cfc2cb20987b038968936fe096ed632313cf95b0b564a2b",
+    "chunk_ids": [
+      "e0ff361455391f831bdf261dcec4fe79:0",
+      "e0ff361455391f831bdf261dcec4fe79:1",
+      "e0ff361455391f831bdf261dcec4fe79:2",
+      "e0ff361455391f831bdf261dcec4fe79:3",
+      "e0ff361455391f831bdf261dcec4fe79:4",
+      "e0ff361455391f831bdf261dcec4fe79:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:19:45"
+  },
+  "unity_manual/UsingCustomEditorTools.md": {
+    "sha256": "51d7496de6ddb0fb7213d545f8f1ddfe72625747d4318adddc80c34f08d18507",
+    "chunk_ids": [
+      "d6a4d349ed22cda9f10071d37dc107f6:0",
+      "d6a4d349ed22cda9f10071d37dc107f6:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:19:46"
+  },
+  "unity_manual/UsingDX11GL3Features.md": {
+    "sha256": "d8bb265a70b8d0e5fdb509409b885793e421a2851cd6a53e32f9ed4d0f34f31b",
+    "chunk_ids": [
+      "99b945c0da0ed9e9cbd5a8f4f57f3f10:0",
+      "99b945c0da0ed9e9cbd5a8f4f57f3f10:1",
+      "99b945c0da0ed9e9cbd5a8f4f57f3f10:2",
+      "99b945c0da0ed9e9cbd5a8f4f57f3f10:3",
+      "99b945c0da0ed9e9cbd5a8f4f57f3f10:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:19:47"
+  },
+  "unity_manual/UsingHumanoidChars.md": {
+    "sha256": "f5f75c91f735612dd163c4c15a29e171f9cf625776b9b4e7f75c8c9b5198f80c",
+    "chunk_ids": [
+      "9d74820ccecdd0c8fc17b085f53c292f:0",
+      "9d74820ccecdd0c8fc17b085f53c292f:1",
+      "9d74820ccecdd0c8fc17b085f53c292f:2",
+      "9d74820ccecdd0c8fc17b085f53c292f:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:19:47"
+  },
+  "unity_manual/UsingLights.md": {
+    "sha256": "64e3c4c67c6b110b78ceb46612f3a62c5f51823a8e1995b34c680d47ae373071",
+    "chunk_ids": [
+      "1a79fae187c9e43028f0ceae330d9d4f:0",
+      "1a79fae187c9e43028f0ceae330d9d4f:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:19:48"
+  },
+  "unity_manual/UsingReflectionProbes.md": {
+    "sha256": "c6d654fc8e626421cb8020659851b8aeb96132e9fca9c913739e732b9a73cc76",
+    "chunk_ids": [
+      "f6ff8b8a34ab3f26597677f11c68c685:0",
+      "f6ff8b8a34ab3f26597677f11c68c685:1",
+      "f6ff8b8a34ab3f26597677f11c68c685:2",
+      "f6ff8b8a34ab3f26597677f11c68c685:3",
+      "f6ff8b8a34ab3f26597677f11c68c685:4",
+      "f6ff8b8a34ab3f26597677f11c68c685:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-03-16T10:19:49"
+  },
+  "unity_manual/UsingTheInspector.md": {
+    "sha256": "1f2cb879e33978dd6a6b4484653c6c964cd025834cbb343b341bdf8a1cfadfb9",
+    "chunk_ids": [
+      "c91deb70ab3152decc6a9aab82b86af0:0",
+      "c91deb70ab3152decc6a9aab82b86af0:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:19:50"
+  },
+  "unity_manual/UsingTheSceneView.md": {
+    "sha256": "9d11b11ec373c827cc184267a47bd58f2e47fa49418a957c8cecd87c21b432d1",
+    "chunk_ids": [
+      "8d2114c1ab6a9bcaf3e78709d0a78443:0",
+      "8d2114c1ab6a9bcaf3e78709d0a78443:1",
+      "8d2114c1ab6a9bcaf3e78709d0a78443:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:19:51"
+  },
+  "unity_manual/UsingtheMeshClass.md": {
+    "sha256": "d83bd0fc42fccaecee052d4fcb498e131d284a70353c1e476fea7af2b4f17e5e",
+    "chunk_ids": [
+      "19d405120b7f75528d190409ba88393c:0",
+      "19d405120b7f75528d190409ba88393c:1",
+      "19d405120b7f75528d190409ba88393c:2",
+      "19d405120b7f75528d190409ba88393c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:19:51"
+  },
+  "unity_manual/VFXGraph.md": {
+    "sha256": "4c0615f27c27abf50927e2fbd9fcccd6df07f08aa99e3fdd62b0019d40bc61d6",
+    "chunk_ids": [
+      "f51107bbcf036ed791e337af3860fae7:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:19:52"
+  },
+  "unity_manual/VRAudioSpatializer.md": {
+    "sha256": "cb22535745ffb344a48ade2bbc6b4bf7f7ca0536ff6344d7608c534cb54fc7bd",
+    "chunk_ids": [
+      "8453fdf819353c22b2f3444c90ed2650:0",
+      "8453fdf819353c22b2f3444c90ed2650:1",
+      "8453fdf819353c22b2f3444c90ed2650:2",
+      "8453fdf819353c22b2f3444c90ed2650:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:19:53"
+  },
+  "unity_manual/VRFeature.md": {
+    "sha256": "151f086f85c049c9fc74eeb6cd9c44f7c5597bdaa1f972a54073d7e4910c3cb9",
+    "chunk_ids": [
+      "e1bae150fd7939955fef3ccef72f1ff1:0",
+      "e1bae150fd7939955fef3ccef72f1ff1:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:19:54"
+  },
+  "unity_manual/VRFrameTiming.md": {
+    "sha256": "72b5b14de64bb083c950e524fc54a755b506cf8c92be0bc19b02fd025e9b0017",
+    "chunk_ids": [
+      "30f2e6a7d6b9be11266eadd370b42eec:0",
+      "30f2e6a7d6b9be11266eadd370b42eec:1",
+      "30f2e6a7d6b9be11266eadd370b42eec:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:19:54"
+  },
+  "unity_manual/VROverview.md": {
+    "sha256": "340f5604a3e0866675a3d8eb2c6aeb351a01fbe600b922eb003d0f8961670be6",
+    "chunk_ids": [
+      "94706a31f467e2c1406f9ae871c392e9:0",
+      "94706a31f467e2c1406f9ae871c392e9:1",
+      "94706a31f467e2c1406f9ae871c392e9:2",
+      "94706a31f467e2c1406f9ae871c392e9:3",
+      "94706a31f467e2c1406f9ae871c392e9:4",
+      "94706a31f467e2c1406f9ae871c392e9:5",
+      "94706a31f467e2c1406f9ae871c392e9:6",
+      "94706a31f467e2c1406f9ae871c392e9:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-03-16T10:19:55"
+  },
+  "unity_manual/VRReference.md": {
+    "sha256": "648ba114cf49b67c15c60ec2a0f1eb1bfec84c3e29c80ed669123be4c05a4688",
+    "chunk_ids": [
+      "83ee4c21f851c78ccda4062adf4bf6d0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:19:56"
+  },
+  "unity_manual/VersionControl.md": {
+    "sha256": "c0ed12e7f6dfe8412875cd6f990487adfee0af9ef24f0d45569b41ce0283d8d5",
+    "chunk_ids": [
+      "86e5a49a98e12009f412ac8dede0f097:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:19:56"
+  },
+  "unity_manual/Versioncontrolintegration.md": {
+    "sha256": "e153f4f25b80f79fba26f2e77c8489001bd319130ea0368064024e727eb81c51",
+    "chunk_ids": [
+      "aee663a5908aadd483151f361920599e:0",
+      "aee663a5908aadd483151f361920599e:1",
+      "aee663a5908aadd483151f361920599e:2",
+      "aee663a5908aadd483151f361920599e:3",
+      "aee663a5908aadd483151f361920599e:4",
+      "aee663a5908aadd483151f361920599e:5",
+      "aee663a5908aadd483151f361920599e:6",
+      "aee663a5908aadd483151f361920599e:7",
+      "aee663a5908aadd483151f361920599e:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-03-16T10:19:58"
+  },
+  "unity_manual/Video.md": {
+    "sha256": "4a0a31fd23dae2944c825a088c60fdbc00d847c199d1dc7c4e3c36ead18c4f84",
+    "chunk_ids": [
+      "949b99fa1678c67f03bde4519de6bfce:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:19:59"
+  },
+  "unity_manual/VideoPanoramic-3D.md": {
+    "sha256": "f716958a5fc24dd9592d51119ea8f6e683a0f794acfd488c743552ae98a9ef51",
+    "chunk_ids": [
+      "fda254f608c54005b0df11aa1f713883:0",
+      "fda254f608c54005b0df11aa1f713883:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:19:59"
+  },
+  "unity_manual/VideoPanoramic-introduction.md": {
+    "sha256": "214c03fc755f5de91be945eadec4b9a7fb92219ad21c850e0fd302152506fad6",
+    "chunk_ids": [
+      "638486e87ddb960cdb5906c42773af27:0",
+      "638486e87ddb960cdb5906c42773af27:1",
+      "638486e87ddb960cdb5906c42773af27:2",
+      "638486e87ddb960cdb5906c42773af27:3",
+      "638486e87ddb960cdb5906c42773af27:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:20:00"
+  },
+  "unity_manual/VideoPanoramic-setup.md": {
+    "sha256": "c60760f77487b0f20687b1b88b2d2aeed708e17cd6142dd3882cc6cff37da79b",
+    "chunk_ids": [
+      "73229189e3ddddd074b7ff4072cdc498:0",
+      "73229189e3ddddd074b7ff4072cdc498:1",
+      "73229189e3ddddd074b7ff4072cdc498:2",
+      "73229189e3ddddd074b7ff4072cdc498:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:20:01"
+  },
+  "unity_manual/VideoPanoramic-skybox.md": {
+    "sha256": "b5ec8c6cd32b6b91cc3c295c0a0ef1fbfc61cb99cb479b9bc22469bb10641636",
+    "chunk_ids": [
+      "633d1f5df4986c72f74b09590e72c334:0",
+      "633d1f5df4986c72f74b09590e72c334:1",
+      "633d1f5df4986c72f74b09590e72c334:2",
+      "633d1f5df4986c72f74b09590e72c334:3",
+      "633d1f5df4986c72f74b09590e72c334:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-03-16T10:20:02"
+  },
+  "unity_manual/VideoPanoramic.md": {
+    "sha256": "f0b8e5b7892b9dc71c7ed7f4006e31422925849beddb233e7d4e2d118c988b09",
+    "chunk_ids": [
+      "9caacd7cbd24e8e28f50a69dbf85e8da:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:20:02"
+  },
+  "unity_manual/VideoPlayer-MigratingFromMovieTexture.md": {
+    "sha256": "14b1db109aeaf25190dde0424f970a49c869a11e9aef78a8e46c7dd29836dcbf",
+    "chunk_ids": [
+      "539dd92b0dd574a43369952baf313f12:0",
+      "539dd92b0dd574a43369952baf313f12:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:20:03"
+  },
+  "unity_manual/VideoPlayer-instructions.md": {
+    "sha256": "8cbcae922ae7211330da5eeb3ad54d488ebdc258cfbfe527499c91b754b0ce20",
+    "chunk_ids": [
+      "aed705ba2fa029d582727e6c9cfa7e62:0",
+      "aed705ba2fa029d582727e6c9cfa7e62:1",
+      "aed705ba2fa029d582727e6c9cfa7e62:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:20:04"
+  },
+  "unity_manual/VideoPlayer-intro.md": {
+    "sha256": "62549f281dc10d0af4901dbd1df0b86b100546c06097e674c2e84c59d476cf49",
+    "chunk_ids": [
+      "9ec49da6148b96a79aaa35b29f8a670d:0",
+      "9ec49da6148b96a79aaa35b29f8a670d:1",
+      "9ec49da6148b96a79aaa35b29f8a670d:2",
+      "9ec49da6148b96a79aaa35b29f8a670d:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:20:53"
+  },
+  "unity_manual/VideoPlayer-rendertexture.md": {
+    "sha256": "dc4b0c156604c303508b3a8aaf9aaf6e2b00ec368bc74d7c5f86485f07bc870f",
+    "chunk_ids": [
+      "c157622d30b7ff1ededa1d7340fd8c3f:0",
+      "c157622d30b7ff1ededa1d7340fd8c3f:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:20:54"
+  },
+  "unity_manual/VideoPlayer.md": {
+    "sha256": "6a44dd8194df7ec1572d80cf609094686c0cf25573865d610c3ce3f7fb0d5821",
+    "chunk_ids": [
+      "4f014a927748abe52347e6d93e8a8bac:0",
+      "4f014a927748abe52347e6d93e8a8bac:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:20:55"
+  },
+  "unity_manual/VideoSources-FileCompatibility.md": {
+    "sha256": "3525a16ab2ac6ed71fdaf2d183b213281d55c7ac87f406a8af7ee2bf79e0dfc1",
+    "chunk_ids": [
+      "763f5dc96a779e0d2e5f9987cff8696c:0",
+      "763f5dc96a779e0d2e5f9987cff8696c:1",
+      "763f5dc96a779e0d2e5f9987cff8696c:2",
+      "763f5dc96a779e0d2e5f9987cff8696c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:20:55"
+  },
+  "unity_manual/VideoSources-VideoFiles.md": {
+    "sha256": "8d67412d8446a22c3b16c739d95a46e28e820532ecd297a054afe053ee96288b",
+    "chunk_ids": [
+      "b440bdec46c4a5dbc8dc1cae852afbcb:0",
+      "b440bdec46c4a5dbc8dc1cae852afbcb:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:20:56"
+  },
+  "unity_manual/VideoTransparency-codecs.md": {
+    "sha256": "8b52295bb36cdc2476b9e199d0e49ed6ccf59207ac57e24da88037ef38a2be35",
+    "chunk_ids": [
+      "702735ee1a3f6c483256041cc14b535e:0",
+      "702735ee1a3f6c483256041cc14b535e:1",
+      "702735ee1a3f6c483256041cc14b535e:2",
+      "702735ee1a3f6c483256041cc14b535e:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:20:57"
+  },
+  "unity_manual/VideoTransparency-instructions.md": {
+    "sha256": "f7306e4601964eddee4f36b4117ad4b2bbc623cbc3943782afb3e0e40d4d6ce4",
+    "chunk_ids": [
+      "bdd1ab83d87da68e6ebc3e745e222dae:0",
+      "bdd1ab83d87da68e6ebc3e745e222dae:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:20:58"
+  },
+  "unity_manual/VideoTransparency-overview.md": {
+    "sha256": "e825402a028ba5558b5e5360cc741d088e22de2961f922123e3fe2fe35bfa29d",
+    "chunk_ids": [
+      "fd9ea1d192b5f924079e348849bbc415:0",
+      "fd9ea1d192b5f924079e348849bbc415:1",
+      "fd9ea1d192b5f924079e348849bbc415:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-03-16T10:20:58"
+  },
+  "unity_manual/VideoTransparency.md": {
+    "sha256": "8217aa5235696009d0eb8105c7225e4d8a7b1df89260106de837fccb9f30ec92",
+    "chunk_ids": [
+      "2105c34393a0eca20997260d15575be2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:20:59"
+  },
+  "unity_manual/VisualStudioprojectgenerationWindows.md": {
+    "sha256": "91db339e3af055315b1f8c51f6f96773c8847efaeb6c050b8039a0521d7e1091",
+    "chunk_ids": [
+      "a1ce4f410eefaf4c7a8b36d26d1d4af7:0",
+      "a1ce4f410eefaf4c7a8b36d26d1d4af7:1",
+      "a1ce4f410eefaf4c7a8b36d26d1d4af7:2",
+      "a1ce4f410eefaf4c7a8b36d26d1d4af7:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:21:00"
+  },
+  "unity_manual/WebGL2.md": {
+    "sha256": "248a7553fb038292a957590c9fd80bcf6c7ce496cab57f55247b64fe0233befe",
+    "chunk_ids": [
+      "67f5e1a3c029f512d238b8531677ef21:0",
+      "67f5e1a3c029f512d238b8531677ef21:1",
+      "67f5e1a3c029f512d238b8531677ef21:2",
+      "67f5e1a3c029f512d238b8531677ef21:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:21:01"
+  },
+  "unity_manual/WebGPU-enable.md": {
+    "sha256": "e5b869ec7e37d7b06d594697e002102f3054120c5ebe01ddaca32612e48c88be",
+    "chunk_ids": [
+      "832f8f7272a6003cee1ae0e312020508:0",
+      "832f8f7272a6003cee1ae0e312020508:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-03-16T10:21:02"
+  },
+  "unity_manual/WebGPU-features.md": {
+    "sha256": "f433fc217263f7d4c2c9ec3fcb52bcedcbe2e2b41af0b593c5a2590a4951c3f7",
+    "chunk_ids": [
+      "d287e6fc3c40ea81fef4c4dd0baf5cfc:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:21:02"
+  },
+  "unity_manual/WebGPU-limitations.md": {
+    "sha256": "11961b53177c65bde145ea9111e70ecddb459ee4a025eefaf67d5fadfa706282",
+    "chunk_ids": [
+      "819f47c0f6a80268f5bf3ac58ca173b9:0",
+      "819f47c0f6a80268f5bf3ac58ca173b9:1",
+      "819f47c0f6a80268f5bf3ac58ca173b9:2",
+      "819f47c0f6a80268f5bf3ac58ca173b9:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-03-16T10:21:03"
+  },
+  "unity_manual/WebGPU.md": {
+    "sha256": "f0a8308fe00ea8377354afd1d9888e7cb2e1a354ea5eb7ce987cf8eb9038bc4a",
+    "chunk_ids": [
+      "47e07f0482a61c5645aede6cd707e68a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:21:04"
+  },
+  "unity_manual/WhatsNew.md": {
+    "sha256": "a518e99b2e35d6f5c5b7767a00365136f716789c30e4f02d2dc5cb4bf3e437b2",
+    "chunk_ids": [
+      "dbaaf009f9d825619a9bcf0847d5b73d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-03-16T10:21:04"
+  },
+  "unity_manual/WhatsNew20231.md": {
+    "sha256": "4cc0b79ded273774d512ff81c861806d2da5cf4d1d37659f5ae2987713a756af",
+    "chunk_ids": [
+      "b4dacc77ac94738f2fdf3f6babed452f:0",
+      "b4dacc77ac94738f2fdf3f6babed452f:1",
+      "b4dacc77ac94738f2fdf3f6babed452f:2",
+      "b4dacc77ac94738f2fdf3f6babed452f:3",
+      "b4dacc77ac94738f2fdf3f6babed452f:4",
+      "b4dacc77ac94738f2fdf3f6babed452f:5",
+      "b4dacc77ac94738f2fdf3f6babed452f:6",
+      "b4dacc77ac94738f2fdf3f6babed452f:7",
+      "b4dacc77ac94738f2fdf3f6babed452f:8",
+      "b4dacc77ac94738f2fdf3f6babed452f:9",
+      "b4dacc77ac94738f2fdf3f6babed452f:10",
+      "b4dacc77ac94738f2fdf3f6babed452f:11",
+      "b4dacc77ac94738f2fdf3f6babed452f:12",
+      "b4dacc77ac94738f2fdf3f6babed452f:13",
+      "b4dacc77ac94738f2fdf3f6babed452f:14",
+      "b4dacc77ac94738f2fdf3f6babed452f:15",
+      "b4dacc77ac94738f2fdf3f6babed452f:16",
+      "b4dacc77ac94738f2fdf3f6babed452f:17",
+      "b4dacc77ac94738f2fdf3f6babed452f:18",
+      "b4dacc77ac94738f2fdf3f6babed452f:19",
+      "b4dacc77ac94738f2fdf3f6babed452f:20",
+      "b4dacc77ac94738f2fdf3f6babed452f:21",
+      "b4dacc77ac94738f2fdf3f6babed452f:22",
+      "b4dacc77ac94738f2fdf3f6babed452f:23",
+      "b4dacc77ac94738f2fdf3f6babed452f:24",
+      "b4dacc77ac94738f2fdf3f6babed452f:25",
+      "b4dacc77ac94738f2fdf3f6babed452f:26",
+      "b4dacc77ac94738f2fdf3f6babed452f:27"
+    ],
+    "chunk_count": 28,
+    "updated_at": "2026-03-16T10:21:07"
+  },
+  "unity_manual/WhatsNew20232.md": {
+    "sha256": "38bfcf0bf533fd9cccc7f0eeb911b39fa329e04343aa57c28684399fc413a739",
+    "chunk_ids": [
+      "c9d56a6eb6e1944c7d23584f739731f7:0",
+      "c9d56a6eb6e1944c7d23584f739731f7:1",
+      "c9d56a6eb6e1944c7d23584f739731f7:2",
+      "c9d56a6eb6e1944c7d23584f739731f7:3",
+      "c9d56a6eb6e1944c7d23584f739731f7:4",
+      "c9d56a6eb6e1944c7d23584f739731f7:5",
+      "c9d56a6eb6e1944c7d23584f739731f7:6",
+      "c9d56a6eb6e1944c7d23584f739731f7:7",
+      "c9d56a6eb6e1944c7d23584f739731f7:8",
+      "c9d56a6eb6e1944c7d23584f739731f7:9",
+      "c9d56a6eb6e1944c7d23584f739731f7:10",
+      "c9d56a6eb6e1944c7d23584f739731f7:11",
+      "c9d56a6eb6e1944c7d23584f739731f7:12",
+      "c9d56a6eb6e1944c7d23584f739731f7:13",
+      "c9d56a6eb6e1944c7d23584f739731f7:14",
+      "c9d56a6eb6e1944c7d23584f739731f7:15",
+      "c9d56a6eb6e1944c7d23584f739731f7:16",
+      "c9d56a6eb6e1944c7d23584f739731f7:17",
+      "c9d56a6eb6e1944c7d23584f739731f7:18",
+      "c9d56a6eb6e1944c7d23584f739731f7:19",
+      "c9d56a6eb6e1944c7d23584f739731f7:20",
+      "c9d56a6eb6e1944c7d23584f739731f7:21"
+    ],
+    "chunk_count": 22,
+    "updated_at": "2026-03-16T10:21:09"
+  },
+  "unity_manual/WhatsNewUnity6.md": {
+    "sha256": "9e7e6d8597a5058e1ca6fb8c14a9f05f36b785a6858691c17133389df380a6d8",
+    "chunk_ids": [
+      "93a78278c515a19fba2d884f6a40c941:0",
+      "93a78278c515a19fba2d884f6a40c941:1",
+      "93a78278c515a19fba2d884f6a40c941:2",
+      "93a78278c515a19fba2d884f6a40c941:3",
+      "93a78278c515a19fba2d884f6a40c941:4",
+      "93a78278c515a19fba2d884f6a40c941:5",
+      "93a78278c515a19fba2d884f6a40c941:6",
+      "93a78278c515a19fba2d884f6a40c941:7",
+      "93a78278c515a19fba2d884f6a40c941:8",
+      "93a78278c515a19fba2d884f6a40c941:9",
+      "93a78278c515a19fba2d884f6a40c941:10",
+      "93a78278c515a19fba2d884f6a40c941:11",
+      "93a78278c515a19fba2d884f6a40c941:12",
+      "93a78278c515a19fba2d884f6a40c941:13",
+      "93a78278c515a19fba2d884f6a40c941:14",
+      "93a78278c515a19fba2d884f6a40c941:15",
+      "93a78278c515a19fba2d884f6a40c941:16",
+      "93a78278c515a19fba2d884f6a40c941:17",
+      "93a78278c515a19fba2d884f6a40c941:18",
+      "93a78278c515a19fba2d884f6a40c941:19",
+      "93a78278c515a19fba2d884f6a40c941:20",
+      "93a78278c515a19fba2d884f6a40c941:21",
+      "93a78278c515a19fba2d884f6a40c941:22",
+      "93a78278c515a19fba2d884f6a40c941:23",
+      "93a78278c515a19fba2d884f6a40c941:24",
+      "93a78278c515a19fba2d884f6a40c941:25",
+      "93a78278c515a19fba2d884f6a40c941:26",
+      "93a78278c515a19fba2d884f6a40c941:27",
+      "93a78278c515a19fba2d884f6a40c941:28",
+      "93a78278c515a19fba2d884f6a40c941:29",
+      "93a78278c515a19fba2d884f6a40c941:30",
+      "93a78278c515a19fba2d884f6a40c941:31",
+      "93a78278c515a19fba2d884f6a40c941:32",
+      "93a78278c515a19fba2d884f6a40c941:33",
+      "93a78278c515a19fba2d884f6a40c941:34",
+      "93a78278c515a19fba2d884f6a40c941:35",
+      "93a78278c515a19fba2d884f6a40c941:36",
+      "93a78278c515a19fba2d884f6a40c941:37",
+      "93a78278c515a19fba2d884f6a40c941:38",
+      "93a78278c515a19fba2d884f6a40c941:39",
+      "93a78278c515a19fba2d884f6a40c941:40",
+      "93a78278c515a19fba2d884f6a40c941:41",
+      "93a78278c515a19fba2d884f6a40c941:42",
+      "93a78278c515a19fba2d884f6a40c941:43",
+      "93a78278c515a19fba2d884f6a40c941:44",
+      "93a78278c515a19fba2d884f6a40c941:45",
+      "93a78278c515a19fba2d884f6a40c941:46",
+      "93a78278c515a19fba2d884f6a40c941:47",
+      "93a78278c515a19fba2d884f6a40c941:48",
+      "93a78278c515a19fba2d884f6a40c941:49",
+      "93a78278c515a19fba2d884f6a40c941:50",
+      "93a78278c515a19fba2d884f6a40c941:51",
+      "93a78278c515a19fba2d884f6a40c941:52",
+      "93a78278c515a19fba2d884f6a40c941:53",
+      "93a78278c515a19fba2d884f6a40c941:54",
+      "93a78278c515a19fba2d884f6a40c941:55",
+      "93a78278c515a19fba2d884f6a40c941:56",
+      "93a78278c515a19fba2d884f6a40c941:57",
+      "93a78278c515a19fba2d884f6a40c941:58",
+      "93a78278c515a19fba2d884f6a40c941:59",
+      "93a78278c515a19fba2d884f6a40c941:60",
+      "93a78278c515a19fba2d884f6a40c941:61",
+      "93a78278c515a19fba2d884f6a40c941:62",
+      "93a78278c515a19fba2d884f6a40c941:63"
+    ],
+    "chunk_count": 64,
+    "updated_at": "2026-03-16T10:22:04"
+  },
+  "unity_manual/WhatsNewUnity61.md": {
+    "sha256": "0c26f9e6f57e34cc60bea5e52d21f49b548043af3ec0996a17f66511454d2e34",
+    "chunk_ids": [
+      "930b0a8be5b8cf366ade824f76149277:0",
+      "930b0a8be5b8cf366ade824f76149277:1",
+      "930b0a8be5b8cf366ade824f76149277:2",
+      "930b0a8be5b8cf366ade824f76149277:3",
+      "930b0a8be5b8cf366ade824f76149277:4",
+      "930b0a8be5b8cf366ade824f76149277:5",
+      "930b0a8be5b8cf366ade824f76149277:6",
+      "930b0a8be5b8cf366ade824f76149277:7",
+      "930b0a8be5b8cf366ade824f76149277:8",
+      "930b0a8be5b8cf366ade824f76149277:9",
+      "930b0a8be5b8cf366ade824f76149277:10",
+      "930b0a8be5b8cf366ade824f76149277:11",
+      "930b0a8be5b8cf366ade824f76149277:12",
+      "930b0a8be5b8cf366ade824f76149277:13",
+      "930b0a8be5b8cf366ade824f76149277:14",
+      "930b0a8be5b8cf366ade824f76149277:15"
+    ],
+    "chunk_count": 16,
+    "updated_at": "2026-03-16T10:22:05"
+  },
+  "unity_manual/WhatsNewUnity62.md": {
+    "sha256": "fd8796ff6292f7cc1c8d3d475b53d0acc47316466066dc3793fb38dced3ef897",
+    "chunk_ids": [
+      "08f74aefd0c6dacf6e274adabfc4a3bb:0",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:1",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:2",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:3",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:4",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:5",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:6",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:7",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:8",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:9",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:10",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:11",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:12",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:13",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:14",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:15",
+      "08f74aefd0c6dacf6e274adabfc4a3bb:16"
+    ],
+    "chunk_count": 17,
+    "updated_at": "2026-03-16T10:22:07"
   }
 }
