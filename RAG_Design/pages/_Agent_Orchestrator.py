@@ -352,6 +352,51 @@ def collect_dependency_outputs(execution_state: Dict[str, Any], depends_on: List
 def safe_generate(client, model_name: str, contents):
     return client.models.generate_content(model=model_name, contents=contents)
 
+    # _Agent_Orchestrator.py 내부
+
+def build_agent_prompt(
+    agent_name: str,
+    instruction: str,
+    global_context: str,
+    dependency_outputs: List[Dict[str, Any]],
+    attachment_summary: str,
+) -> str:
+    return f"""
+    당신은 {agent_name}입니다.
+    아래 지시를 수행하고 반드시 JSON 객체 하나만 출력하세요.
+    마크다운, 코드블록, 장황한 머리말은 쓰지 마세요.
+
+    [Agent Role]
+    {AGENT_REGISTRY[agent_name]["description"]}
+
+    [Instruction]
+    {instruction}
+
+    [Global Context]
+    {global_context}
+
+    [Dependency Outputs]
+    {json.dumps(dependency_outputs, ensure_ascii=False, indent=2)}
+
+    [Attachment Summary]
+    {attachment_summary}
+
+    [출력 스키마]
+    {{
+    "summary": "이번 step 결과 요약",
+    "key_findings": ["핵심 발견 1", "핵심 발견 2"],
+    "deliverable": [
+        "실제 산출물의 첫 번째 단락 또는 1번 항목",
+        "실제 산출물의 두 번째 단락 또는 2번 항목",
+        "상세 내용..."
+    ],
+    "next_step_hint": "다음 step이 활용해야 할 핵심 한 줄",
+    "artifacts": {{
+        "format": "text",
+        "tags": ["analysis", "spec", "code", "graphics"]
+    }}
+    }}
+"""
 
 def execute_agent_step(
     client,
@@ -368,6 +413,7 @@ def execute_agent_step(
     dependency_outputs = collect_dependency_outputs(execution_state, depends_on)
     routed_attachment = route_attachment_to_step(file_data, step)
 
+    # [주의] 위에서 정의한 함수를 '호출'하여 prompt 변수에 저장합니다. 여기서 return 하지 않습니다.
     prompt = build_agent_prompt(
         agent_name=agent_name,
         instruction=instruction,
@@ -376,6 +422,7 @@ def execute_agent_step(
         attachment_summary=routed_attachment["summary"],
     )
 
+    # 이제 아래 코드가 정상적으로 음영 없이 활성화됩니다.
     contents = [prompt]
     contents.extend(routed_attachment["contents"])
 
@@ -390,6 +437,7 @@ def execute_agent_step(
     if not validated["valid"]:
         raise ValueError(f"{agent_name} output schema 오류: {validated['errors']}")
 
+    # 모든 작업이 끝난 후 최종 결과를 return 합니다.
     return {
         "agent": agent_name,
         "step_id": step["id"],
@@ -397,7 +445,6 @@ def execute_agent_step(
         "data": parsed["data"],
         "raw_text": raw_text,
     }
-
 
 def try_repair_plan_once(client, model_name: str, raw_plan_text: str, validation_errors: List[str]) -> Dict[str, Any]:
     repair_prompt = f"""
@@ -431,13 +478,23 @@ def build_final_report(plan: Dict[str, Any], execution_state: Dict[str, Any]) ->
         data = item["data"]
         lines.append(f"\n### {item['step_id']} · {item['agent']}")
         lines.append(f"- 요약: {data.get('summary', '-')}")
+
         findings = data.get("key_findings", [])
         if findings:
             for finding in findings:
                 lines.append(f"  - {finding}")
-        deliverable = data.get("deliverable", "")
+
+        deliverable = data.get("deliverable", [])
         if deliverable:
-            lines.append(f"\n{deliverable}")
+            if isinstance(deliverable, list):
+                # 배열일 경우 마크다운 문단 분리(\n\n)를 적용하여 결합
+                joined_text = "\n\n".join(deliverable)
+                lines.append(f"\n{joined_text}")
+            elif isinstance(deliverable, str):
+                # 기존처럼 단일 String으로 올 경우를 대비한 방어적 코드
+                # LLM이 1. 2. 3. 패턴을 썼을 때 강제로 줄바꿈 처리
+                formatted_text = deliverable.replace(" 1. ", "\n\n1. ").replace(" 2. ", "\n\n2. ").replace(" 3. ", "\n\n3. ").replace(" 4. ", "\n\n4. ")
+                lines.append(f"\n{formatted_text}")
 
     lines.append("\n## 🧩 최종 권장")
     if execution_state["ordered_results"]:
