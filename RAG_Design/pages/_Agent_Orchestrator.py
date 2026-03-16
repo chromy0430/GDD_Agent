@@ -22,36 +22,56 @@ st.set_page_config(layout="wide", page_title="Agent Headquarters")
 # 2. Agent Registry
 # =========================================================
 AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
+    "Market_Analyst": {
+        "file_path": "_Market_Analyst.py",
+        "description": "게임 시장 트렌드 분석, 타겟 유저층 설정, 경쟁작 분석 및 BM(수익화) 모델 초기 방향성을 제안합니다.",
+        "expected_output": "Market_Research_Report"
+    },
     "Video_Analyst": {
-        "description": "영상 파일 분석, 시각 효과/메카닉/UI/연출 역설계",
-        "supported_inputs": {"video", "mixed"},
-        "supported_outputs": {"analysis_report", "reverse_engineering_notes", "shader_graph_brief"},
-        "needs_attachment": True,
+        "file_path": "_Video_Analyst.py",
+        "description": "경쟁 게임이나 레퍼런스 영상의 프레임을 분석하여 애니메이션, 이펙트, UI 연출 등의 시각적 데이터를 추출합니다.",
+        "expected_output": "Video_Analysis_Data"
+    },
+    "Reference_Finder": {
+        "file_path": "_Reference_Finder.py",
+        "description": "기획 의도에 맞는 게임 내외적인 텍스트, 이미지, 시스템 레퍼런스를 RAG 및 웹 검색을 통해 수집합니다.",
+        "expected_output": "Reference_List"
+    },
+    "Game_Designer": {
+        "file_path": "_Game_Designer.py",
+        "description": "레퍼런스와 시장 분석을 바탕으로 게임의 핵심 코어 루프, 메커니즘, 시스템을 기획합니다.",
+        "expected_output": "System_Design_Draft"
+    },
+    "GDD_Writer": {
+        "file_path": "_GDD_Writer.py",
+        "description": "기획된 내용을 바탕으로 개발자와 아티스트가 볼 수 있는 정형화된 게임 시스템 기획서(GDD) 문서를 작성합니다.",
+        "expected_output": "Game_Design_Document(Markdown)"
     },
     "Spec_Generator": {
-        "description": "기획서, 명세서, 구조화 문서 생성",
-        "supported_inputs": {"text", "document", "mixed"},
-        "supported_outputs": {"spec", "design_doc", "summary_report"},
-        "needs_attachment": False,
+        "file_path": "_Spec_Generator.py",
+        "description": "GDD를 기반으로 실제 개발에 필요한 리소스 명세서, 데이터 테이블 구조, API 요구사항 등을 정의합니다.",
+        "expected_output": "Technical_Specification"
     },
-    "Code_Reviewer": {
-        "description": "코드 분석, 리뷰, 리팩토링 제안",
-        "supported_inputs": {"code", "mixed", "text"},
-        "supported_outputs": {"code_review", "refactor_plan", "patch_notes"},
-        "needs_attachment": False,
+    "Balance_Calc": {
+        "file_path": "_Balance_Calc.py",
+        "description": "게임 내 전투 수치, 확률, 경제 밸런스를 계산하고 시뮬레이션하여 검증된 CSV/JSON 데이터를 생성합니다.",
+        "expected_output": "Balance_Table_Data"
     },
     "Graphics_Expert": {
-        "description": "URP/Shader Graph/렌더링 구현 설명",
-        "supported_inputs": {"text", "document", "mixed", "video"},
-        "supported_outputs": {"graphics_plan", "shader_graph_brief", "rendering_notes"},
-        "needs_attachment": False,
+        "file_path": "_Graphics_Expert.py",
+        "description": "Unity URP 환경에 맞는 셰이더, 라이팅, 포스트 프로세싱 세팅 및 아트 리소스 최적화 방향을 제안합니다.",
+        "expected_output": "Graphics_Guideline"
     },
-    "Market_Analyst": {
-        "description": "시장 조사, 비교 분석, 포지셔닝",
-        "supported_inputs": {"text", "document", "mixed"},
-        "supported_outputs": {"market_report", "comparison", "strategy_notes"},
-        "needs_attachment": False,
+    "Feature_Implementer": {
+        "file_path": "_Feature_Implementer.py",
+        "description": "기획서와 명세서를 바탕으로 실제 Unity C# 기반의 코드를 작성하고 기능을 구현합니다.",
+        "expected_output": "C#_Source_Code"
     },
+    "Code_Reviewer": {
+        "file_path": "_Code_Reviewer.py",
+        "description": "작성된 코드의 Unity 6 최적화 여부(Zero GC 등), SOLID 원칙 준수 여부를 리뷰하고 개선안을 제시합니다.",
+        "expected_output": "Code_Review_Feedback"
+    }
 }
 
 
