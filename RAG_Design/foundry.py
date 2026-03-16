@@ -15,11 +15,15 @@ class FoundryGuard:
     def __init__(self):
         self.banned_imports = ["os", "sys", "subprocess", "shutil", "eval", "exec"]
         self.allowed_agents = {
-            "Video_Analyst",
-            "Spec_Generator",
-            "Code_Reviewer",
-            "Graphics_Expert",
             "Market_Analyst",
+            "Video_Analyst",
+            "Reference_Finder",
+            "Game_Designer",
+            "GDD_Writer",
+            "Spec_Generator",
+            "Balance_Calc",
+            "Graphics_Expert",
+            "Code_Reviewer"
         }
 
     # =========================================================

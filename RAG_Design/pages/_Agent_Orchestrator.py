@@ -2,6 +2,7 @@ import os
 import time
 import json
 import tempfile
+import re
 from typing import Dict, Any, List, Optional
 
 import streamlit as st
@@ -25,52 +26,72 @@ AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
     "Market_Analyst": {
         "file_path": "_Market_Analyst.py",
         "description": "게임 시장 트렌드 분석, 타겟 유저층 설정, 경쟁작 분석 및 BM(수익화) 모델 초기 방향성을 제안합니다.",
-        "expected_output": "Market_Research_Report"
+        "expected_output": "Market_Research_Report",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text"]
     },
     "Video_Analyst": {
         "file_path": "_Video_Analyst.py",
         "description": "경쟁 게임이나 레퍼런스 영상의 프레임을 분석하여 애니메이션, 이펙트, UI 연출 등의 시각적 데이터를 추출합니다.",
-        "expected_output": "Video_Analysis_Data"
+        "expected_output": "Video_Analysis_Data",
+        "supported_inputs": ["text", "video", "image"],
+        "supported_outputs": ["text"]
     },
     "Reference_Finder": {
         "file_path": "_Reference_Finder.py",
         "description": "기획 의도에 맞는 게임 내외적인 텍스트, 이미지, 시스템 레퍼런스를 RAG 및 웹 검색을 통해 수집합니다.",
-        "expected_output": "Reference_List"
+        "expected_output": "Reference_List",
+        "supported_inputs": ["text", "image"],
+        "supported_outputs": ["text"]
     },
     "Game_Designer": {
         "file_path": "_Game_Designer.py",
         "description": "레퍼런스와 시장 분석을 바탕으로 게임의 핵심 코어 루프, 메커니즘, 시스템을 기획합니다.",
-        "expected_output": "System_Design_Draft"
+        "expected_output": "System_Design_Draft",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text"]
     },
     "GDD_Writer": {
         "file_path": "_GDD_Writer.py",
-        "description": "기획된 내용을 바탕으로 개발자와 아티스트가 볼 수 있는 정형화된 게임 시스템 기획서(GDD) 문서를 작성합니다.",
-        "expected_output": "Game_Design_Document(Markdown)"
+        "description": "기획된 내용을 바탕으로 개발자와 아티스트가 볼 수 있는 정형화된 게임 시스템기획서(GDD) 문서를 작성합니다.",
+        "expected_output": "Game_Design_Document(Markdown)",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text"]
     },
     "Spec_Generator": {
         "file_path": "_Spec_Generator.py",
         "description": "GDD를 기반으로 실제 개발에 필요한 리소스 명세서, 데이터 테이블 구조, API 요구사항 등을 정의합니다.",
-        "expected_output": "Technical_Specification"
+        "expected_output": "Technical_Specification",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text"]
     },
     "Balance_Calc": {
         "file_path": "_Balance_Calc.py",
         "description": "게임 내 전투 수치, 확률, 경제 밸런스를 계산하고 시뮬레이션하여 검증된 CSV/JSON 데이터를 생성합니다.",
-        "expected_output": "Balance_Table_Data"
+        "expected_output": "Balance_Table_Data",
+        "supported_inputs": ["text", "csv"],
+        "supported_outputs": ["text", "csv"]
     },
     "Graphics_Expert": {
         "file_path": "_Graphics_Expert.py",
         "description": "Unity URP 환경에 맞는 셰이더, 라이팅, 포스트 프로세싱 세팅 및 아트 리소스 최적화 방향을 제안합니다.",
-        "expected_output": "Graphics_Guideline"
+        "expected_output": "Graphics_Guideline",
+        "supported_inputs": ["text", "image"],
+        "supported_outputs": ["text"]
     },
     "Feature_Implementer": {
         "file_path": "_Feature_Implementer.py",
         "description": "기획서와 명세서를 바탕으로 실제 Unity C# 기반의 코드를 작성하고 기능을 구현합니다.",
-        "expected_output": "C#_Source_Code"
+        "expected_output": "C#_Source_Code",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text", "code"]
     },
     "Code_Reviewer": {
         "file_path": "_Code_Reviewer.py",
         "description": "작성된 코드의 Unity 6 최적화 여부(Zero GC 등), SOLID 원칙 준수 여부를 리뷰하고 개선안을 제시합니다.",
-        "expected_output": "Code_Review_Feedback"
+        "expected_output": "Code_Review_Feedback",
+        "supported_inputs": ["text", "code"],
+        "supported_outputs": ["text"]
     }
 }
 
@@ -151,10 +172,13 @@ def process_uploaded_file(uploaded_file, client):
 def make_agent_list_text() -> str:
     lines = []
     for name, meta in AGENT_REGISTRY.items():
+        # .get()을 사용하여 방어적 프로그래밍 적용 (KeyError 방지)
+        inputs = meta.get('supported_inputs', ['text'])
+        outputs = meta.get('supported_outputs', ['text'])
         lines.append(
-            f"- {name}: {meta['description']} / "
-            f"supported_inputs={sorted(list(meta['supported_inputs']))} / "
-            f"supported_outputs={sorted(list(meta['supported_outputs']))}"
+            f"- {name}: {meta.get('description', '')} / "
+            f"supported_inputs={sorted(list(inputs))} / "
+            f"supported_outputs={sorted(list(outputs))}"
         )
     return "\n".join(lines)
 
@@ -165,11 +189,18 @@ def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Option
 사용자 요청과 첨부 정보를 보고, 가장 합리적인 실행 계획을 JSON 하나로만 출력하세요.
 설명문, 마크다운, 코드블록 없이 JSON 객체만 반환하세요.
 
+[CRITICAL RULE : STRICT AGENT SELECTION]
+1. 반드시 아래 [Available Agents] 목록에 있는 에이전트의 '정확한 이름(Exact Key)'만 사용해야 합니다.
+2. 'Product_Manager', 'Software_Engineer' 등 목록에 없는 임의의 에이전트 이름을 절대 창조하지 마십시오.
+3. 대소문자와 언더바(_)를 정확히 일치시키십시오.
+
 [Available Agents]
 {make_agent_list_text()}
 
 [User Request]
+<user_input>
 {prompt}
+</user_input>
 
 [Attachment Info]
 {attachment_info}
@@ -366,6 +397,7 @@ def try_repair_plan_once(client, model_name: str, raw_plan_text: str, validation
 {raw_plan_text}
 
 오류를 수정해서 JSON 객체 하나만 다시 출력하세요.
+목록에 없는 에이전트 이름을 사용했다면, 반드시 [Available Agents] 목록 내의 올바른 이름으로 교체하세요.
 """
     res = safe_generate(client, model_name, repair_prompt)
     repaired = guard.extract_json_object(res.text if hasattr(res, "text") else "")
@@ -411,8 +443,8 @@ def build_final_report(plan: Dict[str, Any], execution_state: Dict[str, Any]) ->
 def main():
     st.title("🧠 Agent 365: 통합 지휘 통제실 (Orchestrator)")
     st.markdown(
-        "텍스트, PDF, 영상, 코드 파일을 업로드하면 **오케스트레이터**가 의도를 파악하고 "
-        "**적절한 전문가 Agent**를 순서대로 호출합니다."
+        "텍스트, PDF, 영상, 코드 파일을 업로드하면 오케스트레이터가 의도를 파악하고 "
+        "적절한 전문가 Agent를 순서대로 호출합니다."
     )
 
     api_key, _, model_name = render_sidebar_settings()
