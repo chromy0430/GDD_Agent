@@ -45,13 +45,20 @@ def main():
         # 1. 구글 검색 수행
         status_box = st.status("🕵️ 시장 데이터를 수집하고 있습니다...", expanded=True)
         
-        search_query = f"{genre} game market trend 2024 2025 top selling games"
+        # 수정 후
+        search_query_market = f"{genre} game market 2025"
+        search_query_competitors = f"{genre} game top games steam mobile"
+
+        status_box.write(f"🔍 구글 검색 중: '{search_query_market}' / '{search_query_competitors}'...")
+
+        search_context = search_google(search_query_market, api_key, cx_id)
+        search_context += "\n---\n"
+        search_context += search_google(search_query_competitors, api_key, cx_id)
+
+        # 경쟁작 직접 입력했을 때 추가 검색
         if competitors:
-            search_query += f" {competitors} analysis"
-        
-        status_box.write(f"🔍 구글 검색 중: '{search_query}'...")
-        
-        search_context = search_google(search_query, api_key, cx_id)
+            search_context += "\n---\n"
+            search_context += search_google(f"{competitors} game review analysis", api_key, cx_id)
         
         if "오류" in search_context:
             status_box.error(search_context)
@@ -62,11 +69,18 @@ def main():
 
         # 2. Gemini 호출
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel(model_name) # [핵심] model_name
+        model = genai.GenerativeModel(model_name)
 
         prompt = f"""
             당신은 데이터 기반의 **Game Business Analyst**입니다.
-            반드시 제공된 [구글 검색 결과]에 기반하여 사실만을 분석해야 합니다. **검색 결과에 없는 내용은 '데이터 부족'으로 표기하십시오.**
+            반드시 제공된 [구글 검색 결과]에 기반하여 사실만을 분석해야 합니다.
+            검색 결과에 없는 부분은 게임 산업 일반 지식으로 보완하되 '[추정]' 태그를 붙이십시오.
+
+            [분석 대상 게임]
+            - 장르: {genre}
+            - 핵심 컨셉: {concept}
+            - 타겟 유저: {target}
+            - 참고 경쟁작: {competitors if competitors else "AI가 판단"}
 
             [구글 검색 결과]
             {search_context}
