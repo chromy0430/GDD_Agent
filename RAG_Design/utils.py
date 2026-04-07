@@ -19,8 +19,8 @@ AVAILABLE_MODELS = [
     "gemini-2.5-flash-lite",   # 가성비/속도
     "gemini-3-flash-preview",
     "gemini-3.1-flash-lite-preview",
-    "gemini-3.1-flash-image-preview" # 이미지 입력 지원 (실험적)
-    #"gemini-1.5-pro",          # 고성능
+    "gemini-3.1-flash-image-preview", # 이미지 입력 지원 (실험적)
+    "gemini-3.1-pro-preview",          # 고성능
     #"gemini-2.0-flash-exp"     # 실험 버전
 ]
 
