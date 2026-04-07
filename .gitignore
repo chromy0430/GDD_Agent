@@ -4,3 +4,6 @@ RAG_Design/knowledge_base/UnityGraphicsProgramming-vol1_Korean.pdf
 RAG_Design/knowledge_base/\[Unity\] Indie Survival Guide_Web version.pdf
 RAG_Design/db/chroma_db/chroma.sqlite3
 RAG_Design/db/chroma_db/chroma.sqlite3
+RAG_Design/db/chroma_db/chroma.sqlite3
+*.bin
+*.sqlite3
