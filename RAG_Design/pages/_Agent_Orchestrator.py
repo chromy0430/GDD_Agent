@@ -51,6 +51,13 @@ AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
         "supported_inputs": ["text"],
         "supported_outputs": ["text"]
     },
+    "Game_Planner": {
+        "file_path": "_Game_Planner.py",
+        "description": "게임의 전반적인 방향성, 비전, 핵심 타겟층 및 기초 컨셉을 기획합니다. (Designer 이전 단계의 상위 기획)",
+        "expected_output": "Game_Concept_Plan",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["text"]
+    },
     "GDD_Writer": {
         "file_path": "_GDD_Writer.py",
         "description": "기획된 내용을 바탕으로 개발자와 아티스트가 볼 수 있는 정형화된 게임 시스템기획서(GDD) 문서를 작성합니다.",
@@ -79,6 +86,13 @@ AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
         "supported_inputs": ["text", "image"],
         "supported_outputs": ["text"]
     },
+    "RenderGraph_Expert": {
+        "file_path": "_RenderGraph_Expert.py",
+        "description": "Unity 6.3 URP Render Graph 기반 커스텀 렌더 패스 및 셰이더 코드를 작성하고 Zero-GC 원칙을 엄수하여 구현합니다.",
+        "expected_output": "C#_and_Shader_Code",
+        "supported_inputs": ["text", "code"],
+        "supported_outputs": ["text", "code"]
+    },
     "Feature_Implementer": {
         "file_path": "_Feature_Implementer.py",
         "description": "기획서와 명세서를 바탕으로 실제 Unity C# 기반의 코드를 작성하고 기능을 구현합니다.",
@@ -92,7 +106,7 @@ AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
         "expected_output": "Code_Review_Feedback",
         "supported_inputs": ["text", "code"],
         "supported_outputs": ["text"]
-    }
+    }    
 }
 
 
@@ -191,7 +205,7 @@ def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Option
 
 [CRITICAL RULE : STRICT AGENT SELECTION]
 1. 반드시 아래 [Available Agents] 목록에 있는 에이전트의 '정확한 이름(Exact Key)'만 사용해야 합니다.
-2. 'Product_Manager', 'Software_Engineer' 등 목록에 없는 임의의 에이전트 이름을 절대 창조하지 마십시오.
+2. 'Unity_Expert', 'Product_Manager' 등 목록에 없는 임의의 에이전트 이름을 절대 창조하지 마십시오.
 3. 대소문자와 언더바(_)를 정확히 일치시키십시오.
 
 [Available Agents]
@@ -213,10 +227,13 @@ def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Option
 
 [계획 원칙]
 - 영상 첨부가 있으면 보통 Video_Analyst를 먼저 고려
-- 코드 요청이나 코드 첨부가 있으면 Code_Reviewer를 우선 고려
+- 게임의 방향성, 비전, 기초 컨셉 기획 요청이면 Game_Planner 우선 고려
+- URP 렌더그래프(Render Graph), 커스텀 패스, 셰이더 코드 구현 요청이면 반드시 RenderGraph_Expert 사용
+- 일반적인 기능 구현 및 C# 로직 작성은 Feature_Implementer 사용
+- 코드의 성능 최적화, Zero-GC 점검 요청이면 Code_Reviewer 우선 고려
 - 문서/PDF 요약 또는 기획서 작성이면 Spec_Generator 활용
-- 그래픽/쉐이더/URP 질문이면 Graphics_Expert 고려
-- 필요 없는 step는 만들지 말 것
+- 그래픽/아트 최적화 방향성이면 Graphics_Expert 고려
+- 필요 없는 step은 만들지 말 것
 - step 수는 1~4개 권장
 - 이전 결과가 다음 step에 필요한 경우 depends_on에 step id를 적을 것
 - 첨부가 꼭 필요한 step만 use_attachment=true
@@ -230,21 +247,12 @@ def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Option
   "steps": [
     {{
       "id": "step1",
-      "agent": "Video_Analyst",
-      "instruction": "이 영상의 메카닉, UI, 연출, 핵심 그래픽 구현 포인트를 분석해줘.",
+      "agent": "RenderGraph_Expert",
+      "instruction": "사용자가 요청한 흑백 처리 포스트 프로세싱 렌더그래프 코드를 작성해줘.",
       "depends_on": [],
-      "input_mode": "video",
-      "use_attachment": true,
-      "expected_output": "analysis_report"
-    }},
-    {{
-      "id": "step2",
-      "agent": "Spec_Generator",
-      "instruction": "step1 결과를 바탕으로 개발 명세서 초안을 작성해줘.",
-      "depends_on": ["step1"],
       "input_mode": "text",
       "use_attachment": false,
-      "expected_output": "spec"
+      "expected_output": "code"
     }}
   ],
   "final_output": {{
@@ -362,41 +370,41 @@ def build_agent_prompt(
     attachment_summary: str,
 ) -> str:
     return f"""
-    당신은 {agent_name}입니다.
-    아래 지시를 수행하고 반드시 JSON 객체 하나만 출력하세요.
-    마크다운, 코드블록, 장황한 머리말은 쓰지 마세요.
+        당신은 {agent_name}입니다.
+        아래 지시를 수행하고 반드시 JSON 객체 하나만 출력하세요.
+        마크다운, 코드블록, 장황한 머리말은 쓰지 마세요.
 
-    [Agent Role]
-    {AGENT_REGISTRY[agent_name]["description"]}
+        [Agent Role]
+        {AGENT_REGISTRY[agent_name]["description"]}
 
-    [Instruction]
-    {instruction}
+        [Instruction]
+        {instruction}
 
-    [Global Context]
-    {global_context}
+        [Global Context]
+        {global_context}
 
-    [Dependency Outputs]
-    {json.dumps(dependency_outputs, ensure_ascii=False, indent=2)}
+        [Dependency Outputs]
+        {json.dumps(dependency_outputs, ensure_ascii=False, indent=2)}
 
-    [Attachment Summary]
-    {attachment_summary}
+        [Attachment Summary]
+        {attachment_summary}
 
-    [출력 스키마]
-    {{
-    "summary": "이번 step 결과 요약",
-    "key_findings": ["핵심 발견 1", "핵심 발견 2"],
-    "deliverable": [
-        "실제 산출물의 첫 번째 단락 또는 1번 항목",
-        "실제 산출물의 두 번째 단락 또는 2번 항목",
-        "상세 내용..."
-    ],
-    "next_step_hint": "다음 step이 활용해야 할 핵심 한 줄",
-    "artifacts": {{
-        "format": "text",
-        "tags": ["analysis", "spec", "code", "graphics"]
-    }}
-    }}
-"""
+        [출력 스키마]
+        {{
+        "summary": "이번 step 결과 요약",
+        "key_findings": ["핵심 발견 1", "핵심 발견 2"],
+        "deliverable": [
+            "실제 산출물의 첫 번째 단락 또는 1번 항목",
+            "실제 산출물의 두 번째 단락 또는 2번 항목",
+            "상세 내용..."
+        ],
+        "next_step_hint": "다음 step이 활용해야 할 핵심 한 줄",
+        "artifacts": {{
+            "format": "text",
+            "tags": ["analysis", "spec", "code", "graphics"]
+        }}
+        }}
+    """
 
 def execute_agent_step(
     client,
@@ -412,6 +420,27 @@ def execute_agent_step(
 
     dependency_outputs = collect_dependency_outputs(execution_state, depends_on)
     routed_attachment = route_attachment_to_step(file_data, step)
+
+    special_context = ""
+    if agent_name == "RenderGraph_Expert":
+        folder_path = "rendergraph_samples"
+        combined_samples = ""
+        if os.path.exists(folder_path):
+            for root, dirs, files in os.walk(folder_path):
+                for filename in files:
+                    if filename.lower().endswith((".cs", ".txt", ".md", ".shader", ".hlsl", ".cginc", ".compute")):
+                        filepath = os.path.join(root, filename)
+                        try:
+                            rel_path = os.path.relpath(filepath, folder_path).replace("\\", "/")
+                            with open(filepath, "r", encoding="utf-8") as f:
+                                combined_samples += f"\n--- [{rel_path}] ---\n{f.read()}\n"
+                        except Exception: pass
+            
+            if combined_samples:
+                special_context = f"\n\n[CRITICAL: Ground Truth Data - RENDER GRAPH SAMPLES]\n반드시 아래 제공된 유니티 6.3 렌더그래프 샘플의 구조와 문법을 기준으로 코드를 작성할 것.\n{combined_samples}"
+    
+    # 병합된 컨텍스트 생성
+    injected_global_context = global_context + special_context
 
     # [주의] 위에서 정의한 함수를 '호출'하여 prompt 변수에 저장합니다. 여기서 return 하지 않습니다.
     prompt = build_agent_prompt(
@@ -448,16 +477,19 @@ def execute_agent_step(
 
 def try_repair_plan_once(client, model_name: str, raw_plan_text: str, validation_errors: List[str]) -> Dict[str, Any]:
     repair_prompt = f"""
-이전 planner 응답은 invalid입니다.
-오류:
-{json.dumps(validation_errors, ensure_ascii=False, indent=2)}
+    이전 planner 응답은 invalid입니다.
+    오류:
+    {json.dumps(validation_errors, ensure_ascii=False, indent=2)}
 
-이전 응답:
-{raw_plan_text}
+    이전 응답:
+    {raw_plan_text}
 
-오류를 수정해서 JSON 객체 하나만 다시 출력하세요.
-목록에 없는 에이전트 이름을 사용했다면, 반드시 [Available Agents] 목록 내의 올바른 이름으로 교체하세요.
-"""
+    오류를 수정해서 JSON 객체 하나만 다시 출력하세요.
+    [CRITICAL] 목록에 없는 에이전트 이름을 사용했다면, 반드시 아래 [Available Agents] 목록 내에 존재하는 올바른 이름으로만 교체하십시오.
+
+    [Available Agents]
+    {make_agent_list_text()}
+    """
     res = safe_generate(client, model_name, repair_prompt)
     repaired = guard.extract_json_object(res.text if hasattr(res, "text") else "")
     return repaired

@@ -38,6 +38,31 @@ def read_rendergraph_samples(folder_path):
                 
     return combined_samples
 
+# _RenderGraph_Expert.py 내부 (기존 UI 로직 건드리지 않고 하단에 추가)
+
+def run_agent(api_key, model_name, task_query, previous_context=""):
+    """오케스트레이터가 백그라운드에서 호출할 헤드리스 함수"""
+    import google.generativeai as genai
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel(model_name)
+    
+    # 기존 샘플 코드 로드 로직 재사용
+    sample_content = read_rendergraph_samples("rendergraph_samples")
+    
+    system_prompt = f"""
+    [Identity & Roleplay]
+    10년 차 수석 그래픽스 개발자.
+    [Standards] Zero-GC, Unity 6.3 URP, Render Graph.
+    [Ground Truth Data]
+    {sample_content}
+    """
+    
+    # 이전 에이전트의 작업물(Context)을 바탕으로 현재 작업(Task) 수행
+    full_prompt = f"{system_prompt}\n\n[Previous Context]\n{previous_context}\n\n[Current Task]\n{task_query}"
+    
+    response = model.generate_content(full_prompt)
+    return response.text
+
 # ==========================================
 # 3. 메인 로직
 # ==========================================
