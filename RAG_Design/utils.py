@@ -31,13 +31,21 @@ def load_config():
     if os.path.exists(CONFIG_FILE):
         try:
             with open(CONFIG_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+                config = json.load(f)
+                
+                # [하위 호환성] 예전 방식의 api_key만 저장되어 있던 경우 변환
+                if "api_key" in config and "api_presets" not in config:
+                    config["api_presets"] = {"기본 API": config["api_key"]}
+                    config["active_preset"] = "기본 API"
+                    
+                return config
         except: return {}
     return {}
 
-def save_config(api_key, cx_id, model_name):
+def save_config(api_presets, active_preset, cx_id, model_name):
     config = {
-        "api_key": api_key,
+        "api_presets": api_presets,
+        "active_preset": active_preset,
         "cx_id": cx_id,
         "model_name": model_name
     }
@@ -99,6 +107,8 @@ def retry_with_backoff(max_retries=3, initial_delay=2, backoff_factor=2):
 
                     if (
                         "429" in error_str
+                        or "503" in error_str
+                        or "high demand" in error_str
                         or "resourceexhausted" in error_str
                         or "quota" in error_str
                         or "rate limit" in error_str
@@ -132,25 +142,72 @@ def safe_generate_content(client, model_name, contents, config=None):
 # ==========================================
 def render_sidebar_settings():
     config = load_config()
-    saved_api = config.get("api_key", "")
+    
+    # 설정값 로드
+    api_presets = config.get("api_presets", {"1번 (기본 API)": ""})
+    active_preset = config.get("active_preset", list(api_presets.keys())[0] if api_presets else "1번 (기본 API)")
     saved_cx = config.get("cx_id", "")
     saved_model = config.get("model_name", AVAILABLE_MODELS[0])
 
     with st.sidebar:
         st.header("⚙️ 통합 설정 (Settings)")
 
+        # 1. 모델 선택
         idx = 0
         if saved_model in AVAILABLE_MODELS:
             idx = AVAILABLE_MODELS.index(saved_model)
-
         selected_model = st.selectbox("🤖 AI 모델 선택", AVAILABLE_MODELS, index=idx)
-        api_input = st.text_input("Google API Key", value=saved_api, type="password")
+
+        st.divider()
+        
+        # 2. API Key 프리셋 관리
+        st.subheader("🔑 API Key 프리셋")
+        
+        preset_options = list(api_presets.keys())
+        preset_options.append("➕ 새 프리셋 추가")
+        
+        # 현재 활성화된 프리셋 인덱스 찾기
+        try:
+            default_idx = preset_options.index(active_preset)
+        except ValueError:
+            default_idx = 0
+            
+        selected_preset = st.selectbox("활성 API 선택", preset_options, index=default_idx)
+        
+        # 새 프리셋 추가 모드인지 기존 수정 모드인지 판단
+        if selected_preset == "➕ 새 프리셋 추가":
+            preset_name_input = st.text_input("새 프리셋 이름", "2번 (유료 API)")
+            actual_preset_name = preset_name_input
+            current_key_val = ""
+        else:
+            actual_preset_name = selected_preset
+            current_key_val = api_presets.get(selected_preset, "")
+            
+        # API 키 입력란
+        api_input = st.text_input(f"'{actual_preset_name}' Key 입력", value=current_key_val, type="password")
+
+        # 삭제 버튼 (기본 API가 아니고, 새로 추가하는 모드가 아닐 때만 표시)
+        if selected_preset != "➕ 새 프리셋 추가" and len(api_presets) > 1:
+            if st.button(f"🗑️ '{selected_preset}' 삭제"):
+                del api_presets[selected_preset]
+                # 삭제 후 첫 번째 프리셋으로 자동 변경
+                save_config(api_presets, list(api_presets.keys())[0], saved_cx, selected_model)
+                st.rerun()
+
+        st.divider()
         cx_input = st.text_input("Search Engine ID (CX)", value=saved_cx, type="password", help="검색 봇용")
 
-        if st.button("💾 설정 저장 (Save All)"):
-            save_config(api_input, cx_input, selected_model)
-            st.success("설정이 저장되었습니다!")
+        # 3. 설정 저장
+        if st.button("💾 설정 저장 (Save All)", type="primary"):
+            if actual_preset_name: # 이름이 비어있지 않은 경우
+                api_presets[actual_preset_name] = api_input
+                active_preset = actual_preset_name
+            
+            save_config(api_presets, active_preset, cx_input, selected_model)
+            st.success(f"'{active_preset}' 설정이 저장되었습니다!")
             st.rerun()
 
         st.divider()
+        
+        # 각 봇으로 전달할 최종 API Key 반환
         return api_input, cx_input, selected_model

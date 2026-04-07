@@ -30227,5 +30227,2566 @@
     ],
     "chunk_count": 11,
     "updated_at": "2026-04-07T12:57:25"
+  },
+  "urp/prebuilt-shader-graphs-urp-lit.md": {
+    "sha256": "a1d52225a6b9b74a3182846574e6fbcc26d09de8d2d94766ffbe2e30dcdc5ec6",
+    "chunk_ids": [
+      "235a1b31fbf71d5a0bdb811393782e62:0",
+      "235a1b31fbf71d5a0bdb811393782e62:1",
+      "235a1b31fbf71d5a0bdb811393782e62:2",
+      "235a1b31fbf71d5a0bdb811393782e62:3",
+      "235a1b31fbf71d5a0bdb811393782e62:4",
+      "235a1b31fbf71d5a0bdb811393782e62:5",
+      "235a1b31fbf71d5a0bdb811393782e62:6",
+      "235a1b31fbf71d5a0bdb811393782e62:7",
+      "235a1b31fbf71d5a0bdb811393782e62:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:46:00"
+  },
+  "urp/prebuilt-shader-graphs-urp-sixway.md": {
+    "sha256": "a7df8785683a891f93c12475a936f3378ddad53d0754e54619e3a0bd74e170bd",
+    "chunk_ids": [
+      "cea4e72ee4534cd74ec029f2666bad36:0",
+      "cea4e72ee4534cd74ec029f2666bad36:1",
+      "cea4e72ee4534cd74ec029f2666bad36:2",
+      "cea4e72ee4534cd74ec029f2666bad36:3",
+      "cea4e72ee4534cd74ec029f2666bad36:4",
+      "cea4e72ee4534cd74ec029f2666bad36:5",
+      "cea4e72ee4534cd74ec029f2666bad36:6",
+      "cea4e72ee4534cd74ec029f2666bad36:7",
+      "cea4e72ee4534cd74ec029f2666bad36:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:46:01"
+  },
+  "urp/prebuilt-shader-graphs-urp-sprite-custom-lit.md": {
+    "sha256": "968def0ff135b638bf2c38973797996e8afbf42f1d5d364c8b89dc309e323168",
+    "chunk_ids": [
+      "72efb1d82231e916240d9711f49d3947:0",
+      "72efb1d82231e916240d9711f49d3947:1",
+      "72efb1d82231e916240d9711f49d3947:2",
+      "72efb1d82231e916240d9711f49d3947:3",
+      "72efb1d82231e916240d9711f49d3947:4",
+      "72efb1d82231e916240d9711f49d3947:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:46:02"
+  },
+  "urp/prebuilt-shader-graphs-urp-sprite-lit.md": {
+    "sha256": "31fc1a55b877d0fff51246bd1783708785054d12ef91538f06f347de359a6649",
+    "chunk_ids": [
+      "6c168cd62b65a15a2a070235c2e2eaa0:0",
+      "6c168cd62b65a15a2a070235c2e2eaa0:1",
+      "6c168cd62b65a15a2a070235c2e2eaa0:2",
+      "6c168cd62b65a15a2a070235c2e2eaa0:3",
+      "6c168cd62b65a15a2a070235c2e2eaa0:4",
+      "6c168cd62b65a15a2a070235c2e2eaa0:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:46:04"
+  },
+  "urp/prebuilt-shader-graphs-urp-sprite-unlit.md": {
+    "sha256": "5d95c5fe9c0bd334ed829c22af827688dca0631f049dd9103ed28ea7151f46eb",
+    "chunk_ids": [
+      "588861f804203c3cf4d9370e87edf0dd:0",
+      "588861f804203c3cf4d9370e87edf0dd:1",
+      "588861f804203c3cf4d9370e87edf0dd:2",
+      "588861f804203c3cf4d9370e87edf0dd:3",
+      "588861f804203c3cf4d9370e87edf0dd:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:46:05"
+  },
+  "urp/prebuilt-shader-graphs-urp-terrain-lit.md": {
+    "sha256": "703a74175ba3d0a6ccba0e3f3adb08bff538b30dc7d8f046d5cb3abae4a70490",
+    "chunk_ids": [
+      "0a42f6e5577949a75a9dc7748f89a5e2:0",
+      "0a42f6e5577949a75a9dc7748f89a5e2:1",
+      "0a42f6e5577949a75a9dc7748f89a5e2:2",
+      "0a42f6e5577949a75a9dc7748f89a5e2:3",
+      "0a42f6e5577949a75a9dc7748f89a5e2:4",
+      "0a42f6e5577949a75a9dc7748f89a5e2:5",
+      "0a42f6e5577949a75a9dc7748f89a5e2:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:46:06"
+  },
+  "urp/prebuilt-shader-graphs-urp-ui.md": {
+    "sha256": "9fff89b042f0c1362c104fab5d15450c9c4ab75f7e0f492b0c341886ba3fb231",
+    "chunk_ids": [
+      "b869b241f91edef5fdb1730f74dac749:0",
+      "b869b241f91edef5fdb1730f74dac749:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:46:07"
+  },
+  "urp/prebuilt-shader-graphs-urp-unlit.md": {
+    "sha256": "bbebaa5c79bcdadfbf330e2e825e5b564bd734a485564891d2697be9a76f1c05",
+    "chunk_ids": [
+      "abeeeb044615707b839732c72f80aef7:0",
+      "abeeeb044615707b839732c72f80aef7:1",
+      "abeeeb044615707b839732c72f80aef7:2",
+      "abeeeb044615707b839732c72f80aef7:3",
+      "abeeeb044615707b839732c72f80aef7:4",
+      "abeeeb044615707b839732c72f80aef7:5",
+      "abeeeb044615707b839732c72f80aef7:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:46:08"
+  },
+  "urp/prebuilt-shader-graphs-urp.md": {
+    "sha256": "923e499b4fa4bfccee9d2de5f39cbe8c0955555eb800a84627d0eafa1cf9699b",
+    "chunk_ids": [
+      "288726f0791a849182cac01226a6109b:0",
+      "288726f0791a849182cac01226a6109b:1",
+      "288726f0791a849182cac01226a6109b:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:46:09"
+  },
+  "urp/probe-volumes-change-lighting-at-runtime.md": {
+    "sha256": "a110c6665dc8018fa005f3116dd9fec51b824f7d9a7e7962101a60dfe52be241",
+    "chunk_ids": [
+      "48630f4685b75f4661256e61d59d3531:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:46:10"
+  },
+  "urp/probevolumes-adjustment-volume-component-reference.md": {
+    "sha256": "566a976e799842d6e353bfc6d0b50f86ad2b8002cdea080506ccbf6469c37d6b",
+    "chunk_ids": [
+      "5096234ccdc4ccfa2c317642ea7dde6c:0",
+      "5096234ccdc4ccfa2c317642ea7dde6c:1",
+      "5096234ccdc4ccfa2c317642ea7dde6c:2",
+      "5096234ccdc4ccfa2c317642ea7dde6c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:46:10"
+  },
+  "urp/probevolumes-bakedifferentlightingsetups.md": {
+    "sha256": "49f269141bf6c3a57b15698bf752a30d88b36f274acc51d0f0c927a4a4024c41",
+    "chunk_ids": [
+      "c2772ae34b01316ad1538f0e6eb776c6:0",
+      "c2772ae34b01316ad1538f0e6eb776c6:1",
+      "c2772ae34b01316ad1538f0e6eb776c6:2",
+      "c2772ae34b01316ad1538f0e6eb776c6:3",
+      "c2772ae34b01316ad1538f0e6eb776c6:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:46:11"
+  },
+  "urp/probevolumes-changedensity.md": {
+    "sha256": "abcffff2edc98ac1b303fa192816f0e99b5847945ccd2c2e2004cf31c1a65002",
+    "chunk_ids": [
+      "78a5249b24c6078503c38d58e7a5fb47:0",
+      "78a5249b24c6078503c38d58e7a5fb47:1",
+      "78a5249b24c6078503c38d58e7a5fb47:2",
+      "78a5249b24c6078503c38d58e7a5fb47:3",
+      "78a5249b24c6078503c38d58e7a5fb47:4",
+      "78a5249b24c6078503c38d58e7a5fb47:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:46:12"
+  },
+  "urp/probevolumes-concept.md": {
+    "sha256": "19b8068c2016e20a10b5d63fc775d4c351057d7ef8774da5a7c395adb236f748",
+    "chunk_ids": [
+      "7edb8e7e8d2a180f745cb8f59ce8bfb3:0",
+      "7edb8e7e8d2a180f745cb8f59ce8bfb3:1",
+      "7edb8e7e8d2a180f745cb8f59ce8bfb3:2",
+      "7edb8e7e8d2a180f745cb8f59ce8bfb3:3",
+      "7edb8e7e8d2a180f745cb8f59ce8bfb3:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:46:13"
+  },
+  "urp/probevolumes-fixissues.md": {
+    "sha256": "0497042fe99718e4fcbf183ddbd139b659cb2d561506d63b1a03cbc12fe15eb8",
+    "chunk_ids": [
+      "053659859b811a05859f3327f7a95fa2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:46:14"
+  },
+  "urp/probevolumes-inspector-reference.md": {
+    "sha256": "44529513a7aae6fe2d9841a99d7b0f69ba598fa6ca86ac5b066f152d66995903",
+    "chunk_ids": [
+      "2c2b0cd9247fa38599c99dd09f17ed14:0",
+      "2c2b0cd9247fa38599c99dd09f17ed14:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:46:15"
+  },
+  "urp/probevolumes-light-probe-validity.md": {
+    "sha256": "860a70a2367476988bef2cb1f88d9dd498fad4ccb1aea64c541ed4cfa129ec69",
+    "chunk_ids": [
+      "c3195c7d3789d7229ff0b90f2601fe19:0",
+      "c3195c7d3789d7229ff0b90f2601fe19:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:46:16"
+  },
+  "urp/probevolumes-lighting-panel-reference.md": {
+    "sha256": "0fac13296cb958bd011d7e49ceaef40b3bde57e748a4e4342b95fdb539e8b75e",
+    "chunk_ids": [
+      "940c04b623f837ca53b2baabb327b1b5:0",
+      "940c04b623f837ca53b2baabb327b1b5:1",
+      "940c04b623f837ca53b2baabb327b1b5:2",
+      "940c04b623f837ca53b2baabb327b1b5:3",
+      "940c04b623f837ca53b2baabb327b1b5:4",
+      "940c04b623f837ca53b2baabb327b1b5:5",
+      "940c04b623f837ca53b2baabb327b1b5:6",
+      "940c04b623f837ca53b2baabb327b1b5:7"
+    ],
+    "chunk_count": 8,
+    "updated_at": "2026-04-07T13:46:17"
+  },
+  "urp/probevolumes-options-override-reference.md": {
+    "sha256": "7255d97a096a20b9c2ec7071f03e591b0256f17e46093f947c5d8156b4a4ab41",
+    "chunk_ids": [
+      "e00147426e3ff8851bcdad3886ffda84:0",
+      "e00147426e3ff8851bcdad3886ffda84:1",
+      "e00147426e3ff8851bcdad3886ffda84:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:46:18"
+  },
+  "urp/probevolumes-showandadjust.md": {
+    "sha256": "ea0d73ed5fa6a59b361b079dd5196a55800dd8ff075bf9d9313813badb08d6cf",
+    "chunk_ids": [
+      "5e58aaeacced7d7804bc2be1d8882ced:0",
+      "5e58aaeacced7d7804bc2be1d8882ced:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:46:19"
+  },
+  "urp/probevolumes-skyocclusion.md": {
+    "sha256": "0400bef28662a46a2828966824b37c5ab44662fb34e2e95d7a4e22a9af4ae414",
+    "chunk_ids": [
+      "74cf3f994ebadca63876b982c3d393a2:0",
+      "74cf3f994ebadca63876b982c3d393a2:1",
+      "74cf3f994ebadca63876b982c3d393a2:2",
+      "74cf3f994ebadca63876b982c3d393a2:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:46:20"
+  },
+  "urp/probevolumes-streaming.md": {
+    "sha256": "bbd52caec89b0a0a2f53843cbc4b981769fc9fe9399ec261184eb587246efb64",
+    "chunk_ids": [
+      "3ad7e72ab615bb211f26a9b51ff019a2:0",
+      "3ad7e72ab615bb211f26a9b51ff019a2:1",
+      "3ad7e72ab615bb211f26a9b51ff019a2:2",
+      "3ad7e72ab615bb211f26a9b51ff019a2:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:46:21"
+  },
+  "urp/probevolumes-troubleshoot-artefacts.md": {
+    "sha256": "dd0d7acb7c09e742066aac795b04c8d0d5bbf729dd4d276074aca6e100c56636",
+    "chunk_ids": [
+      "bbcf346afcf023023d3743653a73624d:0",
+      "bbcf346afcf023023d3743653a73624d:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:47:09"
+  },
+  "urp/probevolumes-troubleshoot-light-leaks.md": {
+    "sha256": "bf4690b8e937d7e4900ecc6773f844312c654d31b4adb3fbb91cf745cea0914a",
+    "chunk_ids": [
+      "fcee3c2be4601e1e8087ec891f38f7d6:0",
+      "fcee3c2be4601e1e8087ec891f38f7d6:1",
+      "fcee3c2be4601e1e8087ec891f38f7d6:2",
+      "fcee3c2be4601e1e8087ec891f38f7d6:3",
+      "fcee3c2be4601e1e8087ec891f38f7d6:4",
+      "fcee3c2be4601e1e8087ec891f38f7d6:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:47:10"
+  },
+  "urp/probevolumes-understand-changing-lighting-at-runtime.md": {
+    "sha256": "e268f427882111a1ab001985ced941141f19c78c4602343e63f7e70319d21c46",
+    "chunk_ids": [
+      "3438f35a7548c4cf6fef3b3ce808ac8d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:47:11"
+  },
+  "urp/probevolumes-use.md": {
+    "sha256": "cdf13b108427866aa381eae8b5e73b4e8ee8deebc77e3efc23ee5f627794fe2e",
+    "chunk_ids": [
+      "ad45134bc1febc00d4317bb4f3a9e271:0",
+      "ad45134bc1febc00d4317bb4f3a9e271:1",
+      "ad45134bc1febc00d4317bb4f3a9e271:2",
+      "ad45134bc1febc00d4317bb4f3a9e271:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:47:12"
+  },
+  "urp/probevolumes-usebakingsets.md": {
+    "sha256": "3811e6a0c2b77295f38af8fb5645f26954258c57be5864db8d4ee4b48eb9a0bd",
+    "chunk_ids": [
+      "6ab82f1853943111a7297903431e7e08:0",
+      "6ab82f1853943111a7297903431e7e08:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:47:13"
+  },
+  "urp/probevolumes.md": {
+    "sha256": "05fb3bbb9049aaf52244cf67da840a52f5b8c5f45e42d0a540b0671a8fdf4495",
+    "chunk_ids": [
+      "1efc7d1204c87380cea101c39a284f35:0",
+      "1efc7d1204c87380cea101c39a284f35:1",
+      "1efc7d1204c87380cea101c39a284f35:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:13"
+  },
+  "urp/quality/change-urp-asset-settings.md": {
+    "sha256": "eeb7f93c281d1e05e6e99cf2dae7be59ff6a0fd2a0e74e63ad3b495d0fe3e755",
+    "chunk_ids": [
+      "10a91526a606b948a9ab0630f8f9582e:0",
+      "10a91526a606b948a9ab0630f8f9582e:1",
+      "10a91526a606b948a9ab0630f8f9582e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:14"
+  },
+  "urp/quality/quality-settings-through-code.md": {
+    "sha256": "aeacfe4acce0e24ad834c7a8ce3ab9ffce54bf194b04596402e0e08bd1090e85",
+    "chunk_ids": [
+      "6d2e82655a5c69ec620701c48211959c:0",
+      "6d2e82655a5c69ec620701c48211959c:1",
+      "6d2e82655a5c69ec620701c48211959c:2",
+      "6d2e82655a5c69ec620701c48211959c:3",
+      "6d2e82655a5c69ec620701c48211959c:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:47:15"
+  },
+  "urp/reduce-rendering-work-on-cpu.md": {
+    "sha256": "b6d28c430a9591cdee3d5313c4afc276a5ae5315735c2f7c051724ea8466fcb3",
+    "chunk_ids": [
+      "809835a30c9ed3a090c5239fdc6c9288:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:47:16"
+  },
+  "urp/render-graph-add-texture-to-frame-data.md": {
+    "sha256": "7b0fbe4d83399f0849e7316e01176170ee8fb10144311247deb6c9475a6e9a68",
+    "chunk_ids": [
+      "9d3e120194a3ad7fe4662aef509f94a6:0",
+      "9d3e120194a3ad7fe4662aef509f94a6:1",
+      "9d3e120194a3ad7fe4662aef509f94a6:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:17"
+  },
+  "urp/render-graph-add-textures-to-camera-history.md": {
+    "sha256": "1e3d1291b770c061d84491380e5b9789053229b68cbab19e2f3fda0e9a41861a",
+    "chunk_ids": [
+      "3ff18d0b300c8eb89845831a5f6cdfd9:0",
+      "3ff18d0b300c8eb89845831a5f6cdfd9:1",
+      "3ff18d0b300c8eb89845831a5f6cdfd9:2",
+      "3ff18d0b300c8eb89845831a5f6cdfd9:3",
+      "3ff18d0b300c8eb89845831a5f6cdfd9:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:47:18"
+  },
+  "urp/render-graph-blit.md": {
+    "sha256": "064b8b24fc74086f156af89c20d27644c6c9884fdcab8dcda6951af0c87fa59d",
+    "chunk_ids": [
+      "80771bd9537106bd2af0a67d5e1bda8b:0",
+      "80771bd9537106bd2af0a67d5e1bda8b:1",
+      "80771bd9537106bd2af0a67d5e1bda8b:2",
+      "80771bd9537106bd2af0a67d5e1bda8b:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:47:18"
+  },
+  "urp/render-graph-compute-shader-input.md": {
+    "sha256": "3f2f64255fa5f71ea29c41d6280b94b8109e9a9daab461e6e332f36605dfdf14",
+    "chunk_ids": [
+      "a81e219295edbfa3e43d801a91ccc0ae:0",
+      "a81e219295edbfa3e43d801a91ccc0ae:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:47:19"
+  },
+  "urp/render-graph-compute-shader-run.md": {
+    "sha256": "cb69f30da23b5a6a3f7efd993e16847c458d59968a655b31c3576f4588543cad",
+    "chunk_ids": [
+      "49e2d43bcc2b6f85d1176779c0981221:0",
+      "49e2d43bcc2b6f85d1176779c0981221:1",
+      "49e2d43bcc2b6f85d1176779c0981221:2",
+      "49e2d43bcc2b6f85d1176779c0981221:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:47:20"
+  },
+  "urp/render-graph-compute-shader.md": {
+    "sha256": "c8bb3afb9252378ad2e8e6d977c7cd9ecd441b3ab4b2541ef1b52c946b049783",
+    "chunk_ids": [
+      "ee77b584416b4112cfd1783f916e858c:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:47:21"
+  },
+  "urp/render-graph-create-a-texture.md": {
+    "sha256": "bdd6a11aef2636a0847bfab7bea3143ff881202436fe929f8ff87d792371f5c9",
+    "chunk_ids": [
+      "056ecf07442fa7234d02fdc04bf52f94:0",
+      "056ecf07442fa7234d02fdc04bf52f94:1",
+      "056ecf07442fa7234d02fdc04bf52f94:2",
+      "056ecf07442fa7234d02fdc04bf52f94:3",
+      "056ecf07442fa7234d02fdc04bf52f94:4",
+      "056ecf07442fa7234d02fdc04bf52f94:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:47:22"
+  },
+  "urp/render-graph-create-global-texture.md": {
+    "sha256": "2e21e83fa7c4514cdef129d4d9688667533a9d04670badcffdff04c4330063d7",
+    "chunk_ids": [
+      "f86379ad1e3267bc7e5ffd5df1e19014:0",
+      "f86379ad1e3267bc7e5ffd5df1e19014:1",
+      "f86379ad1e3267bc7e5ffd5df1e19014:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:23"
+  },
+  "urp/render-graph-draw-objects-in-a-pass.md": {
+    "sha256": "1b195f3bc371465cc4ca531dd52efb6abce2f3c3ff7706450964336610d65143",
+    "chunk_ids": [
+      "645881bc8d95203e3078abec6f4151e4:0",
+      "645881bc8d95203e3078abec6f4151e4:1",
+      "645881bc8d95203e3078abec6f4151e4:2",
+      "645881bc8d95203e3078abec6f4151e4:3",
+      "645881bc8d95203e3078abec6f4151e4:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:47:24"
+  },
+  "urp/render-graph-frame-data-reference.md": {
+    "sha256": "ebbd80ca9e8744d02da88b31aa00970e9a15bf22ae7a0f1855622d7471969deb",
+    "chunk_ids": [
+      "abf7a570a9c0de130a8236f882f6d32c:0",
+      "abf7a570a9c0de130a8236f882f6d32c:1",
+      "abf7a570a9c0de130a8236f882f6d32c:2",
+      "abf7a570a9c0de130a8236f882f6d32c:3",
+      "abf7a570a9c0de130a8236f882f6d32c:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:47:25"
+  },
+  "urp/render-graph-frame-data.md": {
+    "sha256": "d64bc620f964072f1ee51992331f228369aeb9c1fc85ee09eef9eb30fa0d56f3",
+    "chunk_ids": [
+      "e831162f0928b9487c09a2736bcf8988:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:47:26"
+  },
+  "urp/render-graph-framebuffer-fetch.md": {
+    "sha256": "6cf45d4b0df3a45730b8cbd288016442314c20198c4bace538a5329e77e8a13d",
+    "chunk_ids": [
+      "67d97aa226009ed1a68265e87494d56c:0",
+      "67d97aa226009ed1a68265e87494d56c:1",
+      "67d97aa226009ed1a68265e87494d56c:2",
+      "67d97aa226009ed1a68265e87494d56c:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:47:27"
+  },
+  "urp/render-graph-get-previous-frames.md": {
+    "sha256": "ed5f0c48996bd56abf469aa1c159d3078a57e347f56569f0bf37f63f5de549ad",
+    "chunk_ids": [
+      "b8b1109fce343aef266a0afbfef7a8ce:0",
+      "b8b1109fce343aef266a0afbfef7a8ce:1",
+      "b8b1109fce343aef266a0afbfef7a8ce:2",
+      "b8b1109fce343aef266a0afbfef7a8ce:3",
+      "b8b1109fce343aef266a0afbfef7a8ce:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:47:28"
+  },
+  "urp/render-graph-import-a-texture.md": {
+    "sha256": "c70ffab258d7a87fae44c2a45324d4951606e1a1da2e9ab2dc5f099dd3fa53cc",
+    "chunk_ids": [
+      "965bfedbb601e2c0319ae6ec9555712b:0",
+      "965bfedbb601e2c0319ae6ec9555712b:1",
+      "965bfedbb601e2c0319ae6ec9555712b:2",
+      "965bfedbb601e2c0319ae6ec9555712b:3",
+      "965bfedbb601e2c0319ae6ec9555712b:4",
+      "965bfedbb601e2c0319ae6ec9555712b:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:47:30"
+  },
+  "urp/render-graph-introduction.md": {
+    "sha256": "a0e7859dd831b2cb9ea796ddf46b9edfc4312842ba22c35a11d42e6191a07e4d",
+    "chunk_ids": [
+      "1c8e6206789bdf880010e8a800dde84d:0",
+      "1c8e6206789bdf880010e8a800dde84d:1",
+      "1c8e6206789bdf880010e8a800dde84d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:32"
+  },
+  "urp/render-graph-optimize.md": {
+    "sha256": "94fd77aac58894c2771860203fc4e551446d6b641f1fd208f564e64aa80243c7",
+    "chunk_ids": [
+      "b5b9824c6ef8f82b1a3f56adb864c41e:0",
+      "b5b9824c6ef8f82b1a3f56adb864c41e:1",
+      "b5b9824c6ef8f82b1a3f56adb864c41e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:47:32"
+  },
+  "urp/render-graph-pass-textures-between-passes.md": {
+    "sha256": "dee0f50901f4e2c85ffdecb8d6902ac7f4325eba625cf770e69ee347d26c712a",
+    "chunk_ids": [
+      "052ca45f0dc71a847db7167d7ca1f41e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:47:33"
+  },
+  "urp/render-graph-read-write-texture.md": {
+    "sha256": "e91094c2b8643c77216821c5f2ccb2fa151832140225961a39dde1ace8693ef9",
+    "chunk_ids": [
+      "915206326f65891904a75b398be5fb60:0",
+      "915206326f65891904a75b398be5fb60:1",
+      "915206326f65891904a75b398be5fb60:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:22"
+  },
+  "urp/render-graph-unsafe-pass.md": {
+    "sha256": "b8d18a1abc5bd5237a982e7c95f3ec12bc20b629e3a0b44ea4851bd1c057aa4c",
+    "chunk_ids": [
+      "fa977bc73cdc88da01c8af19bdc77686:0",
+      "fa977bc73cdc88da01c8af19bdc77686:1",
+      "fa977bc73cdc88da01c8af19bdc77686:2",
+      "fa977bc73cdc88da01c8af19bdc77686:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:23"
+  },
+  "urp/render-graph-view.md": {
+    "sha256": "d2960cf635b01c400898ef3615979878116701c540dba1471da015ca0d1c8308",
+    "chunk_ids": [
+      "84bc79e068bcef9e80e16dc50abd6915:0",
+      "84bc79e068bcef9e80e16dc50abd6915:1",
+      "84bc79e068bcef9e80e16dc50abd6915:2",
+      "84bc79e068bcef9e80e16dc50abd6915:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:23"
+  },
+  "urp/render-graph-viewer-reference.md": {
+    "sha256": "950eaa4f273448fdb79810300681178dd1e5b5dc045bb58f1543dda34185259f",
+    "chunk_ids": [
+      "2e88525b591bbde5151a33ab375174aa:0",
+      "2e88525b591bbde5151a33ab375174aa:1",
+      "2e88525b591bbde5151a33ab375174aa:2",
+      "2e88525b591bbde5151a33ab375174aa:3",
+      "2e88525b591bbde5151a33ab375174aa:4",
+      "2e88525b591bbde5151a33ab375174aa:5",
+      "2e88525b591bbde5151a33ab375174aa:6",
+      "2e88525b591bbde5151a33ab375174aa:7",
+      "2e88525b591bbde5151a33ab375174aa:8",
+      "2e88525b591bbde5151a33ab375174aa:9"
+    ],
+    "chunk_count": 10,
+    "updated_at": "2026-04-07T13:48:25"
+  },
+  "urp/render-graph-write-render-pass.md": {
+    "sha256": "701d59089b4a9a788e18e9d2eb7027e99285bbb3f4a9ba67f94d689df77d22f9",
+    "chunk_ids": [
+      "2bf3fcd98ce30971d25985a3b0b33e0b:0",
+      "2bf3fcd98ce30971d25985a3b0b33e0b:1",
+      "2bf3fcd98ce30971d25985a3b0b33e0b:2",
+      "2bf3fcd98ce30971d25985a3b0b33e0b:3",
+      "2bf3fcd98ce30971d25985a3b0b33e0b:4",
+      "2bf3fcd98ce30971d25985a3b0b33e0b:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:48:26"
+  },
+  "urp/render-graph.md": {
+    "sha256": "a9fc5bd14b08d13d362c3d766f8e77ebca6d113ddaa8f1d2d64cf37542bbf5b0",
+    "chunk_ids": [
+      "b24c53b3508b111c716e7ca72dad568c:0",
+      "b24c53b3508b111c716e7ca72dad568c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:27"
+  },
+  "urp/renderer-feature-decal-create.md": {
+    "sha256": "26b01617b8fbb1b853818caaef19b4b0e19454e7ab81ad75c903ff041f110d17",
+    "chunk_ids": [
+      "e6717cb5f95986840eb5b041bee2ce00:0",
+      "e6717cb5f95986840eb5b041bee2ce00:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:28"
+  },
+  "urp/renderer-feature-decal-landing.md": {
+    "sha256": "6925acd589405cd641c664633bc0ca4b773c64cae64551a081df02b8f8f8801c",
+    "chunk_ids": [
+      "8e0c6d71e43d62bf50c69420a545be64:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:48:29"
+  },
+  "urp/renderer-feature-decal-projector-reference.md": {
+    "sha256": "115ee473ea5864d249e79509de66b6e257f7b05bd910c2e2d1c6df23697f47e3",
+    "chunk_ids": [
+      "6560e812216c6e9ccfaf5cee94186a75:0",
+      "6560e812216c6e9ccfaf5cee94186a75:1",
+      "6560e812216c6e9ccfaf5cee94186a75:2",
+      "6560e812216c6e9ccfaf5cee94186a75:3",
+      "6560e812216c6e9ccfaf5cee94186a75:4",
+      "6560e812216c6e9ccfaf5cee94186a75:5",
+      "6560e812216c6e9ccfaf5cee94186a75:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:48:30"
+  },
+  "urp/renderer-feature-decal-reference.md": {
+    "sha256": "70db473832099709007f3d7b8d533f5c8c012a67376a17b05724d7479dadb755",
+    "chunk_ids": [
+      "0d7f26d4cfc0198a3e0e6fdf5cac9e7c:0",
+      "0d7f26d4cfc0198a3e0e6fdf5cac9e7c:1",
+      "0d7f26d4cfc0198a3e0e6fdf5cac9e7c:2",
+      "0d7f26d4cfc0198a3e0e6fdf5cac9e7c:3",
+      "0d7f26d4cfc0198a3e0e6fdf5cac9e7c:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:48:31"
+  },
+  "urp/renderer-feature-decal.md": {
+    "sha256": "be16919b8243198306c97e812450ab004995ac3192f6379682924d3c19357257",
+    "chunk_ids": [
+      "9b65879d6ec84bc31611bebd567f445a:0",
+      "9b65879d6ec84bc31611bebd567f445a:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:32"
+  },
+  "urp/renderer-feature-screen-space-shadows.md": {
+    "sha256": "13deb12456025d10cbddc99774061573439fb147f8e17ea9cd60b4cd0876ad60",
+    "chunk_ids": [
+      "557f33aa244dc0759a1474b6739fe31a:0",
+      "557f33aa244dc0759a1474b6739fe31a:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:33"
+  },
+  "urp/renderer-features/custom-rendering-pass-workflow-in-urp.md": {
+    "sha256": "2d61ccab9e2c905c9be93555ca5b05b9b2dee7d33c01e9f3fa4c3d7c892191dd",
+    "chunk_ids": [
+      "66818468fb7e3ec918ae45f0f88550e0:0",
+      "66818468fb7e3ec918ae45f0f88550e0:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:33"
+  },
+  "urp/renderer-features/how-to-custom-effect-render-objects.md": {
+    "sha256": "1497d7deb58c36ca43d95a99d78e07cc586b002fe09c431c9934770aa39f6d0d",
+    "chunk_ids": [
+      "96a79268b4291038604e1a9fb9700f5c:0",
+      "96a79268b4291038604e1a9fb9700f5c:1",
+      "96a79268b4291038604e1a9fb9700f5c:2",
+      "96a79268b4291038604e1a9fb9700f5c:3",
+      "96a79268b4291038604e1a9fb9700f5c:4",
+      "96a79268b4291038604e1a9fb9700f5c:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:48:34"
+  },
+  "urp/renderer-features/intro-to-scriptable-render-passes.md": {
+    "sha256": "6301af4c7bd1b05477799e3761053f8f909a292fcc8427eb5d32ec4728df2c7a",
+    "chunk_ids": [
+      "558ef00a81170b2df24f700da97caa31:0",
+      "558ef00a81170b2df24f700da97caa31:1",
+      "558ef00a81170b2df24f700da97caa31:2",
+      "558ef00a81170b2df24f700da97caa31:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:35"
+  },
+  "urp/renderer-features/renderer-feature-full-screen-pass.md": {
+    "sha256": "82ddb7e19ec4464d4485a02b1aff62e41fc7d54f290ceece374eaccd28e06a59",
+    "chunk_ids": [
+      "d569dbe3e0009902e0fe0eee65d906a4:0",
+      "d569dbe3e0009902e0fe0eee65d906a4:1",
+      "d569dbe3e0009902e0fe0eee65d906a4:2",
+      "d569dbe3e0009902e0fe0eee65d906a4:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:36"
+  },
+  "urp/renderer-features/renderer-feature-render-objects.md": {
+    "sha256": "67868f7b3dd7c883a18fe1d3ac4591ee1a7b6653d9facbab7f6062dd3916de76",
+    "chunk_ids": [
+      "ae8cdb78baa6b70dde93cfbfb7843e28:0",
+      "ae8cdb78baa6b70dde93cfbfb7843e28:1",
+      "ae8cdb78baa6b70dde93cfbfb7843e28:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:37"
+  },
+  "urp/renderer-features/scriptable-renderer-features/inject-a-pass-using-a-scriptable-renderer-feature.md": {
+    "sha256": "7b9b6d715cedbb67f892b0f7f54f296fe2f247ce76272f9dbe9c7716235fa8cb",
+    "chunk_ids": [
+      "edc5ce81176edfb4e8b8a5b9e9536079:0",
+      "edc5ce81176edfb4e8b8a5b9e9536079:1",
+      "edc5ce81176edfb4e8b8a5b9e9536079:2",
+      "edc5ce81176edfb4e8b8a5b9e9536079:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:38"
+  },
+  "urp/rendering-in-universalrp.md": {
+    "sha256": "74dc99f7f1d045372ab5a5ea8b3b3f092ab26873ca59e651e8a94a331b24c84e",
+    "chunk_ids": [
+      "2d80f3b2b6904fbb64df1f94c86672da:0",
+      "2d80f3b2b6904fbb64df1f94c86672da:1",
+      "2d80f3b2b6904fbb64df1f94c86672da:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:39"
+  },
+  "urp/rendering-paths-comparison.md": {
+    "sha256": "8a633e411b41928bd7d836915e577430c56bbd3d4009410871b2aed58bdd67e2",
+    "chunk_ids": [
+      "bfc31047511695dd643b8062068ff93a:0",
+      "bfc31047511695dd643b8062068ff93a:1",
+      "bfc31047511695dd643b8062068ff93a:2",
+      "bfc31047511695dd643b8062068ff93a:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:40"
+  },
+  "urp/rendering-paths-introduction-urp.md": {
+    "sha256": "a611fbc3968ea1da45ac5d5ae587abf933598f83589757e6a33d0351ab7d6133",
+    "chunk_ids": [
+      "a96cb7ad46114a9deb4c9ad6b8f7c1e3:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:48:40"
+  },
+  "urp/rendering-paths-landing.md": {
+    "sha256": "9c968679244cf2ed827d3be5b69e57b7f5885d27297f61de50c4611f6b10129f",
+    "chunk_ids": [
+      "fb4a3a0d220bdc371749d764c6e5d37b:0",
+      "fb4a3a0d220bdc371749d764c6e5d37b:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:41"
+  },
+  "urp/rendering-paths-set.md": {
+    "sha256": "d1f911e0e46090ab0645a1f7d0066678f78a0f743aab797a0024571b9cb9056a",
+    "chunk_ids": [
+      "cc1edd2620a23295cc142893d295914c:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:48:42"
+  },
+  "urp/rendering-to-a-render-texture.md": {
+    "sha256": "20ba49767a5cee325631dcc25628e9d5ed0365213a8231a2a626697fe115e104",
+    "chunk_ids": [
+      "b4709d2c0c8cf134305e735dbb0b54b8:0",
+      "b4709d2c0c8cf134305e735dbb0b54b8:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:43"
+  },
+  "urp/rendering-to-the-same-render-target.md": {
+    "sha256": "2750ce99000ee88f82e3b9c2d814232e28803938746038a1d03eba8b7fa4ca25",
+    "chunk_ids": [
+      "717f391a520d2744e2671f5bc81faadc:0",
+      "717f391a520d2744e2671f5bc81faadc:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:43"
+  },
+  "urp/rendering/accurate-g-buffer-normals.md": {
+    "sha256": "64b0fc9521b45840ed28340ca0fbabbe39dd62f386aab72cdb899b15ad4f075c",
+    "chunk_ids": [
+      "0ebf38f11476666fbdc3a7679fe350ba:0",
+      "0ebf38f11476666fbdc3a7679fe350ba:1",
+      "0ebf38f11476666fbdc3a7679fe350ba:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:44"
+  },
+  "urp/rendering/deferred-rendering-path-introduction.md": {
+    "sha256": "dae4a8ad0dda6879990d2907baec9d8e56a48a9a21d461ad51a0484e48a57f4e",
+    "chunk_ids": [
+      "4a757ce40dbe95bcbb00d1631db041b9:0",
+      "4a757ce40dbe95bcbb00d1631db041b9:1",
+      "4a757ce40dbe95bcbb00d1631db041b9:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:45"
+  },
+  "urp/rendering/deferred-rendering-path-landing.md": {
+    "sha256": "a18e7e335a9c3ea858f09205d0ebaaa02a767fd38fa2e98ce923563469a27a7d",
+    "chunk_ids": [
+      "ca948969d02b468dec8f5435a32855da:0",
+      "ca948969d02b468dec8f5435a32855da:1",
+      "ca948969d02b468dec8f5435a32855da:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:48:46"
+  },
+  "urp/rendering/forward-plus-rendering-path-limitations.md": {
+    "sha256": "5da6843c0fcdf7723e7ae8f3c070e5ce7db67aefa8e5fbea05d0649eaf0cf493",
+    "chunk_ids": [
+      "71d0b0cfba2c44e43a0ca45d8c7d0f69:0",
+      "71d0b0cfba2c44e43a0ca45d8c7d0f69:1",
+      "71d0b0cfba2c44e43a0ca45d8c7d0f69:2",
+      "71d0b0cfba2c44e43a0ca45d8c7d0f69:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:48:47"
+  },
+  "urp/rendering/forward-rendering-paths.md": {
+    "sha256": "429834d5b6e7139699849b175568626419db3d01c66b3d7b78f2665f457df986",
+    "chunk_ids": [
+      "c37c57a69fbd5551b695636e1dc57c25:0",
+      "c37c57a69fbd5551b695636e1dc57c25:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:48:48"
+  },
+  "urp/rendering/g-buffer-layout.md": {
+    "sha256": "4b7e59b2d16228acc5c9528aa82b2c7889297867f09cb9de93c7263ba3c4b1ab",
+    "chunk_ids": [
+      "96781820352b23d8bc21ac1da9fd0318:0",
+      "96781820352b23d8bc21ac1da9fd0318:1",
+      "96781820352b23d8bc21ac1da9fd0318:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:49:00"
+  },
+  "urp/rendering/make-shader-compatible-with-deferred.md": {
+    "sha256": "8421388917b4d15428c0bfc3e32041ad400fc87b304eacf14497196c1d6c23ac",
+    "chunk_ids": [
+      "b86c186b0f2a0eb759cee9e27029ad02:0",
+      "b86c186b0f2a0eb759cee9e27029ad02:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:00"
+  },
+  "urp/rendering/render-passes-deferred.md": {
+    "sha256": "5fdfb036b56fa7a15485ee00504ecb25a02945d164834c1b291efee70e51537f",
+    "chunk_ids": [
+      "bb6ff832e72ede55a320a4e96c403925:0",
+      "bb6ff832e72ede55a320a4e96c403925:1",
+      "bb6ff832e72ede55a320a4e96c403925:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:49:01"
+  },
+  "urp/requirements.md": {
+    "sha256": "51910a5a7f99b52fb72e9f88443b9fe7f848d02170c59d1758f0089dee1e25c0",
+    "chunk_ids": [
+      "9fc3eb733aabeec3b213dfbb82bf7f68:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:02"
+  },
+  "urp/scene-templates.md": {
+    "sha256": "12b7c192425ba28a7485c3207873bd860fd0515fa325418de7ba154e23824ed7",
+    "chunk_ids": [
+      "77e86ce448874546c80bb975f23db013:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:03"
+  },
+  "urp/set-up-a-volume.md": {
+    "sha256": "8ae4907557862ba4cf5973b5ac00d0b591d396d426571c85aa010ea22ceeb601",
+    "chunk_ids": [
+      "f236d0e9d93cb46e2415adf6a285b3e1:0",
+      "f236d0e9d93cb46e2415adf6a285b3e1:1",
+      "f236d0e9d93cb46e2415adf6a285b3e1:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:49:03"
+  },
+  "urp/shader-complex-lit.md": {
+    "sha256": "f9e71716368fbaa3b083b37f67abbef0771782798a362e6d63e94e9c06f815ba",
+    "chunk_ids": [
+      "52a76e17036775f285bb0925a620dbcd:0",
+      "52a76e17036775f285bb0925a620dbcd:1",
+      "52a76e17036775f285bb0925a620dbcd:2",
+      "52a76e17036775f285bb0925a620dbcd:3",
+      "52a76e17036775f285bb0925a620dbcd:4",
+      "52a76e17036775f285bb0925a620dbcd:5",
+      "52a76e17036775f285bb0925a620dbcd:6",
+      "52a76e17036775f285bb0925a620dbcd:7",
+      "52a76e17036775f285bb0925a620dbcd:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:49:05"
+  },
+  "urp/shader-stripping-check.md": {
+    "sha256": "faae360d56f9ed8d4a0552b02541850a02088956a68535e428cc0bbfea64cfef",
+    "chunk_ids": [
+      "80ca75753741604804ab583864d3f01e:0",
+      "80ca75753741604804ab583864d3f01e:1",
+      "80ca75753741604804ab583864d3f01e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:49:06"
+  },
+  "urp/shader-stripping-features.md": {
+    "sha256": "5a4bbfab5b5192085d97048cdc94c0e46766f1d2dd5ee4d5f79bac964b7638ed",
+    "chunk_ids": [
+      "0bdb159782784852dd3870e28a8b0fc0:0",
+      "0bdb159782784852dd3870e28a8b0fc0:1",
+      "0bdb159782784852dd3870e28a8b0fc0:2",
+      "0bdb159782784852dd3870e28a8b0fc0:3",
+      "0bdb159782784852dd3870e28a8b0fc0:4",
+      "0bdb159782784852dd3870e28a8b0fc0:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:49:07"
+  },
+  "urp/shader-stripping-fog.md": {
+    "sha256": "4f36b484e21aa3fd3ae28878dd2b97a4d77944b46464cad7e013544b4974daf2",
+    "chunk_ids": [
+      "d057d2f601ad9a91efd89b85812b30cb:0",
+      "d057d2f601ad9a91efd89b85812b30cb:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:07"
+  },
+  "urp/shader-stripping-landing.md": {
+    "sha256": "5735e6a8c31f62673c0c8da74a9e51cc1ecf70b72900d80618c19ab49af18004",
+    "chunk_ids": [
+      "90f5f51059eb2dd09f29d1e367c80e65:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:08"
+  },
+  "urp/shader-terrain-lit.md": {
+    "sha256": "33e2ce2e742dd5d03e968254c9779030fd7ba6f2360a07135f07f16a751b423b",
+    "chunk_ids": [
+      "a4b73b21737a9ac3128c4db782ccce38:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:09"
+  },
+  "urp/shaders-in-universalrp-channel-packed-texture.md": {
+    "sha256": "0b67e7c742fe0b17d37f86f89dcefee5f8081fb600c8e5d2f0cb139591646a5c",
+    "chunk_ids": [
+      "a0478e3069308d96ba879f5a25fcc12c:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:10"
+  },
+  "urp/shaders-in-universalrp-choose.md": {
+    "sha256": "cb42ae349b42a56bb5b410b5280951e778821bf069f7a279c5063fc3a6ef4916",
+    "chunk_ids": [
+      "c68d96862d6b769692bc3541a2d3d1a4:0",
+      "c68d96862d6b769692bc3541a2d3d1a4:1",
+      "c68d96862d6b769692bc3541a2d3d1a4:2",
+      "c68d96862d6b769692bc3541a2d3d1a4:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:49:11"
+  },
+  "urp/shaders-in-universalrp-reference.md": {
+    "sha256": "5ed73aefcf05890196bb77b05a51c3203af17460ddce4fcdd1e4d51ebae6666b",
+    "chunk_ids": [
+      "d584e055382f8547ac6a926c8a8571b9:0",
+      "d584e055382f8547ac6a926c8a8571b9:1",
+      "d584e055382f8547ac6a926c8a8571b9:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:49:11"
+  },
+  "urp/shaders-in-universalrp-select.md": {
+    "sha256": "1f16a77c3c1a254bc0d34aeaf14d4529a75ad55cf7a42bba9ecac5099195e9af",
+    "chunk_ids": [
+      "1e98cf3c62ecad65a17bb35f13fc105f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:12"
+  },
+  "urp/shaders-in-universalrp-srp-batcher.md": {
+    "sha256": "2b14f49e6581b00f8b6dd5d218205c695593f02c68bc8148ff8cbffc9da5de75",
+    "chunk_ids": [
+      "a78f960d471e77c2b22cfb9074c3000d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:13"
+  },
+  "urp/shaders-in-universalrp.md": {
+    "sha256": "0cc7163b4deda9049bda0d35c6570f0f17dda3a7993bc008929a2fed2a656042",
+    "chunk_ids": [
+      "6842b1866f39367a7e4269314dc6ffa5:0",
+      "6842b1866f39367a7e4269314dc6ffa5:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:14"
+  },
+  "urp/shading-model.md": {
+    "sha256": "5edd6f56f2a94eea10fffdf8f722867e8557e56b207bf669289eafcc4aeec5dc",
+    "chunk_ids": [
+      "2fbf6e012606eb178e28dfd9e9d04606:0",
+      "2fbf6e012606eb178e28dfd9e9d04606:1",
+      "2fbf6e012606eb178e28dfd9e9d04606:2",
+      "2fbf6e012606eb178e28dfd9e9d04606:3",
+      "2fbf6e012606eb178e28dfd9e9d04606:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:49:15"
+  },
+  "urp/shadow-cascades-visualize.md": {
+    "sha256": "897fa37a95e2a6741ec1d359ae0ed8c97079651afc9d66ba83c04c17ebb11f17",
+    "chunk_ids": [
+      "5de3071b3217b790a1a1261bdf6d0ab8:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:15"
+  },
+  "urp/shadow-resolution-urp.md": {
+    "sha256": "1c5c8427d2e8f54c099624f87deaed60cb71431d050afb00128a4e94bdac9da6",
+    "chunk_ids": [
+      "b418c28ee98e50cf5e71df1bff08752c:0",
+      "b418c28ee98e50cf5e71df1bff08752c:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:16"
+  },
+  "urp/shadows-troubleshooting-urp.md": {
+    "sha256": "d7c9a2b577d4aefeb492c318c154074d83a871596e8970721ae14a41dfba7183",
+    "chunk_ids": [
+      "d2eafd03d6b9c00a0b724984895f50ce:0",
+      "d2eafd03d6b9c00a0b724984895f50ce:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:17"
+  },
+  "urp/shared/lens-flare/choose-a-lens-flare-type.md": {
+    "sha256": "12bd101687705336df626668ed7b3a700656878e489da4f6925690a50035cf7c",
+    "chunk_ids": [
+      "38584986935dd398ab1687cfd9249aac:0",
+      "38584986935dd398ab1687cfd9249aac:1",
+      "38584986935dd398ab1687cfd9249aac:2",
+      "38584986935dd398ab1687cfd9249aac:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:49:17"
+  },
+  "urp/shared/lens-flare/lens-flare-asset.md": {
+    "sha256": "07a1db572d4af339b7c5a7068d24dc957453e3615f62c79da22d07739189dec1",
+    "chunk_ids": [
+      "9c550bc995755bea867fad8077c17005:0",
+      "9c550bc995755bea867fad8077c17005:1",
+      "9c550bc995755bea867fad8077c17005:2",
+      "9c550bc995755bea867fad8077c17005:3",
+      "9c550bc995755bea867fad8077c17005:4",
+      "9c550bc995755bea867fad8077c17005:5",
+      "9c550bc995755bea867fad8077c17005:6",
+      "9c550bc995755bea867fad8077c17005:7",
+      "9c550bc995755bea867fad8077c17005:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:49:19"
+  },
+  "urp/shared/lens-flare/lens-flare-component.md": {
+    "sha256": "62e01962f51874db89c003be0618b8c51f451cb63c77d0ba126185fd758a871b",
+    "chunk_ids": [
+      "0515bd593f9b3e179e83888089eb907e:0",
+      "0515bd593f9b3e179e83888089eb907e:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:49:20"
+  },
+  "urp/shared/lens-flare/lens-flare-srp-reference.md": {
+    "sha256": "f527895b0d289d078188f7179d149cc70e852d5c5df1f7bb95f3c80e2555865e",
+    "chunk_ids": [
+      "4c8ee1b1c921e0dcf6262edbdf9cad2f:0",
+      "4c8ee1b1c921e0dcf6262edbdf9cad2f:1",
+      "4c8ee1b1c921e0dcf6262edbdf9cad2f:2",
+      "4c8ee1b1c921e0dcf6262edbdf9cad2f:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:49:22"
+  },
+  "urp/shared/lens-flare/lens-flare.md": {
+    "sha256": "344207e3da4c302b8dcc40279ef8bddb837020506d919718dd91a75fcc31af7b",
+    "chunk_ids": [
+      "c556028f6dc501b3c8342368ac1da0a6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:49:23"
+  },
+  "urp/shared/lens-flare/post-processing-screen-space-lens-flare.md": {
+    "sha256": "b4349ea25a5e2e976acb247f49659fb229f9421a88f5cc92914d89bfa0b5dd1c",
+    "chunk_ids": [
+      "f536bd4c81f6f71313679a2daa49d307:0",
+      "f536bd4c81f6f71313679a2daa49d307:1",
+      "f536bd4c81f6f71313679a2daa49d307:2",
+      "f536bd4c81f6f71313679a2daa49d307:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:49:23"
+  },
+  "urp/shared/lens-flare/reference-screen-space-lens-flare.md": {
+    "sha256": "3b2af2ae798ab371f2c3a4ca8f4ca92bc4debe132a0221f781f41fa7f40a2e6e",
+    "chunk_ids": [
+      "7d5b04f182e0c149fc6a955c3be2236f:0",
+      "7d5b04f182e0c149fc6a955c3be2236f:1",
+      "7d5b04f182e0c149fc6a955c3be2236f:2",
+      "7d5b04f182e0c149fc6a955c3be2236f:3",
+      "7d5b04f182e0c149fc6a955c3be2236f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:49:25"
+  },
+  "urp/simple-lit-shader.md": {
+    "sha256": "4a024643e00178967ec58abea141f5beceacfd86c47c3172b0ba8611298bfe6b",
+    "chunk_ids": [
+      "81b1cd946bf99f3aa669ddea130b53d3:0",
+      "81b1cd946bf99f3aa669ddea130b53d3:1",
+      "81b1cd946bf99f3aa669ddea130b53d3:2",
+      "81b1cd946bf99f3aa669ddea130b53d3:3",
+      "81b1cd946bf99f3aa669ddea130b53d3:4",
+      "81b1cd946bf99f3aa669ddea130b53d3:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:49:25"
+  },
+  "urp/ssao-renderer-feature-reference.md": {
+    "sha256": "618fa4cbd1ec37e3a87010f7a5845644e87baa8c0f84e8aa4ca4a9b18342299e",
+    "chunk_ids": [
+      "7ef7b8f33f9af4c026025957a968a28b:0",
+      "7ef7b8f33f9af4c026025957a968a28b:1",
+      "7ef7b8f33f9af4c026025957a968a28b:2",
+      "7ef7b8f33f9af4c026025957a968a28b:3",
+      "7ef7b8f33f9af4c026025957a968a28b:4",
+      "7ef7b8f33f9af4c026025957a968a28b:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:50:14"
+  },
+  "urp/stp/stp-debug-views.md": {
+    "sha256": "b1db208a77bea13572de7f5de6f31ba5d8a47b6dc7903c6a87331aa79daa5b5a",
+    "chunk_ids": [
+      "0a29269dd41218eb29e23eec4a119c63:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:50:15"
+  },
+  "urp/stp/stp-enable.md": {
+    "sha256": "b16ec59a149e6580fdf6270537d6121b0ae3dcf9a6ffdbb0eba14045964fcc2d",
+    "chunk_ids": [
+      "651056c637bde232db2311b2146ca5e2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:50:16"
+  },
+  "urp/stp/stp-upscaler.md": {
+    "sha256": "801404bd99d49b3e7278a3c2c646426b4996cc26fd0118e8d75b64d94c5d78f2",
+    "chunk_ids": [
+      "fd8156efbf581d6c2c8afefaacedd9a9:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:50:16"
+  },
+  "urp/ts-lights-flicker-disappear.md": {
+    "sha256": "29cbc5ba3165902379ae70f615ce571cf4fb5c660e02951fbd9a66050a260901",
+    "chunk_ids": [
+      "e03eb9c223f75c4f48a78faf089f62d5:0",
+      "e03eb9c223f75c4f48a78faf089f62d5:1",
+      "e03eb9c223f75c4f48a78faf089f62d5:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:50:17"
+  },
+  "urp/understand-performance-landing.md": {
+    "sha256": "74ef1358db8dcaf32c5a0db3231cdde99e75f42628a7e4adef99491bf6464911",
+    "chunk_ids": [
+      "c0a380e69ce34f3298f0de8bc8d97490:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:50:18"
+  },
+  "urp/understand-performance.md": {
+    "sha256": "38153ad10a5f4e5dbc79aafa56c64434d38d1f6f40ec910a7a10dbb650bfb445",
+    "chunk_ids": [
+      "21d8deb74a9e08c0bd3a3ec18e9d3c24:0",
+      "21d8deb74a9e08c0bd3a3ec18e9d3c24:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:50:18"
+  },
+  "urp/universal-additional-camera-data.md": {
+    "sha256": "975ffa518f6c08fbb9caa63e58e3548f9c4f2484214fb7207d471727d2488d31",
+    "chunk_ids": [
+      "70452d6d49119550e0774a7bb19750a7:0",
+      "70452d6d49119550e0774a7bb19750a7:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:50:19"
+  },
+  "urp/universal-additional-light-data.md": {
+    "sha256": "35324d100f0c9fddfce5436ac5dcad00920d621d11106d5407861c1af223d8b5",
+    "chunk_ids": [
+      "05d7898dc99dd19ae47bd2058bdc7ddf:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:50:20"
+  },
+  "urp/universalrp-asset.md": {
+    "sha256": "856182063cfbf3741ce07fc088fecf90aed05a805fdb307d39f1fc1d10b506c9",
+    "chunk_ids": [
+      "639c211c9b18c29394f51a6911c29265:0",
+      "639c211c9b18c29394f51a6911c29265:1",
+      "639c211c9b18c29394f51a6911c29265:2",
+      "639c211c9b18c29394f51a6911c29265:3",
+      "639c211c9b18c29394f51a6911c29265:4",
+      "639c211c9b18c29394f51a6911c29265:5",
+      "639c211c9b18c29394f51a6911c29265:6",
+      "639c211c9b18c29394f51a6911c29265:7",
+      "639c211c9b18c29394f51a6911c29265:8",
+      "639c211c9b18c29394f51a6911c29265:9",
+      "639c211c9b18c29394f51a6911c29265:10",
+      "639c211c9b18c29394f51a6911c29265:11",
+      "639c211c9b18c29394f51a6911c29265:12",
+      "639c211c9b18c29394f51a6911c29265:13",
+      "639c211c9b18c29394f51a6911c29265:14",
+      "639c211c9b18c29394f51a6911c29265:15",
+      "639c211c9b18c29394f51a6911c29265:16",
+      "639c211c9b18c29394f51a6911c29265:17",
+      "639c211c9b18c29394f51a6911c29265:18"
+    ],
+    "chunk_count": 19,
+    "updated_at": "2026-04-07T13:50:22"
+  },
+  "urp/unlit-shader.md": {
+    "sha256": "0ae3c622d5a9c63ff58b73b1b0b543a5f8f7c1ef7a89c99c725b10dd0a3bfb52",
+    "chunk_ids": [
+      "b663bedd1c5b82ae919760d686f2332d:0",
+      "b663bedd1c5b82ae919760d686f2332d:1",
+      "b663bedd1c5b82ae919760d686f2332d:2",
+      "b663bedd1c5b82ae919760d686f2332d:3",
+      "b663bedd1c5b82ae919760d686f2332d:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:50:23"
+  },
+  "urp/upgrade-guide-10-0-x.md": {
+    "sha256": "5aca44b7f4f2cdad58a9f6c6f1b3b6a3b39d63fa034cdc9ed0effa287dae1803",
+    "chunk_ids": [
+      "f8e4eb9947cc73c5616b217cf63e5a47:0",
+      "f8e4eb9947cc73c5616b217cf63e5a47:1",
+      "f8e4eb9947cc73c5616b217cf63e5a47:2",
+      "f8e4eb9947cc73c5616b217cf63e5a47:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:50:24"
+  },
+  "urp/upgrade-guide-10-1-x.md": {
+    "sha256": "bf704e4b5df8fc055cb8753496ab4d166a03e610c477f735b9eaed539b0aae03",
+    "chunk_ids": [
+      "af5744f643af81c0a08b24664479c260:0",
+      "af5744f643af81c0a08b24664479c260:1",
+      "af5744f643af81c0a08b24664479c260:2",
+      "af5744f643af81c0a08b24664479c260:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:50:25"
+  },
+  "urp/upgrade-guide-11-0-x.md": {
+    "sha256": "69735eeb053b81f6825b726802bd5c320fdc47122d74def8d4aa33dc58e084f5",
+    "chunk_ids": [
+      "6a2e585d8d8e15b1f97522c0976db04f:0",
+      "6a2e585d8d8e15b1f97522c0976db04f:1",
+      "6a2e585d8d8e15b1f97522c0976db04f:2",
+      "6a2e585d8d8e15b1f97522c0976db04f:3"
+    ],
+    "chunk_count": 4,
+    "updated_at": "2026-04-07T13:50:26"
+  },
+  "urp/upgrade-guide-2021-2.md": {
+    "sha256": "bfd8c33d7d49b1f9b31a43804addbbf60e690b493fee2a189242f8e186ac5bbe",
+    "chunk_ids": [
+      "15bcbaf5373805cb914157e904bc0c85:0",
+      "15bcbaf5373805cb914157e904bc0c85:1",
+      "15bcbaf5373805cb914157e904bc0c85:2",
+      "15bcbaf5373805cb914157e904bc0c85:3",
+      "15bcbaf5373805cb914157e904bc0c85:4",
+      "15bcbaf5373805cb914157e904bc0c85:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:50:27"
+  },
+  "urp/upgrade-guide-2022-1.md": {
+    "sha256": "16f291e3587ab36c843c68a7fad0de3f05a6ce8a6f47437a51a60afdac6be327",
+    "chunk_ids": [
+      "b3dd355901b300fa7b3944156deeb32d:0",
+      "b3dd355901b300fa7b3944156deeb32d:1",
+      "b3dd355901b300fa7b3944156deeb32d:2",
+      "b3dd355901b300fa7b3944156deeb32d:3",
+      "b3dd355901b300fa7b3944156deeb32d:4",
+      "b3dd355901b300fa7b3944156deeb32d:5",
+      "b3dd355901b300fa7b3944156deeb32d:6",
+      "b3dd355901b300fa7b3944156deeb32d:7",
+      "b3dd355901b300fa7b3944156deeb32d:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:50:28"
+  },
+  "urp/upgrade-guide-2022-2.md": {
+    "sha256": "a5e46372e838e2b26a4bcdf97e2a0910872d59503a5c29dc9398fe32a9ba9331",
+    "chunk_ids": [
+      "8332550cbf3d31985b91b274fe83935a:0",
+      "8332550cbf3d31985b91b274fe83935a:1",
+      "8332550cbf3d31985b91b274fe83935a:2",
+      "8332550cbf3d31985b91b274fe83935a:3",
+      "8332550cbf3d31985b91b274fe83935a:4",
+      "8332550cbf3d31985b91b274fe83935a:5",
+      "8332550cbf3d31985b91b274fe83935a:6",
+      "8332550cbf3d31985b91b274fe83935a:7",
+      "8332550cbf3d31985b91b274fe83935a:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:50:29"
+  },
+  "urp/upgrade-guide-2023-1.md": {
+    "sha256": "6f5057d36fe1b8ff2ad86aff5f44ed21eff8e1cafca595127791c146141f497a",
+    "chunk_ids": [
+      "a6f6e0a48e5b869504055967a3a13f72:0",
+      "a6f6e0a48e5b869504055967a3a13f72:1",
+      "a6f6e0a48e5b869504055967a3a13f72:2",
+      "a6f6e0a48e5b869504055967a3a13f72:3",
+      "a6f6e0a48e5b869504055967a3a13f72:4",
+      "a6f6e0a48e5b869504055967a3a13f72:5",
+      "a6f6e0a48e5b869504055967a3a13f72:6",
+      "a6f6e0a48e5b869504055967a3a13f72:7",
+      "a6f6e0a48e5b869504055967a3a13f72:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:50:31"
+  },
+  "urp/upgrade-guide-2023-2.md": {
+    "sha256": "a619c76e83c7d7599ecb79400ed282e0e199f17baa02dcfcb55d83ab3ce6641b",
+    "chunk_ids": [
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:0",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:1",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:2",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:3",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:4",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:5",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:6",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:7",
+      "ea8b6ae7929fb9dfe094b86f7cd50d20:8"
+    ],
+    "chunk_count": 9,
+    "updated_at": "2026-04-07T13:50:32"
+  },
+  "urp/upgrade-guide-7-2-0.md": {
+    "sha256": "87fcc0d2726f224e686c9e38c1e9f170bd3f803ddaa688cd98bf8ad6afca22a7",
+    "chunk_ids": [
+      "71372d3a44c2823e30d490cfbe34af69:0",
+      "71372d3a44c2823e30d490cfbe34af69:1",
+      "71372d3a44c2823e30d490cfbe34af69:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:51:19"
+  },
+  "urp/upgrade-guide-7-3-0.md": {
+    "sha256": "9dfbe90d6d8a26228212e1d98baaa62b9c6b06a323402371316332d8a84d1308",
+    "chunk_ids": [
+      "c58fb40fe397d33ff7094c7a76b66381:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:20"
+  },
+  "urp/upgrade-guide-7-4-0.md": {
+    "sha256": "1609ca103a106b4904724917ca4f72d1d1cc89b9b6cf6444ebb47cccd72ec097",
+    "chunk_ids": [
+      "7aca04705bb47cf68166e35dfd84c94e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:21"
+  },
+  "urp/upgrade-guide-8-0-0.md": {
+    "sha256": "139c8adcfe2d9e9ccb376f8bd66a167b9be49a63406acbb432322cf9fc39d0f4",
+    "chunk_ids": [
+      "a9c5b60e669a9ef18ee2450f0ae90290:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:22"
+  },
+  "urp/upgrade-guide-8-1-0.md": {
+    "sha256": "4b36458bffcfadad7625f897ed881ddc20615625972a8bcf375897235c3cf20b",
+    "chunk_ids": [
+      "13d511e89e0f3a1d0f6592e65eb8296d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:22"
+  },
+  "urp/upgrade-guide-8-2-0.md": {
+    "sha256": "ed35d966fc5f4d864ded0956c71bb2025d1e56a2bdc475ee90a68da1b617a2b8",
+    "chunk_ids": [
+      "36cbf8fc30417e498a106050be7bcfb8:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:23"
+  },
+  "urp/upgrade-guide-9-0-x.md": {
+    "sha256": "aad493a0d58bfa34845370f3c53cd99fec320fc29392cf66b8aae55ccd71c1e6",
+    "chunk_ids": [
+      "439092ef290b58c6ba5a90a32649f79a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:24"
+  },
+  "urp/upgrade-guide-unity-6-1.md": {
+    "sha256": "2f10c088406274d05a33bf46c29dc7a1ee43afc02ffcce41f35374f9b3a4688c",
+    "chunk_ids": [
+      "8b678adea1908de59e559ad2ce1f1eac:0",
+      "8b678adea1908de59e559ad2ce1f1eac:1",
+      "8b678adea1908de59e559ad2ce1f1eac:2",
+      "8b678adea1908de59e559ad2ce1f1eac:3",
+      "8b678adea1908de59e559ad2ce1f1eac:4",
+      "8b678adea1908de59e559ad2ce1f1eac:5",
+      "8b678adea1908de59e559ad2ce1f1eac:6",
+      "8b678adea1908de59e559ad2ce1f1eac:7",
+      "8b678adea1908de59e559ad2ce1f1eac:8",
+      "8b678adea1908de59e559ad2ce1f1eac:9",
+      "8b678adea1908de59e559ad2ce1f1eac:10",
+      "8b678adea1908de59e559ad2ce1f1eac:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-04-07T13:51:25"
+  },
+  "urp/upgrade-guide-unity-6.md": {
+    "sha256": "f09fa262a912b429e4ae0a4ac91f1922cdf7c9fc530c7b4d19db01c0843c1386",
+    "chunk_ids": [
+      "4de06ea99ab531c174777d00b71f202a:0",
+      "4de06ea99ab531c174777d00b71f202a:1",
+      "4de06ea99ab531c174777d00b71f202a:2",
+      "4de06ea99ab531c174777d00b71f202a:3",
+      "4de06ea99ab531c174777d00b71f202a:4",
+      "4de06ea99ab531c174777d00b71f202a:5",
+      "4de06ea99ab531c174777d00b71f202a:6",
+      "4de06ea99ab531c174777d00b71f202a:7",
+      "4de06ea99ab531c174777d00b71f202a:8",
+      "4de06ea99ab531c174777d00b71f202a:9",
+      "4de06ea99ab531c174777d00b71f202a:10",
+      "4de06ea99ab531c174777d00b71f202a:11"
+    ],
+    "chunk_count": 12,
+    "updated_at": "2026-04-07T13:51:27"
+  },
+  "urp/upgrade-guides.md": {
+    "sha256": "a2ba8028d99e732b23344f25eac5ab0b2a0368a7c03578b0661282a08819ca51",
+    "chunk_ids": [
+      "81b6a5e718b70747ba17f3a888f04036:0",
+      "81b6a5e718b70747ba17f3a888f04036:1",
+      "81b6a5e718b70747ba17f3a888f04036:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:51:28"
+  },
+  "urp/upgrade-lwrp-to-urp.md": {
+    "sha256": "91734b27024eb488e8d7a6c6af9dfb27400a2ea25ec9b75eb24d01bd5a5ab041",
+    "chunk_ids": [
+      "417b9ed25c55aeae44b7d67e8d307b7f:0",
+      "417b9ed25c55aeae44b7d67e8d307b7f:1",
+      "417b9ed25c55aeae44b7d67e8d307b7f:2",
+      "417b9ed25c55aeae44b7d67e8d307b7f:3",
+      "417b9ed25c55aeae44b7d67e8d307b7f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:51:29"
+  },
+  "urp/upgrade-shaders-landing.md": {
+    "sha256": "c5bebe84e54719a18fea0bb106d243c17cb9e3b3f56501ddbac5c0925e966f17",
+    "chunk_ids": [
+      "ed5c00bc276a2cd1ba914e66a8bda4e5:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:30"
+  },
+  "urp/upgrading-from-birp.md": {
+    "sha256": "d279cb57b3ca770c719098851543ae0b7d2f99fd108fa6caa18be7e86ea94d79",
+    "chunk_ids": [
+      "422d2fb72c6e5f3429e9d7cc8f182af2:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:31"
+  },
+  "urp/upgrading-your-shaders.md": {
+    "sha256": "b8765ff7aa24df929f51a603f8f57dea2a0123b2b592372e5ed0b5a252fe574b",
+    "chunk_ids": [
+      "b019e78bbe541c4e89b093e2184b480d:0",
+      "b019e78bbe541c4e89b093e2184b480d:1",
+      "b019e78bbe541c4e89b093e2184b480d:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:51:31"
+  },
+  "urp/urp-asset-additional-settings.md": {
+    "sha256": "46add2fbec56abf1eb50540b45f2bbf675cc4d979c9a101013f4654e2eb96735",
+    "chunk_ids": [
+      "07086361d1c8e9e2c225787d096985ff:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:32"
+  },
+  "urp/urp-asset-and-renderer.md": {
+    "sha256": "409eac6c7354d91e0c9d1cbf6305433e6acc432715662de054e60992ecb8b4e7",
+    "chunk_ids": [
+      "b3d0109900abe9116d3ae6cbbe5ee8af:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:33"
+  },
+  "urp/urp-asset-create.md": {
+    "sha256": "bd3d3c0b801285b8a45b2d44b5aef925de6b2118057ea8f317306b080157d591",
+    "chunk_ids": [
+      "3f9e70f15d8349853fff7921ac8a6fc1:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:34"
+  },
+  "urp/urp-cameras-landing.md": {
+    "sha256": "fefb45af2b94a6f38135b683681652258f366df85784eec3898940323d236f90",
+    "chunk_ids": [
+      "7cc8eda178cf1265cdb1daedacc00608:0",
+      "7cc8eda178cf1265cdb1daedacc00608:1",
+      "7cc8eda178cf1265cdb1daedacc00608:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:51:34"
+  },
+  "urp/urp-concepts.md": {
+    "sha256": "295d98f7a630cadb11d5405b4ae0361ba58051c5b1d39ab308f4e0793b53dda9",
+    "chunk_ids": [
+      "91508691290aaaf0aa618bc9b4f9a88e:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:35"
+  },
+  "urp/urp-global-settings.md": {
+    "sha256": "48b6221eebd30b3af9bdcccf52982b9d29cf685c59f07ae435df9abf610ad703",
+    "chunk_ids": [
+      "07222ba4fbc05ceda450498182e9995c:0",
+      "07222ba4fbc05ceda450498182e9995c:1",
+      "07222ba4fbc05ceda450498182e9995c:2",
+      "07222ba4fbc05ceda450498182e9995c:3",
+      "07222ba4fbc05ceda450498182e9995c:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:51:36"
+  },
+  "urp/urp-introduction.md": {
+    "sha256": "9c5bcd742421d1feedcf39676e21ef66d5bd34af11158522ec1f7f85f3eebb12",
+    "chunk_ids": [
+      "19780eec5505adec08951b9d8895f721:0",
+      "19780eec5505adec08951b9d8895f721:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:51:37"
+  },
+  "urp/urp-quality-settings-landing.md": {
+    "sha256": "4d465678dd4d8751f33fadfcf70c93f65c4458f6cc535a4cffc076c129c0848c",
+    "chunk_ids": [
+      "9eb07d10be9fd5a145de42b01256829a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:38"
+  },
+  "urp/urp-reference-landing.md": {
+    "sha256": "d2c8a53f1f7c2b262c01217940c87733ff52ea3b84a7ad1f69c5172224a5508b",
+    "chunk_ids": [
+      "8b288f46cd7b3765195009ff53d64f3a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:39"
+  },
+  "urp/urp-renderer-feature-landing.md": {
+    "sha256": "fa9c1d87a27e1470e3f11fec7158745e278cf734f8ed7122b2628799393d844d",
+    "chunk_ids": [
+      "8941797730aaff737ed7f97e986d3287:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:51:39"
+  },
+  "urp/urp-renderer-feature.md": {
+    "sha256": "5f4838c1c83fb89542b4a5d45110cdb0adae34832486f784bb2b350d40b7c6aa",
+    "chunk_ids": [
+      "88304b12b31932327452a941ecfff23e:0",
+      "88304b12b31932327452a941ecfff23e:1",
+      "88304b12b31932327452a941ecfff23e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:51:40"
+  },
+  "urp/urp-shaders/birp-urp-custom-shader-upgrade-guide.md": {
+    "sha256": "fa918df99a09432cc0fc2b7f386e2ce1a17c3ccd5815927444c79f72ad874d21",
+    "chunk_ids": [
+      "91da47b7ca1a964bfa3362f9295f4702:0",
+      "91da47b7ca1a964bfa3362f9295f4702:1",
+      "91da47b7ca1a964bfa3362f9295f4702:2",
+      "91da47b7ca1a964bfa3362f9295f4702:3",
+      "91da47b7ca1a964bfa3362f9295f4702:4",
+      "91da47b7ca1a964bfa3362f9295f4702:5",
+      "91da47b7ca1a964bfa3362f9295f4702:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:51:41"
+  },
+  "urp/urp-shaders/shader-keywords-macros.md": {
+    "sha256": "cda4e79e201da484e2987346415006efabb186718abe1cd257e3abf8ab443d66",
+    "chunk_ids": [
+      "750e955ef817e2f6063c5a7097b4c958:0",
+      "750e955ef817e2f6063c5a7097b4c958:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:51:42"
+  },
+  "urp/urp-shaders/urp-shaderlab-pass-tags.md": {
+    "sha256": "250ce89bc1dad1709534229167bb5f85b392fe022cf34276abcae211751d0915",
+    "chunk_ids": [
+      "a0a3756928a21551863b0c0ea3739bab:0",
+      "a0a3756928a21551863b0c0ea3739bab:1",
+      "a0a3756928a21551863b0c0ea3739bab:2",
+      "a0a3756928a21551863b0c0ea3739bab:3",
+      "a0a3756928a21551863b0c0ea3739bab:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:51:43"
+  },
+  "urp/urp-universal-renderer.md": {
+    "sha256": "a2864e729196dfe7d70c379556d02cf518c0902e948a08da241992138071511d",
+    "chunk_ids": [
+      "0d463cc02f365f19d9321942428b0510:0",
+      "0d463cc02f365f19d9321942428b0510:1",
+      "0d463cc02f365f19d9321942428b0510:2",
+      "0d463cc02f365f19d9321942428b0510:3",
+      "0d463cc02f365f19d9321942428b0510:4",
+      "0d463cc02f365f19d9321942428b0510:5",
+      "0d463cc02f365f19d9321942428b0510:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:51:44"
+  },
+  "urp/use-built-in-shader-methods-additional-lights-fplus.md": {
+    "sha256": "9101f1bfde211bdf19acf53f986242f302165f9846f9b2ff95702c6af1de5fdd",
+    "chunk_ids": [
+      "98501a4724f5eebe3fa07e2014d88bac:0",
+      "98501a4724f5eebe3fa07e2014d88bac:1",
+      "98501a4724f5eebe3fa07e2014d88bac:2",
+      "98501a4724f5eebe3fa07e2014d88bac:3",
+      "98501a4724f5eebe3fa07e2014d88bac:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:51:45"
+  },
+  "urp/use-built-in-shader-methods-camera.md": {
+    "sha256": "fd317591cf6572df4a5e8f7ed60484062f25bd410cbdf0ca244639d9330b1981",
+    "chunk_ids": [
+      "65d40edb876ffcba0e990c3b7a34d035:0",
+      "65d40edb876ffcba0e990c3b7a34d035:1",
+      "65d40edb876ffcba0e990c3b7a34d035:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:08"
+  },
+  "urp/use-built-in-shader-methods-import.md": {
+    "sha256": "955816d27d169c950e68a2603b8bcc6ce45b932ed315913c49b958ead7492a85",
+    "chunk_ids": [
+      "b7a4604d6bd7cc8465a46dfc7017a8f5:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:52:09"
+  },
+  "urp/use-built-in-shader-methods-indirect-lighting.md": {
+    "sha256": "d78f2ddeaf671fce4d28444b3c03e39b8bfe77e50ca53b497b320bf2ea8f1482",
+    "chunk_ids": [
+      "38a2dfff9725dd3829c7fd8fa983512e:0",
+      "38a2dfff9725dd3829c7fd8fa983512e:1",
+      "38a2dfff9725dd3829c7fd8fa983512e:2",
+      "38a2dfff9725dd3829c7fd8fa983512e:3",
+      "38a2dfff9725dd3829c7fd8fa983512e:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:52:10"
+  },
+  "urp/use-built-in-shader-methods-lighting.md": {
+    "sha256": "d26104c7cc9e7e0b37c401d3467a59edc3b796e9d1b6396b4c9fd49dd57f312e",
+    "chunk_ids": [
+      "89574e786afb613cd3a28544e4f2ed2f:0",
+      "89574e786afb613cd3a28544e4f2ed2f:1",
+      "89574e786afb613cd3a28544e4f2ed2f:2",
+      "89574e786afb613cd3a28544e4f2ed2f:3",
+      "89574e786afb613cd3a28544e4f2ed2f:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:52:11"
+  },
+  "urp/use-built-in-shader-methods-shadows.md": {
+    "sha256": "1f2da913edbc51b95216efdcf34c2d4f348e58aba2b042ef8c56ce6bd5c9b038",
+    "chunk_ids": [
+      "ea98b818cf6db406ac3323e64a07f1f9:0",
+      "ea98b818cf6db406ac3323e64a07f1f9:1",
+      "ea98b818cf6db406ac3323e64a07f1f9:2",
+      "ea98b818cf6db406ac3323e64a07f1f9:3",
+      "ea98b818cf6db406ac3323e64a07f1f9:4"
+    ],
+    "chunk_count": 5,
+    "updated_at": "2026-04-07T13:52:12"
+  },
+  "urp/use-built-in-shader-methods-transformations.md": {
+    "sha256": "9ca073f056af7204105cad50e4ce2a96d6f175b992084ebbd686475771730d9d",
+    "chunk_ids": [
+      "99edf5056bcd7eea0b99e7b43f933eaa:0",
+      "99edf5056bcd7eea0b99e7b43f933eaa:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:52:13"
+  },
+  "urp/use-built-in-shader-methods.md": {
+    "sha256": "44c0279262d1238dffd8a99e503f958f52c982fb2c82ad90f693a4771af843e9",
+    "chunk_ids": [
+      "229e73425dc81c5936d2a68d3aadd013:0",
+      "229e73425dc81c5936d2a68d3aadd013:1",
+      "229e73425dc81c5936d2a68d3aadd013:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:14"
+  },
+  "urp/volume-component-reference.md": {
+    "sha256": "24aeaca601d9889baeaf9d044116eb7216d1d45dbf2c0d89749e43cbe8bef244",
+    "chunk_ids": [
+      "5b9559f914f4e8bf95adb03204de2dde:0",
+      "5b9559f914f4e8bf95adb03204de2dde:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:52:14"
+  },
+  "urp/volumes-landing-page.md": {
+    "sha256": "58009770c6ebabf5ca04781d363b510b6bef8dfd4ab65cbadfee8e18bc10f3a1",
+    "chunk_ids": [
+      "6834e0987de629cde307d65a4c7fc40f:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:52:15"
+  },
+  "urp/volumes-troubleshooting.md": {
+    "sha256": "19f1f249cc929f8c66f97eb881e9bf57ffd17eaf1643e478d0f29093b267fa44",
+    "chunk_ids": [
+      "03399fb098c7fce23d9a30b31305f31e:0",
+      "03399fb098c7fce23d9a30b31305f31e:1",
+      "03399fb098c7fce23d9a30b31305f31e:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:16"
+  },
+  "urp/whats-new/urp-whats-new.md": {
+    "sha256": "58788889a8e8ff4fb5535796b9947c5be23db0a92769fe0b97c706d3b3449750",
+    "chunk_ids": [
+      "5dbd09775af9f1884810b7658db1ba7d:0",
+      "5dbd09775af9f1884810b7658db1ba7d:1",
+      "5dbd09775af9f1884810b7658db1ba7d:2",
+      "5dbd09775af9f1884810b7658db1ba7d:3",
+      "5dbd09775af9f1884810b7658db1ba7d:4",
+      "5dbd09775af9f1884810b7658db1ba7d:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:52:17"
+  },
+  "urp/working-with-textures.md": {
+    "sha256": "4bd7d0a6c1d8a2e9fb14ea2d3bf80c21e42128732591d135c4ba873c1080ca70",
+    "chunk_ids": [
+      "2952b5a05d82395a189981b8c0df6353:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:52:18"
+  },
+  "urp/writing-custom-shaders-urp.md": {
+    "sha256": "f7a990240cd54d4410c58732265450972da2bb0c199b24f63f56ccb45f076af4",
+    "chunk_ids": [
+      "b3c6baf73e652fb4e0356daec9754b73:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:52:19"
+  },
+  "urp/writing-shaders-urp-basic-prerequisites.md": {
+    "sha256": "b74a32dbcd8ef537c3be70751eff56b1ff519b4118ba00a9706c10628b93dbb6",
+    "chunk_ids": [
+      "ac653f0a4ac77277351bc0eb5a7588c6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T13:52:20"
+  },
+  "urp/writing-shaders-urp-basic-unlit-structure.md": {
+    "sha256": "734345f440eeb0cf9861c010588bd1fed2ae1e560cae07d36099bd222e004e8b",
+    "chunk_ids": [
+      "fe36d896ba95f66ba2f55c64fc075c25:0",
+      "fe36d896ba95f66ba2f55c64fc075c25:1",
+      "fe36d896ba95f66ba2f55c64fc075c25:2",
+      "fe36d896ba95f66ba2f55c64fc075c25:3",
+      "fe36d896ba95f66ba2f55c64fc075c25:4",
+      "fe36d896ba95f66ba2f55c64fc075c25:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:52:21"
+  },
+  "urp/writing-shaders-urp-depth-only.md": {
+    "sha256": "d469ef68906c665dc48fdccd36b7566f31a9428a207d74b535cc2270b6f3d6e0",
+    "chunk_ids": [
+      "5e9e7b27ef92c49d656a069d083c6a72:0",
+      "5e9e7b27ef92c49d656a069d083c6a72:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:52:21"
+  },
+  "urp/writing-shaders-urp-landing.md": {
+    "sha256": "cff2be3abb65c5677c56164047f23452ae94a28d991486a7ba7374ffac489a68",
+    "chunk_ids": [
+      "3ef6a140ac3ebe9ba457e325a1d3a6d2:0",
+      "3ef6a140ac3ebe9ba457e325a1d3a6d2:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:52:22"
+  },
+  "urp/writing-shaders-urp-reconstruct-world-position.md": {
+    "sha256": "51721dd1e5877fb3b1b5dbbd4bdab40cdf4e4681dae38651cc283788c5a93268",
+    "chunk_ids": [
+      "984fc72134481ea80b73a4e5cc2ce88d:0",
+      "984fc72134481ea80b73a4e5cc2ce88d:1",
+      "984fc72134481ea80b73a4e5cc2ce88d:2",
+      "984fc72134481ea80b73a4e5cc2ce88d:3",
+      "984fc72134481ea80b73a4e5cc2ce88d:4",
+      "984fc72134481ea80b73a4e5cc2ce88d:5",
+      "984fc72134481ea80b73a4e5cc2ce88d:6"
+    ],
+    "chunk_count": 7,
+    "updated_at": "2026-04-07T13:52:23"
+  },
+  "urp/writing-shaders-urp-unlit-color.md": {
+    "sha256": "3efb74f288435222d9a7a3370bd289a3952c16b3dc7eb38e9d0dc572d4ce6211",
+    "chunk_ids": [
+      "47f038e9a548a6e4a881a0f917f3d2e0:0",
+      "47f038e9a548a6e4a881a0f917f3d2e0:1",
+      "47f038e9a548a6e4a881a0f917f3d2e0:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:24"
+  },
+  "urp/writing-shaders-urp-unlit-normals.md": {
+    "sha256": "8a61184b2b8c6b91467a1fe9100261787876708e145654b14167abcde38e4194",
+    "chunk_ids": [
+      "7298c918d0e197acace09615a14bd991:0",
+      "7298c918d0e197acace09615a14bd991:1",
+      "7298c918d0e197acace09615a14bd991:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:25"
+  },
+  "urp/writing-shaders-urp-unlit-texture.md": {
+    "sha256": "9f78cc3852796a8b363c3bc93094ccec531cd35aa655e889478ab0448dc8195d",
+    "chunk_ids": [
+      "c47e342715be366c2797fd88ded114de:0",
+      "c47e342715be366c2797fd88ded114de:1",
+      "c47e342715be366c2797fd88ded114de:2"
+    ],
+    "chunk_count": 3,
+    "updated_at": "2026-04-07T13:52:26"
+  },
+  "12-month_VFX_challenge.pdf": {
+    "sha256": "61dbb56a02f9bdb76bcab96a1f15a7608cfb26a8377fc86ba31888f097010668",
+    "chunk_ids": [
+      "ac749d8168fb531e18e114754e4441a1:0",
+      "ac749d8168fb531e18e114754e4441a1:1"
+    ],
+    "chunk_count": 2,
+    "updated_at": "2026-04-07T13:54:43"
+  },
+  "20160204_레벨디자인문서_최규동.pdf": {
+    "sha256": "d0c7564353f1aafe2c7faf641531b46deb91ed9e250b46bab7dabd4f29e834da",
+    "chunk_ids": [
+      "e42acb126657b1fccc853738d9dfd512:0",
+      "e42acb126657b1fccc853738d9dfd512:1",
+      "e42acb126657b1fccc853738d9dfd512:2",
+      "e42acb126657b1fccc853738d9dfd512:3",
+      "e42acb126657b1fccc853738d9dfd512:4",
+      "e42acb126657b1fccc853738d9dfd512:5"
+    ],
+    "chunk_count": 6,
+    "updated_at": "2026-04-07T13:54:45"
+  },
+  "2021_ABM-TheGameDesignerPlaybook_EBook.pdf": {
+    "sha256": "7f882658f0b49d558ad326414c53c051b4a7fcb83a9b5133a3264aed20769491",
+    "chunk_ids": [
+      "9b9d75c10a296605edc06030690717b6:0",
+      "9b9d75c10a296605edc06030690717b6:1",
+      "9b9d75c10a296605edc06030690717b6:2",
+      "9b9d75c10a296605edc06030690717b6:3",
+      "9b9d75c10a296605edc06030690717b6:4",
+      "9b9d75c10a296605edc06030690717b6:5",
+      "9b9d75c10a296605edc06030690717b6:6",
+      "9b9d75c10a296605edc06030690717b6:7",
+      "9b9d75c10a296605edc06030690717b6:8",
+      "9b9d75c10a296605edc06030690717b6:9",
+      "9b9d75c10a296605edc06030690717b6:10",
+      "9b9d75c10a296605edc06030690717b6:11",
+      "9b9d75c10a296605edc06030690717b6:12",
+      "9b9d75c10a296605edc06030690717b6:13",
+      "9b9d75c10a296605edc06030690717b6:14",
+      "9b9d75c10a296605edc06030690717b6:15",
+      "9b9d75c10a296605edc06030690717b6:16",
+      "9b9d75c10a296605edc06030690717b6:17",
+      "9b9d75c10a296605edc06030690717b6:18",
+      "9b9d75c10a296605edc06030690717b6:19",
+      "9b9d75c10a296605edc06030690717b6:20",
+      "9b9d75c10a296605edc06030690717b6:21",
+      "9b9d75c10a296605edc06030690717b6:22",
+      "9b9d75c10a296605edc06030690717b6:23",
+      "9b9d75c10a296605edc06030690717b6:24",
+      "9b9d75c10a296605edc06030690717b6:25",
+      "9b9d75c10a296605edc06030690717b6:26",
+      "9b9d75c10a296605edc06030690717b6:27",
+      "9b9d75c10a296605edc06030690717b6:28",
+      "9b9d75c10a296605edc06030690717b6:29",
+      "9b9d75c10a296605edc06030690717b6:30",
+      "9b9d75c10a296605edc06030690717b6:31",
+      "9b9d75c10a296605edc06030690717b6:32",
+      "9b9d75c10a296605edc06030690717b6:33",
+      "9b9d75c10a296605edc06030690717b6:34",
+      "9b9d75c10a296605edc06030690717b6:35",
+      "9b9d75c10a296605edc06030690717b6:36",
+      "9b9d75c10a296605edc06030690717b6:37",
+      "9b9d75c10a296605edc06030690717b6:38",
+      "9b9d75c10a296605edc06030690717b6:39",
+      "9b9d75c10a296605edc06030690717b6:40",
+      "9b9d75c10a296605edc06030690717b6:41",
+      "9b9d75c10a296605edc06030690717b6:42",
+      "9b9d75c10a296605edc06030690717b6:43",
+      "9b9d75c10a296605edc06030690717b6:44",
+      "9b9d75c10a296605edc06030690717b6:45",
+      "9b9d75c10a296605edc06030690717b6:46",
+      "9b9d75c10a296605edc06030690717b6:47",
+      "9b9d75c10a296605edc06030690717b6:48",
+      "9b9d75c10a296605edc06030690717b6:49",
+      "9b9d75c10a296605edc06030690717b6:50",
+      "9b9d75c10a296605edc06030690717b6:51",
+      "9b9d75c10a296605edc06030690717b6:52",
+      "9b9d75c10a296605edc06030690717b6:53",
+      "9b9d75c10a296605edc06030690717b6:54",
+      "9b9d75c10a296605edc06030690717b6:55",
+      "9b9d75c10a296605edc06030690717b6:56",
+      "9b9d75c10a296605edc06030690717b6:57",
+      "9b9d75c10a296605edc06030690717b6:58",
+      "9b9d75c10a296605edc06030690717b6:59",
+      "9b9d75c10a296605edc06030690717b6:60",
+      "9b9d75c10a296605edc06030690717b6:61",
+      "9b9d75c10a296605edc06030690717b6:62",
+      "9b9d75c10a296605edc06030690717b6:63",
+      "9b9d75c10a296605edc06030690717b6:64",
+      "9b9d75c10a296605edc06030690717b6:65",
+      "9b9d75c10a296605edc06030690717b6:66",
+      "9b9d75c10a296605edc06030690717b6:67",
+      "9b9d75c10a296605edc06030690717b6:68",
+      "9b9d75c10a296605edc06030690717b6:69",
+      "9b9d75c10a296605edc06030690717b6:70",
+      "9b9d75c10a296605edc06030690717b6:71",
+      "9b9d75c10a296605edc06030690717b6:72",
+      "9b9d75c10a296605edc06030690717b6:73",
+      "9b9d75c10a296605edc06030690717b6:74",
+      "9b9d75c10a296605edc06030690717b6:75",
+      "9b9d75c10a296605edc06030690717b6:76",
+      "9b9d75c10a296605edc06030690717b6:77",
+      "9b9d75c10a296605edc06030690717b6:78",
+      "9b9d75c10a296605edc06030690717b6:79",
+      "9b9d75c10a296605edc06030690717b6:80",
+      "9b9d75c10a296605edc06030690717b6:81",
+      "9b9d75c10a296605edc06030690717b6:82",
+      "9b9d75c10a296605edc06030690717b6:83",
+      "9b9d75c10a296605edc06030690717b6:84",
+      "9b9d75c10a296605edc06030690717b6:85",
+      "9b9d75c10a296605edc06030690717b6:86",
+      "9b9d75c10a296605edc06030690717b6:87",
+      "9b9d75c10a296605edc06030690717b6:88",
+      "9b9d75c10a296605edc06030690717b6:89",
+      "9b9d75c10a296605edc06030690717b6:90",
+      "9b9d75c10a296605edc06030690717b6:91",
+      "9b9d75c10a296605edc06030690717b6:92",
+      "9b9d75c10a296605edc06030690717b6:93",
+      "9b9d75c10a296605edc06030690717b6:94",
+      "9b9d75c10a296605edc06030690717b6:95",
+      "9b9d75c10a296605edc06030690717b6:96",
+      "9b9d75c10a296605edc06030690717b6:97",
+      "9b9d75c10a296605edc06030690717b6:98",
+      "9b9d75c10a296605edc06030690717b6:99"
+    ],
+    "chunk_count": 100,
+    "updated_at": "2026-04-07T13:56:35"
+  },
+  "80_tips_to_increase_your_productivity_in_Unity_2022_LTS.pdf": {
+    "sha256": "4c9d3147f3ee0eda6e02a804cc38ea54634221ce966ba828053fc6ba23421dbc",
+    "chunk_ids": [
+      "1964f83cac2c97be7fa7a564725e3f6a:0",
+      "1964f83cac2c97be7fa7a564725e3f6a:1",
+      "1964f83cac2c97be7fa7a564725e3f6a:2",
+      "1964f83cac2c97be7fa7a564725e3f6a:3",
+      "1964f83cac2c97be7fa7a564725e3f6a:4",
+      "1964f83cac2c97be7fa7a564725e3f6a:5",
+      "1964f83cac2c97be7fa7a564725e3f6a:6",
+      "1964f83cac2c97be7fa7a564725e3f6a:7",
+      "1964f83cac2c97be7fa7a564725e3f6a:8",
+      "1964f83cac2c97be7fa7a564725e3f6a:9",
+      "1964f83cac2c97be7fa7a564725e3f6a:10",
+      "1964f83cac2c97be7fa7a564725e3f6a:11",
+      "1964f83cac2c97be7fa7a564725e3f6a:12",
+      "1964f83cac2c97be7fa7a564725e3f6a:13",
+      "1964f83cac2c97be7fa7a564725e3f6a:14",
+      "1964f83cac2c97be7fa7a564725e3f6a:15",
+      "1964f83cac2c97be7fa7a564725e3f6a:16",
+      "1964f83cac2c97be7fa7a564725e3f6a:17",
+      "1964f83cac2c97be7fa7a564725e3f6a:18",
+      "1964f83cac2c97be7fa7a564725e3f6a:19",
+      "1964f83cac2c97be7fa7a564725e3f6a:20",
+      "1964f83cac2c97be7fa7a564725e3f6a:21",
+      "1964f83cac2c97be7fa7a564725e3f6a:22",
+      "1964f83cac2c97be7fa7a564725e3f6a:23",
+      "1964f83cac2c97be7fa7a564725e3f6a:24",
+      "1964f83cac2c97be7fa7a564725e3f6a:25",
+      "1964f83cac2c97be7fa7a564725e3f6a:26",
+      "1964f83cac2c97be7fa7a564725e3f6a:27",
+      "1964f83cac2c97be7fa7a564725e3f6a:28",
+      "1964f83cac2c97be7fa7a564725e3f6a:29",
+      "1964f83cac2c97be7fa7a564725e3f6a:30",
+      "1964f83cac2c97be7fa7a564725e3f6a:31",
+      "1964f83cac2c97be7fa7a564725e3f6a:32",
+      "1964f83cac2c97be7fa7a564725e3f6a:33",
+      "1964f83cac2c97be7fa7a564725e3f6a:34",
+      "1964f83cac2c97be7fa7a564725e3f6a:35",
+      "1964f83cac2c97be7fa7a564725e3f6a:36",
+      "1964f83cac2c97be7fa7a564725e3f6a:37",
+      "1964f83cac2c97be7fa7a564725e3f6a:38",
+      "1964f83cac2c97be7fa7a564725e3f6a:39",
+      "1964f83cac2c97be7fa7a564725e3f6a:40",
+      "1964f83cac2c97be7fa7a564725e3f6a:41",
+      "1964f83cac2c97be7fa7a564725e3f6a:42",
+      "1964f83cac2c97be7fa7a564725e3f6a:43",
+      "1964f83cac2c97be7fa7a564725e3f6a:44",
+      "1964f83cac2c97be7fa7a564725e3f6a:45",
+      "1964f83cac2c97be7fa7a564725e3f6a:46",
+      "1964f83cac2c97be7fa7a564725e3f6a:47",
+      "1964f83cac2c97be7fa7a564725e3f6a:48",
+      "1964f83cac2c97be7fa7a564725e3f6a:49",
+      "1964f83cac2c97be7fa7a564725e3f6a:50",
+      "1964f83cac2c97be7fa7a564725e3f6a:51",
+      "1964f83cac2c97be7fa7a564725e3f6a:52",
+      "1964f83cac2c97be7fa7a564725e3f6a:53",
+      "1964f83cac2c97be7fa7a564725e3f6a:54",
+      "1964f83cac2c97be7fa7a564725e3f6a:55",
+      "1964f83cac2c97be7fa7a564725e3f6a:56",
+      "1964f83cac2c97be7fa7a564725e3f6a:57",
+      "1964f83cac2c97be7fa7a564725e3f6a:58",
+      "1964f83cac2c97be7fa7a564725e3f6a:59",
+      "1964f83cac2c97be7fa7a564725e3f6a:60",
+      "1964f83cac2c97be7fa7a564725e3f6a:61",
+      "1964f83cac2c97be7fa7a564725e3f6a:62",
+      "1964f83cac2c97be7fa7a564725e3f6a:63",
+      "1964f83cac2c97be7fa7a564725e3f6a:64",
+      "1964f83cac2c97be7fa7a564725e3f6a:65",
+      "1964f83cac2c97be7fa7a564725e3f6a:66",
+      "1964f83cac2c97be7fa7a564725e3f6a:67",
+      "1964f83cac2c97be7fa7a564725e3f6a:68",
+      "1964f83cac2c97be7fa7a564725e3f6a:69"
+    ],
+    "chunk_count": 70,
+    "updated_at": "2026-04-07T13:56:51"
+  },
+  "C__Style_Guide_250529_ko-KR.pdf": {
+    "sha256": "10bc2a1f86805fd6ae0adda9fc567a26c8c6ac58d6844819bbe23e892c9e5856",
+    "chunk_ids": [
+      "4fddffa04ad0450a306fa2f33f4c75b0:0",
+      "4fddffa04ad0450a306fa2f33f4c75b0:1",
+      "4fddffa04ad0450a306fa2f33f4c75b0:2",
+      "4fddffa04ad0450a306fa2f33f4c75b0:3",
+      "4fddffa04ad0450a306fa2f33f4c75b0:4",
+      "4fddffa04ad0450a306fa2f33f4c75b0:5",
+      "4fddffa04ad0450a306fa2f33f4c75b0:6",
+      "4fddffa04ad0450a306fa2f33f4c75b0:7",
+      "4fddffa04ad0450a306fa2f33f4c75b0:8",
+      "4fddffa04ad0450a306fa2f33f4c75b0:9",
+      "4fddffa04ad0450a306fa2f33f4c75b0:10",
+      "4fddffa04ad0450a306fa2f33f4c75b0:11",
+      "4fddffa04ad0450a306fa2f33f4c75b0:12",
+      "4fddffa04ad0450a306fa2f33f4c75b0:13",
+      "4fddffa04ad0450a306fa2f33f4c75b0:14",
+      "4fddffa04ad0450a306fa2f33f4c75b0:15",
+      "4fddffa04ad0450a306fa2f33f4c75b0:16",
+      "4fddffa04ad0450a306fa2f33f4c75b0:17",
+      "4fddffa04ad0450a306fa2f33f4c75b0:18",
+      "4fddffa04ad0450a306fa2f33f4c75b0:19",
+      "4fddffa04ad0450a306fa2f33f4c75b0:20",
+      "4fddffa04ad0450a306fa2f33f4c75b0:21",
+      "4fddffa04ad0450a306fa2f33f4c75b0:22",
+      "4fddffa04ad0450a306fa2f33f4c75b0:23",
+      "4fddffa04ad0450a306fa2f33f4c75b0:24",
+      "4fddffa04ad0450a306fa2f33f4c75b0:25",
+      "4fddffa04ad0450a306fa2f33f4c75b0:26",
+      "4fddffa04ad0450a306fa2f33f4c75b0:27",
+      "4fddffa04ad0450a306fa2f33f4c75b0:28",
+      "4fddffa04ad0450a306fa2f33f4c75b0:29",
+      "4fddffa04ad0450a306fa2f33f4c75b0:30",
+      "4fddffa04ad0450a306fa2f33f4c75b0:31",
+      "4fddffa04ad0450a306fa2f33f4c75b0:32",
+      "4fddffa04ad0450a306fa2f33f4c75b0:33",
+      "4fddffa04ad0450a306fa2f33f4c75b0:34",
+      "4fddffa04ad0450a306fa2f33f4c75b0:35",
+      "4fddffa04ad0450a306fa2f33f4c75b0:36"
+    ],
+    "chunk_count": 37,
+    "updated_at": "2026-04-07T13:57:48"
+  },
+  "Data-Oriented_Technology_Stack_for_advanced_Unity_users_2022_LTS_final.pdf": {
+    "sha256": "e1db29908f953ad780dac665183257d005eb2ad46b77617d59c06aff94723b75",
+    "chunk_ids": [
+      "abaeb12581bd1a9c735e263325703c0b:0",
+      "abaeb12581bd1a9c735e263325703c0b:1",
+      "abaeb12581bd1a9c735e263325703c0b:2",
+      "abaeb12581bd1a9c735e263325703c0b:3",
+      "abaeb12581bd1a9c735e263325703c0b:4",
+      "abaeb12581bd1a9c735e263325703c0b:5",
+      "abaeb12581bd1a9c735e263325703c0b:6",
+      "abaeb12581bd1a9c735e263325703c0b:7",
+      "abaeb12581bd1a9c735e263325703c0b:8",
+      "abaeb12581bd1a9c735e263325703c0b:9",
+      "abaeb12581bd1a9c735e263325703c0b:10",
+      "abaeb12581bd1a9c735e263325703c0b:11",
+      "abaeb12581bd1a9c735e263325703c0b:12",
+      "abaeb12581bd1a9c735e263325703c0b:13",
+      "abaeb12581bd1a9c735e263325703c0b:14",
+      "abaeb12581bd1a9c735e263325703c0b:15",
+      "abaeb12581bd1a9c735e263325703c0b:16",
+      "abaeb12581bd1a9c735e263325703c0b:17",
+      "abaeb12581bd1a9c735e263325703c0b:18",
+      "abaeb12581bd1a9c735e263325703c0b:19",
+      "abaeb12581bd1a9c735e263325703c0b:20",
+      "abaeb12581bd1a9c735e263325703c0b:21",
+      "abaeb12581bd1a9c735e263325703c0b:22",
+      "abaeb12581bd1a9c735e263325703c0b:23",
+      "abaeb12581bd1a9c735e263325703c0b:24",
+      "abaeb12581bd1a9c735e263325703c0b:25",
+      "abaeb12581bd1a9c735e263325703c0b:26",
+      "abaeb12581bd1a9c735e263325703c0b:27",
+      "abaeb12581bd1a9c735e263325703c0b:28",
+      "abaeb12581bd1a9c735e263325703c0b:29",
+      "abaeb12581bd1a9c735e263325703c0b:30",
+      "abaeb12581bd1a9c735e263325703c0b:31",
+      "abaeb12581bd1a9c735e263325703c0b:32",
+      "abaeb12581bd1a9c735e263325703c0b:33",
+      "abaeb12581bd1a9c735e263325703c0b:34",
+      "abaeb12581bd1a9c735e263325703c0b:35",
+      "abaeb12581bd1a9c735e263325703c0b:36",
+      "abaeb12581bd1a9c735e263325703c0b:37",
+      "abaeb12581bd1a9c735e263325703c0b:38",
+      "abaeb12581bd1a9c735e263325703c0b:39",
+      "abaeb12581bd1a9c735e263325703c0b:40",
+      "abaeb12581bd1a9c735e263325703c0b:41",
+      "abaeb12581bd1a9c735e263325703c0b:42",
+      "abaeb12581bd1a9c735e263325703c0b:43",
+      "abaeb12581bd1a9c735e263325703c0b:44",
+      "abaeb12581bd1a9c735e263325703c0b:45",
+      "abaeb12581bd1a9c735e263325703c0b:46",
+      "abaeb12581bd1a9c735e263325703c0b:47",
+      "abaeb12581bd1a9c735e263325703c0b:48",
+      "abaeb12581bd1a9c735e263325703c0b:49",
+      "abaeb12581bd1a9c735e263325703c0b:50",
+      "abaeb12581bd1a9c735e263325703c0b:51",
+      "abaeb12581bd1a9c735e263325703c0b:52",
+      "abaeb12581bd1a9c735e263325703c0b:53"
+    ],
+    "chunk_count": 54,
+    "updated_at": "2026-04-07T13:59:34"
+  },
+  "Introduction_to_DOTS_Unity_6_edition_1.pdf": {
+    "sha256": "720e560d28d2f9ffaf7034cc9104f9207dc11718f7506118e28985a1face8895",
+    "chunk_ids": [
+      "7ae55aeff771f24c804d353a3f7f5f7c:0",
+      "7ae55aeff771f24c804d353a3f7f5f7c:1",
+      "7ae55aeff771f24c804d353a3f7f5f7c:2",
+      "7ae55aeff771f24c804d353a3f7f5f7c:3",
+      "7ae55aeff771f24c804d353a3f7f5f7c:4",
+      "7ae55aeff771f24c804d353a3f7f5f7c:5",
+      "7ae55aeff771f24c804d353a3f7f5f7c:6",
+      "7ae55aeff771f24c804d353a3f7f5f7c:7",
+      "7ae55aeff771f24c804d353a3f7f5f7c:8",
+      "7ae55aeff771f24c804d353a3f7f5f7c:9",
+      "7ae55aeff771f24c804d353a3f7f5f7c:10",
+      "7ae55aeff771f24c804d353a3f7f5f7c:11",
+      "7ae55aeff771f24c804d353a3f7f5f7c:12",
+      "7ae55aeff771f24c804d353a3f7f5f7c:13",
+      "7ae55aeff771f24c804d353a3f7f5f7c:14",
+      "7ae55aeff771f24c804d353a3f7f5f7c:15",
+      "7ae55aeff771f24c804d353a3f7f5f7c:16",
+      "7ae55aeff771f24c804d353a3f7f5f7c:17",
+      "7ae55aeff771f24c804d353a3f7f5f7c:18",
+      "7ae55aeff771f24c804d353a3f7f5f7c:19",
+      "7ae55aeff771f24c804d353a3f7f5f7c:20",
+      "7ae55aeff771f24c804d353a3f7f5f7c:21",
+      "7ae55aeff771f24c804d353a3f7f5f7c:22",
+      "7ae55aeff771f24c804d353a3f7f5f7c:23",
+      "7ae55aeff771f24c804d353a3f7f5f7c:24",
+      "7ae55aeff771f24c804d353a3f7f5f7c:25",
+      "7ae55aeff771f24c804d353a3f7f5f7c:26",
+      "7ae55aeff771f24c804d353a3f7f5f7c:27",
+      "7ae55aeff771f24c804d353a3f7f5f7c:28",
+      "7ae55aeff771f24c804d353a3f7f5f7c:29",
+      "7ae55aeff771f24c804d353a3f7f5f7c:30",
+      "7ae55aeff771f24c804d353a3f7f5f7c:31",
+      "7ae55aeff771f24c804d353a3f7f5f7c:32",
+      "7ae55aeff771f24c804d353a3f7f5f7c:33",
+      "7ae55aeff771f24c804d353a3f7f5f7c:34",
+      "7ae55aeff771f24c804d353a3f7f5f7c:35",
+      "7ae55aeff771f24c804d353a3f7f5f7c:36",
+      "7ae55aeff771f24c804d353a3f7f5f7c:37",
+      "7ae55aeff771f24c804d353a3f7f5f7c:38",
+      "7ae55aeff771f24c804d353a3f7f5f7c:39",
+      "7ae55aeff771f24c804d353a3f7f5f7c:40",
+      "7ae55aeff771f24c804d353a3f7f5f7c:41",
+      "7ae55aeff771f24c804d353a3f7f5f7c:42",
+      "7ae55aeff771f24c804d353a3f7f5f7c:43",
+      "7ae55aeff771f24c804d353a3f7f5f7c:44",
+      "7ae55aeff771f24c804d353a3f7f5f7c:45",
+      "7ae55aeff771f24c804d353a3f7f5f7c:46",
+      "7ae55aeff771f24c804d353a3f7f5f7c:47",
+      "7ae55aeff771f24c804d353a3f7f5f7c:48",
+      "7ae55aeff771f24c804d353a3f7f5f7c:49",
+      "7ae55aeff771f24c804d353a3f7f5f7c:50",
+      "7ae55aeff771f24c804d353a3f7f5f7c:51",
+      "7ae55aeff771f24c804d353a3f7f5f7c:52",
+      "7ae55aeff771f24c804d353a3f7f5f7c:53",
+      "7ae55aeff771f24c804d353a3f7f5f7c:54",
+      "7ae55aeff771f24c804d353a3f7f5f7c:55",
+      "7ae55aeff771f24c804d353a3f7f5f7c:56",
+      "7ae55aeff771f24c804d353a3f7f5f7c:57",
+      "7ae55aeff771f24c804d353a3f7f5f7c:58",
+      "7ae55aeff771f24c804d353a3f7f5f7c:59",
+      "7ae55aeff771f24c804d353a3f7f5f7c:60",
+      "7ae55aeff771f24c804d353a3f7f5f7c:61",
+      "7ae55aeff771f24c804d353a3f7f5f7c:62",
+      "7ae55aeff771f24c804d353a3f7f5f7c:63",
+      "7ae55aeff771f24c804d353a3f7f5f7c:64",
+      "7ae55aeff771f24c804d353a3f7f5f7c:65",
+      "7ae55aeff771f24c804d353a3f7f5f7c:66",
+      "7ae55aeff771f24c804d353a3f7f5f7c:67",
+      "7ae55aeff771f24c804d353a3f7f5f7c:68",
+      "7ae55aeff771f24c804d353a3f7f5f7c:69"
+    ],
+    "chunk_count": 70,
+    "updated_at": "2026-04-07T13:59:56"
+  },
+  "Introduction_to_the_URP_for_advanced_Unity_creators_2023_V07_240718_ko-KR.pdf": {
+    "sha256": "5cb3f3b2cd2c4ebf7ed6efa7619fd48b86fa0140da0d172b6682087509c49b49",
+    "chunk_ids": [
+      "9c514376fbc199e942b98527b2e75dc3:0",
+      "9c514376fbc199e942b98527b2e75dc3:1",
+      "9c514376fbc199e942b98527b2e75dc3:2",
+      "9c514376fbc199e942b98527b2e75dc3:3",
+      "9c514376fbc199e942b98527b2e75dc3:4",
+      "9c514376fbc199e942b98527b2e75dc3:5",
+      "9c514376fbc199e942b98527b2e75dc3:6",
+      "9c514376fbc199e942b98527b2e75dc3:7",
+      "9c514376fbc199e942b98527b2e75dc3:8",
+      "9c514376fbc199e942b98527b2e75dc3:9",
+      "9c514376fbc199e942b98527b2e75dc3:10",
+      "9c514376fbc199e942b98527b2e75dc3:11",
+      "9c514376fbc199e942b98527b2e75dc3:12",
+      "9c514376fbc199e942b98527b2e75dc3:13",
+      "9c514376fbc199e942b98527b2e75dc3:14",
+      "9c514376fbc199e942b98527b2e75dc3:15",
+      "9c514376fbc199e942b98527b2e75dc3:16",
+      "9c514376fbc199e942b98527b2e75dc3:17",
+      "9c514376fbc199e942b98527b2e75dc3:18",
+      "9c514376fbc199e942b98527b2e75dc3:19",
+      "9c514376fbc199e942b98527b2e75dc3:20",
+      "9c514376fbc199e942b98527b2e75dc3:21",
+      "9c514376fbc199e942b98527b2e75dc3:22",
+      "9c514376fbc199e942b98527b2e75dc3:23",
+      "9c514376fbc199e942b98527b2e75dc3:24",
+      "9c514376fbc199e942b98527b2e75dc3:25",
+      "9c514376fbc199e942b98527b2e75dc3:26",
+      "9c514376fbc199e942b98527b2e75dc3:27",
+      "9c514376fbc199e942b98527b2e75dc3:28",
+      "9c514376fbc199e942b98527b2e75dc3:29",
+      "9c514376fbc199e942b98527b2e75dc3:30",
+      "9c514376fbc199e942b98527b2e75dc3:31",
+      "9c514376fbc199e942b98527b2e75dc3:32",
+      "9c514376fbc199e942b98527b2e75dc3:33",
+      "9c514376fbc199e942b98527b2e75dc3:34",
+      "9c514376fbc199e942b98527b2e75dc3:35",
+      "9c514376fbc199e942b98527b2e75dc3:36",
+      "9c514376fbc199e942b98527b2e75dc3:37",
+      "9c514376fbc199e942b98527b2e75dc3:38",
+      "9c514376fbc199e942b98527b2e75dc3:39",
+      "9c514376fbc199e942b98527b2e75dc3:40",
+      "9c514376fbc199e942b98527b2e75dc3:41",
+      "9c514376fbc199e942b98527b2e75dc3:42",
+      "9c514376fbc199e942b98527b2e75dc3:43",
+      "9c514376fbc199e942b98527b2e75dc3:44",
+      "9c514376fbc199e942b98527b2e75dc3:45",
+      "9c514376fbc199e942b98527b2e75dc3:46",
+      "9c514376fbc199e942b98527b2e75dc3:47",
+      "9c514376fbc199e942b98527b2e75dc3:48",
+      "9c514376fbc199e942b98527b2e75dc3:49",
+      "9c514376fbc199e942b98527b2e75dc3:50",
+      "9c514376fbc199e942b98527b2e75dc3:51",
+      "9c514376fbc199e942b98527b2e75dc3:52",
+      "9c514376fbc199e942b98527b2e75dc3:53",
+      "9c514376fbc199e942b98527b2e75dc3:54",
+      "9c514376fbc199e942b98527b2e75dc3:55",
+      "9c514376fbc199e942b98527b2e75dc3:56",
+      "9c514376fbc199e942b98527b2e75dc3:57",
+      "9c514376fbc199e942b98527b2e75dc3:58",
+      "9c514376fbc199e942b98527b2e75dc3:59",
+      "9c514376fbc199e942b98527b2e75dc3:60"
+    ],
+    "chunk_count": 61,
+    "updated_at": "2026-04-07T14:00:55"
+  },
+  "Learning-Action-Plan-Template.pdf": {
+    "sha256": "76900a41b0d01538abf3713ea5b638fb282b8fa6f2ffad60275f406e3c8360a1",
+    "chunk_ids": [
+      "32ca2fbc4ea9cb8f76acef6c21cfb3fa:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-07T14:01:07"
+  },
+  "Level_up_your_code_with_Game_Programming_Pattern-3-ko_kr.pdf": {
+    "sha256": "f8ce74a66bc9db750102be796867b33feb3f0cca3f4f97321284ecb8edf4b545",
+    "chunk_ids": [
+      "51eeaab8beb042aadccc41a93987edee:0",
+      "51eeaab8beb042aadccc41a93987edee:1",
+      "51eeaab8beb042aadccc41a93987edee:2",
+      "51eeaab8beb042aadccc41a93987edee:3",
+      "51eeaab8beb042aadccc41a93987edee:4",
+      "51eeaab8beb042aadccc41a93987edee:5",
+      "51eeaab8beb042aadccc41a93987edee:6",
+      "51eeaab8beb042aadccc41a93987edee:7",
+      "51eeaab8beb042aadccc41a93987edee:8",
+      "51eeaab8beb042aadccc41a93987edee:9",
+      "51eeaab8beb042aadccc41a93987edee:10",
+      "51eeaab8beb042aadccc41a93987edee:11",
+      "51eeaab8beb042aadccc41a93987edee:12",
+      "51eeaab8beb042aadccc41a93987edee:13",
+      "51eeaab8beb042aadccc41a93987edee:14",
+      "51eeaab8beb042aadccc41a93987edee:15",
+      "51eeaab8beb042aadccc41a93987edee:16",
+      "51eeaab8beb042aadccc41a93987edee:17",
+      "51eeaab8beb042aadccc41a93987edee:18",
+      "51eeaab8beb042aadccc41a93987edee:19",
+      "51eeaab8beb042aadccc41a93987edee:20",
+      "51eeaab8beb042aadccc41a93987edee:21",
+      "51eeaab8beb042aadccc41a93987edee:22",
+      "51eeaab8beb042aadccc41a93987edee:23",
+      "51eeaab8beb042aadccc41a93987edee:24",
+      "51eeaab8beb042aadccc41a93987edee:25",
+      "51eeaab8beb042aadccc41a93987edee:26",
+      "51eeaab8beb042aadccc41a93987edee:27",
+      "51eeaab8beb042aadccc41a93987edee:28",
+      "51eeaab8beb042aadccc41a93987edee:29",
+      "51eeaab8beb042aadccc41a93987edee:30",
+      "51eeaab8beb042aadccc41a93987edee:31",
+      "51eeaab8beb042aadccc41a93987edee:32",
+      "51eeaab8beb042aadccc41a93987edee:33",
+      "51eeaab8beb042aadccc41a93987edee:34",
+      "51eeaab8beb042aadccc41a93987edee:35",
+      "51eeaab8beb042aadccc41a93987edee:36",
+      "51eeaab8beb042aadccc41a93987edee:37",
+      "51eeaab8beb042aadccc41a93987edee:38",
+      "51eeaab8beb042aadccc41a93987edee:39",
+      "51eeaab8beb042aadccc41a93987edee:40",
+      "51eeaab8beb042aadccc41a93987edee:41",
+      "51eeaab8beb042aadccc41a93987edee:42",
+      "51eeaab8beb042aadccc41a93987edee:43"
+    ],
+    "chunk_count": 44,
+    "updated_at": "2026-04-07T14:02:04"
+  },
+  "OptimizeGamePerformance_eBook_Final.pdf": {
+    "sha256": "3c23f1cb453aca4a87f87e5016e29e32036ce5a29f3906b159caf165163d3d2f",
+    "chunk_ids": [
+      "ea545e09fd66524079d6939763eb3c39:0",
+      "ea545e09fd66524079d6939763eb3c39:1",
+      "ea545e09fd66524079d6939763eb3c39:2",
+      "ea545e09fd66524079d6939763eb3c39:3",
+      "ea545e09fd66524079d6939763eb3c39:4",
+      "ea545e09fd66524079d6939763eb3c39:5",
+      "ea545e09fd66524079d6939763eb3c39:6",
+      "ea545e09fd66524079d6939763eb3c39:7",
+      "ea545e09fd66524079d6939763eb3c39:8",
+      "ea545e09fd66524079d6939763eb3c39:9",
+      "ea545e09fd66524079d6939763eb3c39:10",
+      "ea545e09fd66524079d6939763eb3c39:11",
+      "ea545e09fd66524079d6939763eb3c39:12",
+      "ea545e09fd66524079d6939763eb3c39:13",
+      "ea545e09fd66524079d6939763eb3c39:14",
+      "ea545e09fd66524079d6939763eb3c39:15",
+      "ea545e09fd66524079d6939763eb3c39:16",
+      "ea545e09fd66524079d6939763eb3c39:17",
+      "ea545e09fd66524079d6939763eb3c39:18",
+      "ea545e09fd66524079d6939763eb3c39:19",
+      "ea545e09fd66524079d6939763eb3c39:20",
+      "ea545e09fd66524079d6939763eb3c39:21",
+      "ea545e09fd66524079d6939763eb3c39:22",
+      "ea545e09fd66524079d6939763eb3c39:23",
+      "ea545e09fd66524079d6939763eb3c39:24",
+      "ea545e09fd66524079d6939763eb3c39:25",
+      "ea545e09fd66524079d6939763eb3c39:26",
+      "ea545e09fd66524079d6939763eb3c39:27",
+      "ea545e09fd66524079d6939763eb3c39:28",
+      "ea545e09fd66524079d6939763eb3c39:29",
+      "ea545e09fd66524079d6939763eb3c39:30",
+      "ea545e09fd66524079d6939763eb3c39:31",
+      "ea545e09fd66524079d6939763eb3c39:32",
+      "ea545e09fd66524079d6939763eb3c39:33",
+      "ea545e09fd66524079d6939763eb3c39:34",
+      "ea545e09fd66524079d6939763eb3c39:35",
+      "ea545e09fd66524079d6939763eb3c39:36",
+      "ea545e09fd66524079d6939763eb3c39:37",
+      "ea545e09fd66524079d6939763eb3c39:38",
+      "ea545e09fd66524079d6939763eb3c39:39",
+      "ea545e09fd66524079d6939763eb3c39:40",
+      "ea545e09fd66524079d6939763eb3c39:41",
+      "ea545e09fd66524079d6939763eb3c39:42",
+      "ea545e09fd66524079d6939763eb3c39:43",
+      "ea545e09fd66524079d6939763eb3c39:44",
+      "ea545e09fd66524079d6939763eb3c39:45",
+      "ea545e09fd66524079d6939763eb3c39:46",
+      "ea545e09fd66524079d6939763eb3c39:47",
+      "ea545e09fd66524079d6939763eb3c39:48",
+      "ea545e09fd66524079d6939763eb3c39:49",
+      "ea545e09fd66524079d6939763eb3c39:50",
+      "ea545e09fd66524079d6939763eb3c39:51",
+      "ea545e09fd66524079d6939763eb3c39:52",
+      "ea545e09fd66524079d6939763eb3c39:53",
+      "ea545e09fd66524079d6939763eb3c39:54",
+      "ea545e09fd66524079d6939763eb3c39:55",
+      "ea545e09fd66524079d6939763eb3c39:56",
+      "ea545e09fd66524079d6939763eb3c39:57",
+      "ea545e09fd66524079d6939763eb3c39:58",
+      "ea545e09fd66524079d6939763eb3c39:59",
+      "ea545e09fd66524079d6939763eb3c39:60",
+      "ea545e09fd66524079d6939763eb3c39:61",
+      "ea545e09fd66524079d6939763eb3c39:62",
+      "ea545e09fd66524079d6939763eb3c39:63",
+      "ea545e09fd66524079d6939763eb3c39:64",
+      "ea545e09fd66524079d6939763eb3c39:65",
+      "ea545e09fd66524079d6939763eb3c39:66",
+      "ea545e09fd66524079d6939763eb3c39:67",
+      "ea545e09fd66524079d6939763eb3c39:68",
+      "ea545e09fd66524079d6939763eb3c39:69",
+      "ea545e09fd66524079d6939763eb3c39:70",
+      "ea545e09fd66524079d6939763eb3c39:71",
+      "ea545e09fd66524079d6939763eb3c39:72",
+      "ea545e09fd66524079d6939763eb3c39:73",
+      "ea545e09fd66524079d6939763eb3c39:74",
+      "ea545e09fd66524079d6939763eb3c39:75",
+      "ea545e09fd66524079d6939763eb3c39:76",
+      "ea545e09fd66524079d6939763eb3c39:77",
+      "ea545e09fd66524079d6939763eb3c39:78",
+      "ea545e09fd66524079d6939763eb3c39:79",
+      "ea545e09fd66524079d6939763eb3c39:80",
+      "ea545e09fd66524079d6939763eb3c39:81",
+      "ea545e09fd66524079d6939763eb3c39:82",
+      "ea545e09fd66524079d6939763eb3c39:83",
+      "ea545e09fd66524079d6939763eb3c39:84",
+      "ea545e09fd66524079d6939763eb3c39:85",
+      "ea545e09fd66524079d6939763eb3c39:86",
+      "ea545e09fd66524079d6939763eb3c39:87"
+    ],
+    "chunk_count": 88,
+    "updated_at": "2026-04-07T14:03:56"
+  },
+  "Optimize_Your_Mobile_Game_Performance_FINAL_ko_kr.pdf": {
+    "sha256": "3cac5a6fa8d0110df66e5998e3759ef847aa53fb1e26c8d4d029cf437aecfd44",
+    "chunk_ids": [
+      "269877d6cafa14150c2edcb1a844bbd3:0",
+      "269877d6cafa14150c2edcb1a844bbd3:1",
+      "269877d6cafa14150c2edcb1a844bbd3:2",
+      "269877d6cafa14150c2edcb1a844bbd3:3",
+      "269877d6cafa14150c2edcb1a844bbd3:4",
+      "269877d6cafa14150c2edcb1a844bbd3:5",
+      "269877d6cafa14150c2edcb1a844bbd3:6",
+      "269877d6cafa14150c2edcb1a844bbd3:7",
+      "269877d6cafa14150c2edcb1a844bbd3:8",
+      "269877d6cafa14150c2edcb1a844bbd3:9",
+      "269877d6cafa14150c2edcb1a844bbd3:10",
+      "269877d6cafa14150c2edcb1a844bbd3:11",
+      "269877d6cafa14150c2edcb1a844bbd3:12",
+      "269877d6cafa14150c2edcb1a844bbd3:13",
+      "269877d6cafa14150c2edcb1a844bbd3:14",
+      "269877d6cafa14150c2edcb1a844bbd3:15",
+      "269877d6cafa14150c2edcb1a844bbd3:16",
+      "269877d6cafa14150c2edcb1a844bbd3:17",
+      "269877d6cafa14150c2edcb1a844bbd3:18",
+      "269877d6cafa14150c2edcb1a844bbd3:19",
+      "269877d6cafa14150c2edcb1a844bbd3:20",
+      "269877d6cafa14150c2edcb1a844bbd3:21",
+      "269877d6cafa14150c2edcb1a844bbd3:22",
+      "269877d6cafa14150c2edcb1a844bbd3:23",
+      "269877d6cafa14150c2edcb1a844bbd3:24",
+      "269877d6cafa14150c2edcb1a844bbd3:25",
+      "269877d6cafa14150c2edcb1a844bbd3:26",
+      "269877d6cafa14150c2edcb1a844bbd3:27",
+      "269877d6cafa14150c2edcb1a844bbd3:28",
+      "269877d6cafa14150c2edcb1a844bbd3:29",
+      "269877d6cafa14150c2edcb1a844bbd3:30",
+      "269877d6cafa14150c2edcb1a844bbd3:31",
+      "269877d6cafa14150c2edcb1a844bbd3:32",
+      "269877d6cafa14150c2edcb1a844bbd3:33",
+      "269877d6cafa14150c2edcb1a844bbd3:34",
+      "269877d6cafa14150c2edcb1a844bbd3:35",
+      "269877d6cafa14150c2edcb1a844bbd3:36",
+      "269877d6cafa14150c2edcb1a844bbd3:37",
+      "269877d6cafa14150c2edcb1a844bbd3:38",
+      "269877d6cafa14150c2edcb1a844bbd3:39",
+      "269877d6cafa14150c2edcb1a844bbd3:40",
+      "269877d6cafa14150c2edcb1a844bbd3:41",
+      "269877d6cafa14150c2edcb1a844bbd3:42",
+      "269877d6cafa14150c2edcb1a844bbd3:43",
+      "269877d6cafa14150c2edcb1a844bbd3:44",
+      "269877d6cafa14150c2edcb1a844bbd3:45",
+      "269877d6cafa14150c2edcb1a844bbd3:46",
+      "269877d6cafa14150c2edcb1a844bbd3:47",
+      "269877d6cafa14150c2edcb1a844bbd3:48",
+      "269877d6cafa14150c2edcb1a844bbd3:49",
+      "269877d6cafa14150c2edcb1a844bbd3:50",
+      "269877d6cafa14150c2edcb1a844bbd3:51",
+      "269877d6cafa14150c2edcb1a844bbd3:52",
+      "269877d6cafa14150c2edcb1a844bbd3:53",
+      "269877d6cafa14150c2edcb1a844bbd3:54",
+      "269877d6cafa14150c2edcb1a844bbd3:55",
+      "269877d6cafa14150c2edcb1a844bbd3:56",
+      "269877d6cafa14150c2edcb1a844bbd3:57",
+      "269877d6cafa14150c2edcb1a844bbd3:58",
+      "269877d6cafa14150c2edcb1a844bbd3:59",
+      "269877d6cafa14150c2edcb1a844bbd3:60",
+      "269877d6cafa14150c2edcb1a844bbd3:61",
+      "269877d6cafa14150c2edcb1a844bbd3:62"
+    ],
+    "chunk_count": 63,
+    "updated_at": "2026-04-07T14:05:57"
   }
 }
