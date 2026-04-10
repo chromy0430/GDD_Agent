@@ -7,6 +7,7 @@ import math
 import shutil
 import random
 import hashlib
+import tempfile
 from collections import deque
 from datetime import datetime
 import gc
@@ -249,6 +250,47 @@ class UnityRAG:
             print(f"❌ 멀티모달 분석 실패: {e}")
             return ""
 
+    def _extract_technical_media(self, file_path: str) -> str:
+            tmp_path = None
+            try:
+                print(f"📡 [기술/노드 전용 모드] 파일 분석 중: {os.path.basename(file_path)}")
+                ext = os.path.splitext(file_path)[1]
+                with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp_file:
+                    tmp_path = tmp_file.name
+                
+                shutil.copy2(file_path, tmp_path)
+                uploaded_file = self.client.files.upload(file=tmp_path)
+                
+                while uploaded_file.state.name == "PROCESSING":
+                    time.sleep(2)
+                    uploaded_file = self.client.files.get(name=uploaded_file.name)
+                
+                if uploaded_file.state.name == "FAILED": return ""
+
+                # [CRITICAL] 팩트 기반 노드 추출 전용 프롬프트
+                prompt = (
+                    "이 미디어 파일은 유니티 셰이더 그래프, 블루프린트 등 비주얼 스크립팅/코딩 작업 화면입니다. "
+                    "[절대 준수 사항]: 절대로 작동 원리나 프로그래밍 로직을 스스로 유추하여 지어내지 마십시오. "
+                    "오직 화면에 명확히 보이는 노드의 이름(Text)과 값, 연결 상태만 팩트 기반으로 나열하십시오. "
+                    "화면에 명시적으로 적혀있지 않은 연산 노드(예: Subtract, Add 등)를 임의로 추가하면 치명적인 오류가 발생합니다."
+                )
+
+                response = self.client.models.generate_content(
+                    model='gemini-3.1-flash-lite-preview',
+                    contents=[uploaded_file, prompt]
+                )
+                
+                self.client.files.delete(name=uploaded_file.name)
+                return normalize_text(response.text)
+
+            except Exception as e:
+                print(f"❌ 기술 미디어 분석 실패: {e}")
+                return ""
+            finally:
+                if tmp_path and os.path.exists(tmp_path):
+                    try: os.remove(tmp_path)
+                    except Exception: pass
+
     def _load_document_text(self, file_path: str) -> str:
         ext = os.path.splitext(file_path)[1].lower()
 
@@ -261,7 +303,16 @@ class UnityRAG:
             return self._parse_pdf_pypdf(file_path)
             
         if ext in SUPPORTED_IMAGE_EXTS | SUPPORTED_VIDEO_EXTS | SUPPORTED_AUDIO_EXTS:
-            return self._extract_media_text(file_path)
+            # [추가됨] 파일명 기반 키워드 라우팅
+            tech_keywords = ["ase", "셰이더", "이펙트", "코드", "노드", "블루프린트", "shader", "code", "node", "개발"]
+            filename_lower = os.path.basename(file_path).lower()
+            
+            # 키워드가 포함되어 있으면 신규 기술 전용 함수 사용
+            if any(kw in filename_lower for kw in tech_keywords):
+                return self._extract_technical_media(file_path)
+            else:
+                # 일반 영상은 기존 함수 사용
+                return self._extract_media_text(file_path)
 
         return ""
 
