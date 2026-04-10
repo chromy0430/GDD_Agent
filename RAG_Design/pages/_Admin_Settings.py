@@ -27,11 +27,13 @@ def get_lightweight_status():
     db_exists = os.path.exists(os.path.join(DB_PATH, "chroma.sqlite3"))
 
     knowledge_files = 0
+    valid_extensions = {".md", ".txt", ".pdf", ".png", ".jpg", ".jpeg", ".mp4", ".mpeg", ".mp3", ".wav"}
+    
     if os.path.exists("./knowledge_base"):
         for root, _, files in os.walk("./knowledge_base"):
             for file in files:
                 ext = os.path.splitext(file)[1].lower()
-                if ext in [".md", ".txt", ".pdf"]:
+                if ext in valid_extensions:
                     knowledge_files += 1
 
     return {
@@ -50,6 +52,29 @@ def main():
 
     st.divider()
     st.header("📚 RAG 지식 베이스 관리")
+    
+    # 멀티모달 임베딩 제약 사항 안내 (보스 지시사항 반영)
+    with st.expander("ℹ️ 지원되는 파일 유형 및 임베딩 제약 사항", expanded=False):
+        st.markdown("""
+        `knowledge_base` 폴더에 넣을 수 있는 미디어 파일의 제약 사항입니다. 
+        Gemini 2 Preview 모델의 제한을 따릅니다.
+
+        * **이미지 (`image/png`, `image/jpeg`)**
+            * 프롬프트당 최대 이미지 수: 6개
+            * 최대 파일 크기: 제한 없음
+        * **문서 (`application/pdf`, `.md`, `.txt`)**
+            * 프롬프트당 최대 파일 수: 1개
+            * 파일당 최대 페이지 수: 6페이지 (PDF)
+        * **동영상 (`video/mpeg`, `video/mp4`)**
+            * 최대 동영상 길이 (오디오 포함): 80초
+            * 최대 동영상 길이 (오디오 제외): 120초
+            * 프롬프트당 최대 동영상 수: 1개
+        * **오디오 (`audio/mp3`, `audio/wav`)**
+            * 프롬프트당 최대 오디오 길이: 80초
+            * 프롬프트당 최대 오디오 파일 수: 1개
+        
+        > **💡 시스템 참고:** 오디오/비디오/이미지 파일은 Chroma DB에 적재되기 전, Gemini 모델을 통해 내용이 고도로 분석(전사 및 OCR)되어 텍스트 형태로 벡터화됩니다. 이를 통해 기존 텍스트 파일과 완벽히 동일한 검색 성능을 제공합니다.
+        """)
 
     status = get_lightweight_status()
 
@@ -69,7 +94,7 @@ def main():
             st.error("API Key가 없습니다.")
             return
 
-        with st.spinner("변경된 파일만 분석하여 벡터 DB를 업데이트하는 중입니다..."):
+        with st.spinner("변경된 파일만 분석하여 벡터 DB를 업데이트하는 중입니다... (미디어 파일은 다소 시간이 걸릴 수 있습니다)"):
             try:
                 rag = UnityRAG(api_key_input=api_key)
                 result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False)
@@ -102,7 +127,6 @@ def main():
                 st.success(result_msg)
             except Exception as e:
                 st.error(f"오류 발생: {e}")
-
 
 if __name__ == "__main__":
     main()
