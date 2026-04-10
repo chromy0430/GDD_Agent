@@ -1,12 +1,11 @@
 import os
 import json
 import streamlit as st
-
+import time
 from rag_utils import UnityRAG, MANIFEST_PATH, FAILED_PATH, DB_PATH
 from utils import render_sidebar_settings
 
 st.set_page_config(page_title="관리자 설정", layout="wide")
-
 
 def load_json(path, default):
     if not os.path.exists(path):
@@ -17,7 +16,6 @@ def load_json(path, default):
     except Exception:
         return default
 
-
 def get_lightweight_status():
     manifest = load_json(MANIFEST_PATH, {})
     failed_data = load_json(FAILED_PATH, {"failed_files": []})
@@ -26,15 +24,31 @@ def get_lightweight_status():
     total_chunks = sum(int(v.get("chunk_count", 0)) for v in manifest.values())
     db_exists = os.path.exists(os.path.join(DB_PATH, "chroma.sqlite3"))
 
+    # 유형별 통계 초기화
+    stats_by_group = {
+        "문서 (MD/TXT)": {"total": 0, "indexed": 0, "exts": {".md", ".txt"}},
+        "PDF": {"total": 0, "indexed": 0, "exts": {".pdf"}},
+        "이미지": {"total": 0, "indexed": 0, "exts": {".png", ".jpg", ".jpeg"}},
+        "동영상": {"total": 0, "indexed": 0, "exts": {".mp4", ".mpeg"}},
+        "오디오": {"total": 0, "indexed": 0, "exts": {".mp3", ".wav"}}
+    }
+    
     knowledge_files = 0
-    valid_extensions = {".md", ".txt", ".pdf", ".png", ".jpg", ".jpeg", ".mp4", ".mpeg", ".mp3", ".wav"}
     
     if os.path.exists("./knowledge_base"):
         for root, _, files in os.walk("./knowledge_base"):
             for file in files:
                 ext = os.path.splitext(file)[1].lower()
-                if ext in valid_extensions:
-                    knowledge_files += 1
+                rel = os.path.relpath(os.path.join(root, file), "./knowledge_base").replace("\\", "/")
+                is_indexed = rel in manifest
+                
+                for group, data in stats_by_group.items():
+                    if ext in data["exts"]:
+                        data["total"] += 1
+                        if is_indexed:
+                            data["indexed"] += 1
+                        knowledge_files += 1
+                        break
 
     return {
         "db_exists": db_exists,
@@ -42,8 +56,8 @@ def get_lightweight_status():
         "failed_files": len(failed_files),
         "total_chunks": total_chunks,
         "knowledge_files": knowledge_files,
+        "stats_by_group": stats_by_group
     }
-
 
 def main():
     st.title("⚙️ 시스템 관리")
@@ -53,7 +67,6 @@ def main():
     st.divider()
     st.header("📚 RAG 지식 베이스 관리")
     
-    # 멀티모달 임베딩 제약 사항 안내 (보스 지시사항 반영)
     with st.expander("ℹ️ 지원되는 파일 유형 및 임베딩 제약 사항", expanded=False):
         st.markdown("""
         `knowledge_base` 폴더에 넣을 수 있는 미디어 파일의 제약 사항입니다. 
@@ -78,23 +91,60 @@ def main():
 
     status = get_lightweight_status()
 
+    # 1. 전체 현황
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("DB 존재", "✅ 있음" if status["db_exists"] else "❌ 없음")
-    col2.metric("knowledge_base 파일 수", status["knowledge_files"])
+    col2.metric("전체 파일 수", status["knowledge_files"])
     col3.metric("색인 완료 파일 수", status["indexed_files"])
     col4.metric("실패 파일 수", status["failed_files"])
     col5.metric("총 청크 수", status["total_chunks"])
 
-    st.write("### 🚀 작업 실행")
+    st.divider()
 
+    # 2. 유형별 색인 현황 및 부분 업데이트
+    st.write("### 📊 유형별 색인 현황 및 부분 업데이트")
+    st.caption("필요한 데이터 유형만 선택적으로 업데이트하여 시간과 API 할당량을 절약하세요.")
+    
+    groups = status["stats_by_group"]
+    cols = st.columns(len(groups))
+    
+    for idx, (group_name, data) in enumerate(groups.items()):
+        with cols[idx]:
+            # 색인 진행률 계산
+            progress = data["indexed"] / data["total"] if data["total"] > 0 else 0.0
+            color = "green" if progress == 1.0 and data["total"] > 0 else "orange" if data["total"] > 0 else "gray"
+            
+            st.markdown(f"**{group_name}**")
+            st.markdown(f"<h3 style='color: {color}; margin-top: 0;'>{data['indexed']} / {data['total']}</h3>", unsafe_allow_html=True)
+            st.progress(progress)
+            
+            # 부분 업데이트 버튼
+            if st.button(f"🔄 {group_name} 업데이트", key=f"btn_update_{idx}", use_container_width=True, disabled=(data["total"] == 0)):
+                if not api_key:
+                    st.error("API Key가 없습니다.")
+                    return
+                with st.spinner(f"{group_name} 유형의 파일만 분석하여 DB를 업데이트하는 중입니다..."):
+                    try:
+                        rag = UnityRAG(api_key_input=api_key)
+                        result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False, target_exts=data["exts"])
+                        st.success(result_msg)
+                        time.sleep(2)
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"오류 발생: {e}")
+
+    st.divider()
+
+    # 3. 전체 시스템 작업
+    st.write("### 🚀 전체 시스템 작업")
     col_a, col_b, col_c = st.columns(3)
 
-    if col_a.button("➕ 증분 업데이트", type="primary", use_container_width=True):
+    if col_a.button("➕ 전체 증분 업데이트", type="primary", use_container_width=True):
         if not api_key:
             st.error("API Key가 없습니다.")
             return
 
-        with st.spinner("변경된 파일만 분석하여 벡터 DB를 업데이트하는 중입니다... (미디어 파일은 다소 시간이 걸릴 수 있습니다)"):
+        with st.spinner("모든 유형의 변경된 파일을 스캔하여 벡터 DB를 업데이트하는 중입니다..."):
             try:
                 rag = UnityRAG(api_key_input=api_key)
                 result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False)
@@ -115,7 +165,7 @@ def main():
             except Exception as e:
                 st.error(f"오류 발생: {e}")
 
-    if col_c.button("🧨 전체 재구축", use_container_width=True):
+    if col_c.button("🧨 전체 DB 재구축", use_container_width=True):
         if not api_key:
             st.error("API Key가 없습니다.")
             return

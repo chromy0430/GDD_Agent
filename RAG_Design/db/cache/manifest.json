@@ -33943,5 +33943,85 @@
     ],
     "chunk_count": 101,
     "updated_at": "2026-04-10T10:41:38"
+  },
+  "Shader_CRT_TV.mp4": {
+    "sha256": "720291398f86d04ac9cf01a328c92dc37a711d65a0fd326bb7796ee96e3efe01",
+    "chunk_ids": [
+      "3d92578e2fdf8bd317990a196e7d1e46:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:09:30"
+  },
+  "Shader_Dissolve.mp4": {
+    "sha256": "b570a61cc3633557d84bee497e4a31f751abe4d0826fe0a280507b4c63e82c65",
+    "chunk_ids": [
+      "ff558b084f052a963deecbadf8659da0:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:09:53"
+  },
+  "Shader_Ditherd_Transparency.mp4": {
+    "sha256": "06d887e0478e5cdde441558a813d53037f853a9f640b1b9be90ad4c154ca626e",
+    "chunk_ids": [
+      "04eaa851141b577a4ed262f70693ef9a:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:10:35"
+  },
+  "Shader_DotMatrix.mp4": {
+    "sha256": "246986f304788eec5ba3063ddd1fd338ffc03e2db055a71fdeb77e9a03708db2",
+    "chunk_ids": [
+      "a2132d2f7888cda5ce83ac296988d610:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:11:01"
+  },
+  "Shader_Inverted_Hull_Outlines.mp4": {
+    "sha256": "af748207c01476afb7c2a721b2f1388c5526fb4694d73982ae330c122328e256",
+    "chunk_ids": [
+      "9c643b94c9daf014e9d7566fd04051bd:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:11:32"
+  },
+  "Shader_Portal_Vortex.mp4": {
+    "sha256": "60e239c7065ae463f9dba586e6b44fee898fdf3b17b286efb678529f17a27c08",
+    "chunk_ids": [
+      "f70593b3ad616619d1227a39f5c55097:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:11:56"
+  },
+  "Shader_Scene_Intersection.mp4": {
+    "sha256": "6b9ec63b8e0599d17279938f4a279f359510de0e11a1d03d41533156824d55a1",
+    "chunk_ids": [
+      "9fc0ded6c4c065d58ffa7d7b32e8a029:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:12:22"
+  },
+  "Shader_Silhouette.mp4": {
+    "sha256": "eb4b7973f5b0a0c9418098352c2b54cfd77fd38215364de9fe1085b9601a0ca0",
+    "chunk_ids": [
+      "ae54d01b2e934f88ab3b8ab1ba624ec6:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:12:45"
+  },
+  "Shader_Stat_Increase.mp4": {
+    "sha256": "2f0284de854dc5b906ab2919c4719b5fb8b38146fef75dbca4bb028e71f30209",
+    "chunk_ids": [
+      "76dd9527b9f4e51246eb40df7dfbf404:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:13:12"
+  },
+  "Shader_Vertex_Waves.mp4": {
+    "sha256": "e9601f25546dfdcca77af753306969b755173f304c9d9eaa530b1548a8c3385c",
+    "chunk_ids": [
+      "0ed93b63cebe3cb97c1d2f9b9c381b2d:0"
+    ],
+    "chunk_count": 1,
+    "updated_at": "2026-04-10T11:13:43"
   }
 }

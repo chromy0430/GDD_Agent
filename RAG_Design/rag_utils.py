@@ -15,7 +15,6 @@ from pypdf import PdfReader
 from google import genai
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
-# 최신 패키지 / 구버전 대응
 try:
     from langchain_chroma import Chroma
 except ImportError:
@@ -35,7 +34,6 @@ CACHE_DIR = "./db/cache"
 MANIFEST_PATH = os.path.join(CACHE_DIR, "manifest.json")
 FAILED_PATH = os.path.join(CACHE_DIR, "failed_files.json")
 
-#EMBED_MODEL_NAME = "models/gemini-embedding-001"
 EMBED_MODEL_NAME = "models/gemini-embedding-2-preview"
 
 SUPPORTED_TEXT_EXTS = {".md", ".txt"}
@@ -44,7 +42,6 @@ SUPPORTED_IMAGE_EXTS = {".png", ".jpg", ".jpeg"}
 SUPPORTED_VIDEO_EXTS = {".mp4", ".mpeg"}
 SUPPORTED_AUDIO_EXTS = {".mp3", ".wav"}
 
-# 전체 지원 확장자 통합
 ALL_SUPPORTED_EXTS = SUPPORTED_TEXT_EXTS | SUPPORTED_PDF_EXTS | SUPPORTED_IMAGE_EXTS | SUPPORTED_VIDEO_EXTS | SUPPORTED_AUDIO_EXTS
 
 DEFAULT_CHUNK_SIZE = 2200
@@ -53,16 +50,15 @@ MIN_CHUNK_LENGTH = 80
 DEFAULT_EMBED_RPM = 90
 DEFAULT_BATCH_SIZE = 64
 
+
 # =========================
 # 유틸
 # =========================
 def ensure_dir(path: str):
     os.makedirs(path, exist_ok=True)
 
-
 def now_iso() -> str:
     return datetime.now().isoformat(timespec="seconds")
-
 
 def sha256_of_file(file_path: str) -> str:
     h = hashlib.sha256()
@@ -71,14 +67,11 @@ def sha256_of_file(file_path: str) -> str:
             h.update(chunk)
     return h.hexdigest()
 
-
 def sha256_of_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8", errors="ignore")).hexdigest()
 
-
 def safe_relpath(path: str, start: str) -> str:
     return os.path.relpath(path, start).replace("\\", "/")
-
 
 def normalize_text(text: str) -> str:
     text = text.replace("\x00", " ")
@@ -87,7 +80,6 @@ def normalize_text(text: str) -> str:
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
-
 
 def load_json(path: str, default):
     if not os.path.exists(path):
@@ -98,21 +90,15 @@ def load_json(path: str, default):
     except Exception:
         return default
 
-
 def save_json(path: str, data):
     ensure_dir(os.path.dirname(path))
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-
 def is_quota_error(exc: Exception) -> bool:
     s = str(exc).lower()
     return (
-        "429" in s
-        or "resourceexhausted" in s
-        or "quota" in s
-        or "rate limit" in s
-        or "too many requests" in s
+        "429" in s or "resourceexhausted" in s or "quota" in s or "rate limit" in s or "too many requests" in s
     )
 
 
@@ -126,7 +112,6 @@ class RateLimiter:
 
     def wait(self):
         now = time.time()
-
         while self.calls and now - self.calls[0] >= 60:
             self.calls.popleft()
 
@@ -135,19 +120,9 @@ class RateLimiter:
             if sleep_for > 0:
                 print(f"⏳ RPM 보호 대기: {sleep_for:.1f}초")
                 time.sleep(sleep_for)
-
         self.calls.append(time.time())
 
-
-def retry_with_backoff(
-    func,
-    *args,
-    max_retries: int = 6,
-    initial_delay: float = 3.0,
-    backoff_factor: float = 2.0,
-    jitter: float = 1.0,
-    **kwargs,
-):
+def retry_with_backoff(func, *args, max_retries=6, initial_delay=3.0, backoff_factor=2.0, jitter=1.0, **kwargs):
     delay = initial_delay
     for attempt in range(1, max_retries + 1):
         try:
@@ -155,10 +130,8 @@ def retry_with_backoff(
         except Exception as e:
             if not is_quota_error(e):
                 raise
-
             if attempt >= max_retries:
                 raise
-
             sleep_time = delay + random.uniform(0, jitter)
             print(f"⚠️ 429/Quota 감지. {sleep_time:.1f}초 후 재시도 ({attempt}/{max_retries})")
             time.sleep(sleep_time)
@@ -169,14 +142,7 @@ def retry_with_backoff(
 # 본체
 # =========================
 class UnityRAG:
-    def __init__(
-        self,
-        api_key_input=None,
-        embed_rpm: int = DEFAULT_EMBED_RPM,
-        batch_size: int = DEFAULT_BATCH_SIZE,
-        chunk_size: int = DEFAULT_CHUNK_SIZE,
-        chunk_overlap: int = DEFAULT_CHUNK_OVERLAP,
-    ):
+    def __init__(self, api_key_input=None, embed_rpm: int = DEFAULT_EMBED_RPM, batch_size: int = DEFAULT_BATCH_SIZE, chunk_size: int = DEFAULT_CHUNK_SIZE, chunk_overlap: int = DEFAULT_CHUNK_OVERLAP):
         self.api_key = api_key_input
         if not self.api_key:
             config = load_config()
@@ -202,50 +168,29 @@ class UnityRAG:
             model=EMBED_MODEL_NAME,
             google_api_key=self.api_key
         )
-
-        # 여기서 바로 DB를 열지 않음
         self.vector_db = None
 
-    # -------------------------
-    # DB
-    # -------------------------
     def _load_db(self):
         if self.embedding_model is None:
-            self.vector_db = None
             return
-
         ensure_dir(DB_PATH)
-
-        self.vector_db = Chroma(
-            persist_directory=DB_PATH,
-            embedding_function=self.embedding_model
-        )
+        self.vector_db = Chroma(persist_directory=DB_PATH, embedding_function=self.embedding_model)
 
     def _recreate_db(self):
         self._safe_delete_db_dir()
         ensure_dir(DB_PATH)
+        self.vector_db = Chroma(persist_directory=DB_PATH, embedding_function=self.embedding_model)
 
-        self.vector_db = Chroma(
-            persist_directory=DB_PATH,
-            embedding_function=self.embedding_model
-        )
-
-    # -------------------------
-    # 파일 수집
-    # -------------------------
     def _collect_files(self):
         all_files = []
         for root, _, files in os.walk(KNOWLEDGE_PATH):
             for name in files:
                 ext = os.path.splitext(name)[1].lower()
-                if ext in SUPPORTED_TEXT_EXTS or ext in SUPPORTED_PDF_EXTS:
+                if ext in ALL_SUPPORTED_EXTS:
                     all_files.append(os.path.join(root, name))
         all_files.sort()
         return all_files
 
-    # -------------------------
-    # 텍스트 로드
-    # -------------------------
     def _load_text_file(self, file_path: str) -> str:
         encodings = ["utf-8", "utf-8-sig", "cp949", "euc-kr", "latin-1"]
         for enc in encodings:
@@ -261,12 +206,9 @@ class UnityRAG:
         try:
             doc = fitz.open(file_path)
             for page in doc:
-                page_text = page.get_text("text")
-                if page_text:
-                    text_parts.append(page_text)
+                text_parts.append(page.get_text("text"))
             doc.close()
-        except Exception:
-            return ""
+        except Exception: return ""
         return normalize_text("\n".join(text_parts))
 
     def _parse_pdf_pypdf(self, file_path: str) -> str:
@@ -274,13 +216,10 @@ class UnityRAG:
         try:
             reader = PdfReader(file_path)
             for page in reader.pages:
-                page_text = page.extract_text()
-                if page_text:
-                    text_parts.append(page_text)
-        except Exception:
-            return ""
+                text_parts.append(page.extract_text() or "")
+        except Exception: return ""
         return normalize_text("\n".join(text_parts))
-    
+
     def _extract_media_text(self, file_path: str) -> str:
         try:
             print(f"📡 멀티모달 파일 전송 및 분석 중: {os.path.basename(file_path)}")
@@ -299,15 +238,12 @@ class UnityRAG:
                 "2. 이미지인 경우: 포함된 텍스트를 OCR처럼 모두 추출하고, 구조와 시각적 요소(다이어그램, 차트 등)를 상세히 설명할 것."
             )
 
-            # 멀티모달 추출에는 처리 능력이 가장 뛰어난 flash 모델 고정 사용
             response = self.client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.1-flash-lite-preview',
                 contents=[uploaded_file, prompt]
             )
             
-            # 용량 관리를 위해 API 서버에서 즉시 삭제
             self.client.files.delete(name=uploaded_file.name)
-            
             return normalize_text(response.text)
         except Exception as e:
             print(f"❌ 멀티모달 분석 실패: {e}")
@@ -329,9 +265,6 @@ class UnityRAG:
 
         return ""
 
-    # -------------------------
-    # 문서 -> 청크
-    # -------------------------
     def _split_document(self, doc: Document):
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=self.chunk_size,
@@ -356,17 +289,11 @@ class UnityRAG:
         base = hashlib.md5(source_rel.encode("utf-8")).hexdigest()
         return [f"{base}:{i}" for i in range(len(chunks))]
 
-    # -------------------------
-    # Manifest / 실패 파일
-    # -------------------------
     def _load_manifest(self): return load_json(MANIFEST_PATH, {})
     def _save_manifest(self, manifest): save_json(MANIFEST_PATH, manifest)
     def _load_failed_files(self): return set(load_json(FAILED_PATH, {"failed_files": []}).get("failed_files", []))
     def _save_failed_files(self, failed_files_set): save_json(FAILED_PATH, {"failed_files": sorted(list(failed_files_set))})
 
-    # -------------------------
-    # Chroma 조작
-    # -------------------------
     def _delete_ids_if_exist(self, ids):
         if not ids or self.vector_db is None: return
         try: self.vector_db.delete(ids=ids)
@@ -395,7 +322,8 @@ class UnityRAG:
         for idx, chunk in enumerate(chunks): chunk.metadata["chunk_index"] = idx
         return chunks, self._make_chunk_ids(source_rel, chunks)
 
-    def ingest_knowledge(self, full_rebuild: bool = False, only_failed: bool = False):
+    # 타겟 확장자(target_exts) 파라미터 추가
+    def ingest_knowledge(self, full_rebuild: bool = False, only_failed: bool = False, target_exts: set = None):
         if not self.embedding_model: return "❌ API Key가 설정되지 않았습니다."
         if not os.path.exists(KNOWLEDGE_PATH): return "❌ knowledge_base 폴더가 없습니다."
 
@@ -413,6 +341,7 @@ class UnityRAG:
             if self.vector_db is None: self._load_db()
             if self.vector_db is None: self._recreate_db()
 
+        # 삭제된 파일 동기화 (전체 파일 기준)
         current_relpaths = {safe_relpath(p, KNOWLEDGE_PATH) for p in files}
         manifest_relpaths = set(manifest.keys())
 
@@ -423,8 +352,14 @@ class UnityRAG:
                 manifest.pop(rel, None)
                 failed_files.discard(rel)
 
+        # target_exts가 있을 경우, 작업 대상 큐를 해당 확장자 파일로만 축소
+        if target_exts:
+            files_to_process = [f for f in files if os.path.splitext(f)[1].lower() in target_exts]
+        else:
+            files_to_process = files
+
         targets, skipped = [], 0
-        for file_path in files:
+        for file_path in files_to_process:
             rel = safe_relpath(file_path, KNOWLEDGE_PATH)
             if only_failed and rel not in failed_files:
                 skipped += 1; continue
@@ -470,7 +405,9 @@ class UnityRAG:
 
         self._save_manifest(manifest)
         self._save_failed_files(failed_files)
-        return f"✅ 완료 (전체: {len(files)}, 처리: {processed}, 스킵: {skipped}, 실패: {failed}, 청크: {total_new_chunks})"
+        
+        target_info = "전체" if not target_exts else "부분 유형"
+        return f"✅ 완료 [{target_info}] (대상: {len(files_to_process)}, 처리: {processed}, 스킵: {skipped}, 실패: {failed}, 청크: {total_new_chunks})"
 
     def retrieve_context(self, query, k=3):
         if not self.vector_db: self._load_db()
