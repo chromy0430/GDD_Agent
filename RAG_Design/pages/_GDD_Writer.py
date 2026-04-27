@@ -13,8 +13,6 @@ from rag_utils import UnityRAG
 # 1. 설정 및 상수
 # ==========================================
 st.set_page_config(layout="wide", page_title="기획서 작성/업데이트 봇")
-#MODEL_NAME = "gemini-2.5-flash" 
-#CONFIG_FILE = "config.json"
 SAMPLES_FOLDER = "samples"
 
 # ==========================================

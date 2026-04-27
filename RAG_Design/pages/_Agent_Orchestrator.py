@@ -106,6 +106,13 @@ AGENT_REGISTRY: Dict[str, Dict[str, Any]] = {
         "expected_output": "Code_Review_Feedback",
         "supported_inputs": ["text", "code"],
         "supported_outputs": ["text"]
+    },
+    "Music_Composer": {
+        "file_path": "_Music_Composer.py",
+        "description": "기획서나 RAG 상황 묘사(컨텍스트)를 바탕으로 Lyria 3 모델을 사용하여 고품질 테마 오디오(.mp3)를 작곡합니다.",
+        "expected_output": "Audio_File_MP3",
+        "supported_inputs": ["text"],
+        "supported_outputs": ["audio", "text"]
     }    
 }
 
@@ -238,6 +245,7 @@ def build_plan_prompt(prompt: str, attachment_info: str, attachment_type: Option
 - 이전 결과가 다음 step에 필요한 경우 depends_on에 step id를 적을 것
 - 첨부가 꼭 필요한 step만 use_attachment=true
 - 최종 보고서 형식을 final_output에 적을 것
+- 배경음악, BGM, 오디오, 테마곡 작곡 요청이 포함되어 있으면 반드시 Music_Composer를 파이프라인에 포함할 것.
 
 [출력 스키마]
 {{
@@ -420,6 +428,61 @@ def execute_agent_step(
 
     dependency_outputs = collect_dependency_outputs(execution_state, depends_on)
     routed_attachment = route_attachment_to_step(file_data, step)
+
+    if agent_name == "Music_Composer":
+        import time
+        
+        # 1. Flash 모델을 이용해 한국어 컨텍스트를 완벽한 영문 음악 프롬프트로 변환
+        prompt_maker = f"""
+        당신은 수석 음악 감독입니다. 아래 지시와 컨텍스트를 바탕으로 Lyria 3 모델에 전달할 완벽한 '영문 프롬프트' 하나만 작성하세요.
+        [Instruction]: {instruction}
+        [Global Context (RAG)]: {global_context}
+        [Dependency Outputs]: {json.dumps(dependency_outputs, ensure_ascii=False)}
+        
+        [규칙]: 반드시 영문 프롬프트 내용만 텍스트로 출력하십시오. 장르, 악기, 분위기, BPM을 구체적으로 포함할 것. 보컬이 필요 없다면 "Instrumental only, no vocals"를 명시하십시오.
+        """
+        lyria_prompt_res = safe_generate(client, "gemini-3.1-flash-lite-preview", prompt_maker)
+        lyria_prompt = lyria_prompt_res.text.strip() if hasattr(lyria_prompt_res, "text") else "An epic cinematic orchestral piece."
+
+        # 2. Lyria 3 모델 호출 및 오디오 파일 저장
+        os.makedirs("./output_audio", exist_ok=True)
+        audio_path = f"./output_audio/theme_{int(time.time())}.mp3"
+        
+        try:
+            lyria_res = client.models.generate_content(
+                model="lyria-3-pro-preview",
+                contents=lyria_prompt
+            )
+            
+            audio_saved = False
+            for part in lyria_res.parts:
+                if part.inline_data:
+                    with open(audio_path, "wb") as f:
+                        f.write(part.inline_data.data)
+                    audio_saved = True
+            
+            if audio_saved:
+                deliverable = f"✅ 성공: 오디오 파일 생성 및 저장 완료 [경로: {audio_path}]"
+            else:
+                deliverable = "⚠️ Lyria 응답은 성공했으나 오디오 바이트 데이터가 누락되었습니다."
+        except Exception as e:
+            deliverable = f"❌ Lyria 3 생성 중 오류 발생: {e}"
+
+        # 3. 오케스트레이터 파이프라인이 깨지지 않도록 강제로 JSON 규격 생성 후 즉시 반환
+        parsed_data = {
+            "summary": "Lyria 3를 통한 테마 음악 작곡 완료",
+            "key_findings": [f"적용된 프롬프트: {lyria_prompt}"],
+            "deliverable": [deliverable],
+            "next_step_hint": "오디오 렌더링이 완료되었습니다. 결과물을 확인하십시오.",
+            "artifacts": {"format": "audio", "tags": ["music", "lyria"]}
+        }
+        return {
+            "agent": agent_name,
+            "step_id": step["id"],
+            "instruction": instruction,
+            "data": parsed_data,
+            "raw_text": json.dumps(parsed_data, ensure_ascii=False),
+        }
 
     special_context = ""
     if agent_name == "RenderGraph_Expert":

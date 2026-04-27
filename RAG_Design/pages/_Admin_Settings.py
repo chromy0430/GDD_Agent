@@ -1,7 +1,8 @@
 import os
 import json
-import streamlit as st
 import time
+import streamlit as st
+
 from rag_utils import UnityRAG, MANIFEST_PATH, FAILED_PATH, DB_PATH
 from utils import render_sidebar_settings
 
@@ -72,21 +73,21 @@ def main():
         `knowledge_base` 폴더에 넣을 수 있는 미디어 파일의 제약 사항입니다. 
         Gemini 2 Preview 모델의 제한을 따릅니다.
 
-        * **이미지 (`image/png`, `image/jpeg`)**
+        * 이미지 (`image/png`, `image/jpeg`)
             * 프롬프트당 최대 이미지 수: 6개
             * 최대 파일 크기: 제한 없음
-        * **문서 (`application/pdf`, `.md`, `.txt`)**
+        * 문서 (`application/pdf`, `.md`, `.txt`)
             * 프롬프트당 최대 파일 수: 1개
             * 파일당 최대 페이지 수: 6페이지 (PDF)
-        * **동영상 (`video/mpeg`, `video/mp4`)**
+        * 동영상 (`video/mpeg`, `video/mp4`)
             * 최대 동영상 길이 (오디오 포함): 80초
             * 최대 동영상 길이 (오디오 제외): 120초
             * 프롬프트당 최대 동영상 수: 1개
-        * **오디오 (`audio/mp3`, `audio/wav`)**
+        * 오디오 (`audio/mp3`, `audio/wav`)
             * 프롬프트당 최대 오디오 길이: 80초
             * 프롬프트당 최대 오디오 파일 수: 1개
         
-        > **💡 시스템 참고:** 오디오/비디오/이미지 파일은 Chroma DB에 적재되기 전, Gemini 모델을 통해 내용이 고도로 분석(전사 및 OCR)되어 텍스트 형태로 벡터화됩니다. 이를 통해 기존 텍스트 파일과 완벽히 동일한 검색 성능을 제공합니다.
+        > 💡 시스템 참고: 오디오/비디오/이미지 파일은 Chroma DB에 적재되기 전, Gemini 모델을 통해 내용이 고도로 분석(전사 및 OCR)되어 텍스트 형태로 벡터화됩니다. 이를 통해 기존 텍스트 파일과 완벽히 동일한 검색 성능을 제공합니다.
         """)
 
     status = get_lightweight_status()
@@ -101,34 +102,44 @@ def main():
 
     st.divider()
 
-    # 2. 유형별 색인 현황 및 부분 업데이트
-    st.write("### 📊 유형별 색인 현황 및 부분 업데이트")
-    st.caption("필요한 데이터 유형만 선택적으로 업데이트하여 시간과 API 할당량을 절약하세요.")
+    # 2. 유형별 색인 현황 및 명시적 컨트롤
+    st.write("### 📊 유형별 색인 현황 및 초기화")
+    st.caption("새로 추가된 파일만 업데이트하거나, 특정 유형의 데이터를 DB에서 완전히 지우고 처음부터 다시 색인할 수 있습니다.")
     
     groups = status["stats_by_group"]
     cols = st.columns(len(groups))
     
     for idx, (group_name, data) in enumerate(groups.items()):
         with cols[idx]:
-            # 색인 진행률 계산
             progress = data["indexed"] / data["total"] if data["total"] > 0 else 0.0
             color = "green" if progress == 1.0 and data["total"] > 0 else "orange" if data["total"] > 0 else "gray"
             
-            st.markdown(f"**{group_name}**")
+            st.markdown(f"{group_name}")
             st.markdown(f"<h3 style='color: {color}; margin-top: 0;'>{data['indexed']} / {data['total']}</h3>", unsafe_allow_html=True)
             st.progress(progress)
             
-            # 부분 업데이트 버튼
-            if st.button(f"🔄 {group_name} 업데이트", key=f"btn_update_{idx}", use_container_width=True, disabled=(data["total"] == 0)):
-                if not api_key:
-                    st.error("API Key가 없습니다.")
-                    return
-                with st.spinner(f"{group_name} 유형의 파일만 분석하여 DB를 업데이트하는 중입니다..."):
+            # [기존] 변경점만 스킵/업데이트하는 버튼
+            if st.button(f"🔄 증분 업데이트", key=f"btn_up_{idx}", use_container_width=True, disabled=(data["total"] == 0)):
+                if not api_key: st.error("API Key가 없습니다."); return
+                with st.spinner(f"새로 추가/변경된 {group_name} 파일만 업데이트합니다..."):
                     try:
                         rag = UnityRAG(api_key_input=api_key)
-                        result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False, target_exts=data["exts"])
+                        result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False, target_exts=data["exts"], rebuild_type=False)
                         st.success(result_msg)
-                        time.sleep(2)
+                        time.sleep(1)
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"오류 발생: {e}")
+                        
+            # [신규] 해당 유형 DB 초기화 후 새로 구축하는 버튼
+            if st.button(f"🧨 초기화 재색인", key=f"btn_re_{idx}", use_container_width=True, disabled=(data["total"] == 0)):
+                if not api_key: st.error("API Key가 없습니다."); return
+                with st.spinner(f"기존 {group_name} DB 데이터를 완전히 삭제하고 새로 색인합니다... (시간 소요)"):
+                    try:
+                        rag = UnityRAG(api_key_input=api_key)
+                        result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False, target_exts=data["exts"], rebuild_type=True)
+                        st.success(result_msg)
+                        time.sleep(1)
                         st.rerun()
                     except Exception as e:
                         st.error(f"오류 발생: {e}")
@@ -140,43 +151,31 @@ def main():
     col_a, col_b, col_c = st.columns(3)
 
     if col_a.button("➕ 전체 증분 업데이트", type="primary", use_container_width=True):
-        if not api_key:
-            st.error("API Key가 없습니다.")
-            return
-
+        if not api_key: st.error("API Key가 없습니다."); return
         with st.spinner("모든 유형의 변경된 파일을 스캔하여 벡터 DB를 업데이트하는 중입니다..."):
             try:
                 rag = UnityRAG(api_key_input=api_key)
                 result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=False)
                 st.success(result_msg)
-            except Exception as e:
-                st.error(f"오류 발생: {e}")
+            except Exception as e: st.error(f"오류 발생: {e}")
 
     if col_b.button("🔁 실패 파일만 재시도", use_container_width=True):
-        if not api_key:
-            st.error("API Key가 없습니다.")
-            return
-
+        if not api_key: st.error("API Key가 없습니다."); return
         with st.spinner("이전에 실패했던 파일만 다시 시도하는 중입니다..."):
             try:
                 rag = UnityRAG(api_key_input=api_key)
                 result_msg = rag.ingest_knowledge(full_rebuild=False, only_failed=True)
                 st.success(result_msg)
-            except Exception as e:
-                st.error(f"오류 발생: {e}")
+            except Exception as e: st.error(f"오류 발생: {e}")
 
     if col_c.button("🧨 전체 DB 재구축", use_container_width=True):
-        if not api_key:
-            st.error("API Key가 없습니다.")
-            return
-
+        if not api_key: st.error("API Key가 없습니다."); return
         with st.spinner("모든 문서를 다시 분석하여 DB를 새로 구축하는 중입니다..."):
             try:
                 rag = UnityRAG(api_key_input=api_key)
                 result_msg = rag.ingest_knowledge(full_rebuild=True, only_failed=False)
                 st.success(result_msg)
-            except Exception as e:
-                st.error(f"오류 발생: {e}")
+            except Exception as e: st.error(f"오류 발생: {e}")
 
 if __name__ == "__main__":
     main()

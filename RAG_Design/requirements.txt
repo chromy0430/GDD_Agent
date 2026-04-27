@@ -1,6 +1,13 @@
 streamlit
+google-genai
 google-generativeai
 pandas
-pypdf
 openpyxl
+pypdf
+PyMuPDF
 langchain-chroma
+langchain-google-genai
+langchain-text-splitters
+langchain-community
+pydub
+requests

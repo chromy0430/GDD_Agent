@@ -9,8 +9,6 @@ from utils import log_usage, render_sidebar_settings, search_google
 # 1. 설정 및 상수
 # ==========================================
 st.set_page_config(layout="wide", page_title="시장 분석 전략가")
-#MODEL_NAME = "gemini-2.5-flash" # 2.5는 아직 불안정할 수 있어 1.5 Flash 권장 (원하시면 변경 가능)
-#CONFIG_FILE = "config.json"
 
 # ==========================================
 # 3. 메인 로직

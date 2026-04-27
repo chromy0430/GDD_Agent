@@ -11,8 +11,6 @@ from rag_utils import UnityRAG
 # 1. 설정 및 상수
 # ==========================================
 st.set_page_config(layout="wide", page_title="게임 밸런스 시뮬레이터")
-#MODEL_NAME = "gemini-2.5-flash-lite"
-#CONFIG_FILE = "config.json"
 
 # ==========================================
 # 2. 유틸리티 함수

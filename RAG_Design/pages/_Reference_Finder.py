@@ -10,9 +10,6 @@ from rag_utils import UnityRAG
 # 1. 설정 및 상수
 # ==========================================
 st.set_page_config(layout="wide", page_title="레퍼런스 탐색기")
-#MODEL_NAME = "gemini-2.5-flash-lite"
-#CONFIG_FILE = "config.json"
-
 # ==========================================
 # 3. 메인 로직
 # ==========================================

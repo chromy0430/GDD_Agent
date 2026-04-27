@@ -24,7 +24,10 @@ except ImportError:
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from utils import load_config
-
+try:
+    from pydub import AudioSegment
+except ImportError:
+    pass
 
 # =========================
 # 경로 / 설정
@@ -123,22 +126,30 @@ class RateLimiter:
                 time.sleep(sleep_for)
         self.calls.append(time.time())
 
-def retry_with_backoff(func, *args, max_retries=6, initial_delay=3.0, backoff_factor=2.0, jitter=1.0, **kwargs):
+def retry_with_backoff(
+    func,
+    max_retries: int = 6,
+    initial_delay: float = 3.0,
+    backoff_factor: float = 2.0,
+    jitter: float = 1.0
+):
     delay = initial_delay
     for attempt in range(1, max_retries + 1):
         try:
-            return func(*args, **kwargs)
+            return func()  # 불필요한 가변 인자(*args, kwargs) 제거 및 직관적 호출로 변경
         except Exception as e:
             if not is_quota_error(e):
                 raise
+
             if attempt >= max_retries:
                 raise
+
             sleep_time = delay + random.uniform(0, jitter)
             print(f"⚠️ 429/Quota 감지. {sleep_time:.1f}초 후 재시도 ({attempt}/{max_retries})")
             time.sleep(sleep_time)
             delay *= backoff_factor
 
-
+            
 # =========================
 # 본체
 # =========================
@@ -221,17 +232,23 @@ class UnityRAG:
         except Exception: return ""
         return normalize_text("\n".join(text_parts))
 
+    # [일반] 미디어 추출 함수
     def _extract_media_text(self, file_path: str) -> str:
+        tmp_path = None
         try:
             print(f"📡 멀티모달 파일 전송 및 분석 중: {os.path.basename(file_path)}")
-            uploaded_file = self.client.files.upload(file=file_path)
+            ext = os.path.splitext(file_path)[1]
+            with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp_file:
+                tmp_path = tmp_file.name
+            
+            shutil.copy2(file_path, tmp_path)
+            uploaded_file = self.client.files.upload(file=tmp_path)
             
             while uploaded_file.state.name == "PROCESSING":
                 time.sleep(2)
                 uploaded_file = self.client.files.get(name=uploaded_file.name)
             
-            if uploaded_file.state.name == "FAILED":
-                return ""
+            if uploaded_file.state.name == "FAILED": return ""
 
             prompt = (
                 "이 미디어 파일의 내용을 RAG 지식 검색에 완벽하게 활용할 수 있도록 텍스트로 상세히 변환해줘. "
@@ -239,82 +256,159 @@ class UnityRAG:
                 "2. 이미지인 경우: 포함된 텍스트를 OCR처럼 모두 추출하고, 구조와 시각적 요소(다이어그램, 차트 등)를 상세히 설명할 것."
             )
 
-            response = self.client.models.generate_content(
-                model='gemini-3.1-flash-lite-preview',
-                contents=[uploaded_file, prompt]
-            )
-            
+            response = self.client.models.generate_content(model='gemini-3.1-flash-lite-preview', contents=[uploaded_file, prompt])
             self.client.files.delete(name=uploaded_file.name)
             return normalize_text(response.text)
         except Exception as e:
             print(f"❌ 멀티모달 분석 실패: {e}")
             return ""
+        finally:
+            if tmp_path and os.path.exists(tmp_path):
+                try: os.remove(tmp_path)
+                except Exception: pass
 
+    # [신규] 기술/개발/노드 전용 팩트 기반 추출 함수 (추론 엄격 차단 + 검색 맥락 보존)
     def _extract_technical_media(self, file_path: str) -> str:
-            tmp_path = None
-            try:
-                print(f"📡 [기술/노드 전용 모드] 파일 분석 중: {os.path.basename(file_path)}")
-                ext = os.path.splitext(file_path)[1]
-                with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp_file:
-                    tmp_path = tmp_file.name
-                
-                shutil.copy2(file_path, tmp_path)
-                uploaded_file = self.client.files.upload(file=tmp_path)
-                
-                while uploaded_file.state.name == "PROCESSING":
-                    time.sleep(2)
-                    uploaded_file = self.client.files.get(name=uploaded_file.name)
-                
-                if uploaded_file.state.name == "FAILED": return ""
+        tmp_path = None
+        try:
+            print(f"📡 [기술/노드 전용] 멀티모달 파일 분석 중: {os.path.basename(file_path)}")
+            ext = os.path.splitext(file_path)[1]
+            filename = os.path.basename(file_path) # 파일명 추출
+            
+            with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp_file:
+                tmp_path = tmp_file.name
+            
+            shutil.copy2(file_path, tmp_path)
+            uploaded_file = self.client.files.upload(file=tmp_path)
+            
+            while uploaded_file.state.name == "PROCESSING":
+                time.sleep(2)
+                uploaded_file = self.client.files.get(name=uploaded_file.name)
+            
+            if uploaded_file.state.name == "FAILED": return ""
 
-                # [CRITICAL] 팩트 기반 노드 추출 전용 프롬프트
-                prompt = (
-                    "이 미디어 파일은 유니티 셰이더 그래프, 블루프린트 등 비주얼 스크립팅/코딩 작업 화면입니다. "
-                    "[절대 준수 사항]: 절대로 작동 원리나 프로그래밍 로직을 스스로 유추하여 지어내지 마십시오. "
-                    "오직 화면에 명확히 보이는 노드의 이름(Text)과 값, 연결 상태만 팩트 기반으로 나열하십시오. "
-                    "화면에 명시적으로 적혀있지 않은 연산 노드(예: Subtract, Add 등)를 임의로 추가하면 치명적인 오류가 발생합니다."
-                )
+            # [CRITICAL FIX] 검색용 요약(허용)과 노드 추출(엄격 통제)의 분리
+            prompt = (
+                f"이 미디어 파일(이름: {filename})은 유니티 셰이더 그래프, 블루프린트 등 비주얼 스크립팅/코딩 작업 화면입니다. "
+                "RAG 검색 시스템이 이 영상의 목적을 찾을 수 있도록 다음 두 가지 지침을 엄격히 분리해서 작성해줘:\n\n"
+                "1. [목적 요약]: 파일명과 영상 초반/후반의 결과물(시각적 형태)을 바탕으로, 이 영상이 '어떤 기능이나 이펙트(예: 실루엣, 포탈 등)'를 다루는지 1~2줄로 요약할 것.\n"
+                "2. [노드 팩트 나열 - 절대 준수 사항]: 구현 세부 로직을 설명할 때는 절대로 작동 원리를 스스로 유추하여 지어내지 마십시오. "
+                "오직 화면에 명확히 보이는 노드의 이름(Text)과 값, 연결선(Link) 상태만 팩트 기반으로 나열하십시오. "
+                "화면에 명시적으로 적혀있지 않은 연산 노드(예: Subtract, Add 등)를 임의로 추가하면 치명적인 오류가 발생합니다."
+            )
 
-                response = self.client.models.generate_content(
-                    model='gemini-3.1-flash-lite-preview',
-                    contents=[uploaded_file, prompt]
-                )
-                
-                self.client.files.delete(name=uploaded_file.name)
-                return normalize_text(response.text)
+            response = self.client.models.generate_content(model='gemini-3.1-flash-lite-preview', contents=[uploaded_file, prompt])
+            self.client.files.delete(name=uploaded_file.name)
+            return normalize_text(response.text)
+        except Exception as e:
+            print(f"❌ 기술 미디어 분석 실패: {e}")
+            return ""
+        finally:
+            if tmp_path and os.path.exists(tmp_path):
+                try: os.remove(tmp_path)
+                except Exception: pass
+# [신규] 긴 오디오 파일을 70초 단위로 분할하여 텍스트를 추출하고 병합하는 함수
+    def _extract_long_audio(self, file_path: str) -> str:
+        try:
+            from pydub import AudioSegment
+        except ImportError:
+            print("❌ pydub 라이브러리가 설치되지 않아 오디오 분할이 불가능합니다. (pip install pydub)")
+            return ""
 
-            except Exception as e:
-                print(f"❌ 기술 미디어 분석 실패: {e}")
-                return ""
-            finally:
-                if tmp_path and os.path.exists(tmp_path):
-                    try: os.remove(tmp_path)
-                    except Exception: pass
+        try:
+            print(f"🔊 긴 오디오 파일 분석 준비 중: {os.path.basename(file_path)}")
+            audio = AudioSegment.from_file(file_path)
+            chunk_length_ms = 70 * 1000  # API 제한(80초)을 고려하여 안전하게 70초 단위로 분할
+            chunks = [audio[i:i + chunk_length_ms] for i in range(0, len(audio), chunk_length_ms)]
+
+            full_transcripts = []
+            print(f"총 {len(audio)/1000:.1f}초의 오디오를 {len(chunks)}개의 조각으로 분할하여 분석합니다.")
+
+            for idx, chunk in enumerate(chunks, start=1):
+                tmp_path = None
+                try:
+                    ext = os.path.splitext(file_path)[1]
+                    with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp_file:
+                        tmp_path = tmp_file.name
+                    
+                    # 조각난 오디오를 임시 파일로 내보내기
+                    chunk.export(tmp_path, format=ext.replace(".", ""))
+                    
+                    print(f"  -> 📡 [{idx}/{len(chunks)}] 번째 조각 전송 및 묘사 추출 중...")
+                    uploaded_file = self.client.files.upload(file=tmp_path)
+                    
+                    while uploaded_file.state.name == "PROCESSING":
+                        time.sleep(2)
+                        uploaded_file = self.client.files.get(name=uploaded_file.name)
+                    
+                    if uploaded_file.state.name == "FAILED":
+                        continue
+
+                    prompt = (
+                        "이 오디오 조각을 RAG 지식 검색에 활용할 수 있도록 텍스트로 상세히 분석해줘. "
+                        "1. 대화가 있다면 전사(Transcript)할 것. "
+                        "2. [음악/BGM인 경우 절대 준수]: 단순히 '평화롭다'는 식의 묘사를 넘어, 수석 음악 감독의 시각으로 기술적 분석을 수행할 것. "
+                        "사용된 메인 악기(Lead Instruments), 대략적인 템포(BPM), 리듬의 질감, 장르(예: 판타지 오케스트라, 칩튠, 로파이 등), "
+                        "그리고 곡을 구성하는 지배적인 음향적 특징(Acoustic features)을 매우 구체적인 영문 음악 용어를 섞어서 묘사하라."
+                    )
+
+                    response = self.client.models.generate_content(model='gemini-3.1-flash-lite-preview', contents=[uploaded_file, prompt])
+                    self.client.files.delete(name=uploaded_file.name)
+                    
+                    # 각 조각의 텍스트를 리스트에 누적
+                    full_transcripts.append(f"--- [오디오 파트 {idx}] ---\n{response.text.strip()}")
+
+                except Exception as e:
+                    print(f"❌ 오디오 조각 {idx} 분석 실패: {e}")
+                finally:
+                    if tmp_path and os.path.exists(tmp_path):
+                        try: os.remove(tmp_path)
+                        except Exception: pass
+            
+            # 모든 조각의 텍스트를 하나의 거대한 텍스트로 병합하여 반환
+            return normalize_text("\n\n".join(full_transcripts))
+
+        except Exception as e:
+            print(f"❌ 긴 오디오 처리 실패: {e}")
+            return ""
+
 
     def _load_document_text(self, file_path: str) -> str:
-        ext = os.path.splitext(file_path)[1].lower()
+            ext = os.path.splitext(file_path)[1].lower()
 
-        if ext in SUPPORTED_TEXT_EXTS:
-            return self._load_text_file(file_path)
+            if ext in SUPPORTED_TEXT_EXTS:
+                return self._load_text_file(file_path)
 
-        if ext in SUPPORTED_PDF_EXTS:
-            text = self._parse_pdf_pymupdf(file_path)
-            if len(text) >= 50: return text
-            return self._parse_pdf_pypdf(file_path)
-            
-        if ext in SUPPORTED_IMAGE_EXTS | SUPPORTED_VIDEO_EXTS | SUPPORTED_AUDIO_EXTS:
-            # [추가됨] 파일명 기반 키워드 라우팅
-            tech_keywords = ["ase", "셰이더", "이펙트", "코드", "노드", "블루프린트", "shader", "code", "node", "개발"]
-            filename_lower = os.path.basename(file_path).lower()
-            
-            # 키워드가 포함되어 있으면 신규 기술 전용 함수 사용
-            if any(kw in filename_lower for kw in tech_keywords):
-                return self._extract_technical_media(file_path)
-            else:
-                # 일반 영상은 기존 함수 사용
-                return self._extract_media_text(file_path)
+            if ext in SUPPORTED_PDF_EXTS:
+                text = self._parse_pdf_pymupdf(file_path)
+                if len(text) >= 50:
+                    return text
+                text = self._parse_pdf_pypdf(file_path)
+                if len(text) >= 50:
+                    return text
+                # 두 방법 모두 실패 → 스캔본으로 간주, Gemini OCR fallback
+                print(f"⚠️ 텍스트 추출 실패, Gemini OCR로 재시도: {os.path.basename(file_path)}")
+                return self._extract_pdf_via_gemini_ocr(file_path)
 
-        return ""
+            '''if ext in SUPPORTED_PDF_EXTS:
+                text = self._parse_pdf_pymupdf(file_path)
+                if len(text) >= 50: return text
+                return self._parse_pdf_pypdf(file_path)'''
+                
+            # 👇 오디오 파일 전용 라우팅 추가
+            if ext in SUPPORTED_AUDIO_EXTS:
+                return self._extract_long_audio(file_path)
+                
+            if ext in SUPPORTED_IMAGE_EXTS | SUPPORTED_VIDEO_EXTS:
+                tech_keywords = ["ase", "셰이더", "이펙트", "코드", "노드", "블루프린트", "shader", "code", "node", "개발"]
+                filename_lower = os.path.basename(file_path).lower()
+                
+                if any(kw in filename_lower for kw in tech_keywords):
+                    return self._extract_technical_media(file_path)
+                else:
+                    return self._extract_media_text(file_path)
+
+            return ""
 
     def _split_document(self, doc: Document):
         splitter = RecursiveCharacterTextSplitter(
@@ -373,8 +467,8 @@ class UnityRAG:
         for idx, chunk in enumerate(chunks): chunk.metadata["chunk_index"] = idx
         return chunks, self._make_chunk_ids(source_rel, chunks)
 
-    # 타겟 확장자(target_exts) 파라미터 추가
-    def ingest_knowledge(self, full_rebuild: bool = False, only_failed: bool = False, target_exts: set = None):
+    # [수정됨] rebuild_type 파라미터 추가
+    def ingest_knowledge(self, full_rebuild: bool = False, only_failed: bool = False, target_exts: set = None, rebuild_type: bool = False):
         if not self.embedding_model: return "❌ API Key가 설정되지 않았습니다."
         if not os.path.exists(KNOWLEDGE_PATH): return "❌ knowledge_base 폴더가 없습니다."
 
@@ -392,7 +486,25 @@ class UnityRAG:
             if self.vector_db is None: self._load_db()
             if self.vector_db is None: self._recreate_db()
 
-        # 삭제된 파일 동기화 (전체 파일 기준)
+        # [핵심 로직] 특정 유형만 초기화(백지화) 후 진행
+        if rebuild_type and target_exts and not full_rebuild:
+            print(f"🧨 부분 유형 완전 초기화 시작: {target_exts}")
+            relpaths_to_delete = []
+            for rel, item in manifest.items():
+                ext = os.path.splitext(rel)[1].lower()
+                if ext in target_exts:
+                    relpaths_to_delete.append(rel)
+            
+            for rel in relpaths_to_delete:
+                self._delete_ids_if_exist(manifest.get(rel, {}).get("chunk_ids", []))
+                manifest.pop(rel, None)
+                failed_files.discard(rel)
+                
+            self._save_manifest(manifest)
+            self._save_failed_files(failed_files)
+            print(f"✅ DB에서 해당 유형 기록 삭제 완료: {len(relpaths_to_delete)}건")
+
+        # 삭제된 파일 동기화
         current_relpaths = {safe_relpath(p, KNOWLEDGE_PATH) for p in files}
         manifest_relpaths = set(manifest.keys())
 
@@ -403,7 +515,6 @@ class UnityRAG:
                 manifest.pop(rel, None)
                 failed_files.discard(rel)
 
-        # target_exts가 있을 경우, 작업 대상 큐를 해당 확장자 파일로만 축소
         if target_exts:
             files_to_process = [f for f in files if os.path.splitext(f)[1].lower() in target_exts]
         else:
@@ -417,11 +528,14 @@ class UnityRAG:
 
             file_hash = sha256_of_file(file_path)
             old = manifest.get(rel)
+            
             if not full_rebuild and not only_failed and old and old.get("sha256") == file_hash:
                 skipped += 1; continue
+                
             targets.append((file_path, rel, file_hash))
 
         if only_failed and not targets: return "✅ 실패 파일 재시도 대상이 없습니다."
+        if not targets: return "✅ 모든 파일이 최신 상태입니다. (업데이트할 대상 없음)"
 
         processed, failed, total_new_chunks = 0, 0, 0
 
@@ -458,7 +572,7 @@ class UnityRAG:
         self._save_failed_files(failed_files)
         
         target_info = "전체" if not target_exts else "부분 유형"
-        return f"✅ 완료 [{target_info}] (대상: {len(files_to_process)}, 처리: {processed}, 스킵: {skipped}, 실패: {failed}, 청크: {total_new_chunks})"
+        return f"✅ 완료 [{target_info}] (대상: {len(targets)}, 처리: {processed}, 스킵: {skipped}, 실패: {failed}, 청크: {total_new_chunks})"
 
     def retrieve_context(self, query, k=3):
         if not self.vector_db: self._load_db()
@@ -499,3 +613,69 @@ class UnityRAG:
                 last_error = e
                 time.sleep(delay)
         raise last_error
+    
+    def _extract_pdf_via_gemini_ocr(self, file_path: str) -> str:
+        try:
+            doc = fitz.open(file_path)
+            all_text = []
+
+            for page_num, page in enumerate(doc):
+                mat = fitz.Matrix(2.0, 2.0)
+                pix = page.get_pixmap(matrix=mat)
+                img_bytes = pix.tobytes("png")
+
+                import base64
+                img_b64 = base64.standard_b64encode(img_bytes).decode("utf-8")
+
+                try:
+                    response = self.client.models.generate_content(
+                        model='gemini-3.1-flash-lite-preview',
+                        contents=[
+                            {
+                                "parts": [
+                                    {
+                                        "inline_data": {
+                                            "mime_type": "image/png",
+                                            "data": img_b64
+                                        }
+                                    },
+                                    {
+                                        "text": (
+                                            "이 PDF 페이지에서 텍스트를 그대로 추출해줘 (OCR). "
+                                            "원본 구조(제목, 단락, 코드블록 등)를 최대한 유지하고, "
+                                            "설명이나 요약 없이 텍스트만 출력해."
+                                        )
+                                    }
+                                ]
+                            }
+                        ]
+                    )
+
+                    # ✅ response.text가 None일 경우 candidates에서 직접 추출
+                    page_text = None
+                    if response.text is not None:
+                        page_text = response.text.strip()
+                    elif response.candidates:
+                        parts = response.candidates[0].content.parts
+                        page_text = "".join(p.text for p in parts if hasattr(p, "text") and p.text).strip()
+
+                    if page_text:
+                        all_text.append(f"--- [페이지 {page_num + 1}] ---\n{page_text}")
+                    else:
+                        print(f"⚠️ 페이지 {page_num + 1}: 텍스트 없음 (이미지만 있는 페이지일 수 있음)")
+
+                except Exception as e:
+                    print(f"⚠️ 페이지 {page_num + 1} OCR 실패, 스킵: {e}")
+                    continue
+
+                self.rate_limiter.wait()
+
+            doc.close()
+            result = normalize_text("\n\n".join(all_text))
+            print(f"✅ Gemini OCR 완료: 총 {len(all_text)}페이지 추출")
+            return result
+
+        except Exception as e:
+            print(f"❌ Gemini OCR 실패: {e}")
+            return ""
+        

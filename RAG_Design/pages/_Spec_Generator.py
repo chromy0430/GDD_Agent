@@ -13,9 +13,6 @@ from rag_utils import UnityRAG
 # 1. 설정 및 상수
 # ==========================================
 st.set_page_config(layout="wide", page_title="개발 명세서 생성기")
-#MODEL_NAME = "gemini-2.5-flash-lite"
-#CONFIG_FILE = "config.json" # 루트 경로의 설정 파일 공유
-
 # ==========================================
 # 2. 유틸리티 함수 (app.py와 공유 가능하지만 독립성을 위해 포함)
 # ==========================================

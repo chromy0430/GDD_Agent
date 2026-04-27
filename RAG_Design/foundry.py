@@ -26,7 +26,8 @@ class FoundryGuard:
             "Code_Reviewer",
             "RenderGraph_Expert",  # 추가됨
             "Game_Planner",        # 추가됨
-            "Feature_Implementer"  # 추가됨 (기존 orchestrator에는 있었으나 여기서 누락되어 있었음)
+            "Feature_Implementer",  # 추가됨 (기존 orchestrator에는 있었으나 여기서 누락되어 있었음)
+            "Music_Composer"
         }
 
     # =========================================================
