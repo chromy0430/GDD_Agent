@@ -1,12 +1,8 @@
 {
   "api_presets": {
-    "기본 API": "AIzaSyCf9qWfPQuwUtbnZNEsjNc1_F-lQp-Oacs",
-    "유료 키": "AIzaSyDOWivqxgTmBAQ1p4xS9BCGItBoiXCK50Y",
-    "무료 키_2": "AIzaSyBg3FOL6n2TPKUI-_qr1um7xJM3TJQvgcQ",
-    "무료 키_3": "AIzaSyDuBVftikABQFfqoDlKLYqgxDC9VlIOC2k",
-    "무료 키_4": "AIzaSyByy-IF8IHUG7I5xsV8bZDlgP3W5iE9lBA"
+    "기본 API": ""
   },
-  "active_preset": "무료 키_2",
-  "cx_id": "1628e81ac0dfe42db",
-  "model_name": "gemini-3.1-flash-lite-preview"
+  "active_preset": "기본 API",
+  "cx_id": "",
+  "model_name": "gemini-2.5-flash"
 }
